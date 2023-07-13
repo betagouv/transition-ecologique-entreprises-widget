@@ -1,5 +1,6 @@
 export const status = {
   id: 'track_status',
+  category: 'goals',
   title: { fr: "Mon niveau d'avancement" },
   label: { fr: 'Statut de votre projet' },
   interface: {

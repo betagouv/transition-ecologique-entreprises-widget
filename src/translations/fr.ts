@@ -4,9 +4,11 @@ export const frDict = {
   close: 'Fermer',
   send: 'Envoyer',
   modify: 'modifier',
+  or: 'Ou',
   licence: 'Ce widget et son code source sont sous licence',
   selection: {
-    selected: 'Ma sélection'
+    mySelection: 'Ma sélection',
+    selected: 'Sélectionné'
   },
   form: {
     mandatory: "Champs obligatoires",
@@ -15,15 +17,24 @@ export const frDict = {
     advisors: "Nous allons <b>identifier le bon conseiller</b> près de chez vous",
     phoneContact: "Le conseiller vous <b>contactera par téléphone</b> dans les 5 jours (délai moyen de prise en charge)",
   },
+  input: {
+    research: 'Recherche',
+    search: 'Rechercher'
+  },
   results: {
     backToResults: "Retour aux résultats",
-    showForm: "Candidatez pour le dispositif {title}",
+    // showForm: "Candidatez pour le dispositif {title}",
+    knowMore: "En savoir plus",
+    showForm: "En savoir plus sur {title}",
     alertTitle: "Merci, voici vos résultats",
-    alertTitleNoResult: "Pas de résultats",
-    alertNoResult: "Désolé, nous n'avons pas trouvé d'aides correspondant à vos choix",
+    alertTitleNoResults: "Pas de résultats",
+    alertNoResults: "Désolé, nous n'avons pas trouvé de dispositif adapté à votre situation et vos demandes",
     alertDescription: "Vous pouvez également nous envoyer un mail via le formulaire ci-après pour être mis en contact avec des conseillers",
     yourResults: 'Vos résultats',
     fittingPrograms: 'Les aides correspondant à vos choix',
+  },
+  errors: {
+    error: "Erreur"
   },
   program: {
     programResume: "Le dispositif en deux mots",
@@ -37,5 +48,9 @@ export const frDict = {
   programTypes: {
     aap: 'Appel à projets',
     diag: 'Diagnostic'
+  },
+  enterprise: {
+    select: 'Sélectionnez votre entreprise',
+    noStructureFound: "Aucune structure n'a été trouvée."
   }
 }

@@ -37,8 +37,10 @@ conditions:
   - type: structure_sizes
     operator: "or"
     value: 
-      - tpe
-      - pme
+      - PME
+      - TPE
+      - ETI
+      - GE
   - type: user_goals
     operator: "or"
     value: 

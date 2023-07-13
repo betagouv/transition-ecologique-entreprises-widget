@@ -36,8 +36,10 @@
         "type": "structure_sizes",
         "operator": "or",
         "value": [
-          "pme",
-          "tpe"
+          "PME",
+          "TPE",
+          "ETI",
+          "GE"
         ]
       },
       {
@@ -94,7 +96,7 @@
         "type": "structure_sizes",
         "operator": "or",
         "value": [
-          "pme"
+          "PME"
         ]
       },
       {
@@ -148,8 +150,10 @@
         "type": "structure_sizes",
         "operator": "or",
         "value": [
-          "tpe",
-          "pme"
+          "PME",
+          "TPE",
+          "ETI",
+          "GE"
         ]
       },
       {
@@ -204,8 +208,10 @@
         "type": "structure_sizes",
         "operator": "or",
         "value": [
-          "tpe",
-          "pme"
+          "PME",
+          "TPE",
+          "ETI",
+          "GE"
         ]
       },
       {
@@ -262,8 +268,10 @@
         "type": "structure_sizes",
         "operator": "or",
         "value": [
-          "tpe",
-          "pme"
+          "PME",
+          "TPE",
+          "ETI",
+          "GE"
         ]
       },
       {
@@ -318,7 +326,7 @@
         "type": "structure_sizes",
         "operator": "or",
         "value": [
-          "tpe"
+          "TPE"
         ]
       },
       {
@@ -372,8 +380,10 @@
         "type": "structure_sizes",
         "operator": "or",
         "value": [
-          "tpe",
-          "pme"
+          "PME",
+          "TPE",
+          "ETI",
+          "GE"
         ]
       },
       {
@@ -447,8 +457,10 @@
         "type": "structure_sizes",
         "operator": "or",
         "value": [
-          "tpe",
-          "pme"
+          "PME",
+          "TPE",
+          "ETI",
+          "GE"
         ]
       },
       {

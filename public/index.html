@@ -11,13 +11,14 @@
         <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
           Please enable it to continue.</strong>
         </noscript> -->
-      <div style="margin: 3em;">
+      <div style="margin: 2em;">
         <!-- <h1>
           TEST HTLM FILE FROM PUBLIC DIR
         </h1> -->
         <!-- <link rel="stylesheet" type="text/css" href="css/core.main.min.css" /> -->
         <!-- <link id="gov-aid-tree-app-css" rel="stylesheet" type="text/css" href="style.css" /> -->
         <!-- <link id="gov-aid-tree-app-css" rel="stylesheet" type="text/css" href="https://gov-aid-tree-poc.netlify.app/style.css" /> -->
+        <!-- msg="fr | TPE & PME <img src='https://github.com/betagouv/transition-ecologique-entreprises-widget/raw/main/images/logos/logo-gov-aid-tree-cropped.png' height='25px'> engagez votre entreprise<br>dans la transition écologique | The GOV-AID-TREE widget to find your aid program !" -->
         <gov-aid-tree-app
           id="main-widget"
           show-header="true"
@@ -28,7 +29,6 @@
           locale="fr"
           dataset-url="public/data/eco-aides.json"
           max-depth=3
-          msg="fr | TPE & PME <img src='https://github.com/betagouv/transition-ecologique-entreprises-widget/raw/main/images/logos/logo-gov-aid-tree-cropped.png' height='25px'> engagez votre entreprise<br>dans la transition écologique | The GOV-AID-TREE widget to find your aid program !"
           debug-switch="true"
           debug="false"
           >

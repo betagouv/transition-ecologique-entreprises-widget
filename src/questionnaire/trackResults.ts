@@ -1,5 +1,6 @@
 export const results = {
   id: 'track_results',
+  category: 'results',
   title: { fr: 'Mes résultats' },
   label: { fr: 'Vos résultats'},
   intro: { fr: 'Résultats'},
@@ -10,7 +11,8 @@ export const results = {
     static: true,
   },
   config: {
-    showAlert: false,
+    showAlertResults: false,
+    showAlertNoResults: true,
     showResultsTitle: false,
     showProgramInfos: false,
     showProgramSubtitles: false
@@ -28,7 +30,7 @@ export const results = {
   form: {
     value: 'contact_form.email',
     label: { fr: 'Vous êtes intéressé.e par le dispositif {title} ?' },
-    hint: { fr: "Déposez votre demande, un conseiller vous rappelle dans les 5 jours."},
+    hint: { fr: "Posez votre question, un conseiller vous contactera dans les 5 jours"},
     intro: { fr: `
       <h2>
         <span
@@ -77,6 +79,11 @@ export const results = {
         hint: { fr: '385 290 309 00454' },
         required: false,
         type: 'text',
+        preFillFrom: {
+          id: 'siret',
+          from: 'usedTracks',
+          dataField: 'siret',
+        },
         cols: 12,
         // for debugging purposes
         // defaultValue: '83014132100034'
@@ -184,11 +191,11 @@ export const results = {
             id: 'siret',
             dataField: 'attributes.SIRET',
           },
-          {
-            from: 'formData',
-            id: 'needs',
-            dataField: 'attributes.FORM_NEEDS',
-          },
+          // {
+          //   from: 'formData',
+          //   id: 'needs',
+          //   dataField: 'attributes.FORM_NEEDS',
+          // },
           {
             from: 'formData',
             id: 'cgu',
@@ -214,11 +221,11 @@ export const results = {
             id: 'user_goals',
             dataField: 'attributes.USER_GOALS',
           },
-          {
-            from: 'usedTracks',
-            id: 'project_status',
-            dataField: 'attributes.PROJECT_STATUS',
-          },
+          // {
+          //   from: 'usedTracks',
+          //   id: 'project_status',
+          //   dataField: 'attributes.PROJECT_STATUS',
+          // },
           {
             from: 'usedTracks',
             id: 'structure_sizes',

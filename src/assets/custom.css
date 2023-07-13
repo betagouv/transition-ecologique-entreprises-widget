@@ -1,12 +1,53 @@
 /* 
 WARNING : 
-WHEN CHANGING THIS FILE PLEASE RE-RUN 
-npm run dev 
+  ORIGINAL FILE TO EDIT : ./src/assets/custom.css
+
+  WHEN CHANGING THIS FILE PLEASE RE-RUN 
+  npm run dev 
 */
 
 /* CUSTOM STYLES - OVERIDES DSFR */
 .fr-card:hover {
   cursor: pointer !important;
+}
+.fr-btn-fullwidth {
+  width: 100% !important;
+}
+.fr-div-fixed-height {
+  height: 100%;
+}
+.fr-btn-fixed-height {
+  min-height: 64px;
+  height: 100%;
+}
+.fr-modal-custom::before {
+  content: none !important;
+}
+.fr-modal__body-custom {
+  max-height: 100vh !important;
+  height: 100vh !important;
+}
+.fr-btn-align-center {
+  justify-content: center;
+}
+.fr-btn-align-left {
+  /* text-align: left; */
+}
+.fr-btn-sm-align-left > span {
+  text-align: left;
+}
+.fr-btn-sm-align-center > svg {
+  min-width: 19px !important;
+}
+.fr-tag-clickable:hover {
+  cursor: pointer !important;
+}
+.fr-tag-selected {
+  color: white !important;
+  background-color: var(--text-action-high-blue-france) !important;
+}
+.fr-card-result  {
+  height: 250px !important; 
 }
 
 /* DEBUGGING STYLES */
@@ -28,3 +69,259 @@ code {
   line-height: 1.4em !important;
   overflow: auto;
 }
+
+@media screen and (max-width:48em) {
+  .fr-sm-hide {
+    display: none !important;
+  }
+  .fr-col-sm-hide {
+    display: none !important;
+  }
+  .fr-btn-sm-fullwidth {
+    width: 100% !important;
+    justify-content: center;
+  }
+  .fr-btn-sm-align-center > span {
+    width: 100%;
+  }
+  .fr-btn-sm-align-left > span {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 0em) and (max-width: 36em) {
+  /*! media sm */
+  .fr-hidden-xs {
+    display: none !important;
+  }
+
+  .fr-unhidden-xs {
+    display: inherit !important;
+  }
+
+  .fr-sr-only-xs {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+  }
+
+  .fr-container-xs {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .fr-container-xs--fluid {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    overflow: hidden;
+  }
+
+  .fr-grid-row-xs--gutters {
+    margin: -0.5rem;
+  }
+
+  .fr-grid-row-xs--gutters > [class^=fr-col-],
+  .fr-grid-row-xs--gutters > [class*=" fr-col-"],
+  .fr-grid-row-xs--gutters > .fr-col {
+    padding: 0.5rem;
+  }
+
+  .fr-grid-row-xs--no-gutters {
+    margin: 0;
+  }
+
+  .fr-grid-row-xs--no-gutters > [class^=fr-col-],
+  .fr-grid-row-xs--no-gutters > [class*=" fr-col-"],
+  .fr-grid-row-xs--no-gutters > .fr-col {
+    padding: 0;
+  }
+
+  .fr-col-xs {
+    flex: 1;
+  }
+
+  .fr-col-xs-1 {
+    flex: 0 0 calc(100% / 12);
+    width: calc(100% / 12);
+    max-width: calc(100% / 12);
+  }
+
+  .fr-col-offset-xs-1:not(.fr-col-offset-xs-1--right) {
+    margin-left: calc(100% / 12);
+  }
+
+  .fr-col-offset-xs-1--right {
+    margin-right: calc(100% / 12);
+  }
+
+  .fr-col-xs-2 {
+    flex: 0 0 calc(200% / 12);
+    width: calc(200% / 12);
+    max-width: calc(200% / 12);
+  }
+
+  .fr-col-offset-xs-2:not(.fr-col-offset-xs-2--right) {
+    margin-left: calc(200% / 12);
+  }
+
+  .fr-col-offset-xs-2--right {
+    margin-right: calc(200% / 12);
+  }
+
+  .fr-col-xs-3 {
+    flex: 0 0 calc(300% / 12);
+    width: calc(300% / 12);
+    max-width: calc(300% / 12);
+  }
+
+  .fr-col-offset-xs-3:not(.fr-col-offset-xs-3--right) {
+    margin-left: calc(300% / 12);
+  }
+
+  .fr-col-offset-xs-3--right {
+    margin-right: calc(300% / 12);
+  }
+
+  .fr-col-xs-4 {
+    flex: 0 0 calc(400% / 12);
+    width: calc(400% / 12);
+    max-width: calc(400% / 12);
+  }
+
+  .fr-col-offset-xs-4:not(.fr-col-offset-xs-4--right) {
+    margin-left: calc(400% / 12);
+  }
+
+  .fr-col-offset-xs-4--right {
+    margin-right: calc(400% / 12);
+  }
+
+  .fr-col-xs-5 {
+    flex: 0 0 calc(500% / 12);
+    width: calc(500% / 12);
+    max-width: calc(500% / 12);
+  }
+
+  .fr-col-offset-xs-5:not(.fr-col-offset-xs-5--right) {
+    margin-left: calc(500% / 12);
+  }
+
+  .fr-col-offset-xs-5--right {
+    margin-right: calc(500% / 12);
+  }
+
+  .fr-col-xs-6 {
+    flex: 0 0 calc(600% / 12);
+    width: calc(600% / 12);
+    max-width: calc(600% / 12);
+  }
+
+  .fr-col-offset-xs-6:not(.fr-col-offset-xs-6--right) {
+    margin-left: calc(600% / 12);
+  }
+
+  .fr-col-offset-xs-6--right {
+    margin-right: calc(600% / 12);
+  }
+
+  .fr-col-xs-7 {
+    flex: 0 0 calc(700% / 12);
+    width: calc(700% / 12);
+    max-width: calc(700% / 12);
+  }
+
+  .fr-col-offset-xs-7:not(.fr-col-offset-xs-7--right) {
+    margin-left: calc(700% / 12);
+  }
+
+  .fr-col-offset-xs-7--right {
+    margin-right: calc(700% / 12);
+  }
+
+  .fr-col-xs-8 {
+    flex: 0 0 calc(800% / 12);
+    width: calc(800% / 12);
+    max-width: calc(800% / 12);
+  }
+
+  .fr-col-offset-xs-8:not(.fr-col-offset-xs-8--right) {
+    margin-left: calc(800% / 12);
+  }
+
+  .fr-col-offset-xs-8--right {
+    margin-right: calc(800% / 12);
+  }
+
+  .fr-col-xs-9 {
+    flex: 0 0 calc(900% / 12);
+    width: calc(900% / 12);
+    max-width: calc(900% / 12);
+  }
+
+  .fr-col-offset-xs-9:not(.fr-col-offset-xs-9--right) {
+    margin-left: calc(900% / 12);
+  }
+
+  .fr-col-offset-xs-9--right {
+    margin-right: calc(900% / 12);
+  }
+
+  .fr-col-xs-10 {
+    flex: 0 0 calc(1000% / 12);
+    width: calc(1000% / 12);
+    max-width: calc(1000% / 12);
+  }
+
+  .fr-col-offset-xs-10:not(.fr-col-offset-xs-10--right) {
+    margin-left: calc(1000% / 12);
+  }
+
+  .fr-col-offset-xs-10--right {
+    margin-right: calc(1000% / 12);
+  }
+
+  .fr-col-xs-11 {
+    flex: 0 0 calc(1100% / 12);
+    width: calc(1100% / 12);
+    max-width: calc(1100% / 12);
+  }
+
+  .fr-col-offset-xs-11:not(.fr-col-offset-xs-11--right) {
+    margin-left: calc(1100% / 12);
+  }
+
+  .fr-col-offset-xs-11--right {
+    margin-right: calc(1100% / 12);
+  }
+
+  .fr-col-xs-12 {
+    flex: 0 0 calc(1200% / 12);
+    width: calc(1200% / 12);
+    max-width: calc(1200% / 12);
+  }
+
+  .fr-col-offset-xs-12:not(.fr-col-offset-xs-12--right) {
+    margin-left: calc(1200% / 12);
+  }
+
+  .fr-col-offset-xs-12--right {
+    margin-right: calc(1200% / 12);
+  }
+}
+
+@media screen and (min-width:48em) {
+  .fr-col-sm-show {
+    display: none !important;
+  }
+  .fr-modal__body-custom {
+    margin-top: 2em !important;
+  }
+}
+

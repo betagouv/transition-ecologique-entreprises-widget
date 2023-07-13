@@ -15,28 +15,31 @@
 
   <!-- LIST OF USED TRACKS + MODIFY CHOICE -->
   <!-- fr-ri-check-fill -->
-  <p
+  <template
     v-for="usedTrack in usedTracks"
-    :key="usedTrack.id"
-    class="fr-mb-1v">
-    <DsfrButton
-      :label="tracks.getTrackTitle(usedTrack.id, choices.lang)"
-      :icon="`${ usedTrack.completed ? '' : 'ri-arrow-right-line'}`"
-      :disabled="!usedTrack.completed"
-      tertiary
-      no-outline
-      @click="backToTrack(usedTrack.id)">
-    </DsfrButton>
-    <div v-if="usedTrack.completed && usedTrack.selected.length">
-      <p
-        v-for="(vt, idx) in usedTrack.selected"
-        :key="`${usedTrack.id}-${idx}`"
-        class="fr-pl-10v fr-mb-2v">
-        <span class="fr-icon-check-line fr-icon--sm" aria-hidden="true"></span>
-        {{ vt.title[choices.lang] }}
-      </p>
+    :key="usedTrack.id">
+    <div
+      v-show="usedTrack.step > 1"
+      class="fr-mb-1v">
+      <DsfrButton
+        :label="tracks.getTrackTitle(usedTrack.id, choices.lang)"
+        :icon="`${ usedTrack.completed ? '' : 'ri-arrow-right-line'}`"
+        :disabled="!usedTrack.completed"
+        tertiary
+        no-outline
+        @click="backToTrack(usedTrack.id)"/>
+      <template
+        v-if="usedTrack.completed && usedTrack.selected.length">
+        <p
+          v-for="(vt, idx) in usedTrack.selected"
+          :key="`${usedTrack.id}-${idx}`"
+          class="fr-pl-10v fr-mb-2v">
+          <span class="fr-icon-check-line fr-icon--sm" aria-hidden="true"></span>
+          {{ vt.title[choices.lang] }}
+        </p>
+      </template>
     </div>
-  </p>
+  </template>
 </template>
 
 <script setup lang="ts">

@@ -8,8 +8,8 @@ console.log()
 console.log('Starting ...') 
 console.log('vite.config ...')
 
-console.log('process.env', process.env)
 console.log('process.env.NODE_ENV : ', process.env.NODE_ENV)
+console.log('process.env', process.env)
 
 const mode = process.env.NODE_ENV || 'development'
 console.log('vite.config > mode : ', mode)

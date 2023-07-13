@@ -1,5 +1,7 @@
 export const sectors = {
   id: 'track_sectors',
+  help: 'https://www.insee.fr/fr/metadonnees/nafr2',
+  category: 'entreprise',
   title: { fr: 'Mon activité' },
   label: { fr: "Quel est votre activité ?" },
   interface: {

@@ -63,9 +63,25 @@ export interface Translations {
   [name: string]: string
 }
 
+
+enum TrackCalloutType {
+  info = 'info'
+}
+export interface TrackCallout {
+  header?: Translations,
+  title: Translations,
+  bigTitle: boolean,
+  description: Translations,
+  color?: string,
+  type?: TrackCalloutType
+  hintIcon?: string,
+  hint?: Translations,
+}
+
 enum TrackComponents {
   cards = 'cards',
-  buttons = 'buttons'
+  buttons = 'buttons',
+  simpleButtons = 'simpleButtons'
 }
 export interface TrackInterface {
   component: TrackComponents,
@@ -94,15 +110,30 @@ export interface TrackOptions {
   id?: string,
   disabled?: Boolean,
   value: string | number,
+  required?: Boolean,
   title: Translations,
   label: Translations,
+  hint?: Translations,
+  callout?: TrackCallout,
+  info?: Translations,
+  placeholder?: Translations,
+  postResponses?: Translations,
   intro?: Translations,
   fields?: TrackOptionsField,
-  hint?: Translations,
   next?: TrackNext
 }
+
+export interface TrackOptionsInput extends TrackOptions {
+  placeholder: Translations,
+  defaultInput?: string | number,
+  callbacks? : any,
+  wildcard?: any
+}
+
 export interface Track {
   id: string,
+  help?: string,
+  category?: string,
   title: Translations,
   label: Translations,
   interface?: TrackInterface,
@@ -148,7 +179,8 @@ export interface TrackChoice {
 // FOR TRACK RESULTS
 
 export interface TrackResultsConfig {
-  showAlert: boolean,
+  showAlertNoResults: boolean,
+  showAlertResults: boolean,
   showResultsTitle: boolean,
   showProgramInfos: boolean,
   showProgramSubtitles: boolean
@@ -166,6 +198,7 @@ enum FormFieldTypes {
   textarea = 'textarea',
   checkbox = 'checkbox',
 }
+
 export interface FormField {
   id: string,
   help?: string,
@@ -174,7 +207,8 @@ export interface FormField {
   hint?: any,
   cols?: number,
   type?: FormFieldTypes,
-  defaultValue?: boolean | string | number
+  defaultValue?: boolean | string | number,
+  preFillFrom?: FormCallbackDataMapping
 }
 
 export interface FormOptions {
@@ -184,7 +218,7 @@ export interface FormOptions {
   intro?: Translations,
   fields?: FormField[],
   next?: string,
-  callbacks: FormCallback[]
+  callbacks: FormCallback[],
 }
 
 export interface FormDataResp {
@@ -218,14 +252,33 @@ export interface Comp {
 
 // FOR REQUESTS
 
-export interface ReqResp {
-  action?: CallbackActions,
-  status?: number,
-  code?: string,
-  message?: string,
+export interface ResultsMapping {
+  respFields: string[],
+  position?: string,
+  label?: string,
+  icon?: string,
+  class?: string,
+  sep?: string,
+  style?: string,
+  cleaning?:  Cleaner[] | CleanerReplaceAll[] | CleanerFromJson[] | CleanerDefaultIfNull[]
 }
 
-// FOR EMAILING
+export interface ReqError {
+  ok?: boolean,
+  status?: number,
+  statusText?: string,
+}
+export interface ReqResp extends ReqError {
+  action?: CallbackActions,
+  code?: string,
+  message?: string,
+  data?: any,
+  raw?: any,
+  resultsMapping?: ResultsMapping[]
+}
+
+
+// FOR EMAILING / REQUESTS
 
 export interface EmailData {
   name: string,
@@ -237,15 +290,19 @@ enum DataMappingFroms {
   formData = 'formData',
   usedTracks = 'usedTracks',
   props = 'props',
+  rawData = 'rawData',
 }
 export interface FormCallbackDataMapping {
   from: DataMappingFroms,
   id: string,
   dataField: string,
+  path?: string,
   asArray?: boolean
   sep?: string
   type?: string,
-  subKey?: string
+  subKey?: string,
+  onlyRemap?: boolean,
+  cleaning?:  Cleaner[] | CleanerReplaceAll[] | CleanerFromJson[] | CleanerFromDict[] | CleanerDefaultIfNull[]
 }
 
 enum CallbackMethods {
@@ -254,8 +311,42 @@ enum CallbackMethods {
   put = 'PUT',
 }
 enum CallbackActions {
+  requestAPI = 'requestAPI',
   createContact = 'createContact',
   sendTransactionalEmail = 'sendTransactionalEmail'
+}
+enum CleanerOperations {
+  replaceAll = 'replaceAll',
+  stringToDate = 'stringToDate',
+  findFromRefs = 'findFromRefs',
+  findFromDict = 'findFromDict',
+  defaultIfNull = 'defaultIfNull',
+}
+
+export interface Cleaner {
+  operation: CleanerOperations,
+}
+
+export interface CleanerDefaultIfNull extends Cleaner {
+  // respFields: string,
+  defaultValue : Translations,
+}
+export interface CleanerReplaceAll extends Cleaner {
+  stringToReplace: string,
+  replaceBy: string, 
+}
+
+export enum FindInRefs {
+  nafCodes= 'nafCodes'
+}
+export interface CleanerFromJson extends Cleaner {
+  findInRef: FindInRefs,
+  findFromField: string,
+  retrieveFromField: string,
+}
+
+export interface CleanerFromDict extends Cleaner {
+  dict: any, 
 }
 export interface FormCallback {
   disabled?: boolean,
@@ -269,4 +360,6 @@ export interface FormCallback {
   method: CallbackMethods,
   dataStructure: object | object[],
   dataMapping: FormCallbackDataMapping[]
+  inputCleaning?: Cleaner[] | CleanerReplaceAll[] | CleanerFromJson[] | CleanerFromDict[] | CleanerDefaultIfNull[],
+  resultsMapping?: ResultsMapping[]
 }

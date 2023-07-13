@@ -10,7 +10,7 @@
       <DsfrHeader
         logo-text="ADEME"
         service-title="Transition écologique des entreprises"
-        service-description="Vos aides en quelques clics"
+        service-description="Faire rimer écologie avec économies !"
       />
     </p>
 
@@ -36,7 +36,7 @@
       <!-- MESSAGE-->
       <div 
         v-if="showMessageBool"
-        class="fr-col-9">
+        class="fr-col">
         <h3
           v-if="message"
           class="red-color">
@@ -46,7 +46,7 @@
       <!-- DEBUG SWITCH-->
       <div
         v-if="debugSwitchBool" 
-        class="fr-col-3">
+        class="fr-col-md-3 fr-col-sm-6">
         <DsfrToggleSwitch 
           label="Debug mode" 
           hint="Switch to activate / deactivate debugging mode"
@@ -63,7 +63,8 @@
 
     <!-- QUESTIONNAIRE -->
     <div
-      v-show="!programs.programDetail">
+      v-show="!programs.programDetail"
+      class="fr-container--fluid">
       <!-- STEPPER -->
       <p
         v-if="showStepperBool" 
@@ -78,11 +79,20 @@
       <!-- TRACKS INTERFACES -->
       <div class="fr-grid-row fr-grid-row-gutters fr-p-1v">
         
-        <!-- SIDEBAR MENU -->
+        <!-- SIDEBAR MENU (FIL D'ARIANE)-->
         <div
-          v-show="tracks.currentStep > 1"
-          class="fr-col-3">
+          v-if="tracks.currentStep > 1"
+          class="fr-col-3 fr-col-md-4 fr-col-lg-4 fr-col-xl-2 fr-col-offset-xl-1 fr-col-sm-hide"
+          style="height: 100%;">
           <TeeSidebar
+            :used-tracks="tracks.usedTracks"
+            :debug="debugBool"
+          />
+        </div>
+        <div
+          v-if="tracks.currentStep > 1"
+          class="fr-col-12 fr-col-sm-show fr-mb-8v">
+          <TeeTopbar
             :used-tracks="tracks.usedTracks"
             :debug="debugBool"
           />
@@ -90,7 +100,7 @@
 
         <!-- TRACKS -->
         <div 
-          :class="`fr-col-${debugBool ? 7 : tracks.currentStep > 1 ? 8 : 12 } ${debugBool ? '' : 'fr-grid-row--center'}`">
+          :class="`${debugBool ? 'fr-col-7' : tracks.currentStep === 1 ? 'fr-col-12 fr-col-lg-8 fr-col-xl-6' : 'fr-col fr-col-lg-8 fr-col-xl-6' } ${debugBool ? '' : 'fr-grid-row--center'}`">
           <div
             v-for="(track, index) in tracks.usedTracks"
             :key="track.id"
@@ -155,13 +165,16 @@
     <!-- DETAIL RESULT CARD -->
     <div
       v-if="programs.programDetail"
-      class="fr-grid-row fr-grid-row-gutters">
-      <div class="fr-col-8 fr-col-offset-2">
-        <TeeProgramDetail
-          :program="programs.getProgramById(programs.programDetail)"
-          :track-config="tracks.getTrack(programs.programDetailConfig)"
-          :debug="debugBool"
-        />
+      class="fr-container-fluid">
+      <div 
+        class="fr-grid-row fr-grid-row-gutters">
+        <div class="fr-col">
+          <TeeProgramDetail
+            :program="programs.getProgramById(programs.programDetail)"
+            :track-config="tracks.getTrack(programs.programDetailConfig)"
+            :debug="debugBool"
+            />
+        </div>
       </div>
     </div>
 
@@ -205,6 +218,8 @@ import TeeTrack from './components/TeeTrack.vue'
 import TeeStepper from './components/TeeStepper.vue'
 // @ts-ignore
 import TeeSidebar from './components/TeeSidebar.vue'
+// @ts-ignore
+import TeeTopbar from './components/TeeTopbar.vue'
 // @ts-ignore
 import TeeProgramDetail from './components/TeeProgramDetail.vue'
 // @ts-ignore

@@ -47,21 +47,81 @@
     v-if="!isCompleted"
     class="fr-grid-row fr-grid-row--gutters"
     >
-  
+
+    <!-- CALLOUT -->
+    <div 
+      v-if="track.callout"
+      :class="`fr-col-12 ${track.callout.bigTitle ? 'fr-mb-10v fr-mx-0 fr-px-4v' : 'fr-callout'} ${track.callout.color || 'fr--grey-1000'}`">
+        <h2
+          v-if="track.callout.header"
+          style="color: var(--text-default-info);"
+          class="">
+          {{ track.callout.header[choices.lang]}}
+        </h2>
+        <h1
+          v-if="track.callout.bigTitle"
+          class="">
+          {{ track.callout.title[choices.lang]}}
+        </h1>
+        <h3
+          v-else
+          class="fr-callout__title">
+          {{ track.callout.title[choices.lang]}}
+        </h3>
+        <p class="fr-callout__text">
+          {{ track.callout.description[choices.lang]}}
+        </p>
+        <p 
+          v-if="track.callout.hint"
+          class="fr-mt-2v"
+          style="color: var(--text-active-blue-france);">
+          <i>
+            <span 
+              v-if="track.callout.hintIcon"
+              :class="track.callout.hintIcon" 
+              aria-hidden="true">
+            </span>
+            {{ track.callout.hint[choices.lang]}}
+          </i>
+        </p>
+    </div>
+
     <!-- TRACK LABEL -->
     <div
       v-if="step !== 1"
       :class="`${isTrackResults ? 'fr-col-10 fr-col-offset-1' : 'fr-col-12'}`">
-      <h3>
+      <h3
+        :class="track.info ? 'fr-mb-0' : 'fr-mb-2v'">
         {{ tracks.getTrackLabel(trackId, choices.lang) }}
       </h3>
     </div>
 
-    <!-- TRACK CHOICES -->
+    <!-- TRACK INFOS -->
+    <div 
+      v-if="track.info"
+      class="fr-col-12">
+      <p class="fr-mb-2v">
+        <span 
+          class="fr-icon-info-fill" 
+          aria-hidden="true"></span>
+        {{ track.info[choices.lang] }}
+      </p>
+    </div>
+
+    <!-- TRACK HINT -->
+    <div 
+      v-if="track.hint"
+      class="fr-col-12">
+      <p class="fr-mb-0">
+        {{ track.hint[choices.lang] }}
+      </p>
+    </div>
+
+    <!-- TRACK CHOICES {{ renderAs }} -->
     <div
       v-for="option in optionsArray"
       :key="option.value"
-      :class="`fr-col-${colsWidth} ${isTrackResults ? 'fr-col-offset-1' : ''} fr-py-1v`"
+      :class="`${colsWidth} ${isTrackResults ? 'fr-col-offset-1' : ''} fr-py-2v`"
       >
       
       <!-- AS CARDS -->
@@ -82,21 +142,9 @@
               <div
                 v-if="isActiveChoice(option.value)" 
                 class="fr-card__start">
-                <!-- <p>
-                  <DsfrBadge 
-                    type="info" 
-                    :label="choices.t('selection.selected')" />
-                </p> -->
                 <p class="fr-badge fr-badge--info fr-badge--no-icon fr-mb-4v">
                   {{ choices.t('selection.selected') }}
                 </p>
-                <!-- <ul class="fr-tags-group">
-                  <li>
-                    <p class="fr-tag">
-                      {{ choices.t('selection.selected') }}
-                    </p>
-                  </li>
-                </ul> -->
             </div>
               <p class="fr-card__desc">
                 {{ option.hint[choices.lang] }}
@@ -116,26 +164,40 @@
       
       <!-- AS BUTTONS -->
       <div 
-        v-if="renderAs === 'buttons' && !allowMultiple"
-        >
+        v-if="renderAs === 'buttons'"
+        class="fr-div-fixed-height">
         <DsfrButton
-          style="width: -moz-available !important; width: 100%;"
+          class="fr-btn-fullwidth fr-btn-fixed-height fr-btn-sm-align-left"
           :label="option.label[choices.lang]" 
-          :icon="`${isActiveChoice(option.value) ? 'md-radiobuttonchecked' : 'md-radiobuttonunchecked'}`"
+          :icon="getButtonIcon(option.value)"
           :secondary="!isActiveChoice(option.value)"
           @click="updateSelection(option)"
         />
       </div>
+
+      <!-- AS SIMPLE BUTTONS -->
       <div 
-        v-if="renderAs === 'buttons' && allowMultiple"
-        >
+        v-if="renderAs === 'simpleButtons'">
         <DsfrButton
-          style="width: -moz-available !important;"
-          :label="option.label[choices.lang]" 
-          :icon="`${isActiveChoice(option.value) ? 'ri-checkbox-line' : 'ri-checkbox-blank-line'}`"
-          :secondary="!isActiveChoice(option.value)"
-          @click="updateSelection(option)"
+          class="fr-btn-fullwidth fr-btn-align-center"
+          :label="option.label[choices.lang]"
+          size="large"
+          style="font-weight: 1000;"
+          @click="updateSelection(option); saveSelection()"
         />
+      </div>
+
+      <!-- AS INPUT -->
+      <div 
+        v-if="renderAs === 'input'"
+        style="height: 100%;">
+        <TeeTrackInput
+          :track-id="trackId"
+          :option="option"
+          :debug="debug"
+          @update-selection="updateSelectionFromSignal"
+          @go-to-next-track="saveSelectionFromSignal"
+          />
       </div>
 
       <!-- AS FORM -->
@@ -167,23 +229,26 @@
   
   <!-- SEND / NEXT BUTTON -->
   <div 
-    v-if="renderAs !== 'cards' && !isCompleted && !isTrackResults"
-    class="fr-grid-row fr-grid-row--gutters fr-pt-8v">
+    v-if="!noNeedForNext.includes(renderAs) && !isCompleted && !isTrackResults"
+    class="fr-grid-row fr-grid-row--gutters fr-pt-8v"
+    style="justify-content: end;">
+    <!-- BTN PREVIOUS -->
     <div
       v-if="step > 1"
-      class="fr-col-3 fr-col-offset-6">
+      class="fr-col-6 fr-col-md-4 fr-col-lg-4 fr-col-xl-3">
       <DsfrButton
-        style="width: -moz-available !important; width: 100%"
+        class="fr-btn-fullwidth fr-btn-sm-fullwidth"
         :label="choices.t('previous')"
         icon="ri-arrow-left-line"
         secondary
         @click="backToPreviousTrack"
       />
     </div>
+    <!-- BTN NEXT -->
     <div 
-      :class="`fr-col-3 ${step === 1 ? 'fr-col-offset-9' : ''}`">
+      class="fr-col-6 fr-col-md-4 fr-col-lg-4 fr-col-xl-3">
       <DsfrButton
-        style="width: -moz-available !important; width: 100%"
+        class="fr-btn-fullwidth fr-btn-sm-fullwidth"
         :label="choices.t('next')"
         :disabled="!selectedOptions.length"
         icon="ri-arrow-right-line"
@@ -206,6 +271,8 @@ import { analyticsStore } from '../stores/analytics'
 // @ts-ignore
 import type { Track, TrackOptions, ColsOptions } from '@/types/index'
 
+// @ts-ignore
+import TeeTrackInput from './TeeTrackInput.vue'
 // // @ts-ignore
 // import TeeForm from './TeeForm.vue'
 // @ts-ignore
@@ -221,11 +288,27 @@ const props = defineProps<Props>()
 
 const colsOptions: ColsOptions = {
   buttons: 12,
+  simpleButtons: 6,
+  input: 12,
   cards: 4,
   form: 8,
   modify: 2,
   results: 10,
 }
+const colsOptionsLarge: ColsOptions = {
+  buttons: 6,
+  simpleButtons: 6,
+  input: 12,
+  cards: 4,
+  form: 8,
+  modify: 2,
+  results: 10,
+}
+
+const noNeedForNext = [
+  'cards',
+  'simpleButtons'
+]
 
 const tracks = tracksStore()
 const choices = choicesStore()
@@ -247,7 +330,7 @@ const allowMultiple: boolean = !!track?.behavior?.multipleChoices
 const trackOperator: boolean = track?.behavior?.operator || false
 const optionsArray: any[] = track?.options.filter( (o: TrackOptions) => !o.disabled) || []
 
-// Computed
+// computed
 const isTrackResults = computed(() => {
   return track?.interface.component === 'results'
 })
@@ -259,35 +342,41 @@ const selectionValues = computed(() => {
 })
 
 const colsWidth = computed(() => {
+  let divSize: string | number
+  const divSizeLarge = colsOptionsLarge[renderAs]
+
   if (props.isCompleted) {
     // full width of 10 if completed track
-    return colsOptions[renderAs]
+    divSize = colsOptions[renderAs]
   } else if (customColWidth === 'auto') {
     // auto columns width
     const rawDiv = Math.round(12 / optionsArray.length)
-    return rawDiv < 2 ? 3 : rawDiv
+    divSize = rawDiv < 2 ? 3 : rawDiv >= 12 ? colsOptions[renderAs] : rawDiv
   } else {
     if (customColWidth) {
       // if defined in choices*.ts
-      return customColWidth
+      divSize = customColWidth
     } else {
       // default values hard written 
-      return colsOptions[renderAs]
+      divSize = colsOptions[renderAs]
     }
   }
+
+  return `fr-col-xl-${divSizeLarge} fr-col-lg-${divSize} fr-col-md-${divSize} fr-col-sm-12 fr-col-xs-12`
 })
 
-// Getters
-const isActiveChoice = (value: string | number) => {
+// getters
+const isActiveChoice = (value: string | number | undefined) => {
+  // console.log('TeeTrack > isActiveChoice > value :', value)
   // console.log('TeeTrack > isActiveChoice > selectionValues :', selectionValues)
   return selectionValues.value.includes(value)
 }
 
-const updateSelection = (option: any) => {
+const updateSelection = (option: any, forceRemove: boolean = false) => {
   // console.log('TeeTrack > updateSelection > option :', option)
   const isActive = isActiveChoice(option.value)
   let remove = false
-  if (!isActive) {
+  if (!isActive && !forceRemove) {
     if (allowMultiple) {
       selectedOptions.value.push(option)
     } else {
@@ -300,16 +389,42 @@ const updateSelection = (option: any) => {
       analytics.sendEvent(props.trackId, key, val)
     }
   } else {
+    // remove from selection because is already active
     selectedOptions.value = selectedOptions.value.filter(i => i.value !== option.value)
     remove = !selectedOptions.value.length
   }
   needRemove.value = remove
   // selectedOptions.value = option
   
-  // Direc
-  if (!allowMultiple && renderAs !== 'buttons'  ) {
+  // Direct to next track
+  const directToNext: string[] = ['cards']
+  if (!allowMultiple && directToNext.includes(renderAs)  ) {
     saveSelection()
   }
+}
+
+const updateSelectionFromSignal = (ev: any) => {
+  // console.log('TeeTrack > updateSelectionFromSignal > ev :', ev)
+  updateSelection(ev.option, ev.remove)
+}
+
+const saveSelectionFromSignal = (ev: any) => {
+  // console.log('TeeTrack > saveSelectionFromSignal > ev :', ev)
+  updateSelection(ev.option)
+  saveSelection()
+}
+
+
+const getButtonIcon = (optionValue: any) => {
+  const isActive = isActiveChoice(optionValue)
+  // console.log('TeeTrack > getButtonIcon > isActive :', isActive)
+  let icon = ''
+  if (allowMultiple) {
+    icon = isActive ? 'ri-checkbox-line' : 'ri-checkbox-blank-line'
+  } else {
+    icon = isActive ? 'md-radiobuttonchecked' : 'md-radiobuttonunchecked'
+  }
+  return icon 
 }
 
 // watchers
@@ -321,7 +436,7 @@ watch(() => props.isCompleted, ( next ) => {
   }
 })
 
-// Actions
+// functions
 const saveSelection = () => {
   // console.log()
   // console.log('TeeTrack > updateStore > option :', option)

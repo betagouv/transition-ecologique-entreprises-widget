@@ -1,0 +1,8168 @@
+[
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.11Z",
+    "NIV4": "01.11",
+    "NIV3": "01.1",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture de céréales (à l'exception du riz), de légumineuses et de graines oléagineuses"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.12Z",
+    "NIV4": "01.12",
+    "NIV3": "01.1",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture du riz"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.13Z",
+    "NIV4": "01.13",
+    "NIV3": "01.1",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture de légumes, de melons, de racines et de tubercules"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.14Z",
+    "NIV4": "01.14",
+    "NIV3": "01.1",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture de la canne à sucre"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.15Z",
+    "NIV4": "01.15",
+    "NIV3": "01.1",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture du tabac"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.16Z",
+    "NIV4": "01.16",
+    "NIV3": "01.1",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture de plantes à fibres"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.19Z",
+    "NIV4": "01.19",
+    "NIV3": "01.1",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Autres cultures non permanentes"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.21Z",
+    "NIV4": "01.21",
+    "NIV3": "01.2",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture de la vigne"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.22Z",
+    "NIV4": "01.22",
+    "NIV3": "01.2",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture de fruits tropicaux et subtropicaux"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.23Z",
+    "NIV4": "01.23",
+    "NIV3": "01.2",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture d'agrumes"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.24Z",
+    "NIV4": "01.24",
+    "NIV3": "01.2",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture de fruits à pépins et à noyau"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.25Z",
+    "NIV4": "01.25",
+    "NIV3": "01.2",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture d'aut. fruits d'arbres ou d'arbustes et de fruits a coque"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.26Z",
+    "NIV4": "01.26",
+    "NIV3": "01.2",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture de fruits oléagineux"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.27Z",
+    "NIV4": "01.27",
+    "NIV3": "01.2",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture de plantes à boissons"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.28Z",
+    "NIV4": "01.28",
+    "NIV3": "01.2",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture plantes à épices aromatiques médicinales pharmaceutiques"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.29Z",
+    "NIV4": "01.29",
+    "NIV3": "01.2",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Autres cultures permanentes"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.30Z",
+    "NIV4": "01.30",
+    "NIV3": "01.3",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Reproduction de plantes"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.41Z",
+    "NIV4": "01.41",
+    "NIV3": "01.4",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Élevage de vaches laitières"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.42Z",
+    "NIV4": "01.42",
+    "NIV3": "01.4",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Élevage d'autres bovins et de buffles"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.43Z",
+    "NIV4": "01.43",
+    "NIV3": "01.4",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Élevage de chevaux et d'autres équidés"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.44Z",
+    "NIV4": "01.44",
+    "NIV3": "01.4",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Élevage de chameaux et d'autres camélidés"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.45Z",
+    "NIV4": "01.45",
+    "NIV3": "01.4",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Élevage d'ovins et de caprins"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.46Z",
+    "NIV4": "01.46",
+    "NIV3": "01.4",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Élevage de porcins"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.47Z",
+    "NIV4": "01.47",
+    "NIV3": "01.4",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Élevage de volailles"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.49Z",
+    "NIV4": "01.49",
+    "NIV3": "01.4",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Élevage d'autres animaux"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.50Z",
+    "NIV4": "01.50",
+    "NIV3": "01.5",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Culture et élevage associés"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.61Z",
+    "NIV4": "01.61",
+    "NIV3": "01.6",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Activités de soutien aux cultures"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.62Z",
+    "NIV4": "01.62",
+    "NIV3": "01.6",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Activités de soutien à la production animale"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.63Z",
+    "NIV4": "01.63",
+    "NIV3": "01.6",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Traitement primaire des récoltes"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.64Z",
+    "NIV4": "01.64",
+    "NIV3": "01.6",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Traitement des semences"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "01.70Z",
+    "NIV4": "01.70",
+    "NIV3": "01.7",
+    "NIV2": "01",
+    "NIV1": "A",
+    "label_vf": "Chasse, piégeage et services annexes"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "02.10Z",
+    "NIV4": "02.10",
+    "NIV3": "02.1",
+    "NIV2": "02",
+    "NIV1": "A",
+    "label_vf": "Sylviculture et autres activités forestières"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "02.20Z",
+    "NIV4": "02.20",
+    "NIV3": "02.2",
+    "NIV2": "02",
+    "NIV1": "A",
+    "label_vf": "Exploitation forestière"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "02.30Z",
+    "NIV4": "02.30",
+    "NIV3": "02.3",
+    "NIV2": "02",
+    "NIV1": "A",
+    "label_vf": "Récolte prod. forestiers non ligneux poussant à l'état sauvage"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "02.40Z",
+    "NIV4": "02.40",
+    "NIV3": "02.4",
+    "NIV2": "02",
+    "NIV1": "A",
+    "label_vf": "Services de soutien à l'exploitation forestière"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "03.11Z",
+    "NIV4": "03.11",
+    "NIV3": "03.1",
+    "NIV2": "03",
+    "NIV1": "A",
+    "label_vf": "Pêche en mer"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "03.12Z",
+    "NIV4": "03.12",
+    "NIV3": "03.1",
+    "NIV2": "03",
+    "NIV1": "A",
+    "label_vf": "Pêche en eau douce"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "03.21Z",
+    "NIV4": "03.21",
+    "NIV3": "03.2",
+    "NIV2": "03",
+    "NIV1": "A",
+    "label_vf": "Aquaculture en mer"
+  },
+  {
+    "tags": [
+      "agriculture"
+    ],
+    "NIV5": "03.22Z",
+    "NIV4": "03.22",
+    "NIV3": "03.2",
+    "NIV2": "03",
+    "NIV1": "A",
+    "label_vf": "Aquaculture en eau douce"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "05.10Z",
+    "NIV4": "05.10",
+    "NIV3": "05.1",
+    "NIV2": "05",
+    "NIV1": "B",
+    "label_vf": "Extraction de houille"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "05.20Z",
+    "NIV4": "05.20",
+    "NIV3": "05.2",
+    "NIV2": "05",
+    "NIV1": "B",
+    "label_vf": "Extraction de lignite"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "06.10Z",
+    "NIV4": "06.10",
+    "NIV3": "06.1",
+    "NIV2": "06",
+    "NIV1": "B",
+    "label_vf": "Extraction de pétrole brut"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "06.20Z",
+    "NIV4": "06.20",
+    "NIV3": "06.2",
+    "NIV2": "06",
+    "NIV1": "B",
+    "label_vf": "Extraction de gaz naturel"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "07.10Z",
+    "NIV4": "07.10",
+    "NIV3": "07.1",
+    "NIV2": "07",
+    "NIV1": "B",
+    "label_vf": "Extraction de minerais de fer"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "07.21Z",
+    "NIV4": "07.21",
+    "NIV3": "07.2",
+    "NIV2": "07",
+    "NIV1": "B",
+    "label_vf": "Extraction de minerais d'uranium et de thorium"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "07.29Z",
+    "NIV4": "07.29",
+    "NIV3": "07.2",
+    "NIV2": "07",
+    "NIV1": "B",
+    "label_vf": "Extraction d'autres minerais de métaux non ferreux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "08.11Z",
+    "NIV4": "08.11",
+    "NIV3": "08.1",
+    "NIV2": "08",
+    "NIV1": "B",
+    "label_vf": "Extraction pierres ornement. construc. calcaire industriel, gypse"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "08.12Z",
+    "NIV4": "08.12",
+    "NIV3": "08.1",
+    "NIV2": "08",
+    "NIV1": "B",
+    "label_vf": "Exploit gravieres & sablieres, extraction argiles & kaolin"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "08.91Z",
+    "NIV4": "08.91",
+    "NIV3": "08.9",
+    "NIV2": "08",
+    "NIV1": "B",
+    "label_vf": "Extraction des minéraux chimiques et d'engrais minéraux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "08.92Z",
+    "NIV4": "08.92",
+    "NIV3": "08.9",
+    "NIV2": "08",
+    "NIV1": "B",
+    "label_vf": "Extraction de tourbe"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "08.93Z",
+    "NIV4": "08.93",
+    "NIV3": "08.9",
+    "NIV2": "08",
+    "NIV1": "B",
+    "label_vf": "Production de sel"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "08.99Z",
+    "NIV4": "08.99",
+    "NIV3": "08.9",
+    "NIV2": "08",
+    "NIV1": "B",
+    "label_vf": "Autres activités extractives n.c.a."
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "09.10Z",
+    "NIV4": "09.10",
+    "NIV3": "09.1",
+    "NIV2": "09",
+    "NIV1": "B",
+    "label_vf": "Activités de soutien à l'extraction d'hydrocarbures"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "09.90Z",
+    "NIV4": "09.90",
+    "NIV3": "09.9",
+    "NIV2": "09",
+    "NIV1": "B",
+    "label_vf": "Activités de soutien aux autres industries extractives"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.11Z",
+    "NIV4": "10.11",
+    "NIV3": "10.1",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Transformation et conservation de la viande de boucherie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.12Z",
+    "NIV4": "10.12",
+    "NIV3": "10.1",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Transformation et conservation de la viande de volaille"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.13A",
+    "NIV4": "10.13",
+    "NIV3": "10.1",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Préparation industrielle de produits à base de viande"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.13B",
+    "NIV4": "10.13",
+    "NIV3": "10.1",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Charcuterie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.20Z",
+    "NIV4": "10.20",
+    "NIV3": "10.2",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Transform. & conserv. poisson, crustacés & mollusques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.31Z",
+    "NIV4": "10.31",
+    "NIV3": "10.3",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Transformation et conservation de pommes de terre"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.32Z",
+    "NIV4": "10.32",
+    "NIV3": "10.3",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Préparation de jus de fruits et légumes"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.39A",
+    "NIV4": "10.39",
+    "NIV3": "10.3",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Autre transformation et conservation de légumes"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.39B",
+    "NIV4": "10.39",
+    "NIV3": "10.3",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Transformation et conservation de fruits"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.41A",
+    "NIV4": "10.41",
+    "NIV3": "10.4",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'huiles et graisses brutes"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.41B",
+    "NIV4": "10.41",
+    "NIV3": "10.4",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'huiles et graisses raffinées"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.42Z",
+    "NIV4": "10.42",
+    "NIV3": "10.4",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de margarine et graisses comestibles similaires"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.51A",
+    "NIV4": "10.51",
+    "NIV3": "10.5",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de lait liquide et de produits frais"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.51B",
+    "NIV4": "10.51",
+    "NIV3": "10.5",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de beurre"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.51C",
+    "NIV4": "10.51",
+    "NIV3": "10.5",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de fromage"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.51D",
+    "NIV4": "10.51",
+    "NIV3": "10.5",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres produits laitiers"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.52Z",
+    "NIV4": "10.52",
+    "NIV3": "10.5",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de glaces et sorbets"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.61A",
+    "NIV4": "10.61",
+    "NIV3": "10.6",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Meunerie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.61B",
+    "NIV4": "10.61",
+    "NIV3": "10.6",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Autres activités du travail des grains"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.62Z",
+    "NIV4": "10.62",
+    "NIV3": "10.6",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de produits amylacés"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.71A",
+    "NIV4": "10.71",
+    "NIV3": "10.7",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication industrielle de pain et de pâtisserie fraîche"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.71B",
+    "NIV4": "10.71",
+    "NIV3": "10.7",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Cuisson de produits de boulangerie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.71C",
+    "NIV4": "10.71",
+    "NIV3": "10.7",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Boulangerie et boulangerie-pâtisserie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.71D",
+    "NIV4": "10.71",
+    "NIV3": "10.7",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Pâtisserie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.72Z",
+    "NIV4": "10.72",
+    "NIV3": "10.7",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de biscuits, biscottes et pâtisseries de conservation"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.73Z",
+    "NIV4": "10.73",
+    "NIV3": "10.7",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de pâtes alimentaires"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.81Z",
+    "NIV4": "10.81",
+    "NIV3": "10.8",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de sucre"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.82Z",
+    "NIV4": "10.82",
+    "NIV3": "10.8",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de cacao, chocolat et de produits de confiserie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.83Z",
+    "NIV4": "10.83",
+    "NIV3": "10.8",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Transformation du thé et du café"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.84Z",
+    "NIV4": "10.84",
+    "NIV3": "10.8",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de condiments et assaisonnements"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.85Z",
+    "NIV4": "10.85",
+    "NIV3": "10.8",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication de plats préparés"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.86Z",
+    "NIV4": "10.86",
+    "NIV3": "10.8",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'aliments homogénéisés et diététiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.89Z",
+    "NIV4": "10.89",
+    "NIV3": "10.8",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres produits alimentaires n.c.a."
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.91Z",
+    "NIV4": "10.91",
+    "NIV3": "10.9",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'aliments pour animaux de ferme"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "10.92Z",
+    "NIV4": "10.92",
+    "NIV3": "10.9",
+    "NIV2": "10",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'aliments pour animaux de compagnie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "11.01Z",
+    "NIV4": "11.01",
+    "NIV3": "11.0",
+    "NIV2": "11",
+    "NIV1": "C",
+    "label_vf": "Production de boissons alcooliques distillées"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "11.02A",
+    "NIV4": "11.02",
+    "NIV3": "11.0",
+    "NIV2": "11",
+    "NIV1": "C",
+    "label_vf": "Fabrication de vins effervescents"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "11.02B",
+    "NIV4": "11.02",
+    "NIV3": "11.0",
+    "NIV2": "11",
+    "NIV1": "C",
+    "label_vf": "Vinification"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "11.03Z",
+    "NIV4": "11.03",
+    "NIV3": "11.0",
+    "NIV2": "11",
+    "NIV1": "C",
+    "label_vf": "Fabrication de cidre et de vins de fruits"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "11.04Z",
+    "NIV4": "11.04",
+    "NIV3": "11.0",
+    "NIV2": "11",
+    "NIV1": "C",
+    "label_vf": "Production d'autres boissons fermentées non distillées"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "11.05Z",
+    "NIV4": "11.05",
+    "NIV3": "11.0",
+    "NIV2": "11",
+    "NIV1": "C",
+    "label_vf": "Fabrication de bière"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "11.06Z",
+    "NIV4": "11.06",
+    "NIV3": "11.0",
+    "NIV2": "11",
+    "NIV1": "C",
+    "label_vf": "Fabrication de malt"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "11.07A",
+    "NIV4": "11.07",
+    "NIV3": "11.0",
+    "NIV2": "11",
+    "NIV1": "C",
+    "label_vf": "Industrie des eaux de table"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "11.07B",
+    "NIV4": "11.07",
+    "NIV3": "11.0",
+    "NIV2": "11",
+    "NIV1": "C",
+    "label_vf": "Production de boissons rafraîchissantes"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "12.00Z",
+    "NIV4": "12.00",
+    "NIV3": "12.0",
+    "NIV2": "12",
+    "NIV1": "C",
+    "label_vf": "Fabrication de produits à base de tabac"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "13.10Z",
+    "NIV4": "13.10",
+    "NIV3": "13.1",
+    "NIV2": "13",
+    "NIV1": "C",
+    "label_vf": "Préparation de fibres textiles et filature"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "13.20Z",
+    "NIV4": "13.20",
+    "NIV3": "13.2",
+    "NIV2": "13",
+    "NIV1": "C",
+    "label_vf": "Tissage"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "13.30Z",
+    "NIV4": "13.30",
+    "NIV3": "13.3",
+    "NIV2": "13",
+    "NIV1": "C",
+    "label_vf": "Ennoblissement textile"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "13.91Z",
+    "NIV4": "13.91",
+    "NIV3": "13.9",
+    "NIV2": "13",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'étoffes à mailles"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "13.92Z",
+    "NIV4": "13.92",
+    "NIV3": "13.9",
+    "NIV2": "13",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'articles textiles, sauf habillement"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "13.93Z",
+    "NIV4": "13.93",
+    "NIV3": "13.9",
+    "NIV2": "13",
+    "NIV1": "C",
+    "label_vf": "Fabrication de tapis et moquettes"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "13.94Z",
+    "NIV4": "13.94",
+    "NIV3": "13.9",
+    "NIV2": "13",
+    "NIV1": "C",
+    "label_vf": "Fabrication de ficelles, cordes et filets"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "13.95Z",
+    "NIV4": "13.95",
+    "NIV3": "13.9",
+    "NIV2": "13",
+    "NIV1": "C",
+    "label_vf": "Fabrication de non-tissés, sauf habillement"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "13.96Z",
+    "NIV4": "13.96",
+    "NIV3": "13.9",
+    "NIV2": "13",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres textiles techniques et industriels"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "13.99Z",
+    "NIV4": "13.99",
+    "NIV3": "13.9",
+    "NIV2": "13",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres textiles n.c.a."
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "14.11Z",
+    "NIV4": "14.11",
+    "NIV3": "14.1",
+    "NIV2": "14",
+    "NIV1": "C",
+    "label_vf": "Fabrication de vêtements en cuir"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "14.12Z",
+    "NIV4": "14.12",
+    "NIV3": "14.1",
+    "NIV2": "14",
+    "NIV1": "C",
+    "label_vf": "Fabrication de vêtements de travail"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "14.13Z",
+    "NIV4": "14.13",
+    "NIV3": "14.1",
+    "NIV2": "14",
+    "NIV1": "C",
+    "label_vf": "Fabrication de vêtements de dessus"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "14.14Z",
+    "NIV4": "14.14",
+    "NIV3": "14.1",
+    "NIV2": "14",
+    "NIV1": "C",
+    "label_vf": "Fabrication de vêtements de dessous"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "14.19Z",
+    "NIV4": "14.19",
+    "NIV3": "14.1",
+    "NIV2": "14",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres vêtements et accessoires"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "14.20Z",
+    "NIV4": "14.20",
+    "NIV3": "14.2",
+    "NIV2": "14",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'articles en fourrure"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "14.31Z",
+    "NIV4": "14.31",
+    "NIV3": "14.3",
+    "NIV2": "14",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'articles chaussants à mailles"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "14.39Z",
+    "NIV4": "14.39",
+    "NIV3": "14.3",
+    "NIV2": "14",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres articles à mailles"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "15.11Z",
+    "NIV4": "15.11",
+    "NIV3": "15.1",
+    "NIV2": "15",
+    "NIV1": "C",
+    "label_vf": "Apprêt, tannage des cuirs; préparation et teinture des fourrures"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "15.12Z",
+    "NIV4": "15.12",
+    "NIV3": "15.1",
+    "NIV2": "15",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'articles de voyage, de maroquinerie et de sellerie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "15.20Z",
+    "NIV4": "15.20",
+    "NIV3": "15.2",
+    "NIV2": "15",
+    "NIV1": "C",
+    "label_vf": "Fabrication de chaussures"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "16.10A",
+    "NIV4": "16.10",
+    "NIV3": "16.1",
+    "NIV2": "16",
+    "NIV1": "C",
+    "label_vf": "Sciage et rabotage du bois, hors imprégnation"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "16.10B",
+    "NIV4": "16.10",
+    "NIV3": "16.1",
+    "NIV2": "16",
+    "NIV1": "C",
+    "label_vf": "Imprégnation du bois"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "16.21Z",
+    "NIV4": "16.21",
+    "NIV3": "16.2",
+    "NIV2": "16",
+    "NIV1": "C",
+    "label_vf": "Fabrication de placage et de panneaux de bois"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "16.22Z",
+    "NIV4": "16.22",
+    "NIV3": "16.2",
+    "NIV2": "16",
+    "NIV1": "C",
+    "label_vf": "Fabrication de parquets assemblés"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "16.23Z",
+    "NIV4": "16.23",
+    "NIV3": "16.2",
+    "NIV2": "16",
+    "NIV1": "C",
+    "label_vf": "Fabrication de charpentes et d'autres menuiseries"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "16.24Z",
+    "NIV4": "16.24",
+    "NIV3": "16.2",
+    "NIV2": "16",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'emballages en bois"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "16.29Z",
+    "NIV4": "16.29",
+    "NIV3": "16.2",
+    "NIV2": "16",
+    "NIV1": "C",
+    "label_vf": "Fabrication objets divers en bois, liège, vannerie et sparterie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "17.11Z",
+    "NIV4": "17.11",
+    "NIV3": "17.1",
+    "NIV2": "17",
+    "NIV1": "C",
+    "label_vf": "Fabrication de pâte à papier"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "17.12Z",
+    "NIV4": "17.12",
+    "NIV3": "17.1",
+    "NIV2": "17",
+    "NIV1": "C",
+    "label_vf": "Fabrication de papier et de carton"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "17.21A",
+    "NIV4": "17.21",
+    "NIV3": "17.2",
+    "NIV2": "17",
+    "NIV1": "C",
+    "label_vf": "Fabrication de carton ondulé"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "17.21B",
+    "NIV4": "17.21",
+    "NIV3": "17.2",
+    "NIV2": "17",
+    "NIV1": "C",
+    "label_vf": "Fabrication de cartonnages"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "17.21C",
+    "NIV4": "17.21",
+    "NIV3": "17.2",
+    "NIV2": "17",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'emballages en papier"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "17.22Z",
+    "NIV4": "17.22",
+    "NIV3": "17.2",
+    "NIV2": "17",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'articles en papier à usage sanitaire ou domestique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "17.23Z",
+    "NIV4": "17.23",
+    "NIV3": "17.2",
+    "NIV2": "17",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'articles de papeterie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "17.24Z",
+    "NIV4": "17.24",
+    "NIV3": "17.2",
+    "NIV2": "17",
+    "NIV1": "C",
+    "label_vf": "Fabrication de papiers peints"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "17.29Z",
+    "NIV4": "17.29",
+    "NIV3": "17.2",
+    "NIV2": "17",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres articles en papier ou en carton"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "18.11Z",
+    "NIV4": "18.11",
+    "NIV3": "18.1",
+    "NIV2": "18",
+    "NIV1": "C",
+    "label_vf": "Imprimerie de journaux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "18.12Z",
+    "NIV4": "18.12",
+    "NIV3": "18.1",
+    "NIV2": "18",
+    "NIV1": "C",
+    "label_vf": "Autre imprimerie (labeur)"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "18.13Z",
+    "NIV4": "18.13",
+    "NIV3": "18.1",
+    "NIV2": "18",
+    "NIV1": "C",
+    "label_vf": "Activités de pré-presse"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "18.14Z",
+    "NIV4": "18.14",
+    "NIV3": "18.1",
+    "NIV2": "18",
+    "NIV1": "C",
+    "label_vf": "Reliure et activités connexes"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "18.20Z",
+    "NIV4": "18.20",
+    "NIV3": "18.2",
+    "NIV2": "18",
+    "NIV1": "C",
+    "label_vf": "Reproduction d'enregistrements"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "19.10Z",
+    "NIV4": "19.10",
+    "NIV3": "19.1",
+    "NIV2": "19",
+    "NIV1": "C",
+    "label_vf": "Cokéfaction"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "19.20Z",
+    "NIV4": "19.20",
+    "NIV3": "19.2",
+    "NIV2": "19",
+    "NIV1": "C",
+    "label_vf": "Raffinage du pétrole"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.11Z",
+    "NIV4": "20.11",
+    "NIV3": "20.1",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de gaz industriels"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.12Z",
+    "NIV4": "20.12",
+    "NIV3": "20.1",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de colorants et de pigments"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.13A",
+    "NIV4": "20.13",
+    "NIV3": "20.1",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Enrichissement et retraitement de matières nucléaires"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.13B",
+    "NIV4": "20.13",
+    "NIV3": "20.1",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabric. d'autres produits chimiques inorganiques de base n.c.a."
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.14Z",
+    "NIV4": "20.14",
+    "NIV3": "20.1",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres produits chimiques organiques de base"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.15Z",
+    "NIV4": "20.15",
+    "NIV3": "20.1",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de produits azotés et d'engrais"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.16Z",
+    "NIV4": "20.16",
+    "NIV3": "20.1",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de matières plastiques de base"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.17Z",
+    "NIV4": "20.17",
+    "NIV3": "20.1",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de caoutchouc synthétique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.20Z",
+    "NIV4": "20.20",
+    "NIV3": "20.2",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de pesticides et d’autres produits agrochimiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.30Z",
+    "NIV4": "20.30",
+    "NIV3": "20.3",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de peintures, vernis, encres et mastics"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.41Z",
+    "NIV4": "20.41",
+    "NIV3": "20.4",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de savons, détergents et produits d'entretien"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.42Z",
+    "NIV4": "20.42",
+    "NIV3": "20.4",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de parfums et de produits pour la toilette"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.51Z",
+    "NIV4": "20.51",
+    "NIV3": "20.5",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de produits explosifs"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.52Z",
+    "NIV4": "20.52",
+    "NIV3": "20.5",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de colles"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.53Z",
+    "NIV4": "20.53",
+    "NIV3": "20.5",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'huiles essentielles"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.59Z",
+    "NIV4": "20.59",
+    "NIV3": "20.5",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres produits chimiques n.c.a."
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "20.60Z",
+    "NIV4": "20.60",
+    "NIV3": "20.6",
+    "NIV2": "20",
+    "NIV1": "C",
+    "label_vf": "Fabrication de fibres artificielles ou synthétiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "21.10Z",
+    "NIV4": "21.10",
+    "NIV3": "21.1",
+    "NIV2": "21",
+    "NIV1": "C",
+    "label_vf": "Fabrication de produits pharmaceutiques de base"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "21.20Z",
+    "NIV4": "21.20",
+    "NIV3": "21.2",
+    "NIV2": "21",
+    "NIV1": "C",
+    "label_vf": "Fabrication de préparations pharmaceutiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "22.11Z",
+    "NIV4": "22.11",
+    "NIV3": "22.1",
+    "NIV2": "22",
+    "NIV1": "C",
+    "label_vf": "Fabrication et rechapage de pneumatiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "22.19Z",
+    "NIV4": "22.19",
+    "NIV3": "22.1",
+    "NIV2": "22",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres articles en caoutchouc"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "22.21Z",
+    "NIV4": "22.21",
+    "NIV3": "22.2",
+    "NIV2": "22",
+    "NIV1": "C",
+    "label_vf": "Fabrication plaques, feuilles, tubes et profilés en plastique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "22.22Z",
+    "NIV4": "22.22",
+    "NIV3": "22.2",
+    "NIV2": "22",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'emballages en matières plastiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "22.23Z",
+    "NIV4": "22.23",
+    "NIV3": "22.2",
+    "NIV2": "22",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'éléments matières plastiques pour la construction"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "22.29A",
+    "NIV4": "22.29",
+    "NIV3": "22.2",
+    "NIV2": "22",
+    "NIV1": "C",
+    "label_vf": "Fabrication de pièces techniques à base de matières plastiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "22.29B",
+    "NIV4": "22.29",
+    "NIV3": "22.2",
+    "NIV2": "22",
+    "NIV1": "C",
+    "label_vf": "Fabrication produits de consommation courante en plastique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.11Z",
+    "NIV4": "23.11",
+    "NIV3": "23.1",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication de verre plat"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.12Z",
+    "NIV4": "23.12",
+    "NIV3": "23.1",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Façonnage et transformation du verre plat"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.13Z",
+    "NIV4": "23.13",
+    "NIV3": "23.1",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication de verre creux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.14Z",
+    "NIV4": "23.14",
+    "NIV3": "23.1",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication de fibres de verre"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.19Z",
+    "NIV4": "23.19",
+    "NIV3": "23.1",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication & façonnage autres articles verre yc verre technique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.20Z",
+    "NIV4": "23.20",
+    "NIV3": "23.2",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication de produits réfractaires"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.31Z",
+    "NIV4": "23.31",
+    "NIV3": "23.3",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication de carreaux en céramique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.32Z",
+    "NIV4": "23.32",
+    "NIV3": "23.3",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication briques tuiles & prod. de construction en terre cuite"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.41Z",
+    "NIV4": "23.41",
+    "NIV3": "23.4",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'articles céramiques à usage domestique, ornemental"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.42Z",
+    "NIV4": "23.42",
+    "NIV3": "23.4",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'appareils sanitaires en céramique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.43Z",
+    "NIV4": "23.43",
+    "NIV3": "23.4",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'isolateurs et pièces isolantes en céramique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.44Z",
+    "NIV4": "23.44",
+    "NIV3": "23.4",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres produits céramiques à usage technique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.49Z",
+    "NIV4": "23.49",
+    "NIV3": "23.4",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres produits céramiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.51Z",
+    "NIV4": "23.51",
+    "NIV3": "23.5",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication de ciment"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.52Z",
+    "NIV4": "23.52",
+    "NIV3": "23.5",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication de chaux et plâtre"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.61Z",
+    "NIV4": "23.61",
+    "NIV3": "23.6",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'éléments en béton pour la construction"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.62Z",
+    "NIV4": "23.62",
+    "NIV3": "23.6",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'éléments en plâtre pour la construction"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.63Z",
+    "NIV4": "23.63",
+    "NIV3": "23.6",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication de béton prêt à l'emploi"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.64Z",
+    "NIV4": "23.64",
+    "NIV3": "23.6",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication de mortiers et bétons secs"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.65Z",
+    "NIV4": "23.65",
+    "NIV3": "23.6",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'ouvrages en fibre-ciment"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.69Z",
+    "NIV4": "23.69",
+    "NIV3": "23.6",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres ouvrages en béton, en ciment ou en plâtre"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.70Z",
+    "NIV4": "23.70",
+    "NIV3": "23.7",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Taille, façonnage et finissage de pierres"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.91Z",
+    "NIV4": "23.91",
+    "NIV3": "23.9",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication de produits abrasifs"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "23.99Z",
+    "NIV4": "23.99",
+    "NIV3": "23.9",
+    "NIV2": "23",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres produits minéraux non métalliques n.c.a."
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.10Z",
+    "NIV4": "24.10",
+    "NIV3": "24.1",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Sidérurgie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.20Z",
+    "NIV4": "24.20",
+    "NIV3": "24.2",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Fabric. tubes, tuyaux, profilés creux & accessoir. corresp. acier"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.31Z",
+    "NIV4": "24.31",
+    "NIV3": "24.3",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Étirage à froid de barres"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.32Z",
+    "NIV4": "24.32",
+    "NIV3": "24.3",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Laminage à froid de feuillards"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.33Z",
+    "NIV4": "24.33",
+    "NIV3": "24.3",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Profilage à froid par formage ou pliage"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.34Z",
+    "NIV4": "24.34",
+    "NIV3": "24.3",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Tréfilage à froid"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.41Z",
+    "NIV4": "24.41",
+    "NIV3": "24.4",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Production de métaux précieux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.42Z",
+    "NIV4": "24.42",
+    "NIV3": "24.4",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Métallurgie de l'aluminium"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.43Z",
+    "NIV4": "24.43",
+    "NIV3": "24.4",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Métallurgie du plomb, du zinc ou de l'étain"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.44Z",
+    "NIV4": "24.44",
+    "NIV3": "24.4",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Métallurgie du cuivre"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.45Z",
+    "NIV4": "24.45",
+    "NIV3": "24.4",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Métallurgie des autres métaux non ferreux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.46Z",
+    "NIV4": "24.46",
+    "NIV3": "24.4",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Élaboration et transformation de matières nucléaires"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.51Z",
+    "NIV4": "24.51",
+    "NIV3": "24.5",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Fonderie de fonte"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.52Z",
+    "NIV4": "24.52",
+    "NIV3": "24.5",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Fonderie d'acier"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.53Z",
+    "NIV4": "24.53",
+    "NIV3": "24.5",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Fonderie de métaux légers"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "24.54Z",
+    "NIV4": "24.54",
+    "NIV3": "24.5",
+    "NIV2": "24",
+    "NIV1": "C",
+    "label_vf": "Fonderie d'autres métaux non ferreux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "25.11Z",
+    "NIV4": "25.11",
+    "NIV3": "25.1",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication de structures métalliques et de parties de structures"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "25.12Z",
+    "NIV4": "25.12",
+    "NIV3": "25.1",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication de portes et fenêtres en métal"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "25.21Z",
+    "NIV4": "25.21",
+    "NIV3": "25.2",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication radiateurs et chaudières pour le chauffage central"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "25.29Z",
+    "NIV4": "25.29",
+    "NIV3": "25.2",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres réservoirs, citernes, conteneurs métalliques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "25.30Z",
+    "NIV4": "25.30",
+    "NIV3": "25.3",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabric. générateurs vapeur sf chaudières pour chauffage central"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "25.40Z",
+    "NIV4": "25.40",
+    "NIV3": "25.4",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'armes et de munitions"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "25.50A",
+    "NIV4": "25.50",
+    "NIV3": "25.5",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Forge, estampage, matriçage; métallurgie des poudres"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "25.50B",
+    "NIV4": "25.50",
+    "NIV3": "25.5",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Découpage, emboutissage"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "25.61Z",
+    "NIV4": "25.61",
+    "NIV3": "25.6",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Traitement et revêtement des métaux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "25.62A",
+    "NIV4": "25.62",
+    "NIV3": "25.6",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Décolletage"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "25.62B",
+    "NIV4": "25.62",
+    "NIV3": "25.6",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Mécanique industrielle"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "25.71Z",
+    "NIV4": "25.71",
+    "NIV3": "25.7",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication de coutellerie"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "25.72Z",
+    "NIV4": "25.72",
+    "NIV3": "25.7",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication de serrures et de ferrures"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "25.73A",
+    "NIV4": "25.73",
+    "NIV3": "25.7",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication de moules et modèles"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "25.73B",
+    "NIV4": "25.73",
+    "NIV3": "25.7",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres outillages"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "25.91Z",
+    "NIV4": "25.91",
+    "NIV3": "25.9",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication de fûts et emballages métalliques similaires"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "25.92Z",
+    "NIV4": "25.92",
+    "NIV3": "25.9",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'emballages métalliques légers"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "25.93Z",
+    "NIV4": "25.93",
+    "NIV3": "25.9",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'articles en fils métalliques, chaînes et ressorts"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "25.94Z",
+    "NIV4": "25.94",
+    "NIV3": "25.9",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication de vis et de boulons"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "25.99A",
+    "NIV4": "25.99",
+    "NIV3": "25.9",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'articles métalliques ménagers"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "25.99B",
+    "NIV4": "25.99",
+    "NIV3": "25.9",
+    "NIV2": "25",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres articles métalliques"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "26.11Z",
+    "NIV4": "26.11",
+    "NIV3": "26.1",
+    "NIV2": "26",
+    "NIV1": "C",
+    "label_vf": "Fabrication de composants électroniques"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "26.12Z",
+    "NIV4": "26.12",
+    "NIV3": "26.1",
+    "NIV2": "26",
+    "NIV1": "C",
+    "label_vf": "Fabrication de cartes électroniques assemblées"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "26.20Z",
+    "NIV4": "26.20",
+    "NIV3": "26.2",
+    "NIV2": "26",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'ordinateurs et d'équipements périphériques"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "26.30Z",
+    "NIV4": "26.30",
+    "NIV3": "26.3",
+    "NIV2": "26",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'équipements de communication"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "26.40Z",
+    "NIV4": "26.40",
+    "NIV3": "26.4",
+    "NIV2": "26",
+    "NIV1": "C",
+    "label_vf": "Fabrication de produits électroniques grand public"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "26.51A",
+    "NIV4": "26.51",
+    "NIV3": "26.5",
+    "NIV2": "26",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'équipements d'aide à la navigation"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "26.51B",
+    "NIV4": "26.51",
+    "NIV3": "26.5",
+    "NIV2": "26",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'instrumentation scientifique et technique"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "26.52Z",
+    "NIV4": "26.52",
+    "NIV3": "26.5",
+    "NIV2": "26",
+    "NIV1": "C",
+    "label_vf": "Horlogerie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "26.60Z",
+    "NIV4": "26.60",
+    "NIV3": "26.6",
+    "NIV2": "26",
+    "NIV1": "C",
+    "label_vf": "Fab. éqpts d'irradiation médic. électromédic. & électrothérapeut."
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "26.70Z",
+    "NIV4": "26.70",
+    "NIV3": "26.7",
+    "NIV2": "26",
+    "NIV1": "C",
+    "label_vf": "Fabrication de matériels optique et photographique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "26.80Z",
+    "NIV4": "26.80",
+    "NIV3": "26.8",
+    "NIV2": "26",
+    "NIV1": "C",
+    "label_vf": "Fabrication de supports magnétiques et optiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "27.11Z",
+    "NIV4": "27.11",
+    "NIV3": "27.1",
+    "NIV2": "27",
+    "NIV1": "C",
+    "label_vf": "Fabrication de moteurs, génératrices, transformateurs électriques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "27.12Z",
+    "NIV4": "27.12",
+    "NIV3": "27.1",
+    "NIV2": "27",
+    "NIV1": "C",
+    "label_vf": "Fabrication de matériel de distribution et de commande électrique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "27.20Z",
+    "NIV4": "27.20",
+    "NIV3": "27.2",
+    "NIV2": "27",
+    "NIV1": "C",
+    "label_vf": "Fabrication de piles et d'accumulateurs électriques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "27.31Z",
+    "NIV4": "27.31",
+    "NIV3": "27.3",
+    "NIV2": "27",
+    "NIV1": "C",
+    "label_vf": "Fabrication de câbles de fibres optiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "27.32Z",
+    "NIV4": "27.32",
+    "NIV3": "27.3",
+    "NIV2": "27",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres fils et câbles électroniques ou électriques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "27.33Z",
+    "NIV4": "27.33",
+    "NIV3": "27.3",
+    "NIV2": "27",
+    "NIV1": "C",
+    "label_vf": "Fabrication de matériel d'installation électrique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "27.40Z",
+    "NIV4": "27.40",
+    "NIV3": "27.4",
+    "NIV2": "27",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'appareils d'éclairage électrique"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "27.51Z",
+    "NIV4": "27.51",
+    "NIV3": "27.5",
+    "NIV2": "27",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'appareils électroménagers"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "27.52Z",
+    "NIV4": "27.52",
+    "NIV3": "27.5",
+    "NIV2": "27",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'appareils ménagers non électriques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "27.90Z",
+    "NIV4": "27.90",
+    "NIV3": "27.9",
+    "NIV2": "27",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres matériels électriques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.11Z",
+    "NIV4": "28.11",
+    "NIV3": "28.1",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication moteurs & turbines sf moteurs d'avions & de véhicules"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.12Z",
+    "NIV4": "28.12",
+    "NIV3": "28.1",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'équipements hydrauliques et pneumatiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.13Z",
+    "NIV4": "28.13",
+    "NIV3": "28.1",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres pompes et compresseurs"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.14Z",
+    "NIV4": "28.14",
+    "NIV3": "28.1",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres articles de robinetterie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.15Z",
+    "NIV4": "28.15",
+    "NIV3": "28.1",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'engrenages et d'organes mécaniques de transmission"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.21Z",
+    "NIV4": "28.21",
+    "NIV3": "28.2",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication de fours et brûleurs"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.22Z",
+    "NIV4": "28.22",
+    "NIV3": "28.2",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication de matériel de levage et de manutention"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.23Z",
+    "NIV4": "28.23",
+    "NIV3": "28.2",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fab. machines équipts bureau (sf ordinateurs & équipts périph.)"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.24Z",
+    "NIV4": "28.24",
+    "NIV3": "28.2",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'outillage portatif à moteur incorporé"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.25Z",
+    "NIV4": "28.25",
+    "NIV3": "28.2",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication équipements aérauliques et frigorifiques industriels"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.29A",
+    "NIV4": "28.29",
+    "NIV3": "28.2",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication équipts emballage, conditionnement & pesage"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.29B",
+    "NIV4": "28.29",
+    "NIV3": "28.2",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres machines d'usage général"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.30Z",
+    "NIV4": "28.30",
+    "NIV3": "28.3",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication de machines agricoles et forestières"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.41Z",
+    "NIV4": "28.41",
+    "NIV3": "28.4",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication de machines-outils pour le travail des métaux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.49Z",
+    "NIV4": "28.49",
+    "NIV3": "28.4",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres machines-outils"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.91Z",
+    "NIV4": "28.91",
+    "NIV3": "28.9",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication de machines pour la métallurgie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.92Z",
+    "NIV4": "28.92",
+    "NIV3": "28.9",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication de machines pour l'extraction ou la construction"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.93Z",
+    "NIV4": "28.93",
+    "NIV3": "28.9",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication de machines pour l'industrie agro-alimentaire"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.94Z",
+    "NIV4": "28.94",
+    "NIV3": "28.9",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication de machines pour les industries textiles"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.95Z",
+    "NIV4": "28.95",
+    "NIV3": "28.9",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication de machines pour les industries du papier et carton"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.96Z",
+    "NIV4": "28.96",
+    "NIV3": "28.9",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabric. machines pour le travail du caoutchouc ou des plastiques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.99A",
+    "NIV4": "28.99",
+    "NIV3": "28.9",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication de machines d'imprimerie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "28.99B",
+    "NIV4": "28.99",
+    "NIV3": "28.9",
+    "NIV2": "28",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres machines spécialisées"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "29.10Z",
+    "NIV4": "29.10",
+    "NIV3": "29.1",
+    "NIV2": "29",
+    "NIV1": "C",
+    "label_vf": "Construction de véhicules automobiles"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "29.20Z",
+    "NIV4": "29.20",
+    "NIV3": "29.2",
+    "NIV2": "29",
+    "NIV1": "C",
+    "label_vf": "Fabrication de carrosseries et remorques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "29.31Z",
+    "NIV4": "29.31",
+    "NIV3": "29.3",
+    "NIV2": "29",
+    "NIV1": "C",
+    "label_vf": "Fabrication équipements électriques et électroniques automobiles"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "29.32Z",
+    "NIV4": "29.32",
+    "NIV3": "29.3",
+    "NIV2": "29",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'autres équipements automobiles"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "30.11Z",
+    "NIV4": "30.11",
+    "NIV3": "30.1",
+    "NIV2": "30",
+    "NIV1": "C",
+    "label_vf": "Construction de navires et de structures flottantes"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "30.12Z",
+    "NIV4": "30.12",
+    "NIV3": "30.1",
+    "NIV2": "30",
+    "NIV1": "C",
+    "label_vf": "Construction de bateaux de plaisance"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "30.20Z",
+    "NIV4": "30.20",
+    "NIV3": "30.2",
+    "NIV2": "30",
+    "NIV1": "C",
+    "label_vf": "Construction locomotives & autre matériel ferroviaire roulant"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "30.30Z",
+    "NIV4": "30.30",
+    "NIV3": "30.3",
+    "NIV2": "30",
+    "NIV1": "C",
+    "label_vf": "Construction aéronautique et spatiale"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "30.40Z",
+    "NIV4": "30.40",
+    "NIV3": "30.4",
+    "NIV2": "30",
+    "NIV1": "C",
+    "label_vf": "Construction de véhicules militaires de combat"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "30.91Z",
+    "NIV4": "30.91",
+    "NIV3": "30.9",
+    "NIV2": "30",
+    "NIV1": "C",
+    "label_vf": "Fabrication de motocycles"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "30.92Z",
+    "NIV4": "30.92",
+    "NIV3": "30.9",
+    "NIV2": "30",
+    "NIV1": "C",
+    "label_vf": "Fabrication de bicyclettes et de véhicules pour invalides"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "30.99Z",
+    "NIV4": "30.99",
+    "NIV3": "30.9",
+    "NIV2": "30",
+    "NIV1": "C",
+    "label_vf": "Fabrication d’autres équipements de transport n.c.a."
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "31.01Z",
+    "NIV4": "31.01",
+    "NIV3": "31.0",
+    "NIV2": "31",
+    "NIV1": "C",
+    "label_vf": "Fabrication de meubles de bureau et de magasin"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "31.02Z",
+    "NIV4": "31.02",
+    "NIV3": "31.0",
+    "NIV2": "31",
+    "NIV1": "C",
+    "label_vf": "Fabrication de meubles de cuisine"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "31.03Z",
+    "NIV4": "31.03",
+    "NIV3": "31.0",
+    "NIV2": "31",
+    "NIV1": "C",
+    "label_vf": "Fabrication de matelas"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "31.09A",
+    "NIV4": "31.09",
+    "NIV3": "31.0",
+    "NIV2": "31",
+    "NIV1": "C",
+    "label_vf": "Fabrication de sièges d'ameublement d'intérieur"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "31.09B",
+    "NIV4": "31.09",
+    "NIV3": "31.0",
+    "NIV2": "31",
+    "NIV1": "C",
+    "label_vf": "Fabrication autres meubles & industries connexes de l'ameublement"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "32.11Z",
+    "NIV4": "32.11",
+    "NIV3": "32.1",
+    "NIV2": "32",
+    "NIV1": "C",
+    "label_vf": "Frappe de monnaie"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "32.12Z",
+    "NIV4": "32.12",
+    "NIV3": "32.1",
+    "NIV2": "32",
+    "NIV1": "C",
+    "label_vf": "Fabrication d’articles de joaillerie et bijouterie"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "32.13Z",
+    "NIV4": "32.13",
+    "NIV3": "32.1",
+    "NIV2": "32",
+    "NIV1": "C",
+    "label_vf": "Fabrication articles bijouterie fantaisie & articles similaires"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "32.20Z",
+    "NIV4": "32.20",
+    "NIV3": "32.2",
+    "NIV2": "32",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'instruments de musique"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "32.30Z",
+    "NIV4": "32.30",
+    "NIV3": "32.3",
+    "NIV2": "32",
+    "NIV1": "C",
+    "label_vf": "Fabrication d'articles de sport"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "32.40Z",
+    "NIV4": "32.40",
+    "NIV3": "32.4",
+    "NIV2": "32",
+    "NIV1": "C",
+    "label_vf": "Fabrication de jeux et jouets"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "32.50A",
+    "NIV4": "32.50",
+    "NIV3": "32.5",
+    "NIV2": "32",
+    "NIV1": "C",
+    "label_vf": "Fabrication de matériel médico-chirurgical et dentaire"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "32.50B",
+    "NIV4": "32.50",
+    "NIV3": "32.5",
+    "NIV2": "32",
+    "NIV1": "C",
+    "label_vf": "Fabrication de lunettes"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "32.91Z",
+    "NIV4": "32.91",
+    "NIV3": "32.9",
+    "NIV2": "32",
+    "NIV1": "C",
+    "label_vf": "Fabrication d’articles de brosserie"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "32.99Z",
+    "NIV4": "32.99",
+    "NIV3": "32.9",
+    "NIV2": "32",
+    "NIV1": "C",
+    "label_vf": "Autres activités manufacturières n.c.a."
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "33.11Z",
+    "NIV4": "33.11",
+    "NIV3": "33.1",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Réparation d'ouvrages en métaux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "33.12Z",
+    "NIV4": "33.12",
+    "NIV3": "33.1",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Réparation de machines et équipements mécaniques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "33.13Z",
+    "NIV4": "33.13",
+    "NIV3": "33.1",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Réparation de matériels électroniques et optiques"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "33.14Z",
+    "NIV4": "33.14",
+    "NIV3": "33.1",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Réparation d'équipements électriques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "33.15Z",
+    "NIV4": "33.15",
+    "NIV3": "33.1",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Réparation et maintenance navale"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "33.16Z",
+    "NIV4": "33.16",
+    "NIV3": "33.1",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Réparation et maintenance d'aéronefs et d'engins spatiaux"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "33.17Z",
+    "NIV4": "33.17",
+    "NIV3": "33.1",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Réparation et maintenance d'autres équipements de transport"
+  },
+  {
+    "tags": [
+      "industry",
+      "craft"
+    ],
+    "NIV5": "33.19Z",
+    "NIV4": "33.19",
+    "NIV3": "33.1",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Réparation d'autres équipements"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "33.20A",
+    "NIV4": "33.20",
+    "NIV3": "33.2",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Installation structures métalliques, chaudronnées et tuyauterie"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "33.20B",
+    "NIV4": "33.20",
+    "NIV3": "33.2",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Installation de machines et équipements mécaniques"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "33.20C",
+    "NIV4": "33.20",
+    "NIV3": "33.2",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Concept. d'ens. & assembl s/site d'éqpts ctrle des processus ind."
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "33.20D",
+    "NIV4": "33.20",
+    "NIV3": "33.2",
+    "NIV2": "33",
+    "NIV1": "C",
+    "label_vf": "Instal. éqpts électriq, mat. électro. et optiq. ou aut. matériels"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "35.11Z",
+    "NIV4": "35.11",
+    "NIV3": "35.1",
+    "NIV2": "35",
+    "NIV1": "D",
+    "label_vf": "Production d'électricité"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "35.12Z",
+    "NIV4": "35.12",
+    "NIV3": "35.1",
+    "NIV2": "35",
+    "NIV1": "D",
+    "label_vf": "Transport d'électricité"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "35.13Z",
+    "NIV4": "35.13",
+    "NIV3": "35.1",
+    "NIV2": "35",
+    "NIV1": "D",
+    "label_vf": "Distribution d'électricité"
+  },
+  {
+    "tags": [
+      "industry",
+      "tertiary"
+    ],
+    "NIV5": "35.14Z",
+    "NIV4": "35.14",
+    "NIV3": "35.1",
+    "NIV2": "35",
+    "NIV1": "D",
+    "label_vf": "Commerce d'électricité"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "35.21Z",
+    "NIV4": "35.21",
+    "NIV3": "35.2",
+    "NIV2": "35",
+    "NIV1": "D",
+    "label_vf": "Production de combustibles gazeux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "35.22Z",
+    "NIV4": "35.22",
+    "NIV3": "35.2",
+    "NIV2": "35",
+    "NIV1": "D",
+    "label_vf": "Distribution de combustibles gazeux par conduites"
+  },
+  {
+    "tags": [
+      "industry",
+      "tertiary"
+    ],
+    "NIV5": "35.23Z",
+    "NIV4": "35.23",
+    "NIV3": "35.2",
+    "NIV2": "35",
+    "NIV1": "D",
+    "label_vf": "Commerce de combustibles gazeux par conduites"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "35.30Z",
+    "NIV4": "35.30",
+    "NIV3": "35.3",
+    "NIV2": "35",
+    "NIV1": "D",
+    "label_vf": "Production et distribution de vapeur et d'air conditionné"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "36.00Z",
+    "NIV4": "36.00",
+    "NIV3": "36.0",
+    "NIV2": "36",
+    "NIV1": "E",
+    "label_vf": "Captage, traitement et distribution d'eau"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "37.00Z",
+    "NIV4": "37.00",
+    "NIV3": "37.0",
+    "NIV2": "37",
+    "NIV1": "E",
+    "label_vf": "Collecte et traitement des eaux usées"
+  },
+  {
+    "tags": [
+      "industry",
+      "tertiary"
+    ],
+    "NIV5": "38.11Z",
+    "NIV4": "38.11",
+    "NIV3": "38.1",
+    "NIV2": "38",
+    "NIV1": "E",
+    "label_vf": "Collecte des déchets non dangereux"
+  },
+  {
+    "tags": [
+      "industry",
+      "tertiary"
+    ],
+    "NIV5": "38.12Z",
+    "NIV4": "38.12",
+    "NIV3": "38.1",
+    "NIV2": "38",
+    "NIV1": "E",
+    "label_vf": "Collecte des déchets dangereux"
+  },
+  {
+    "tags": [
+      "industry",
+      "tertiary"
+    ],
+    "NIV5": "38.21Z",
+    "NIV4": "38.21",
+    "NIV3": "38.2",
+    "NIV2": "38",
+    "NIV1": "E",
+    "label_vf": "Traitement et élimination des déchets non dangereux"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "38.22Z",
+    "NIV4": "38.22",
+    "NIV3": "38.2",
+    "NIV2": "38",
+    "NIV1": "E",
+    "label_vf": "Traitement et élimination des déchets dangereux"
+  },
+  {
+    "tags": [
+      "industry",
+      "tertiary"
+    ],
+    "NIV5": "38.31Z",
+    "NIV4": "38.31",
+    "NIV3": "38.3",
+    "NIV2": "38",
+    "NIV1": "E",
+    "label_vf": "Démantèlement d'épaves"
+  },
+  {
+    "tags": [
+      "industry",
+      "tertiary"
+    ],
+    "NIV5": "38.32Z",
+    "NIV4": "38.32",
+    "NIV3": "38.3",
+    "NIV2": "38",
+    "NIV1": "E",
+    "label_vf": "Récupération de déchets triés"
+  },
+  {
+    "tags": [
+      "industry"
+    ],
+    "NIV5": "39.00Z",
+    "NIV4": "39.00",
+    "NIV3": "39.0",
+    "NIV2": "39",
+    "NIV1": "E",
+    "label_vf": "Dépollution et autres services de gestion des déchets"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "41.10A",
+    "NIV4": "41.10",
+    "NIV3": "41.1",
+    "NIV2": "41",
+    "NIV1": "F",
+    "label_vf": "Promotion immobilière de logements"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "41.10B",
+    "NIV4": "41.10",
+    "NIV3": "41.1",
+    "NIV2": "41",
+    "NIV1": "F",
+    "label_vf": "Promotion immobilière de bureaux"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "41.10C",
+    "NIV4": "41.10",
+    "NIV3": "41.1",
+    "NIV2": "41",
+    "NIV1": "F",
+    "label_vf": "Promotion immobilière d'autres bâtiments"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "41.10D",
+    "NIV4": "41.10",
+    "NIV3": "41.1",
+    "NIV2": "41",
+    "NIV1": "F",
+    "label_vf": "Supports juridiques de programmes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "41.20A",
+    "NIV4": "41.20",
+    "NIV3": "41.2",
+    "NIV2": "41",
+    "NIV1": "F",
+    "label_vf": "Construction de maisons individuelles"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "41.20B",
+    "NIV4": "41.20",
+    "NIV3": "41.2",
+    "NIV2": "41",
+    "NIV1": "F",
+    "label_vf": "Construction d'autres bâtiments"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "42.11Z",
+    "NIV4": "42.11",
+    "NIV3": "42.1",
+    "NIV2": "42",
+    "NIV1": "F",
+    "label_vf": "Construction de routes et autoroutes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "42.12Z",
+    "NIV4": "42.12",
+    "NIV3": "42.1",
+    "NIV2": "42",
+    "NIV1": "F",
+    "label_vf": "Construction de voies ferrées de surface et souterraines"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "42.13A",
+    "NIV4": "42.13",
+    "NIV3": "42.1",
+    "NIV2": "42",
+    "NIV1": "F",
+    "label_vf": "Construction d'ouvrages d'art"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "42.13B",
+    "NIV4": "42.13",
+    "NIV3": "42.1",
+    "NIV2": "42",
+    "NIV1": "F",
+    "label_vf": "Construction et entretien de tunnels"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "42.21Z",
+    "NIV4": "42.21",
+    "NIV3": "42.2",
+    "NIV2": "42",
+    "NIV1": "F",
+    "label_vf": "Construction de réseaux pour fluides"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "42.22Z",
+    "NIV4": "42.22",
+    "NIV3": "42.2",
+    "NIV2": "42",
+    "NIV1": "F",
+    "label_vf": "Construction de réseaux électriques et de télécommunications"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "42.91Z",
+    "NIV4": "42.91",
+    "NIV3": "42.9",
+    "NIV2": "42",
+    "NIV1": "F",
+    "label_vf": "Construction d'ouvrages maritimes et fluviaux"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "42.99Z",
+    "NIV4": "42.99",
+    "NIV3": "42.9",
+    "NIV2": "42",
+    "NIV1": "F",
+    "label_vf": "Construction d'autres ouvrages de génie civil n.c.a."
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.11Z",
+    "NIV4": "43.11",
+    "NIV3": "43.1",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de démolition"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.12A",
+    "NIV4": "43.12",
+    "NIV3": "43.1",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de terrassement courants et travaux préparatoires"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.12B",
+    "NIV4": "43.12",
+    "NIV3": "43.1",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de terrassement spécialisés ou de grande masse"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.13Z",
+    "NIV4": "43.13",
+    "NIV3": "43.1",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Forages et sondages"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.21A",
+    "NIV4": "43.21",
+    "NIV3": "43.2",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux d'installation électrique dans tous locaux"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.21B",
+    "NIV4": "43.21",
+    "NIV3": "43.2",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux d'installation électrique sur la voie publique"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.22A",
+    "NIV4": "43.22",
+    "NIV3": "43.2",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux d'installation d'eau et de gaz en tous locaux"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.22B",
+    "NIV4": "43.22",
+    "NIV3": "43.2",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux d'installation équipements thermiques et climatisation"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.29A",
+    "NIV4": "43.29",
+    "NIV3": "43.2",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux d'isolation"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.29B",
+    "NIV4": "43.29",
+    "NIV3": "43.2",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Autres travaux d'installation n.c.a."
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.31Z",
+    "NIV4": "43.31",
+    "NIV3": "43.3",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de plâtrerie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.32A",
+    "NIV4": "43.32",
+    "NIV3": "43.3",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de menuiserie bois et PVC"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.32B",
+    "NIV4": "43.32",
+    "NIV3": "43.3",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de menuiserie métallique et serrurerie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.32C",
+    "NIV4": "43.32",
+    "NIV3": "43.3",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Agencement de lieux de vente"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.33Z",
+    "NIV4": "43.33",
+    "NIV3": "43.3",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de revêtement des sols et des murs"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.34Z",
+    "NIV4": "43.34",
+    "NIV3": "43.3",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de peinture et vitrerie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.39Z",
+    "NIV4": "43.39",
+    "NIV3": "43.3",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Autres travaux de finition"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.91A",
+    "NIV4": "43.91",
+    "NIV3": "43.9",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de charpente"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.91B",
+    "NIV4": "43.91",
+    "NIV3": "43.9",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de couverture par éléments"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.99A",
+    "NIV4": "43.99",
+    "NIV3": "43.9",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux d'étanchéification"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.99B",
+    "NIV4": "43.99",
+    "NIV3": "43.9",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de montage de structures métalliques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.99C",
+    "NIV4": "43.99",
+    "NIV3": "43.9",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Travaux de maçonnerie générale et gros oeuvre de bâtiment"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.99D",
+    "NIV4": "43.99",
+    "NIV3": "43.9",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Autres travaux spécialisés de construction"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "43.99E",
+    "NIV4": "43.99",
+    "NIV3": "43.9",
+    "NIV2": "43",
+    "NIV1": "F",
+    "label_vf": "Location avec opérateur de matériel de construction"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "45.11Z",
+    "NIV4": "45.11",
+    "NIV3": "45.1",
+    "NIV2": "45",
+    "NIV1": "G",
+    "label_vf": "Commerce de voitures et de véhicules automobiles légers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "45.19Z",
+    "NIV4": "45.19",
+    "NIV3": "45.1",
+    "NIV2": "45",
+    "NIV1": "G",
+    "label_vf": "Commerce d'autres véhicules automobiles"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "45.20A",
+    "NIV4": "45.20",
+    "NIV3": "45.2",
+    "NIV2": "45",
+    "NIV1": "G",
+    "label_vf": "Entretien et réparation de véhicules automobiles légers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "45.20B",
+    "NIV4": "45.20",
+    "NIV3": "45.2",
+    "NIV2": "45",
+    "NIV1": "G",
+    "label_vf": "Entretien et réparation d'autres véhicules automobiles"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "45.31Z",
+    "NIV4": "45.31",
+    "NIV3": "45.3",
+    "NIV2": "45",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros d'équipements automobiles"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "45.32Z",
+    "NIV4": "45.32",
+    "NIV3": "45.3",
+    "NIV2": "45",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail d'équipements automobiles"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "45.40Z",
+    "NIV4": "45.40",
+    "NIV3": "45.4",
+    "NIV2": "45",
+    "NIV1": "G",
+    "label_vf": "Commerce et réparation de motocycles"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.11Z",
+    "NIV4": "46.11",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Interm. du comm. en m.p. agricoles & textiles, animaux vivants"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.12A",
+    "NIV4": "46.12",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Centrales d'achat de carburant"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.12B",
+    "NIV4": "46.12",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Autres interm. comm. combustibles métaux minéraux prod. chimiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.13Z",
+    "NIV4": "46.13",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Intermédiaires du commerce en bois et matériaux de construction"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.14Z",
+    "NIV4": "46.14",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Interm. comm. machines, équipts industriels, navires et avions"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.15Z",
+    "NIV4": "46.15",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Interm. comm. en meubles, articles de ménage et quincaillerie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.16Z",
+    "NIV4": "46.16",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Interm. comm. textiles, habillt, fourrures, chaussures & art cuir"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.17A",
+    "NIV4": "46.17",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Centrales d'achat alimentaires"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.17B",
+    "NIV4": "46.17",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Autres intermédiaires du commerce en denrées, boissons et tabac"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.18Z",
+    "NIV4": "46.18",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Interm. spécialisés commerce d'autres produits spécifiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.19A",
+    "NIV4": "46.19",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Centrales d'achat non alimentaires"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.19B",
+    "NIV4": "46.19",
+    "NIV3": "46.1",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Autres intermédiaires du commerce en produits divers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.21Z",
+    "NIV4": "46.21",
+    "NIV3": "46.2",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Comm. de gros céréales, tabac non manuf. et aliments pour bétail"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.22Z",
+    "NIV4": "46.22",
+    "NIV3": "46.2",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) de fleurs et plantes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.23Z",
+    "NIV4": "46.23",
+    "NIV3": "46.2",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) d'animaux vivants"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.24Z",
+    "NIV4": "46.24",
+    "NIV3": "46.2",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) de cuirs et peaux"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.31Z",
+    "NIV4": "46.31",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) de fruits et légumes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.32A",
+    "NIV4": "46.32",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de viandes de boucherie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.32B",
+    "NIV4": "46.32",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de produits à base de viande"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.32C",
+    "NIV4": "46.32",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de volailles et gibier"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.33Z",
+    "NIV4": "46.33",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Com. gros produits laitiers, oeufs, huiles & mat. grasses comest."
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.34Z",
+    "NIV4": "46.34",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) de boissons"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.35Z",
+    "NIV4": "46.35",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de produits à base de tabac"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.36Z",
+    "NIV4": "46.36",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de sucre, chocolat et confiserie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.37Z",
+    "NIV4": "46.37",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de café, thé, cacao et épices"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.38A",
+    "NIV4": "46.38",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de poissons, crustacés et mollusques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.38B",
+    "NIV4": "46.38",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros alimentaire spécialisé divers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.39A",
+    "NIV4": "46.39",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) de produits surgelés"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.39B",
+    "NIV4": "46.39",
+    "NIV3": "46.3",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros alimentaire non spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.41Z",
+    "NIV4": "46.41",
+    "NIV3": "46.4",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) de textiles"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.42Z",
+    "NIV4": "46.42",
+    "NIV3": "46.4",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros d'habillement et de chaussures"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.43Z",
+    "NIV4": "46.43",
+    "NIV3": "46.4",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros d'appareils électroménagers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.44Z",
+    "NIV4": "46.44",
+    "NIV3": "46.4",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de vaisselle, verrerie et produits d'entretien"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.45Z",
+    "NIV4": "46.45",
+    "NIV3": "46.4",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de parfumerie et de produits de beauté"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.46Z",
+    "NIV4": "46.46",
+    "NIV3": "46.4",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de produits pharmaceutiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.47Z",
+    "NIV4": "46.47",
+    "NIV3": "46.4",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de meubles, de tapis et d'appareils d'éclairage"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.48Z",
+    "NIV4": "46.48",
+    "NIV3": "46.4",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros d'articles d'horlogerie et de bijouterie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.49Z",
+    "NIV4": "46.49",
+    "NIV3": "46.4",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros d'autres biens domestiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.51Z",
+    "NIV4": "46.51",
+    "NIV3": "46.5",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Comm. de gros d'ordinat., d'éqpts informatiq. périph. & logiciels"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.52Z",
+    "NIV4": "46.52",
+    "NIV3": "46.5",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Comm. de gros d'éqpts et composants électroniques et de télécomm."
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.61Z",
+    "NIV4": "46.61",
+    "NIV3": "46.6",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) de matériel agricole"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.62Z",
+    "NIV4": "46.62",
+    "NIV3": "46.6",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) de machines-outils"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.63Z",
+    "NIV4": "46.63",
+    "NIV3": "46.6",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Comm de gros de machines pour l'extrac, la constr, le génie civil"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.64Z",
+    "NIV4": "46.64",
+    "NIV3": "46.6",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Comm. gros (interentr.) machines pour industrie textile & habill."
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.65Z",
+    "NIV4": "46.65",
+    "NIV3": "46.6",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de mobilier de bureau"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.66Z",
+    "NIV4": "46.66",
+    "NIV3": "46.6",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros d'autres machines et équipements de bureau"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.69A",
+    "NIV4": "46.69",
+    "NIV3": "46.6",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de matériel électrique"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.69B",
+    "NIV4": "46.69",
+    "NIV3": "46.6",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de fournitures et équipements industriels divers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.69C",
+    "NIV4": "46.69",
+    "NIV3": "46.6",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Comm. gros de fournitures & équipts divers pour commerces & sces"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.71Z",
+    "NIV4": "46.71",
+    "NIV3": "46.7",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de combustibles et de produits annexes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.72Z",
+    "NIV4": "46.72",
+    "NIV3": "46.7",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de minerais et métaux"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.73A",
+    "NIV4": "46.73",
+    "NIV3": "46.7",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de bois et de matériaux de construction"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.73B",
+    "NIV4": "46.73",
+    "NIV3": "46.7",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros d'appareils sanitaires et produits de décoration"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.74A",
+    "NIV4": "46.74",
+    "NIV3": "46.7",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) de quincaillerie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.74B",
+    "NIV4": "46.74",
+    "NIV3": "46.7",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de fournitures pour la plomberie et le chauffage"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.75Z",
+    "NIV4": "46.75",
+    "NIV3": "46.7",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros de produits chimiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.76Z",
+    "NIV4": "46.76",
+    "NIV3": "46.7",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros d'autres produits intermédiaires"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.77Z",
+    "NIV4": "46.77",
+    "NIV3": "46.7",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) de déchets et débris"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "46.90Z",
+    "NIV4": "46.90",
+    "NIV3": "46.9",
+    "NIV2": "46",
+    "NIV1": "G",
+    "label_vf": "Commerce de gros (commerce interentreprises) non spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.11A",
+    "NIV4": "47.11",
+    "NIV3": "47.1",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de produits surgelés"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.11B",
+    "NIV4": "47.11",
+    "NIV3": "47.1",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce d'alimentation générale"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.11C",
+    "NIV4": "47.11",
+    "NIV3": "47.1",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Supérettes"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.11D",
+    "NIV4": "47.11",
+    "NIV3": "47.1",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Supermarchés"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.11E",
+    "NIV4": "47.11",
+    "NIV3": "47.1",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Magasins multi-commerces"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.11F",
+    "NIV4": "47.11",
+    "NIV3": "47.1",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Hypermarchés"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.19A",
+    "NIV4": "47.19",
+    "NIV3": "47.1",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Grands magasins"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.19B",
+    "NIV4": "47.19",
+    "NIV3": "47.1",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Autres commerces de détail en magasin non spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.21Z",
+    "NIV4": "47.21",
+    "NIV3": "47.2",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de fruits et légumes en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.22Z",
+    "NIV4": "47.22",
+    "NIV3": "47.2",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail viandes & produits à base de viande (magas. spéc.)"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.23Z",
+    "NIV4": "47.23",
+    "NIV3": "47.2",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail poissons crustacés & mollusques (magasin spécialisé)"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.24Z",
+    "NIV4": "47.24",
+    "NIV3": "47.2",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail pain pâtisserie & confiserie (magasin spécialisé)"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.25Z",
+    "NIV4": "47.25",
+    "NIV3": "47.2",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de boissons en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.26Z",
+    "NIV4": "47.26",
+    "NIV3": "47.2",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail de produits à base de tabac en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.29Z",
+    "NIV4": "47.29",
+    "NIV3": "47.2",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Autres commerces de détail alimentaires en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.30Z",
+    "NIV4": "47.30",
+    "NIV3": "47.3",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de carburants en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.41Z",
+    "NIV4": "47.41",
+    "NIV3": "47.4",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail ordinateurs unités périph. & logiciels (magas. spéc)"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.42Z",
+    "NIV4": "47.42",
+    "NIV3": "47.4",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail matériels télécommunication (magasin spécialisé)"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.43Z",
+    "NIV4": "47.43",
+    "NIV3": "47.4",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de matériels audio/vidéo en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.51Z",
+    "NIV4": "47.51",
+    "NIV3": "47.5",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de textiles en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.52A",
+    "NIV4": "47.52",
+    "NIV3": "47.5",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail de quincaillerie, peintures et verres (mag.< 400 m2)"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.52B",
+    "NIV4": "47.52",
+    "NIV3": "47.5",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail de quincaillerie, peintures et verres (mag.> 400 m2)"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.53Z",
+    "NIV4": "47.53",
+    "NIV3": "47.5",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail tapis, moquettes & revêts murs & sols (magas. spéc.)"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.54Z",
+    "NIV4": "47.54",
+    "NIV3": "47.5",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail appareils électroménagers (magasin spécialisé)"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.59A",
+    "NIV4": "47.59",
+    "NIV3": "47.5",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de meubles"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.59B",
+    "NIV4": "47.59",
+    "NIV3": "47.5",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail d'autres équipements du foyer"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.61Z",
+    "NIV4": "47.61",
+    "NIV3": "47.6",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de livres en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.62Z",
+    "NIV4": "47.62",
+    "NIV3": "47.6",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de journaux et papeterie en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.63Z",
+    "NIV4": "47.63",
+    "NIV3": "47.6",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail enreg. musicaux & vidéo (magasin spécialisé)"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.64Z",
+    "NIV4": "47.64",
+    "NIV3": "47.6",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail d'articles de sport en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.65Z",
+    "NIV4": "47.65",
+    "NIV3": "47.6",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de jeux et jouets en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.71Z",
+    "NIV4": "47.71",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail d'habillement en magasin spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.72A",
+    "NIV4": "47.72",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de la chaussure"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.72B",
+    "NIV4": "47.72",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de maroquinerie et d'articles de voyage"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "47.73Z",
+    "NIV4": "47.73",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail produits pharmaceutiques (magasin spécialisé)"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "47.74Z",
+    "NIV4": "47.74",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail d'articles médicaux & orthopédiques en magasin spéc."
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.75Z",
+    "NIV4": "47.75",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail de parfumerie & produits de beauté en magasin spéc."
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.76Z",
+    "NIV4": "47.76",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. dét. fleurs, plantes, etc, animaux de cie et leurs aliments"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.77Z",
+    "NIV4": "47.77",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail d'articles horlogerie & bijouterie (magas. spéc.)"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.78A",
+    "NIV4": "47.78",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerces de détail d'optique"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "47.78B",
+    "NIV4": "47.78",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerces de détail de charbons et combustibles"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.78C",
+    "NIV4": "47.78",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Autres commerces de détail spécialisés divers"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.79Z",
+    "NIV4": "47.79",
+    "NIV3": "47.7",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail de biens d'occasion en magasin"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.81Z",
+    "NIV4": "47.81",
+    "NIV3": "47.8",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Commerce de détail alimentaire sur éventaires et marchés"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.82Z",
+    "NIV4": "47.82",
+    "NIV3": "47.8",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Comm. détail textiles habillt & chaussures s/éventaires & marchés"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "47.89Z",
+    "NIV4": "47.89",
+    "NIV3": "47.8",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Autres commerces de détail sur éventaires et marchés"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "47.91A",
+    "NIV4": "47.91",
+    "NIV3": "47.9",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Vente à distance sur catalogue général"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "47.91B",
+    "NIV4": "47.91",
+    "NIV3": "47.9",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Vente à distance sur catalogue spécialisé"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "47.99A",
+    "NIV4": "47.99",
+    "NIV3": "47.9",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Vente à domicile"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "47.99B",
+    "NIV4": "47.99",
+    "NIV3": "47.9",
+    "NIV2": "47",
+    "NIV1": "G",
+    "label_vf": "Vente par automate, aut. com. dét. hors mag., éventaire ou marché"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "49.10Z",
+    "NIV4": "49.10",
+    "NIV3": "49.1",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Transport ferroviaire interurbain de voyageurs"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "49.20Z",
+    "NIV4": "49.20",
+    "NIV3": "49.2",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Transports ferroviaires de fret"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "49.31Z",
+    "NIV4": "49.31",
+    "NIV3": "49.3",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Transports urbains et suburbains de voyageurs"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "49.32Z",
+    "NIV4": "49.32",
+    "NIV3": "49.3",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Transports de voyageurs par taxis"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "49.39A",
+    "NIV4": "49.39",
+    "NIV3": "49.3",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Transports routiers réguliers de voyageurs"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "49.39B",
+    "NIV4": "49.39",
+    "NIV3": "49.3",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Autres transports routiers de voyageurs"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "49.39C",
+    "NIV4": "49.39",
+    "NIV3": "49.3",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Téléphériques et remontées mécaniques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "49.41A",
+    "NIV4": "49.41",
+    "NIV3": "49.4",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Transports routiers de fret interurbains"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "49.41B",
+    "NIV4": "49.41",
+    "NIV3": "49.4",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Transports routiers de fret de proximité"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "49.41C",
+    "NIV4": "49.41",
+    "NIV3": "49.4",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Location de camions avec chauffeur"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "49.42Z",
+    "NIV4": "49.42",
+    "NIV3": "49.4",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Services de déménagement"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "49.50Z",
+    "NIV4": "49.50",
+    "NIV3": "49.5",
+    "NIV2": "49",
+    "NIV1": "H",
+    "label_vf": "Transports par conduites"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "50.10Z",
+    "NIV4": "50.10",
+    "NIV3": "50.1",
+    "NIV2": "50",
+    "NIV1": "H",
+    "label_vf": "Transports maritimes et côtiers de passagers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "50.20Z",
+    "NIV4": "50.20",
+    "NIV3": "50.2",
+    "NIV2": "50",
+    "NIV1": "H",
+    "label_vf": "Transports maritimes et côtiers de fret"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "50.30Z",
+    "NIV4": "50.30",
+    "NIV3": "50.3",
+    "NIV2": "50",
+    "NIV1": "H",
+    "label_vf": "Transports fluviaux de passagers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "50.40Z",
+    "NIV4": "50.40",
+    "NIV3": "50.4",
+    "NIV2": "50",
+    "NIV1": "H",
+    "label_vf": "Transports fluviaux de fret"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "51.10Z",
+    "NIV4": "51.10",
+    "NIV3": "51.1",
+    "NIV2": "51",
+    "NIV1": "H",
+    "label_vf": "Transports aériens de passagers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "51.21Z",
+    "NIV4": "51.21",
+    "NIV3": "51.2",
+    "NIV2": "51",
+    "NIV1": "H",
+    "label_vf": "Transports aériens de fret"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "51.22Z",
+    "NIV4": "51.22",
+    "NIV3": "51.2",
+    "NIV2": "51",
+    "NIV1": "H",
+    "label_vf": "Transports spatiaux"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "52.10A",
+    "NIV4": "52.10",
+    "NIV3": "52.1",
+    "NIV2": "52",
+    "NIV1": "H",
+    "label_vf": "Entreposage et stockage frigorifique"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "52.10B",
+    "NIV4": "52.10",
+    "NIV3": "52.1",
+    "NIV2": "52",
+    "NIV1": "H",
+    "label_vf": "Entreposage et stockage non frigorifique"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "52.21Z",
+    "NIV4": "52.21",
+    "NIV3": "52.2",
+    "NIV2": "52",
+    "NIV1": "H",
+    "label_vf": "Services auxiliaires des transports terrestres"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "52.22Z",
+    "NIV4": "52.22",
+    "NIV3": "52.2",
+    "NIV2": "52",
+    "NIV1": "H",
+    "label_vf": "Services auxiliaires des transports par eau"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "52.23Z",
+    "NIV4": "52.23",
+    "NIV3": "52.2",
+    "NIV2": "52",
+    "NIV1": "H",
+    "label_vf": "Services auxiliaires des transports aériens"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "52.24A",
+    "NIV4": "52.24",
+    "NIV3": "52.2",
+    "NIV2": "52",
+    "NIV1": "H",
+    "label_vf": "Manutention portuaire"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "52.24B",
+    "NIV4": "52.24",
+    "NIV3": "52.2",
+    "NIV2": "52",
+    "NIV1": "H",
+    "label_vf": "Manutention non portuaire"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "52.29A",
+    "NIV4": "52.29",
+    "NIV3": "52.2",
+    "NIV2": "52",
+    "NIV1": "H",
+    "label_vf": "Messagerie, fret express"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "52.29B",
+    "NIV4": "52.29",
+    "NIV3": "52.2",
+    "NIV2": "52",
+    "NIV1": "H",
+    "label_vf": "Affrètement et organisation des transports"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "53.10Z",
+    "NIV4": "53.10",
+    "NIV3": "53.1",
+    "NIV2": "53",
+    "NIV1": "H",
+    "label_vf": "Activ. poste dans le cadre d'une obligation de service universel"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "53.20Z",
+    "NIV4": "53.20",
+    "NIV3": "53.2",
+    "NIV2": "53",
+    "NIV1": "H",
+    "label_vf": "Autres activités de poste et de courrier"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "55.10Z",
+    "NIV4": "55.10",
+    "NIV3": "55.1",
+    "NIV2": "55",
+    "NIV1": "I",
+    "label_vf": "Hôtels et hébergement similaire"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "55.20Z",
+    "NIV4": "55.20",
+    "NIV3": "55.2",
+    "NIV2": "55",
+    "NIV1": "I",
+    "label_vf": "Hébergement touristique et autre hébergement de courte durée"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "55.30Z",
+    "NIV4": "55.30",
+    "NIV3": "55.3",
+    "NIV2": "55",
+    "NIV1": "I",
+    "label_vf": "Terrains de camping et parcs pour caravanes, véhicules de loisirs"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "55.90Z",
+    "NIV4": "55.90",
+    "NIV3": "55.9",
+    "NIV2": "55",
+    "NIV1": "I",
+    "label_vf": "Autres hébergements"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "56.10A",
+    "NIV4": "56.10",
+    "NIV3": "56.1",
+    "NIV2": "56",
+    "NIV1": "I",
+    "label_vf": "Restauration traditionnelle"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "56.10B",
+    "NIV4": "56.10",
+    "NIV3": "56.1",
+    "NIV2": "56",
+    "NIV1": "I",
+    "label_vf": "Cafétérias et autres libres-services"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "56.10C",
+    "NIV4": "56.10",
+    "NIV3": "56.1",
+    "NIV2": "56",
+    "NIV1": "I",
+    "label_vf": "Restauration de type rapide"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "56.21Z",
+    "NIV4": "56.21",
+    "NIV3": "56.2",
+    "NIV2": "56",
+    "NIV1": "I",
+    "label_vf": "Services des traiteurs"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "56.29A",
+    "NIV4": "56.29",
+    "NIV3": "56.2",
+    "NIV2": "56",
+    "NIV1": "I",
+    "label_vf": "Restauration collective sous contrat"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "56.29B",
+    "NIV4": "56.29",
+    "NIV3": "56.2",
+    "NIV2": "56",
+    "NIV1": "I",
+    "label_vf": "Autres services de restauration n.c.a."
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "56.30Z",
+    "NIV4": "56.30",
+    "NIV3": "56.3",
+    "NIV2": "56",
+    "NIV1": "I",
+    "label_vf": "Débits de boissons"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "58.11Z",
+    "NIV4": "58.11",
+    "NIV3": "58.1",
+    "NIV2": "58",
+    "NIV1": "J",
+    "label_vf": "Édition de livres"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "58.12Z",
+    "NIV4": "58.12",
+    "NIV3": "58.1",
+    "NIV2": "58",
+    "NIV1": "J",
+    "label_vf": "Édition de répertoires et de fichiers d'adresses"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "58.13Z",
+    "NIV4": "58.13",
+    "NIV3": "58.1",
+    "NIV2": "58",
+    "NIV1": "J",
+    "label_vf": "Édition de journaux"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "58.14Z",
+    "NIV4": "58.14",
+    "NIV3": "58.1",
+    "NIV2": "58",
+    "NIV1": "J",
+    "label_vf": "Édition de revues et périodiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "58.19Z",
+    "NIV4": "58.19",
+    "NIV3": "58.1",
+    "NIV2": "58",
+    "NIV1": "J",
+    "label_vf": "Autres activités d'édition"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "58.21Z",
+    "NIV4": "58.21",
+    "NIV3": "58.2",
+    "NIV2": "58",
+    "NIV1": "J",
+    "label_vf": "Édition de jeux électroniques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "58.29A",
+    "NIV4": "58.29",
+    "NIV3": "58.2",
+    "NIV2": "58",
+    "NIV1": "J",
+    "label_vf": "Édition de logiciels système et de réseau"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "58.29B",
+    "NIV4": "58.29",
+    "NIV3": "58.2",
+    "NIV2": "58",
+    "NIV1": "J",
+    "label_vf": "Edition de logiciels outils de développement et de langages"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "58.29C",
+    "NIV4": "58.29",
+    "NIV3": "58.2",
+    "NIV2": "58",
+    "NIV1": "J",
+    "label_vf": "Edition de logiciels applicatifs"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "59.11A",
+    "NIV4": "59.11",
+    "NIV3": "59.1",
+    "NIV2": "59",
+    "NIV1": "J",
+    "label_vf": "Production de films et de programmes pour la télévision"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "59.11B",
+    "NIV4": "59.11",
+    "NIV3": "59.1",
+    "NIV2": "59",
+    "NIV1": "J",
+    "label_vf": "Production de films institutionnels et publicitaires"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "59.11C",
+    "NIV4": "59.11",
+    "NIV3": "59.1",
+    "NIV2": "59",
+    "NIV1": "J",
+    "label_vf": "Production de films pour le cinéma"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "59.12Z",
+    "NIV4": "59.12",
+    "NIV3": "59.1",
+    "NIV2": "59",
+    "NIV1": "J",
+    "label_vf": "Post-production films cinématograph. vidéo & prog. de télévision"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "59.13A",
+    "NIV4": "59.13",
+    "NIV3": "59.1",
+    "NIV2": "59",
+    "NIV1": "J",
+    "label_vf": "Distribution de films cinématographiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "59.13B",
+    "NIV4": "59.13",
+    "NIV3": "59.1",
+    "NIV2": "59",
+    "NIV1": "J",
+    "label_vf": "Edition et distribution vidéo"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "59.14Z",
+    "NIV4": "59.14",
+    "NIV3": "59.1",
+    "NIV2": "59",
+    "NIV1": "J",
+    "label_vf": "Projection de films cinématographiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "59.20Z",
+    "NIV4": "59.20",
+    "NIV3": "59.2",
+    "NIV2": "59",
+    "NIV1": "J",
+    "label_vf": "Enregistrement sonore et édition musicale"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "60.10Z",
+    "NIV4": "60.10",
+    "NIV3": "60.1",
+    "NIV2": "60",
+    "NIV1": "J",
+    "label_vf": "Édition et diffusion de programmes radio"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "60.20A",
+    "NIV4": "60.20",
+    "NIV3": "60.2",
+    "NIV2": "60",
+    "NIV1": "J",
+    "label_vf": "Edition de chaînes généralistes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "60.20B",
+    "NIV4": "60.20",
+    "NIV3": "60.2",
+    "NIV2": "60",
+    "NIV1": "J",
+    "label_vf": "Edition de chaînes thématiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "61.10Z",
+    "NIV4": "61.10",
+    "NIV3": "61.1",
+    "NIV2": "61",
+    "NIV1": "J",
+    "label_vf": "Télécommunications filaires"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "61.20Z",
+    "NIV4": "61.20",
+    "NIV3": "61.2",
+    "NIV2": "61",
+    "NIV1": "J",
+    "label_vf": "Télécommunications sans fil"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "61.30Z",
+    "NIV4": "61.30",
+    "NIV3": "61.3",
+    "NIV2": "61",
+    "NIV1": "J",
+    "label_vf": "Télécommunications par satellite"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "61.90Z",
+    "NIV4": "61.90",
+    "NIV3": "61.9",
+    "NIV2": "61",
+    "NIV1": "J",
+    "label_vf": "Autres activités de télécommunication"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "62.01Z",
+    "NIV4": "62.01",
+    "NIV3": "62.0",
+    "NIV2": "62",
+    "NIV1": "J",
+    "label_vf": "Programmation informatique"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "62.02A",
+    "NIV4": "62.02",
+    "NIV3": "62.0",
+    "NIV2": "62",
+    "NIV1": "J",
+    "label_vf": "Conseil en systèmes et logiciels informatiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "62.02B",
+    "NIV4": "62.02",
+    "NIV3": "62.0",
+    "NIV2": "62",
+    "NIV1": "J",
+    "label_vf": "Tierce maintenance de systèmes et d’applications informatiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "62.03Z",
+    "NIV4": "62.03",
+    "NIV3": "62.0",
+    "NIV2": "62",
+    "NIV1": "J",
+    "label_vf": "Gestion d'installations informatiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "62.09Z",
+    "NIV4": "62.09",
+    "NIV3": "62.0",
+    "NIV2": "62",
+    "NIV1": "J",
+    "label_vf": "Autres activités informatiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "63.11Z",
+    "NIV4": "63.11",
+    "NIV3": "63.1",
+    "NIV2": "63",
+    "NIV1": "J",
+    "label_vf": "Traitement de données, hébergement et activités connexes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "63.12Z",
+    "NIV4": "63.12",
+    "NIV3": "63.1",
+    "NIV2": "63",
+    "NIV1": "J",
+    "label_vf": "Portails Internet"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "63.91Z",
+    "NIV4": "63.91",
+    "NIV3": "63.9",
+    "NIV2": "63",
+    "NIV1": "J",
+    "label_vf": "Activités des agences de presse"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "63.99Z",
+    "NIV4": "63.99",
+    "NIV3": "63.9",
+    "NIV2": "63",
+    "NIV1": "J",
+    "label_vf": "Autres services d'information n.c.a."
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "64.11Z",
+    "NIV4": "64.11",
+    "NIV3": "64.1",
+    "NIV2": "64",
+    "NIV1": "K",
+    "label_vf": "Activités de banque centrale"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "64.19Z",
+    "NIV4": "64.19",
+    "NIV3": "64.1",
+    "NIV2": "64",
+    "NIV1": "K",
+    "label_vf": "Autres intermédiations monétaires"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "64.20Z",
+    "NIV4": "64.20",
+    "NIV3": "64.2",
+    "NIV2": "64",
+    "NIV1": "K",
+    "label_vf": "Activités des sociétés holding"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "64.30Z",
+    "NIV4": "64.30",
+    "NIV3": "64.3",
+    "NIV2": "64",
+    "NIV1": "K",
+    "label_vf": "Fonds de placement et entités financières similaires"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "64.91Z",
+    "NIV4": "64.91",
+    "NIV3": "64.9",
+    "NIV2": "64",
+    "NIV1": "K",
+    "label_vf": "Crédit-bail"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "64.92Z",
+    "NIV4": "64.92",
+    "NIV3": "64.9",
+    "NIV2": "64",
+    "NIV1": "K",
+    "label_vf": "Autre distribution de crédit"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "64.99Z",
+    "NIV4": "64.99",
+    "NIV3": "64.9",
+    "NIV2": "64",
+    "NIV1": "K",
+    "label_vf": "Autres activ. serv. financiers sf assurance & c. de retraite, nca"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "65.11Z",
+    "NIV4": "65.11",
+    "NIV3": "65.1",
+    "NIV2": "65",
+    "NIV1": "K",
+    "label_vf": "Assurance vie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "65.12Z",
+    "NIV4": "65.12",
+    "NIV3": "65.1",
+    "NIV2": "65",
+    "NIV1": "K",
+    "label_vf": "Autres assurances"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "65.20Z",
+    "NIV4": "65.20",
+    "NIV3": "65.2",
+    "NIV2": "65",
+    "NIV1": "K",
+    "label_vf": "Réassurance"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "65.30Z",
+    "NIV4": "65.30",
+    "NIV3": "65.3",
+    "NIV2": "65",
+    "NIV1": "K",
+    "label_vf": "Caisses de retraite"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "66.11Z",
+    "NIV4": "66.11",
+    "NIV3": "66.1",
+    "NIV2": "66",
+    "NIV1": "K",
+    "label_vf": "Administration de marchés financiers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "66.12Z",
+    "NIV4": "66.12",
+    "NIV3": "66.1",
+    "NIV2": "66",
+    "NIV1": "K",
+    "label_vf": "Courtage de valeurs mobilières et de marchandises"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "66.19A",
+    "NIV4": "66.19",
+    "NIV3": "66.1",
+    "NIV2": "66",
+    "NIV1": "K",
+    "label_vf": "Supports juridiques de gestion de patrimoine mobilier"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "66.19B",
+    "NIV4": "66.19",
+    "NIV3": "66.1",
+    "NIV2": "66",
+    "NIV1": "K",
+    "label_vf": "Aut. activ. auxil. serv. financ., hors assur. & caisse retr. nca."
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "66.21Z",
+    "NIV4": "66.21",
+    "NIV3": "66.2",
+    "NIV2": "66",
+    "NIV1": "K",
+    "label_vf": "Évaluation des risques et dommages"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "66.22Z",
+    "NIV4": "66.22",
+    "NIV3": "66.2",
+    "NIV2": "66",
+    "NIV1": "K",
+    "label_vf": "Activités des agents et courtiers d'assurances"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "66.29Z",
+    "NIV4": "66.29",
+    "NIV3": "66.2",
+    "NIV2": "66",
+    "NIV1": "K",
+    "label_vf": "Aut. activités auxiliaires d'assurance et de caisses de retraite"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "66.30Z",
+    "NIV4": "66.30",
+    "NIV3": "66.3",
+    "NIV2": "66",
+    "NIV1": "K",
+    "label_vf": "Gestion de fonds"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "68.10Z",
+    "NIV4": "68.10",
+    "NIV3": "68.1",
+    "NIV2": "68",
+    "NIV1": "L",
+    "label_vf": "Activités des marchands de biens immobiliers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "68.20A",
+    "NIV4": "68.20",
+    "NIV3": "68.2",
+    "NIV2": "68",
+    "NIV1": "L",
+    "label_vf": "Location de logements"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "68.20B",
+    "NIV4": "68.20",
+    "NIV3": "68.2",
+    "NIV2": "68",
+    "NIV1": "L",
+    "label_vf": "Location de terrains et d'autres biens immobiliers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "68.31Z",
+    "NIV4": "68.31",
+    "NIV3": "68.3",
+    "NIV2": "68",
+    "NIV1": "L",
+    "label_vf": "Agences immobilières"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "68.32A",
+    "NIV4": "68.32",
+    "NIV3": "68.3",
+    "NIV2": "68",
+    "NIV1": "L",
+    "label_vf": "Administration d'immeubles et autres biens immobiliers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "68.32B",
+    "NIV4": "68.32",
+    "NIV3": "68.3",
+    "NIV2": "68",
+    "NIV1": "L",
+    "label_vf": "Supports juridiques de gestion de patrimoine immobilier"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "69.10Z",
+    "NIV4": "69.10",
+    "NIV3": "69.1",
+    "NIV2": "69",
+    "NIV1": "M",
+    "label_vf": "Activités juridiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "69.20Z",
+    "NIV4": "69.20",
+    "NIV3": "69.2",
+    "NIV2": "69",
+    "NIV1": "M",
+    "label_vf": "Activités comptables"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "70.10Z",
+    "NIV4": "70.10",
+    "NIV3": "70.1",
+    "NIV2": "70",
+    "NIV1": "M",
+    "label_vf": "Activités des sièges sociaux"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "70.21Z",
+    "NIV4": "70.21",
+    "NIV3": "70.2",
+    "NIV2": "70",
+    "NIV1": "M",
+    "label_vf": "Conseil en relations publiques et communication"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "70.22Z",
+    "NIV4": "70.22",
+    "NIV3": "70.2",
+    "NIV2": "70",
+    "NIV1": "M",
+    "label_vf": "Conseil pour les affaires et autres conseils de gestion"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "71.11Z",
+    "NIV4": "71.11",
+    "NIV3": "71.1",
+    "NIV2": "71",
+    "NIV1": "M",
+    "label_vf": "Activités d'architecture"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "71.12A",
+    "NIV4": "71.12",
+    "NIV3": "71.1",
+    "NIV2": "71",
+    "NIV1": "M",
+    "label_vf": "Activité des géomètres"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "71.12B",
+    "NIV4": "71.12",
+    "NIV3": "71.1",
+    "NIV2": "71",
+    "NIV1": "M",
+    "label_vf": "Ingénierie, études techniques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "71.20A",
+    "NIV4": "71.20",
+    "NIV3": "71.2",
+    "NIV2": "71",
+    "NIV1": "M",
+    "label_vf": "Contrôle technique automobile"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "71.20B",
+    "NIV4": "71.20",
+    "NIV3": "71.2",
+    "NIV2": "71",
+    "NIV1": "M",
+    "label_vf": "Analyses, essais et inspections techniques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "72.11Z",
+    "NIV4": "72.11",
+    "NIV3": "72.1",
+    "NIV2": "72",
+    "NIV1": "M",
+    "label_vf": "Recherche-développement en biotechnologie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "72.19Z",
+    "NIV4": "72.19",
+    "NIV3": "72.1",
+    "NIV2": "72",
+    "NIV1": "M",
+    "label_vf": "Recherche-développement : autres sciences physiques et naturelles"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "72.20Z",
+    "NIV4": "72.20",
+    "NIV3": "72.2",
+    "NIV2": "72",
+    "NIV1": "M",
+    "label_vf": "Recherche-développement en sciences humaines et sociales"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "73.11Z",
+    "NIV4": "73.11",
+    "NIV3": "73.1",
+    "NIV2": "73",
+    "NIV1": "M",
+    "label_vf": "Activités des agences de publicité"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "73.12Z",
+    "NIV4": "73.12",
+    "NIV3": "73.1",
+    "NIV2": "73",
+    "NIV1": "M",
+    "label_vf": "Régie publicitaire de médias"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "73.20Z",
+    "NIV4": "73.20",
+    "NIV3": "73.2",
+    "NIV2": "73",
+    "NIV1": "M",
+    "label_vf": "Études de marché et sondages"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "74.10Z",
+    "NIV4": "74.10",
+    "NIV3": "74.1",
+    "NIV2": "74",
+    "NIV1": "M",
+    "label_vf": "Activités spécialisées de design"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "74.20Z",
+    "NIV4": "74.20",
+    "NIV3": "74.2",
+    "NIV2": "74",
+    "NIV1": "M",
+    "label_vf": "Activités photographiques"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "74.30Z",
+    "NIV4": "74.30",
+    "NIV3": "74.3",
+    "NIV2": "74",
+    "NIV1": "M",
+    "label_vf": "Traduction et interprétation"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "74.90A",
+    "NIV4": "74.90",
+    "NIV3": "74.9",
+    "NIV2": "74",
+    "NIV1": "M",
+    "label_vf": "Activité des économistes de la construction"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "74.90B",
+    "NIV4": "74.90",
+    "NIV3": "74.9",
+    "NIV2": "74",
+    "NIV1": "M",
+    "label_vf": "Activités spécialisées, scientifiques et techniques diverses"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "75.00Z",
+    "NIV4": "75.00",
+    "NIV3": "75.0",
+    "NIV2": "75",
+    "NIV1": "M",
+    "label_vf": "Activités vétérinaires"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "77.11A",
+    "NIV4": "77.11",
+    "NIV3": "77.1",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location de courte durée voitures & véhicules auto. légers"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "77.11B",
+    "NIV4": "77.11",
+    "NIV3": "77.1",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location de longue durée voitures & véhicules automobiles légers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "77.12Z",
+    "NIV4": "77.12",
+    "NIV3": "77.1",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location et location-bail de camions"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "77.21Z",
+    "NIV4": "77.21",
+    "NIV3": "77.2",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location et location-bail d'articles de loisirs et de sport"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "77.22Z",
+    "NIV4": "77.22",
+    "NIV3": "77.2",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location de vidéocassettes et disques vidéo"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "77.29Z",
+    "NIV4": "77.29",
+    "NIV3": "77.2",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location et location-bail autres biens personnels et domestiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "77.31Z",
+    "NIV4": "77.31",
+    "NIV3": "77.3",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location et location-bail de machines et équipements agricoles"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "77.32Z",
+    "NIV4": "77.32",
+    "NIV3": "77.3",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location et location-bail machines & équipts pour la construction"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "77.33Z",
+    "NIV4": "77.33",
+    "NIV3": "77.3",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location et location-bail machines bureau & matériel informatique"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "77.34Z",
+    "NIV4": "77.34",
+    "NIV3": "77.3",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location et location-bail de matériels de transport par eau"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "77.35Z",
+    "NIV4": "77.35",
+    "NIV3": "77.3",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location et location-bail de matériels de transport aérien"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "77.39Z",
+    "NIV4": "77.39",
+    "NIV3": "77.3",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Location et location-bail machines, équipements et biens divers"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "77.40Z",
+    "NIV4": "77.40",
+    "NIV3": "77.4",
+    "NIV2": "77",
+    "NIV1": "N",
+    "label_vf": "Loc-bail de propriété intell. & sf oeuvres soumises à copyright"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "78.10Z",
+    "NIV4": "78.10",
+    "NIV3": "78.1",
+    "NIV2": "78",
+    "NIV1": "N",
+    "label_vf": "Activités des agences de placement de main-d'oeuvre"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "78.20Z",
+    "NIV4": "78.20",
+    "NIV3": "78.2",
+    "NIV2": "78",
+    "NIV1": "N",
+    "label_vf": "Activités des agences de travail temporaire"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "78.30Z",
+    "NIV4": "78.30",
+    "NIV3": "78.3",
+    "NIV2": "78",
+    "NIV1": "N",
+    "label_vf": "Autre mise à disposition de ressources humaines"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "79.11Z",
+    "NIV4": "79.11",
+    "NIV3": "79.1",
+    "NIV2": "79",
+    "NIV1": "N",
+    "label_vf": "Activités des agences de voyage"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "79.12Z",
+    "NIV4": "79.12",
+    "NIV3": "79.1",
+    "NIV2": "79",
+    "NIV1": "N",
+    "label_vf": "Activités des voyagistes"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "79.90Z",
+    "NIV4": "79.90",
+    "NIV3": "79.9",
+    "NIV2": "79",
+    "NIV1": "N",
+    "label_vf": "Autres services de réservation et activités connexes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "80.10Z",
+    "NIV4": "80.10",
+    "NIV3": "80.1",
+    "NIV2": "80",
+    "NIV1": "N",
+    "label_vf": "Activités de sécurité privée"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "80.20Z",
+    "NIV4": "80.20",
+    "NIV3": "80.2",
+    "NIV2": "80",
+    "NIV1": "N",
+    "label_vf": "Activités liées aux systèmes de sécurité"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "80.30Z",
+    "NIV4": "80.30",
+    "NIV3": "80.3",
+    "NIV2": "80",
+    "NIV1": "N",
+    "label_vf": "Activités d'enquête"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "81.10Z",
+    "NIV4": "81.10",
+    "NIV3": "81.1",
+    "NIV2": "81",
+    "NIV1": "N",
+    "label_vf": "Activités combinées de soutien lié aux bâtiments"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "81.21Z",
+    "NIV4": "81.21",
+    "NIV3": "81.2",
+    "NIV2": "81",
+    "NIV1": "N",
+    "label_vf": "Nettoyage courant des bâtiments"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "81.22Z",
+    "NIV4": "81.22",
+    "NIV3": "81.2",
+    "NIV2": "81",
+    "NIV1": "N",
+    "label_vf": "Autres activités nettoyage des bâtiments et nettoyage industriel"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "81.29A",
+    "NIV4": "81.29",
+    "NIV3": "81.2",
+    "NIV2": "81",
+    "NIV1": "N",
+    "label_vf": "Désinfection, désinsectisation, dératisation"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "81.29B",
+    "NIV4": "81.29",
+    "NIV3": "81.2",
+    "NIV2": "81",
+    "NIV1": "N",
+    "label_vf": "Autres activités de nettoyage n.c.a."
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "81.30Z",
+    "NIV4": "81.30",
+    "NIV3": "81.3",
+    "NIV2": "81",
+    "NIV1": "N",
+    "label_vf": "Services d'aménagement paysager"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "82.11Z",
+    "NIV4": "82.11",
+    "NIV3": "82.1",
+    "NIV2": "82",
+    "NIV1": "N",
+    "label_vf": "Services administratifs combinés de bureau"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "82.19Z",
+    "NIV4": "82.19",
+    "NIV3": "82.1",
+    "NIV2": "82",
+    "NIV1": "N",
+    "label_vf": "Photocopie prépa. documents & aut. activ. spéc. soutien de bureau"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "82.20Z",
+    "NIV4": "82.20",
+    "NIV3": "82.2",
+    "NIV2": "82",
+    "NIV1": "N",
+    "label_vf": "Activités de centres d'appels"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "82.30Z",
+    "NIV4": "82.30",
+    "NIV3": "82.3",
+    "NIV2": "82",
+    "NIV1": "N",
+    "label_vf": "Organisation de foires, salons professionnels et congrès"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "82.91Z",
+    "NIV4": "82.91",
+    "NIV3": "82.9",
+    "NIV2": "82",
+    "NIV1": "N",
+    "label_vf": "Activ. de recouvrement factures & d'info. financ. s/la clientèle"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "82.92Z",
+    "NIV4": "82.92",
+    "NIV3": "82.9",
+    "NIV2": "82",
+    "NIV1": "N",
+    "label_vf": "Activités de conditionnement"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "82.99Z",
+    "NIV4": "82.99",
+    "NIV3": "82.9",
+    "NIV2": "82",
+    "NIV1": "N",
+    "label_vf": "Autres activités de soutien aux entreprises n.c.a."
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "84.11Z",
+    "NIV4": "84.11",
+    "NIV3": "84.1",
+    "NIV2": "84",
+    "NIV1": "O",
+    "label_vf": "Administration publique générale"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "84.12Z",
+    "NIV4": "84.12",
+    "NIV3": "84.1",
+    "NIV2": "84",
+    "NIV1": "O",
+    "label_vf": "Adm. pub. tutelle santé form. cult. & social (aut que sécu. soc.)"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "84.13Z",
+    "NIV4": "84.13",
+    "NIV3": "84.1",
+    "NIV2": "84",
+    "NIV1": "O",
+    "label_vf": "Administration publique (tutelle) des activités économiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "84.21Z",
+    "NIV4": "84.21",
+    "NIV3": "84.2",
+    "NIV2": "84",
+    "NIV1": "O",
+    "label_vf": "Affaires étrangères"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "84.22Z",
+    "NIV4": "84.22",
+    "NIV3": "84.2",
+    "NIV2": "84",
+    "NIV1": "O",
+    "label_vf": "Défense"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "84.23Z",
+    "NIV4": "84.23",
+    "NIV3": "84.2",
+    "NIV2": "84",
+    "NIV1": "O",
+    "label_vf": "Justice"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "84.24Z",
+    "NIV4": "84.24",
+    "NIV3": "84.2",
+    "NIV2": "84",
+    "NIV1": "O",
+    "label_vf": "Activités d’ordre public et de sécurité"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "84.25Z",
+    "NIV4": "84.25",
+    "NIV3": "84.2",
+    "NIV2": "84",
+    "NIV1": "O",
+    "label_vf": "Services du feu et de secours"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "84.30A",
+    "NIV4": "84.30",
+    "NIV3": "84.3",
+    "NIV2": "84",
+    "NIV1": "O",
+    "label_vf": "Activités générales de sécurité sociale"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "84.30B",
+    "NIV4": "84.30",
+    "NIV3": "84.3",
+    "NIV2": "84",
+    "NIV1": "O",
+    "label_vf": "Gestion des retraites complémentaires"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "84.30C",
+    "NIV4": "84.30",
+    "NIV3": "84.3",
+    "NIV2": "84",
+    "NIV1": "O",
+    "label_vf": "Distribution sociale de revenus"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.10Z",
+    "NIV4": "85.10",
+    "NIV3": "85.1",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Enseignement pré-primaire"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.20Z",
+    "NIV4": "85.20",
+    "NIV3": "85.2",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Enseignement primaire"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.31Z",
+    "NIV4": "85.31",
+    "NIV3": "85.3",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Enseignement secondaire général"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.32Z",
+    "NIV4": "85.32",
+    "NIV3": "85.3",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Enseignement secondaire technique ou professionnel"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.41Z",
+    "NIV4": "85.41",
+    "NIV3": "85.4",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Enseignement post-secondaire non supérieur"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.42Z",
+    "NIV4": "85.42",
+    "NIV3": "85.4",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Enseignement supérieur"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.51Z",
+    "NIV4": "85.51",
+    "NIV3": "85.5",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Enseignement de disciplines sportives et d'activités de loisirs"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.52Z",
+    "NIV4": "85.52",
+    "NIV3": "85.5",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Enseignement culturel"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.53Z",
+    "NIV4": "85.53",
+    "NIV3": "85.5",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Enseignement de la conduite"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.59A",
+    "NIV4": "85.59",
+    "NIV3": "85.5",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Formation continue d'adultes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.59B",
+    "NIV4": "85.59",
+    "NIV3": "85.5",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Autres enseignements"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "85.60Z",
+    "NIV4": "85.60",
+    "NIV3": "85.6",
+    "NIV2": "85",
+    "NIV1": "P",
+    "label_vf": "Activités de soutien à l'enseignement"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.10Z",
+    "NIV4": "86.10",
+    "NIV3": "86.1",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Activités hospitalières"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.21Z",
+    "NIV4": "86.21",
+    "NIV3": "86.2",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Activité des médecins généralistes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.22A",
+    "NIV4": "86.22",
+    "NIV3": "86.2",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Activités de radiodiagnostic et de radiothérapie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.22B",
+    "NIV4": "86.22",
+    "NIV3": "86.2",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Activités chirurgicales"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.22C",
+    "NIV4": "86.22",
+    "NIV3": "86.2",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Autres activités des médecins spécialistes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.23Z",
+    "NIV4": "86.23",
+    "NIV3": "86.2",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Pratique dentaire"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.90A",
+    "NIV4": "86.90",
+    "NIV3": "86.9",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Ambulances"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.90B",
+    "NIV4": "86.90",
+    "NIV3": "86.9",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Laboratoires d'analyses médicales"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.90C",
+    "NIV4": "86.90",
+    "NIV3": "86.9",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Centres de collecte et banques d'organes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.90D",
+    "NIV4": "86.90",
+    "NIV3": "86.9",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Activités des infirmiers et des sages-femmes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.90E",
+    "NIV4": "86.90",
+    "NIV3": "86.9",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Activité profess. rééducation appareillage & pédicures-podologues"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "86.90F",
+    "NIV4": "86.90",
+    "NIV3": "86.9",
+    "NIV2": "86",
+    "NIV1": "Q",
+    "label_vf": "Activités de santé humaine non classées ailleurs"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "87.10A",
+    "NIV4": "87.10",
+    "NIV3": "87.1",
+    "NIV2": "87",
+    "NIV1": "Q",
+    "label_vf": "Hébergement médicalisé pour personnes âgées"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "87.10B",
+    "NIV4": "87.10",
+    "NIV3": "87.1",
+    "NIV2": "87",
+    "NIV1": "Q",
+    "label_vf": "Hébergement médicalisé pour enfants handicapés"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "87.10C",
+    "NIV4": "87.10",
+    "NIV3": "87.1",
+    "NIV2": "87",
+    "NIV1": "Q",
+    "label_vf": "Héberg. médicalisé adultes handicapés & autre héberg. médicalisé"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "87.20A",
+    "NIV4": "87.20",
+    "NIV3": "87.2",
+    "NIV2": "87",
+    "NIV1": "Q",
+    "label_vf": "Hébergement social pour handicapés mentaux et malades mentaux"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "87.20B",
+    "NIV4": "87.20",
+    "NIV3": "87.2",
+    "NIV2": "87",
+    "NIV1": "Q",
+    "label_vf": "Hébergement social pour toxicomanes"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "87.30A",
+    "NIV4": "87.30",
+    "NIV3": "87.3",
+    "NIV2": "87",
+    "NIV1": "Q",
+    "label_vf": "Hébergement social pour personnes âgées"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "87.30B",
+    "NIV4": "87.30",
+    "NIV3": "87.3",
+    "NIV2": "87",
+    "NIV1": "Q",
+    "label_vf": "Hébergement social pour handicapés  physiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "87.90A",
+    "NIV4": "87.90",
+    "NIV3": "87.9",
+    "NIV2": "87",
+    "NIV1": "Q",
+    "label_vf": "Hébergement social pour enfants en difficultés"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "87.90B",
+    "NIV4": "87.90",
+    "NIV3": "87.9",
+    "NIV2": "87",
+    "NIV1": "Q",
+    "label_vf": "Hébergement social pour adultes, familles en difficultés et autre"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "88.10A",
+    "NIV4": "88.10",
+    "NIV3": "88.1",
+    "NIV2": "88",
+    "NIV1": "Q",
+    "label_vf": "Aide à domicile"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "88.10B",
+    "NIV4": "88.10",
+    "NIV3": "88.1",
+    "NIV2": "88",
+    "NIV1": "Q",
+    "label_vf": "Accueil accompagn. sans héberg. adultes handicapés ou pers. âgées"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "88.10C",
+    "NIV4": "88.10",
+    "NIV3": "88.1",
+    "NIV2": "88",
+    "NIV1": "Q",
+    "label_vf": "Aide par le travail"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "88.91A",
+    "NIV4": "88.91",
+    "NIV3": "88.9",
+    "NIV2": "88",
+    "NIV1": "Q",
+    "label_vf": "Accueil de jeunes enfants"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "88.91B",
+    "NIV4": "88.91",
+    "NIV3": "88.9",
+    "NIV2": "88",
+    "NIV1": "Q",
+    "label_vf": "Accueil ou accompagnement sans hébergement d’enfants handicapés"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "88.99A",
+    "NIV4": "88.99",
+    "NIV3": "88.9",
+    "NIV2": "88",
+    "NIV1": "Q",
+    "label_vf": "Aut. accueil ou accompgnt sans hébergt d’enfants et adolescents"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "88.99B",
+    "NIV4": "88.99",
+    "NIV3": "88.9",
+    "NIV2": "88",
+    "NIV1": "Q",
+    "label_vf": "Action sociale sans hébergement n.c.a."
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "90.01Z",
+    "NIV4": "90.01",
+    "NIV3": "90.0",
+    "NIV2": "90",
+    "NIV1": "R",
+    "label_vf": "Arts du spectacle vivant"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "90.02Z",
+    "NIV4": "90.02",
+    "NIV3": "90.0",
+    "NIV2": "90",
+    "NIV1": "R",
+    "label_vf": "Activités de soutien au spectacle vivant"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "90.03A",
+    "NIV4": "90.03",
+    "NIV3": "90.0",
+    "NIV2": "90",
+    "NIV1": "R",
+    "label_vf": "Création artistique relevant des arts plastiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "90.03B",
+    "NIV4": "90.03",
+    "NIV3": "90.0",
+    "NIV2": "90",
+    "NIV1": "R",
+    "label_vf": "Autre création artistique"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "90.04Z",
+    "NIV4": "90.04",
+    "NIV3": "90.0",
+    "NIV2": "90",
+    "NIV1": "R",
+    "label_vf": "Gestion de salles de spectacles"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "91.01Z",
+    "NIV4": "91.01",
+    "NIV3": "91.0",
+    "NIV2": "91",
+    "NIV1": "R",
+    "label_vf": "Gestion des bibliothèques et des archives"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "91.02Z",
+    "NIV4": "91.02",
+    "NIV3": "91.0",
+    "NIV2": "91",
+    "NIV1": "R",
+    "label_vf": "Gestion des musées"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "91.03Z",
+    "NIV4": "91.03",
+    "NIV3": "91.0",
+    "NIV2": "91",
+    "NIV1": "R",
+    "label_vf": "Gestion sites monuments historiques & attractions tourist. simil."
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "91.04Z",
+    "NIV4": "91.04",
+    "NIV3": "91.0",
+    "NIV2": "91",
+    "NIV1": "R",
+    "label_vf": "Gest. des jardins botaniques et zoolog. et des réserv. naturelles"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "92.00Z",
+    "NIV4": "92.00",
+    "NIV3": "92.0",
+    "NIV2": "92",
+    "NIV1": "R",
+    "label_vf": "Organisation de jeux de hasard et d'argent"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "93.11Z",
+    "NIV4": "93.11",
+    "NIV3": "93.1",
+    "NIV2": "93",
+    "NIV1": "R",
+    "label_vf": "Gestion d'installations sportives"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "93.12Z",
+    "NIV4": "93.12",
+    "NIV3": "93.1",
+    "NIV2": "93",
+    "NIV1": "R",
+    "label_vf": "Activités de clubs de sports"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "93.13Z",
+    "NIV4": "93.13",
+    "NIV3": "93.1",
+    "NIV2": "93",
+    "NIV1": "R",
+    "label_vf": "Activités des centres de culture physique"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "93.19Z",
+    "NIV4": "93.19",
+    "NIV3": "93.1",
+    "NIV2": "93",
+    "NIV1": "R",
+    "label_vf": "Autres activités liées au sport"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "93.21Z",
+    "NIV4": "93.21",
+    "NIV3": "93.2",
+    "NIV2": "93",
+    "NIV1": "R",
+    "label_vf": "Activités des parcs d'attractions et parcs à thèmes"
+  },
+  {
+    "tags": [
+      "tertiary",
+      "tourism"
+    ],
+    "NIV5": "93.29Z",
+    "NIV4": "93.29",
+    "NIV3": "93.2",
+    "NIV2": "93",
+    "NIV1": "R",
+    "label_vf": "Autres activités récréatives et de loisirs"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "94.11Z",
+    "NIV4": "94.11",
+    "NIV3": "94.1",
+    "NIV2": "94",
+    "NIV1": "S",
+    "label_vf": "Activités des organisations patronales et consulaires"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "94.12Z",
+    "NIV4": "94.12",
+    "NIV3": "94.1",
+    "NIV2": "94",
+    "NIV1": "S",
+    "label_vf": "Activités des organisations professionnelles"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "94.20Z",
+    "NIV4": "94.20",
+    "NIV3": "94.2",
+    "NIV2": "94",
+    "NIV1": "S",
+    "label_vf": "Activités des syndicats de salariés"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "94.91Z",
+    "NIV4": "94.91",
+    "NIV3": "94.9",
+    "NIV2": "94",
+    "NIV1": "S",
+    "label_vf": "Activités des organisations religieuses"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "94.92Z",
+    "NIV4": "94.92",
+    "NIV3": "94.9",
+    "NIV2": "94",
+    "NIV1": "S",
+    "label_vf": "Activités des organisations politiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "94.99Z",
+    "NIV4": "94.99",
+    "NIV3": "94.9",
+    "NIV2": "94",
+    "NIV1": "S",
+    "label_vf": "Autres organisations fonctionnant par adhésion volontaire"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "95.11Z",
+    "NIV4": "95.11",
+    "NIV3": "95.1",
+    "NIV2": "95",
+    "NIV1": "S",
+    "label_vf": "Réparation d'ordinateurs et d'équipements périphériques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "95.12Z",
+    "NIV4": "95.12",
+    "NIV3": "95.1",
+    "NIV2": "95",
+    "NIV1": "S",
+    "label_vf": "Réparation d'équipements de communication"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "95.21Z",
+    "NIV4": "95.21",
+    "NIV3": "95.2",
+    "NIV2": "95",
+    "NIV1": "S",
+    "label_vf": "Réparation de produits électroniques grand public"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "95.22Z",
+    "NIV4": "95.22",
+    "NIV3": "95.2",
+    "NIV2": "95",
+    "NIV1": "S",
+    "label_vf": "Réparation appareils électromén. & équipts maison & jardin"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "95.23Z",
+    "NIV4": "95.23",
+    "NIV3": "95.2",
+    "NIV2": "95",
+    "NIV1": "S",
+    "label_vf": "Réparation de chaussures et d'articles en cuir"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "95.24Z",
+    "NIV4": "95.24",
+    "NIV3": "95.2",
+    "NIV2": "95",
+    "NIV1": "S",
+    "label_vf": "Réparation de meubles et d'équipements du foyer"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "95.25Z",
+    "NIV4": "95.25",
+    "NIV3": "95.2",
+    "NIV2": "95",
+    "NIV1": "S",
+    "label_vf": "Réparation d'articles d'horlogerie et de bijouterie"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "95.29Z",
+    "NIV4": "95.29",
+    "NIV3": "95.2",
+    "NIV2": "95",
+    "NIV1": "S",
+    "label_vf": "Réparation d'autres biens personnels et domestiques"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "96.01A",
+    "NIV4": "96.01",
+    "NIV3": "96.0",
+    "NIV2": "96",
+    "NIV1": "S",
+    "label_vf": "Blanchisserie-teinturerie de gros"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "96.01B",
+    "NIV4": "96.01",
+    "NIV3": "96.0",
+    "NIV2": "96",
+    "NIV1": "S",
+    "label_vf": "Blanchisserie-teinturerie de détail"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "96.02A",
+    "NIV4": "96.02",
+    "NIV3": "96.0",
+    "NIV2": "96",
+    "NIV1": "S",
+    "label_vf": "Coiffure"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "96.02B",
+    "NIV4": "96.02",
+    "NIV3": "96.0",
+    "NIV2": "96",
+    "NIV1": "S",
+    "label_vf": "Soins de beauté"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "96.03Z",
+    "NIV4": "96.03",
+    "NIV3": "96.0",
+    "NIV2": "96",
+    "NIV1": "S",
+    "label_vf": "Services funéraires"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "96.04Z",
+    "NIV4": "96.04",
+    "NIV3": "96.0",
+    "NIV2": "96",
+    "NIV1": "S",
+    "label_vf": "Entretien corporel"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "96.09Z",
+    "NIV4": "96.09",
+    "NIV3": "96.0",
+    "NIV2": "96",
+    "NIV1": "S",
+    "label_vf": "Autres services personnels n.c.a."
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "97.00Z",
+    "NIV4": "97.00",
+    "NIV3": "97.0",
+    "NIV2": "97",
+    "NIV1": "T",
+    "label_vf": "Activités des ménages  : employeurs de personnel domestique"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "98.10Z",
+    "NIV4": "98.10",
+    "NIV3": "98.1",
+    "NIV2": "98",
+    "NIV1": "T",
+    "label_vf": "Activ. indifférenciées ménages : producteurs biens (usage propre)"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "98.20Z",
+    "NIV4": "98.20",
+    "NIV3": "98.2",
+    "NIV2": "98",
+    "NIV1": "T",
+    "label_vf": "Activ. indifférenciées ménages  : produc. services (usage propre)"
+  },
+  {
+    "tags": [
+      "tertiary"
+    ],
+    "NIV5": "99.00Z",
+    "NIV4": "99.00",
+    "NIV3": "99.0",
+    "NIV2": "99",
+    "NIV1": "U",
+    "label_vf": "Activités des organisations et organismes extraterritoriaux"
+  }
+]

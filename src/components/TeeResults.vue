@@ -12,12 +12,18 @@
 
   <!-- RESULTS ALERT -->
   <DsfrAlert
-    v-if="trackConfig && trackConfig.showAlert"
-    :title="choices.t(`results.${resultsProgsLen ? 'alertTitle' : 'alertTitleNoResult'}`)"
-    :description="choices.t(`results.${resultsProgsLen ? 'alertDescription' : 'alertNoResult'}`)"
-    :type="resultsProgsLen ? 'success' : 'warning'">
+    v-if="trackConfig && trackConfig.showAlertResults && resultsProgsLen"
+    :title="choices.t('results.alertTitle')"
+    :description="choices.t('results.alertDescription')"
+    type="success">
   </DsfrAlert>
-  
+  <DsfrAlert
+    v-if="trackConfig && trackConfig.showAlertNoResults && !resultsProgsLen"
+    :title="choices.t('results.alertTitleNoResults')"
+    :description="choices.t('results.alertNoResults')"
+    type="warning">
+  </DsfrAlert>
+
   <!-- DEBUGGING -->
   <h4
     v-if="trackConfig && trackConfig.showResultsTitle && resultsProgsLen"
@@ -26,7 +32,7 @@
     ({{ resultsProgsLen }})
   </h4>
 
-  <!-- PROGRAMS AS LIST IN ACCORDIONS -->
+  <!-- PROGRAMS AS LIST OF CARDS -->
   <div 
     v-if="resultsProgsLen"
     class="fr-container fr-px-0 fr-pt-6v">

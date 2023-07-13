@@ -37,7 +37,7 @@ conditions:
   - type: structure_sizes
     operator: "or"
     value: 
-      - tpe
+      - TPE
   - type: user_goals
     operator: "or"
     value: 
