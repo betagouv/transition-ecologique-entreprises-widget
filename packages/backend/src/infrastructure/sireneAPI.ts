@@ -63,7 +63,7 @@ const parseEstablishment = (establishmentDocument: EstablishmentDocument): Estab
       streetLabel: etablissement.adresseEtablissement.libelleVoieEtablissement,
       zipCode: etablissement.adresseEtablissement.codePostalEtablissement,
       cityLabel: etablissement.adresseEtablissement.libelleCommuneEtablissement,
-      cityCode: etablissement.adresseEtablissement.codePostalEtablissement
+      cityCode: etablissement.adresseEtablissement.codeCommuneEtablissement
     }
   }
 }
