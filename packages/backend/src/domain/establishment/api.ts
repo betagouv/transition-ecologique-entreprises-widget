@@ -3,4 +3,4 @@ import { Establishment } from './establishmentType'
 
 type EstablishmentResult = Result<Establishment, Error>
 
-export type fetchEtablishment = (siret: string) => Promise<EstablishmentResult>
+export type fetchEstablishment = (siret: string) => Promise<EstablishmentResult>

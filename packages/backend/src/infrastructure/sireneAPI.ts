@@ -1,16 +1,18 @@
-
 import axios, { AxiosError, AxiosResponse } from 'axios'
 import { EstablishmentDocument } from './types'
 import { ensureError } from '../helpers/errors'
 import { Result } from 'true-myth'
-import { EtablissementRepository } from '../domain/spi'
-import { Establishment, EstablishmentNotFoundError } from '../domain/establishment/establishmentType'
+import { EstablishmentRepository } from '../domain/spi'
+import {
+  Establishment,
+  EstablishmentNotFoundError
+} from '../domain/establishment/establishmentType'
 
 /**
- * getEtablissement reads the API token from an environment
+ * getEstablishment reads the API token from an environment
  * variable and get an Établissement by its siret from the Sirene API
  */
-export const getEtablissement: EtablissementRepository['get'] = async (siret) => {
+export const getEstablishment: EstablishmentRepository['get'] = async (siret) => {
   const token = process.env['SIRENE_API_TOKEN'] || ''
   return requestSireneAPI(token, siret)
 }
@@ -31,7 +33,8 @@ export const requestSireneAPI = async (
     const response: AxiosResponse<EstablishmentDocument> = await axios.get(api_sirene_url, {
       headers: makeHeaders(token)
     })
-    return Result.ok(response.data as Establishment)
+
+    return Result.ok(parseEstablishment(response.data))
   } catch (err: unknown) {
     let error = ensureError(err)
 
@@ -42,6 +45,26 @@ export const requestSireneAPI = async (
     }
 
     return Result.err(error)
+  }
+}
+
+const parseEstablishment = (establishmentDocument: EstablishmentDocument): Establishment => {
+  const etablissement = establishmentDocument.etablissement
+  return {
+    siren: etablissement.siren,
+    nic: etablissement.nic,
+    siret: etablissement.siret,
+    creationDate: etablissement.uniteLegale.dateCreationUniteLegale,
+    denomination: etablissement.uniteLegale.denominationUniteLegale,
+    nafCode: etablissement.uniteLegale.activitePrincipaleUniteLegale,
+    address: {
+      streetNumber: etablissement.adresseEtablissement.numeroVoieEtablissement,
+      streetType: etablissement.adresseEtablissement.typeVoieEtablissement,
+      streetLabel: etablissement.adresseEtablissement.libelleVoieEtablissement,
+      zipCode: etablissement.adresseEtablissement.codePostalEtablissement,
+      cityLabel: etablissement.adresseEtablissement.libelleCommuneEtablissement,
+      cityCode: etablissement.adresseEtablissement.codePostalEtablissement
+    }
   }
 }
 

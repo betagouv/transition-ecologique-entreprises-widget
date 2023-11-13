@@ -1,20 +1,21 @@
-import { EtablissementRepository, ContactInfoRepository } from './spi'
-import { fetchEtablissement, postNewContact } from './api'
+import { EstablishmentRepository, ContactInfoRepository } from './spi'
+import { postNewContact } from './api'
+import { fetchEstablishment } from './establishment/api'
 
 /**
  * Injects infrastructure dependency into domain features
  */
-export const createEtablissementFeatures = (repo: EtablissementRepository) => {
+export const createEstablishmentFeatures = (repo: EstablishmentRepository) => {
   /*
-   * fetchEtablissement passes through the Promise of the infrastructure layer
-   * (promise of Etablissement in case of success, Error otherwise)
+   * fetchEstablishment passes through the Promise of the infrastructure layer
+   * (promise of Establishment in case of success, Error otherwise)
    * @param siret: a SIRET. Its format is expected to be 14 digits.
    */
-  const fetchEtablissement: fetchEtablissement = async (siret) => {
+  const fetchEstablishment: fetchEstablishment = async (siret) => {
     return repo.get(siret)
   }
 
-  return { fetchEtablissement }
+  return { fetchEstablishment }
 }
 
 export const createContactFeatures = (repo: ContactInfoRepository) => {
