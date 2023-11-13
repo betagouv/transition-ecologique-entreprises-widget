@@ -1,9 +1,10 @@
-import { EstablishmentNotFoundError, Etablissement } from '../domain/types'
+
 import axios, { AxiosError, AxiosResponse } from 'axios'
-import { EtablissementDocument } from './types'
+import { EstablishmentDocument } from './types'
 import { ensureError } from '../helpers/errors'
 import { Result } from 'true-myth'
 import { EtablissementRepository } from '../domain/spi'
+import { Establishment, EstablishmentNotFoundError } from '../domain/establishment/establishmentType'
 
 /**
  * getEtablissement reads the API token from an environment
@@ -23,14 +24,14 @@ export const getEtablissement: EtablissementRepository['get'] = async (siret) =>
 export const requestSireneAPI = async (
   token: string,
   siret: string
-): Promise<Result<Etablissement, Error>> => {
+): Promise<Result<Establishment, Error>> => {
   const api_sirene_url = `https://api.insee.fr/entreprises/sirene/V3/siret/${siret}`
 
   try {
-    const response: AxiosResponse<EtablissementDocument> = await axios.get(api_sirene_url, {
+    const response: AxiosResponse<EstablishmentDocument> = await axios.get(api_sirene_url, {
       headers: makeHeaders(token)
     })
-    return Result.ok(response.data as Etablissement)
+    return Result.ok(response.data as Establishment)
   } catch (err: unknown) {
     let error = ensureError(err)
 

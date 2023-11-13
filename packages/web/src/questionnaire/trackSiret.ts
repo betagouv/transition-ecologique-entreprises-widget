@@ -95,14 +95,14 @@ export const siret: Track = {
               from: DataMappingFrom.RawData,
               id: 'naf',
               help: 'https://www.insee.fr/fr/information/2120875',
-              path: 'etablissement.uniteLegale.activitePrincipaleUniteLegale',
+              path: 'nafCode',
               dataField: 'codeNaf',
               onlyRemap: true
             },
             {
               from: DataMappingFrom.RawData,
               id: 'region',
-              path: 'etablissement.adresseEtablissement.codeCommuneEtablissement',
+              path: 'address.cityCode',
               dataField: 'région',
               onlyRemap: true,
               cleaning: [
@@ -117,7 +117,7 @@ export const siret: Track = {
             {
               from: DataMappingFrom.RawData,
               id: 'secteur',
-              path: 'etablissement.uniteLegale.activitePrincipaleUniteLegale',
+              path: 'nafCode',
               dataField: '.',
               onlyRemap: true,
               cleaning: [
@@ -148,7 +148,7 @@ export const siret: Track = {
             {
               from: DataMappingFrom.RawData,
               id: 'codeNAF1',
-              path: 'etablissement.uniteLegale.activitePrincipaleUniteLegale',
+              path: 'nafCode',
               dataField: '.',
               onlyRemap: true,
               cleaning: [
@@ -173,7 +173,7 @@ export const siret: Track = {
             {
               from: DataMappingFrom.RawData,
               id: 'sectorLabel',
-              path: 'etablissement.uniteLegale.activitePrincipaleUniteLegale',
+              path: 'nafCode',
               dataField: 'secteur',
               onlyRemap: true,
               cleaning: [
@@ -188,28 +188,28 @@ export const siret: Track = {
             {
               from: DataMappingFrom.RawData,
               id: 'denomination',
-              path: 'etablissement.uniteLegale.denominationUniteLegale',
+              path: 'denomination',
               dataField: 'denomination',
               onlyRemap: true
             },
             {
               from: DataMappingFrom.RawData,
               id: 'city',
-              path: 'etablissement.adresseEtablissement.libelleCommuneEtablissement',
+              path: 'address.cityLabel',
               dataField: 'ville',
               onlyRemap: true
             },
             {
               from: DataMappingFrom.RawData,
               id: 'postalCode',
-              path: 'etablissement.adresseEtablissement.codePostalEtablissement',
+              path: 'address.zipCode',
               dataField: 'codePostal',
               onlyRemap: true
             }
             // {
             //   from: DataMappingFrom.RawData,
             //   id: 'size',
-            //   path: 'etablissement.uniteLegale.categorieEntreprise',
+            //   path: 'uniteLegale.categorieEntreprise',
             //   dataField: 'structure_sizes',
             //   onlyRemap: true
             // },
@@ -271,9 +271,9 @@ export const siret: Track = {
             // },
             {
               respFields: [
-                'raw.etablissement.adresseEtablissement.numeroVoieEtablissement',
-                'raw.etablissement.adresseEtablissement.typeVoieEtablissement',
-                'raw.etablissement.adresseEtablissement.libelleVoieEtablissement',
+                'raw.address.streetNumber',
+                'raw.address.streetType',
+                'raw.address.streetLabel',
                 'data.codePostal',
                 'data.ville'
               ],
@@ -281,7 +281,7 @@ export const siret: Track = {
               icon: 'fr-icon-map-pin-2-line'
             },
             {
-              respFields: ['raw.etablissement.uniteLegale.dateCreationUniteLegale'],
+              respFields: ['raw.creationDate'],
               label: 'Création le',
               // prefix: 'Création le ',
               icon: 'fr-icon-time-line',

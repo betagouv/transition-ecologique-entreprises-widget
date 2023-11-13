@@ -28,3 +28,6 @@ retrieving domain objects from external data sources are in a "repository",
 through which concrete implementations are injected via the "createFeatures" 
 function.
 
+
+## Swagger
+url: localhost:3000/api/docs

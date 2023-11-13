@@ -4,18 +4,16 @@ export interface Establishment {
   siren: string
   nic: string
   siret: string
-  uniteLegale: {
-    dateCreationUniteLegale: string
-    denominationUniteLegale: string
-    activitePrincipaleUniteLegale: string
-  }
-  adresseEtablissement: {
-    numeroVoieEtablissement: string
-    typeVoieEtablissement: string
-    libelleVoieEtablissement: string
-    codePostalEtablissement: string
-    libelleCommuneEtablissement: string
-    codeCommuneEtablissement: string
+  creationDate: string
+  denomination: string
+  nafCode: string
+  address: {
+    streetNumber: string
+    streetType: string
+    streetLabel: string
+    zipCode: string
+    cityLabel: string
+    cityCode: string
   }
 }
 
