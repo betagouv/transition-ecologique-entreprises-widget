@@ -1,7 +1,10 @@
 import { Body, Controller, Post, Route, SuccessResponse, TsoaResponse, Res, Example } from 'tsoa'
 import { createEtablissementFeatures } from '../domain/features'
 import { EtablissementRepository } from '../domain/spi'
-import { EstablishmentNotFoundError, Etablissement } from '../domain/types'
+import {
+  EstablishmentNotFoundError,
+  Establishment
+} from '../domain/establishment/establishmentType'
 import { getEtablissement } from '../infrastructure/sirene-API'
 import { ErrorJSON, ValidateErrorJSON } from './types'
 
@@ -133,14 +136,14 @@ export class SireneController extends Controller {
    * @example requestBody: {"siret": "83014132100034"}
    */
 
-  @Example<Etablissement>(exampleEtablissement)
+  @Example<Establishment>(exampleEtablissement)
   @Post('get_by_siret')
   public async health(
     @Body() requestBody: SiretBody,
     @Res() requestFailedResponse: TsoaResponse<500, ErrorJSON>,
     @Res() _validationFailedResponse: TsoaResponse<422, ValidateErrorJSON>,
     @Res() notFoundResponse: TsoaResponse<404, EstablishmentNotFoundErrorJSON>
-  ): Promise<Etablissement> {
+  ): Promise<Establishment> {
     const requestedSiret = requestBody.siret
 
     const feat = createEtablissementFeatures(etablissementRepository)
