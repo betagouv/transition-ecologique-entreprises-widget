@@ -15,6 +15,8 @@ export class StatisticsController extends Controller {
 
     if (opportunityResult.isErr) {
       const err = opportunityResult.error
+
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-return
       return requestFailedResponse(500, { message: `Server internal error: ${err.message}` })
     }
 

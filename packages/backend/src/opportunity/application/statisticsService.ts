@@ -16,12 +16,12 @@ const fakeStatistics: Statistics = {
 }
 
 const fakeStatisticsRepository: StatisticsRepository = {
-  get: async () => Result.ok(fakeStatistics)
+  get: async () => Promise.resolve(Result.ok(fakeStatistics))
 }
 
 export default class StatisticsService {
   public async get(): Promise<Result<Statistics, Error>> {
-    return Promise.resolve(this._getStatisticsRepository().get())
+    return this._getStatisticsRepository().get()
   }
 
   private _getStatisticsRepository(): StatisticsRepository {
