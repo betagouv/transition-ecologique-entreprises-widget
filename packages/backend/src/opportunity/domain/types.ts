@@ -35,9 +35,6 @@ export interface OpportunityId {
   id: string
 }
 
-export type Year = `${number}${number}${number}${number}`
-export type Month = `${number}${number}`
-
 export type DemandsTimeSeries = {
   year: YYYY
   month: MM
