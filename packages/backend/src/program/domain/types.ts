@@ -1,4 +1,5 @@
 import { QuestionnaireRoute } from '../../../../common/src/questionnaire/types'
+import { Sector } from '../infrastructure/preprocessProgramsPublicodes'
 
 export { type Program } from '@tee/data/src/type/program'
 export { type Operators } from '@tee/data/src/generated/program'
@@ -20,7 +21,7 @@ interface QuestionnaireDataSpecificGoal {
   region: string
   structure_sizes: string // enum ?
   denomination: string
-  secteur: string
+  secteur: Sector
   'entreprise . effectif': number
   'questionnaire . objectif prioritaire . est mon impact environnemental': OuiNon
   'questionnaire . objectif prioritaire . est ma performance énergétique': OuiNon

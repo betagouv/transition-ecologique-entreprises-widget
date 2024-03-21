@@ -2,13 +2,34 @@ import { QuestionnaireRoute } from '../../../../common/src/questionnaire/types'
 import { type QuestionnaireData, Program } from '../domain/types'
 import { type PublicodesInputData, PublicodesKeys, PublicodesQuestionnaireRoute } from './types'
 
+export enum Sector {
+  Craftsmanship = 'artisanat',
+  Industry = 'industrie',
+  Tourism = 'tourisme',
+  Tertiary = 'tertiaire',
+  Agriculture = 'agriculture',
+  Other = 'autre secteur'
+}
+
+// const SectorActivityPrefix = ""
+
+// export enum EntrepriseSector {
+//   Craftsmanship = SectorActivityPrefix + Sector.Craftsmanship,
+//   Industry = SectorActivityPrefix + Sector.Industry,
+//   Tourism = SectorActivityPrefix + Sector.Tourism,
+//   Tertiary = SectorActivityPrefix + Sector.Tertiary,
+//   Agriculture = SectorActivityPrefix + Sector.Agriculture,
+//   Other = SectorActivityPrefix + Sector.Other
+// }
+
+
 export const SectorByNAF = {
-  [EntrepriseSector.Craftsmanship]: ['C', 'F', 'G'],
-  [EntrepriseSector.Industry]: ['B', 'C', 'D', 'E'],
-  [EntrepriseSector.Tourism]: ['I'],
-  [EntrepriseSector.Tertiary]: ['G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U'],
-  [EntrepriseSector.Agriculture]: ['A'],
-  [EntrepriseSector.Other]: ['D', 'E', 'F', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U']
+  [Sector.Craftsmanship]: ['C', 'F', 'G'],
+  [Sector.Industry]: ['B', 'C', 'D', 'E'],
+  [Sector.Tourism]: ['I'],
+  [Sector.Tertiary]: ['G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U'],
+  [Sector.Agriculture]: ['A'],
+  [Sector.Other]: ['D', 'E', 'F', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U']
 }
 
 /** preprocesses the data gathered from the questionnaire into variables
@@ -25,24 +46,24 @@ export const preprocessInputForPublicodes = (
 
   if (questionnaireData.codeNaf) publicodesData['entreprise . code NAF'] = enquotePublicodesLiteralString(questionnaireData.codeNaf)
 
-  let codeNaf1: string[]
+  let codeNaf1Consolidated: string[]
 
   if (questionnaireData.secteur) {
-    codeNaf1 = SectorByNAF[questionnaireData.secteur]
-  } else if (questionnaireData.codeNaf1) {
-    codeNaf1 = [questionnaireData.codeNaf1]
+    codeNaf1Consolidated = SectorByNAF[questionnaireData.secteur]
+  } else if (questionnaireData.codeNAF1) {
+    codeNaf1Consolidated = [questionnaireData.codeNAF1]
   } else {
     // TOFIX
     // Should never happen
     // Update the QuestionnaireData type accordingly
-    codeNaf1 = []
+    codeNaf1Consolidated = []
   }
 
-  if (codeNaf1) {
-    export const NAF1Letters = [...'ABCDEFGHIJKLMNOPQRSTU'] as const
+  if (codeNaf1Consolidated) {
+    const NAF1Letters = [...'ABCDEFGHIJKLMNOPQRSTU'] as const
     NAF1Letters.forEach((NAF1) => {
       const publicodeNAF1Key = 'entreprise . code NAF niveau 1 . est ' + NAF1
-      if (NAF1 in questionnaireData.codeNaf1) {
+      if (NAF1 in codeNaf1Consolidated) {
         publicodesData[publicodeNAF1Key] = 'oui'
       } else {
         publicodesData[publicodeNAF1Key] = 'non'
