@@ -2,9 +2,6 @@
 // console.log(`questionnaire.trackSiret > FUNCTION_NAME > MSG_OR_VALUE :`)
 
 import {
-  codesNAF1,
-  NAF1Letters,
-  NAF1ToVar,
   CallbackActions,
   CallbackMethods,
   CleanerOperations,

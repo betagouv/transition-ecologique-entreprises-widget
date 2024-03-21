@@ -16,6 +16,18 @@ export const preprocessInputForPublicodes = (
 
   if (questionnaireData.codeNaf) publicodesData['entreprise . code NAF'] = enquotePublicodesLiteralString(questionnaireData.codeNaf)
 
+
+// NAF CODES
+// // Associates a NAF1 (composed of 1 letter) to its expected publicode variable
+// export const NAF1ToVar = (letter: string): string => Entreprise.CodeNAF1 + letter
+
+// export const NAF1Letters = [...'ABCDEFGHIJKLMNOPQRSTU'] as const
+
+// // publicodes variable initialization to "non"
+// export const codesNAF1: { [p: string]: YesNo } = Object.fromEntries(NAF1Letters.map((l) => [NAF1ToVar(l), YesNo.No]))
+
+
+
   publicodesData.région = questionnaireData.region
 
   const route = questionnaireData.questionnaire_route
