@@ -2,6 +2,15 @@ import { QuestionnaireRoute } from '../../../../common/src/questionnaire/types'
 import { type QuestionnaireData, Program } from '../domain/types'
 import { type PublicodesInputData, PublicodesKeys, PublicodesQuestionnaireRoute } from './types'
 
+export const SectorByNAF = {
+  [EntrepriseSector.Craftsmanship]: ['C', 'F', 'G'],
+  [EntrepriseSector.Industry]: ['B', 'C', 'D', 'E'],
+  [EntrepriseSector.Tourism]: ['I'],
+  [EntrepriseSector.Tertiary]: ['G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U'],
+  [EntrepriseSector.Agriculture]: ['A'],
+  [EntrepriseSector.Other]: ['D', 'E', 'F', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U']
+}
+
 /** preprocesses the data gathered from the questionnaire into variables
  * needed by publicodes */
 export const preprocessInputForPublicodes = (
@@ -16,17 +25,30 @@ export const preprocessInputForPublicodes = (
 
   if (questionnaireData.codeNaf) publicodesData['entreprise . code NAF'] = enquotePublicodesLiteralString(questionnaireData.codeNaf)
 
+  let codeNaf1: string[]
 
-// NAF CODES
-// // Associates a NAF1 (composed of 1 letter) to its expected publicode variable
-// export const NAF1ToVar = (letter: string): string => Entreprise.CodeNAF1 + letter
+  if (questionnaireData.secteur) {
+    codeNaf1 = SectorByNAF[questionnaireData.secteur]
+  } else if (questionnaireData.codeNaf1) {
+    codeNaf1 = [questionnaireData.codeNaf1]
+  } else {
+    // TOFIX
+    // Should never happen
+    // Update the QuestionnaireData type accordingly
+    codeNaf1 = []
+  }
 
-// export const NAF1Letters = [...'ABCDEFGHIJKLMNOPQRSTU'] as const
-
-// // publicodes variable initialization to "non"
-// export const codesNAF1: { [p: string]: YesNo } = Object.fromEntries(NAF1Letters.map((l) => [NAF1ToVar(l), YesNo.No]))
-
-
+  if (codeNaf1) {
+    export const NAF1Letters = [...'ABCDEFGHIJKLMNOPQRSTU'] as const
+    NAF1Letters.forEach((NAF1) => {
+      const publicodeNAF1Key = 'entreprise . code NAF niveau 1 . est ' + NAF1
+      if (NAF1 in questionnaireData.codeNaf1) {
+        publicodesData[publicodeNAF1Key] = 'oui'
+      } else {
+        publicodesData[publicodeNAF1Key] = 'non'
+      }
+    })
+  }
 
   publicodesData.région = questionnaireData.region
 

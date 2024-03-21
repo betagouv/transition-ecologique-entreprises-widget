@@ -16,6 +16,10 @@ export enum Questionnaire {
   priorityObjective = 'questionnaire . objectif prioritaire . est '
 }
 
+// TOFIX before merge
+// remove enums not used in front
+// duplicated in backend
+
 export enum Sector {
   Craftsmanship = 'artisanat',
   Industry = 'industrie',
