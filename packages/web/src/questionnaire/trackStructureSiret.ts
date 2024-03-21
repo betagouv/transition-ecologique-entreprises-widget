@@ -93,19 +93,8 @@ export const siret: Track = {
               from: DataMappingFrom.RawData,
               id: 'codeNAF1',
               path: 'nafSectionCode',
-              dataField: '.',
-              onlyRemap: true,
-              cleaning: [
-                {
-                  operation: CleanerOperations.findFromDict,
-                  dict: Object.fromEntries(NAF1Letters.map((l) => [l, { [NAF1ToVar(l)]: 'oui' }]))
-                  // => { "entreprise . code NAF . est A": 'oui' }
-                },
-                {
-                  operation: CleanerOperations.injectInObject,
-                  object: { ...codesNAF1 }
-                }
-              ]
+              dataField: 'codeNAF1',
+              onlyRemap: true
             },
             {
               from: DataMappingFrom.RawData,
