@@ -22,7 +22,7 @@ const dataTarget = {
   codeNAF1: '',
   ville: '',
   codePostal: '',
-  région: null,
+  region: null,
   structure_sizes: '',
   denomination: '',
   secteur: undefined
@@ -87,13 +87,6 @@ export const siret: Track = {
               help: 'https://www.insee.fr/fr/information/2120875',
               path: 'nafCode',
               dataField: 'codeNaf',
-              onlyRemap: true
-            },
-            {
-              from: DataMappingFrom.RawData,
-              id: 'region',
-              path: 'region',
-              dataField: 'région',
               onlyRemap: true
             },
             {

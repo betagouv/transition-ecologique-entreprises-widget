@@ -3,8 +3,8 @@ import { QuestionnaireRoute } from '../../../../common/src/questionnaire/types'
 export { type Program } from '@tee/data/src/type/program'
 export { type Operators } from '@tee/data/src/generated/program'
 
-export interface QuestionnaireData {
-  codeNaf?: string
+
+export interface QuestionnaireData extends QuestionnaireDataSpecificGoal {
   questionnaire_route?: QuestionnaireRoute
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any
@@ -14,11 +14,11 @@ type OuiNon = 'oui' | 'non'
 
 interface QuestionnaireDataSpecificGoal {
   siret: string
-  codeNaf: string
+  codeNaf?: string 
   codeNAF1?: string
   ville: string
   codePostal: string
-  région: string
+  region: string
   structure_sizes: string // enum ?
   denomination: string
   secteur: string

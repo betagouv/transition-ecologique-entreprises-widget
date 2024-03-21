@@ -1,4 +1,5 @@
 export interface PublicodesInputData {
+  région?: string
   [PublicodesKeys.NAFCode]?: string
   [PublicodesKeys.ValidityStart]?: string
   [PublicodesKeys.ValidityEnd]?: string

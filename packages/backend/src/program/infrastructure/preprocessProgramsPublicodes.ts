@@ -16,6 +16,8 @@ export const preprocessInputForPublicodes = (
 
   if (questionnaireData.codeNaf) publicodesData['entreprise . code NAF'] = enquotePublicodesLiteralString(questionnaireData.codeNaf)
 
+  publicodesData.région = questionnaireData.region
+
   const route = questionnaireData.questionnaire_route
   if (route) {
     publicodesData[PublicodesKeys.QuestionnaireRoute] = convertQuestionnaireRoute(route)

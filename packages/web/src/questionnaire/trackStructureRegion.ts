@@ -82,7 +82,7 @@ const nextExceptions: NextTrackRuleSet[] = [
 
 const regionsOptions = regionsList.map((regName) => {
   return {
-    value: { région: regName },
+    value: { region: regName },
     title: { fr: regName },
     label: { fr: regName },
     next: {
