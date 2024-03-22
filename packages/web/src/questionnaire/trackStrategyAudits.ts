@@ -1,5 +1,6 @@
 import type { Track } from '@/types'
-import { Objectives, TrackComponents, TrackId, YesNo } from '@/types'
+import { TrackComponents, TrackId, YesNo } from '@/types'
+import { Objectives } from '@tee/common/src/questionnaire/types'
 
 export const strategyAudits: Track = {
   id: TrackId.StrategyAudits,

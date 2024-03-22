@@ -1,5 +1,6 @@
 import type { Track } from '@/types'
-import { Objectives, TrackComponents, TrackId, YesNo } from '@/types'
+import { TrackComponents, TrackId } from '@/types'
+import { Objectives } from '@tee/common/src/questionnaire/types'
 
 export const energyReductionPriority: Track = {
   id: TrackId.EnergyReductionPriority,
@@ -26,7 +27,7 @@ export const energyReductionPriority: Track = {
   },
   options: [
     {
-      value: { energy_reduction_priority: 'yes', [Objectives.EnergyPerformance]: YesNo.Yes },
+      value: { energy_reduction_priority: 'yes', objectives: [Objectives.EnergyPerformance] },
       title: { fr: 'Oui' },
       label: { fr: '👍 Oui, c’est une priorité' },
       next: {
@@ -34,7 +35,7 @@ export const energyReductionPriority: Track = {
       }
     },
     {
-      value: { energy_reduction_priority: 'no', [Objectives.EnergyPerformance]: YesNo.No },
+      value: { energy_reduction_priority: 'no' },
       title: { fr: 'Non' },
       label: { fr: '❌ Ce n’est pas ma priorité' },
       next: {
@@ -42,7 +43,7 @@ export const energyReductionPriority: Track = {
       }
     },
     {
-      value: { energy_reduction_priority: 'unknown', [Objectives.EnergyPerformance]: YesNo.Yes },
+      value: { energy_reduction_priority: 'unknown', objectives: [Objectives.EnergyPerformance] },
       title: { fr: 'Je ne sais pas' },
       label: { fr: 'Je ne sais pas' },
       next: {

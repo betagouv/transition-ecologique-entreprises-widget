@@ -1,3 +1,5 @@
+import { Sector } from '@tee/common/src/questionnaire/types'
+
 export interface PublicodesInputData {
   région?: string
   [PublicodesKeys.NAFCode]?: string
@@ -20,4 +22,13 @@ export enum PublicodesKeys {
   ValidityEnd = 'dispositif . fin de validité',
   QuestionnaireRoute = 'questionnaire . parcours',
   CurrentDate = 'date du jour'
+}
+
+export const SectorByNAF = {
+  [Sector.Craftsmanship]: ['C', 'F', 'G'],
+  [Sector.Industry]: ['B', 'C', 'D', 'E'],
+  [Sector.Tourism]: ['I'],
+  [Sector.Tertiary]: ['G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U'],
+  [Sector.Agriculture]: ['A'],
+  [Sector.Other]: ['D', 'E', 'F', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U']
 }

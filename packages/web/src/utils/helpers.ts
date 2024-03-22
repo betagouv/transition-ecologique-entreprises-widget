@@ -23,11 +23,11 @@ export const getFrom = (from: any, selectors: PropertyPath[]) => {
     const arraySelector = Array.isArray(selector)
       ? selector
       : selector
-          // Add support for array notation, e.g.
-          // a.b[3] becomes a.b.3.
-          .replace(/\[([^[\]]*)\]/g, '.$1.')
-          .split('.')
-          .filter((t: any) => t !== '')
+        // Add support for array notation, e.g.
+        // a.b[3] becomes a.b.3.
+        .replace(/\[([^[\]]*)\]/g, '.$1.')
+        .split('.')
+        .filter((t: any) => t !== '')
 
     // eslint-disable-next-line @typescript-eslint/no-unsafe-return
     return getFromArraySelector(from, arraySelector)
@@ -93,7 +93,7 @@ export const findInObjectsArray = (objectsArray: object[], id: string, all: bool
 export const groupBy = <T>(objectsArray: T[], key: keyof T): Record<string, T[]> => {
   return objectsArray.reduce((rv: Record<string, T[]>, x: T) => {
     const keyValue = x[key] as unknown as string
-    ;(rv[keyValue] = rv[keyValue] || []).push(x)
+      ; (rv[keyValue] = rv[keyValue] || []).push(x)
     return rv
   }, {})
 }

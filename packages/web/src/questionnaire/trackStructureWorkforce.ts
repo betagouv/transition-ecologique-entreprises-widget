@@ -1,7 +1,6 @@
 import type { NextTrackRuleSet, Track } from '@/types'
 import { ConditionOperators, DataMappingFrom, TrackComponents, TrackId } from '@/types'
 import { QuestionnaireRoute } from '@tee/common/src/questionnaire/types'
-import { Entreprise } from '@/types/publicodesObjects'
 
 const nextExceptions: NextTrackRuleSet[] = [
   {
@@ -95,7 +94,7 @@ export const workforce: Track = {
   options: [
     {
       disabled: false,
-      value: { [Entreprise.Workforce]: 19, structure_sizes: ['TPE'] },
+      value: { workForce: 19, structure_sizes: ['TPE'] },
       title: { fr: 'Moins de 20 employés' },
       label: { fr: '‍️🧍‍ Moins de 20 employés' },
       next: {
@@ -105,7 +104,7 @@ export const workforce: Track = {
     },
     {
       disabled: false,
-      value: { [Entreprise.Workforce]: 49, structure_sizes: ['PME'] },
+      value: { workForce: 49, structure_sizes: ['PME'] },
       title: { fr: 'Entre 20 et 49 employés' },
       label: { fr: '‍️👫 Entre 20 et 49 employés' },
       next: {
@@ -115,7 +114,7 @@ export const workforce: Track = {
     },
     {
       disabled: false,
-      value: { [Entreprise.Workforce]: 249, structure_sizes: ['PME'] },
+      value: { workForce: 249, structure_sizes: ['PME'] },
       title: { fr: 'Entre 50 et 250 employés' },
       label: { fr: '‍️👫👭 Entre 50 et 250 employés' },
       next: {
@@ -125,7 +124,7 @@ export const workforce: Track = {
     },
     {
       disabled: false,
-      value: { [Entreprise.Workforce]: 251, structure_sizes: ['ETI', 'GE'] },
+      value: { workForce: 251, structure_sizes: ['ETI', 'GE'] },
       title: { fr: '+250 employés' },
       label: { fr: '👫👭👫 Plus de 250 employés' },
       next: {

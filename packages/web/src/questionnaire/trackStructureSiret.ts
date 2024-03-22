@@ -88,6 +88,13 @@ export const siret: Track = {
             },
             {
               from: DataMappingFrom.RawData,
+              id: 'region',
+              path: 'region',
+              dataField: 'region',
+              onlyRemap: true
+            },
+            {
+              from: DataMappingFrom.RawData,
               id: 'codeNAF1',
               path: 'nafSectionCode',
               dataField: 'codeNAF1',

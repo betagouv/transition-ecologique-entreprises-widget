@@ -1,15 +1,6 @@
-import { QuestionnaireRoute } from '../../../../common/src/questionnaire/types'
+import { QuestionnaireRoute, Sector } from '../../../../common/src/questionnaire/types'
 import { type QuestionnaireData, Program } from '../domain/types'
 import { type PublicodesInputData, PublicodesKeys, PublicodesQuestionnaireRoute } from './types'
-
-export enum Sector {
-  Craftsmanship = 'artisanat',
-  Industry = 'industrie',
-  Tourism = 'tourisme',
-  Tertiary = 'tertiaire',
-  Agriculture = 'agriculture',
-  Other = 'autre secteur'
-}
 
 // const SectorActivityPrefix = ""
 
@@ -48,15 +39,13 @@ export const preprocessInputForPublicodes = (
 
   let codeNaf1Consolidated: string[]
 
-  if (questionnaireData.secteur) {
-    codeNaf1Consolidated = SectorByNAF[questionnaireData.secteur]
-  } else if (questionnaireData.codeNAF1) {
-    codeNaf1Consolidated = [questionnaireData.codeNAF1]
-  } else {
-    // TOFIX
-    // Should never happen
-    // Update the QuestionnaireData type accordingly
-    codeNaf1Consolidated = []
+  if (questionnaireData.siret) { //if we have a siret, codeNAF1 exist, we use it
+    const existingNAF1 = questionnaireData.codeNAF1 as string;
+    codeNaf1Consolidated = [existingNAF1]
+  } else { // we are using manual informations
+    // secteur is of type Sector
+    const secteurAsSector = questionnaireData.secteur as Sector
+    codeNaf1Consolidated = SectorByNAF[secteurAsSector]
   }
 
   if (codeNaf1Consolidated) {

@@ -1,4 +1,5 @@
-import { Objectives, priorityObjectives, YesNo, TrackComponents, TrackId } from '@/types'
+import { TrackComponents, TrackId } from '@/types'
+import { Objectives } from '@tee/common/src/questionnaire/types'
 import type { Track } from '@/types'
 
 export const goals: Track = {
@@ -18,11 +19,7 @@ export const goals: Track = {
   },
   options: [
     {
-      // WIP
-      value: {
-        ...priorityObjectives,
-        [Objectives.EnvironmentalImpact]: YesNo.Yes
-      },
+      value: { objectives: [Objectives.EnvironmentalImpact] },
       title: { fr: 'Impact environnemental' },
       label: { fr: '🌱 Mesurer mon impact environnemental et le réduire' },
       next: {
@@ -30,10 +27,7 @@ export const goals: Track = {
       }
     },
     {
-      value: {
-        ...priorityObjectives,
-        [Objectives.EnergyPerformance]: YesNo.Yes
-      },
+      value: { objectives: [Objectives.EnergyPerformance] },
       title: { fr: "Gestion de l'énergie" },
       label: { fr: '⚡️ Améliorer la performance énergétique de mon entreprise' },
       next: {
@@ -41,10 +35,7 @@ export const goals: Track = {
       }
     },
     {
-      value: {
-        ...priorityObjectives,
-        [Objectives.WaterConsumption]: YesNo.Yes
-      },
+      value: { objectives: [Objectives.WaterConsumption] },
       title: { fr: "Gestion de l'eau" },
       label: { fr: "💧 Diminuer ma consommation d'eau" },
       next: {
@@ -52,10 +43,7 @@ export const goals: Track = {
       }
     },
     {
-      value: {
-        ...priorityObjectives,
-        [Objectives.BuildingRenovation]: YesNo.Yes
-      },
+      value: { objectives: [Objectives.BuildingRenovation] },
       title: { fr: 'Rénovation du bâtiment' },
       label: { fr: '🏢 Rénover mon bâtiment' },
       next: {
@@ -63,10 +51,7 @@ export const goals: Track = {
       }
     },
     {
-      value: {
-        ...priorityObjectives,
-        [Objectives.SustainableMobility]: YesNo.Yes
-      },
+      value: { objectives: [Objectives.SustainableMobility] },
       title: { fr: 'Mobilité durable' },
       label: { fr: '🚲 Engager une démarche de mobilité durable' },
       next: {
@@ -74,10 +59,7 @@ export const goals: Track = {
       }
     },
     {
-      value: {
-        ...priorityObjectives,
-        [Objectives.WasteManagement]: YesNo.Yes
-      },
+      value: { objectives: [Objectives.WasteManagement] },
       title: { fr: 'Gestion des déchets' },
       label: { fr: '🗑 Mieux gérer mes déchets' },
       next: {
@@ -85,10 +67,7 @@ export const goals: Track = {
       }
     },
     {
-      value: {
-        ...priorityObjectives,
-        [Objectives.EcoDesign]: YesNo.Yes
-      },
+      value: { objectives: [Objectives.EcoDesign] },
       title: { fr: 'Eco-conception' },
       label: { fr: '🏭 Améliorer la performance environnementale de mes produits et services' },
       next: {
@@ -96,10 +75,7 @@ export const goals: Track = {
       }
     },
     {
-      value: {
-        ...priorityObjectives,
-        [Objectives.TrainOrRecruit]: YesNo.Yes
-      },
+      value: { objectives: [Objectives.TrainOrRecruit] },
       title: { fr: 'Formation' },
       label: { fr: '🧑‍🎓 Former ou recruter sur la transition écologique' },
       next: {
@@ -111,10 +87,7 @@ export const goals: Track = {
     // USEFUL FOR DEBUGGING
     {
       disabled: true,
-      value: {
-        ...priorityObjectives,
-        [Objectives.MakeSavings]: YesNo.Yes
-      },
+      value: { objectives: [Objectives.MakeSavings] },
       title: { fr: 'Economies' },
       label: {
         fr: '💶 Faire des économies en réduisant nos pertes en énergie, matière, déchets et eau'
@@ -125,10 +98,7 @@ export const goals: Track = {
     },
     {
       disabled: true,
-      value: {
-        ...priorityObjectives,
-        [Objectives.DurablyInvest]: YesNo.Yes
-      },
+      value: { objectives: [Objectives.DurablyInvest] },
       title: { fr: 'Consolider mon projet' },
       label: { fr: "📂 Consolider mon projet d'investissement durable" },
       next: {
@@ -137,10 +107,7 @@ export const goals: Track = {
     },
     {
       disabled: true,
-      value: {
-        ...priorityObjectives,
-        [Objectives.UnknownYet]: YesNo.Yes
-      },
+      value: { objectives: [Objectives.UnknownYet] },
       title: { fr: 'Autre' },
       label: { fr: '💁 Je ne sais pas encore' },
       next: {
