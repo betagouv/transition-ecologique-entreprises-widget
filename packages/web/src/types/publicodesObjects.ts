@@ -14,19 +14,19 @@ export const priorityObjectives = {
   [Objectives.UnknownYet]: YesNo.No
 }
 
-// TOFIX i want to delete eveything below this line
+// // TOFIX i want to delete eveything below this line
 
-// cfilter nafcode not linked for publicode
-// NAF CODES
-// Associates a NAF1 (composed of 1 letter) to its expected publicode variable
-export const NAF1ToVar = (letter: string): string => Entreprise.CodeNAF1 + letter
+// // cfilter nafcode not linked for publicode
+// // NAF CODES
+// // Associates a NAF1 (composed of 1 letter) to its expected publicode variable
+// export const NAF1ToVar = (letter: string): string => Entreprise.CodeNAF1 + letter
 
-export const NAF1Letters = [...'ABCDEFGHIJKLMNOPQRSTU'] as const
+// export const NAF1Letters = [...'ABCDEFGHIJKLMNOPQRSTU'] as const
 
-// publicodes variable initialization to "non"
-export const codesNAF1: { [p: string]: YesNo } = Object.fromEntries(NAF1Letters.map((l) => [NAF1ToVar(l), YesNo.No]))
+// // publicodes variable initialization to "non"
+// export const codesNAF1: { [p: string]: YesNo } = Object.fromEntries(NAF1Letters.map((l) => [NAF1ToVar(l), YesNo.No]))
 
-// deleting everything below which is clear publicode !
+// // deleting everything below which is clear publicode !
 export enum Entreprise {
   SectorActivity = "entreprise . secteur d'activité . est ",
   CodeNAF1 = 'entreprise . code NAF niveau 1 . est ',

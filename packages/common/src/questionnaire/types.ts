@@ -3,6 +3,18 @@ export enum QuestionnaireRoute {
   SpecificGoal = 'specific_goal'
 }
 
+export enum QuestionnaireJSONKeys {
+  Workforce = 'workForce',
+  StructureSizes = 'structure_sizes',
+  StructureBuildingProperty = 'aa'
+} //TOFIX WIP
+
+export enum StructureBuildingProperty {
+  Owns = 'owns',
+  Rents = 'rents',
+  OwnsAndRents = 'owns_and_rents'
+} //TOFIX WIP
+
 export enum Sector {
   Craftsmanship = 'artisanat',
   Industry = 'industrie',

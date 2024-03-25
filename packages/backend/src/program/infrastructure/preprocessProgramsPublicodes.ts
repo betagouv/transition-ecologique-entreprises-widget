@@ -12,13 +12,20 @@ export const preprocessInputForPublicodes = (
 
   // we start from a clean object, which create front to back isolation...
   let publicodesData: PublicodesInputData = {
-    ...questionnaireData, // TOFIX debug
     [PublicodesKeys.CurrentDate]: currentDate
   };
   
   if (questionnaireData.codeNaf) publicodesData[PublicodesKeys.NAFCode] = enquotePublicodesLiteralString(questionnaireData.codeNaf)
 
   publicodesData[PublicodesKeys.Workforce] = questionnaireData.workForce
+
+  if (questionnaireData['structure_building_property']) {
+    if (questionnaireData['structure_building_property'].includes("owns")) {
+      publicodesData[PublicodesKeys.BuildingOwner] = 'oui'
+    } else {
+      publicodesData[PublicodesKeys.BuildingOwner] = 'non'
+    }
+  }
 
   let codeNaf1Consolidated: string[]
   if (questionnaireData.siret) { //if we have a siret, codeNAF1 exist, we use it
