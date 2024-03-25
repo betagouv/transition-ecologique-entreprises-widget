@@ -1,27 +1,6 @@
-import { QuestionnaireRoute, Sector } from '../../../../common/src/questionnaire/types'
+import { QuestionnaireRoute, Sector, Objectives } from '../../../../common/src/questionnaire/types'
 import { type QuestionnaireData, Program } from '../domain/types'
-import { type PublicodesInputData, PublicodesKeys, PublicodesQuestionnaireRoute } from './types'
-
-// const SectorActivityPrefix = ""
-
-// export enum EntrepriseSector {
-//   Craftsmanship = SectorActivityPrefix + Sector.Craftsmanship,
-//   Industry = SectorActivityPrefix + Sector.Industry,
-//   Tourism = SectorActivityPrefix + Sector.Tourism,
-//   Tertiary = SectorActivityPrefix + Sector.Tertiary,
-//   Agriculture = SectorActivityPrefix + Sector.Agriculture,
-//   Other = SectorActivityPrefix + Sector.Other
-// }
-
-
-export const SectorByNAF = {
-  [Sector.Craftsmanship]: ['C', 'F', 'G'],
-  [Sector.Industry]: ['B', 'C', 'D', 'E'],
-  [Sector.Tourism]: ['I'],
-  [Sector.Tertiary]: ['G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U'],
-  [Sector.Agriculture]: ['A'],
-  [Sector.Other]: ['D', 'E', 'F', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U']
-}
+import { type PublicodesInputData, PublicodesKeys, PublicodesQuestionnaireRoute, SectorToNafSection } from './types'
 
 /** preprocesses the data gathered from the questionnaire into variables
  * needed by publicodes */
@@ -30,37 +9,40 @@ export const preprocessInputForPublicodes = (
   programData: Program,
   currentDate: string
 ): PublicodesInputData => {
-  const publicodesData: PublicodesInputData = {
-    ...questionnaireData,
-    [PublicodesKeys.CurrentDate]: currentDate
-  }
 
-  if (questionnaireData.codeNaf) publicodesData['entreprise . code NAF'] = enquotePublicodesLiteralString(questionnaireData.codeNaf)
+  // we start from a clean object, which create front to back isolation...
+  let publicodesData: PublicodesInputData = {
+    ...questionnaireData, // TOFIX debug
+    [PublicodesKeys.CurrentDate]: currentDate
+  };
+  
+  if (questionnaireData.codeNaf) publicodesData[PublicodesKeys.NAFCode] = enquotePublicodesLiteralString(questionnaireData.codeNaf)
+
+  publicodesData[PublicodesKeys.Workforce] = questionnaireData.workForce
 
   let codeNaf1Consolidated: string[]
-
   if (questionnaireData.siret) { //if we have a siret, codeNAF1 exist, we use it
     const existingNAF1 = questionnaireData.codeNAF1 as string;
     codeNaf1Consolidated = [existingNAF1]
   } else { // we are using manual informations
-    // secteur is of type Sector
+    // secteur is always of type Sector, we give the info to the TS type checker
     const secteurAsSector = questionnaireData.secteur as Sector
-    codeNaf1Consolidated = SectorByNAF[secteurAsSector]
+    codeNaf1Consolidated = SectorToNafSection[secteurAsSector]
+  }
+  const NAF1Letters = [...'ABCDEFGHIJKLMNOPQRSTU'] as const
+  // it is mandatory to write all the naf sections, whether they are true or false
+  NAF1Letters.forEach((NAF1) => {
+    const publicodeNAF1Key = 'entreprise . code NAF niveau 1 . est ' + NAF1
+    publicodesData[publicodeNAF1Key] = (codeNaf1Consolidated.includes(NAF1)) ? 'oui' : 'non';
+  })
+
+  for (const objective of Object.values(Objectives)) {
+    // it is mandatory to write all the objectives, whether they are true or false
+    const publicodeObjectiveKey = 'questionnaire . objectif prioritaire . est ' + objective;
+    publicodesData[publicodeObjectiveKey] = (questionnaireData[objective] == 'oui') ? 'oui' : 'non'; 
   }
 
-  if (codeNaf1Consolidated) {
-    const NAF1Letters = [...'ABCDEFGHIJKLMNOPQRSTU'] as const
-    NAF1Letters.forEach((NAF1) => {
-      const publicodeNAF1Key = 'entreprise . code NAF niveau 1 . est ' + NAF1
-      if (NAF1 in codeNaf1Consolidated) {
-        publicodesData[publicodeNAF1Key] = 'oui'
-      } else {
-        publicodesData[publicodeNAF1Key] = 'non'
-      }
-    })
-  }
-
-  publicodesData.région = questionnaireData.region
+  publicodesData.région = questionnaireData.region as string
 
   const route = questionnaireData.questionnaire_route
   if (route) {
@@ -73,7 +55,7 @@ export const preprocessInputForPublicodes = (
   if (programData['fin de validité']) {
     publicodesData['dispositif . fin de validité'] = programData['fin de validité']
   }
-
+  console.log("publiocode data" , publicodesData) //TOFIX delete
   return publicodesData
 }
 

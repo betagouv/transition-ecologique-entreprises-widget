@@ -1,4 +1,14 @@
-import { Sector } from '@tee/common/src/questionnaire/types'
+// import { Sector } from '@tee/common/src/questionnaire/types'
+// why is this import failing ?? 
+
+export enum Sector {
+  Craftsmanship = 'artisanat',
+  Industry = 'industrie',
+  Tourism = 'tourisme',
+  Tertiary = 'tertiaire',
+  Agriculture = 'agriculture',
+  Other = 'autre secteur'
+}
 
 export interface PublicodesInputData {
   région?: string
@@ -21,10 +31,16 @@ export enum PublicodesKeys {
   ValidityStart = 'dispositif . début de validité',
   ValidityEnd = 'dispositif . fin de validité',
   QuestionnaireRoute = 'questionnaire . parcours',
-  CurrentDate = 'date du jour'
+  CurrentDate = 'date du jour',
+  SectorActivity = "entreprise . secteur d'activité . est ",
+  CodeNAF1 = 'entreprise . code NAF niveau 1 . est ',
+  CodeNAF = 'entreprise . code NAF',
+  Workforce = 'entreprise . effectif',
+  BuildingOwner = 'entreprise . est propriétaire de ses locaux', 
+  Goal = 'questionnaire . objectif prioritaire . est'
 }
 
-export const SectorByNAF = {
+export const SectorToNafSection = {
   [Sector.Craftsmanship]: ['C', 'F', 'G'],
   [Sector.Industry]: ['B', 'C', 'D', 'E'],
   [Sector.Tourism]: ['I'],

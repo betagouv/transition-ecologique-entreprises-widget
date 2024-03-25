@@ -1,6 +1,6 @@
 import type { Track } from '@/types'
 import { TrackComponents, TrackId } from '@/types'
-import { Objectives } from '@tee/common/src/questionnaire/types'
+import { Objectives, YesNo } from '@tee/common/src/questionnaire/types'
 
 export const mobilityWishes: Track = {
   id: TrackId.MobilityWishes,
@@ -29,7 +29,9 @@ export const mobilityWishes: Track = {
   },
   options: [
     {
-      value: { objectives: [Objectives.SustainableMobility] },
+      value: {
+        [Objectives.SustainableMobility]: YesNo.Yes
+      },
       title: { fr: 'Oui' },
       label: { fr: "👏 Oui, ça m'intéresse !" },
       next: {
@@ -37,7 +39,9 @@ export const mobilityWishes: Track = {
       }
     },
     {
-      value: {},
+      value: {
+        [Objectives.SustainableMobility]: YesNo.No
+      },
       title: { fr: 'Non, on fait le maximum' },
       label: { fr: '🚲 Non, on fait déjà le maximum sur le sujet' },
       next: {
@@ -45,7 +49,9 @@ export const mobilityWishes: Track = {
       }
     },
     {
-      value: {},
+      value: {
+        [Objectives.SustainableMobility]: YesNo.No
+      },
       title: { fr: 'Non, pas un enjeu' },
       label: { fr: "❌ Non, ce n'est pas un enjeu pour moi" },
       next: {
@@ -53,7 +59,9 @@ export const mobilityWishes: Track = {
       }
     },
     {
-      value: { objectives: [Objectives.SustainableMobility] },
+      value: {
+        [Objectives.SustainableMobility]: YesNo.Yes
+      },
       title: { fr: 'Ne sais pas' },
       label: { fr: 'Aucune idée' },
       next: {

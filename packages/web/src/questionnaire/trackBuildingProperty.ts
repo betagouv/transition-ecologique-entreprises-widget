@@ -1,5 +1,5 @@
 import type { Track } from '@/types'
-import { Entreprise, TrackComponents, TrackId, YesNo } from '@/types'
+import { TrackComponents, TrackId } from '@/types'
 
 export const buildingProperty: Track = {
   id: TrackId.BuildingProperty,
@@ -26,10 +26,7 @@ export const buildingProperty: Track = {
   },
   options: [
     {
-      value: {
-        structure_building_property: 'owns',
-        [Entreprise.BuildingOwner]: YesNo.Yes
-      },
+      value: { structure_building_property: 'owns' },
       title: { fr: 'Propriétaire' },
       label: { fr: '🔑 Propriétaire' },
       next: {
@@ -37,10 +34,7 @@ export const buildingProperty: Track = {
       }
     },
     {
-      value: {
-        structure_building_property: 'rents',
-        [Entreprise.BuildingOwner]: YesNo.No
-      },
+      value: { structure_building_property: 'rents' },
       title: { fr: 'Locataire' },
       label: { fr: '📝 Locataire ' },
       next: {
@@ -48,10 +42,7 @@ export const buildingProperty: Track = {
       }
     },
     {
-      value: {
-        structure_building_property: 'owns_and_rents',
-        [Entreprise.BuildingOwner]: YesNo.Yes
-      },
+      value: { structure_building_property: 'owns_and_rents' },
       title: { fr: 'Propriétaire & locataire' },
       label: { fr: 'Je suis à la fois propriétaire et locataire sur mes différents locaux' },
       next: {

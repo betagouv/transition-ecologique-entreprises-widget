@@ -25,3 +25,8 @@ export enum Objectives {
   DurablyInvest = 'investir durable',
   UnknownYet = 'je ne sais pas encore'
 }
+
+export enum YesNo {
+  Yes = 'oui',
+  No = 'non'
+}
