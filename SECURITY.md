@@ -10,7 +10,7 @@ Ce document décrit les procédures de sécurité et les politiques générales 
 
 La communauté et l’équipe de 'transition-ecologique-des-entreprises.beta.gouv.fr' prennent très au sérieux la sécurité de l’application.
 
-Signalez toute faille de sécurité en envoyant un mail à l’équipe : france-transition@beta.gouv.fr
+Signalez toute faille de sécurité en envoyant un mail à l’équipe : contact@mission-transition-ecologique.beta.gouv.fr
 
 L’équipe accusera réception de votre mail dans les 72 heures. Après la réponse initiale à votre rapport, elle vous tiendra informé de la progression vers une correction et une annonce complète, et pourra vous demander des informations ou des conseils supplémentaires.
 
@@ -26,4 +26,4 @@ Lorsque l’équipe reçoit un rapport sur une faille de sécurité, elle procè
 
 ## Commentaires sur cette politique
 
-Si vous avez des suggestions sur la façon dont ce processus pourrait être amélioré, vous pouvez nous contacter en envoyant un mail à l’équipe : france-transition@beta.gouv.fr
+Si vous avez des suggestions sur la façon dont ce processus pourrait être amélioré, vous pouvez nous contacter en envoyant un mail à l’équipe : contact@mission-transition-ecologique.beta.gouv.fr

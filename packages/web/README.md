@@ -1,10 +1,6 @@
-# <img src="./images/logos/logo-gov-aid-tree-cropped.png" height="30px"> GOV-AID-TREE 
+# <img src="./images/logos/logo-gov-aid-tree-cropped.png" height="30px"> TEE-FRONTEND
 
-**Decision tree interfaces + fit user's decision with a database** 
-
----
-
-## `WARNING : work in progress`
+**Decision tree interfaces + fit user's decision with a database**
 
 ---
 
@@ -25,7 +21,11 @@ A project from the `transition-ecologique-entreprises` SE team.
 
 ## Screenshots
 
-![](./images/screenshots/screenshot-230602-a.png)
+![](./images/screenshots/screenshot-240326-a.png)
+
+---
+
+![](./images/screenshots/screenshot-240326-b.png)
 
 ---
 
@@ -37,7 +37,7 @@ This project aims to implement a flexible but simple way to display a questionna
 
 #### 1. Making and updating an official aid programs dataset
 
-Our first usecase points at the difficulty for french entreprises to find public aid programs helping them to engage in an ecological transition. 
+Our first usecase points at the difficulty for french entreprises to find public aid programs helping them to engage in an ecological transition.
 
 Such aid programs could be created at every administrative level (national, regional, local) by a wide diversity of actors.
 
@@ -68,12 +68,12 @@ The last main challenge is to give the widest possible visibility to the aids, i
 - Easy to implement / replicate in any partner's website.
 - Publish the dataset in open data.
 
-### The gov-aid-tree widget
+### The widget
 
-This project is built to respond to those challenges. We made gov-aid-tree as : 
+This project is built to respond to those challenges. We made this project as :
 
 - a web component (widget) to facilitate its replication and visibility ;
-- based on a common schema for all aid programs ; 
+- based on a common schema for all aid programs ;
 - based on a innovative way to describe a decision tree / questionnaire ;
 - based on the principle of adaptability / customization, to be able to adapt it to other models or/and other questionnaires ;
 - internationalisable, so to be able to implement it for users other than french-speaking ones ;
@@ -85,7 +85,7 @@ This project is built to respond to those challenges. We made gov-aid-tree as :
 
 ```mermaid
 graph TD;
-    
+
     subgraph "Widget / Questionnaire"
 	    tracksModel[Questionnaire model] -- organizes --- tracks
 	    tracks[Questionnaire slides : config files] --> widget[GOV-AID-TREE - VUEJS WEB COMPONENT]
@@ -99,7 +99,7 @@ graph TD;
 	    datamodel -. respects .- datafiles
 	    datafiles[Aid program yaml files] -- are built into --> dataset
     end
-    
+
     subgraph "Data : automated scrapping"
 	    connectors[* API connectors] --> parser
 	    parser[* API parsers scripts] -- uses --> datamodel
@@ -148,16 +148,16 @@ graph TD;
     clicagil --> sources
     edf --> sources
     others --> sources
-    end 
+    end
 
     sources --> adminsExt
-    
+
     subgraph "End users : entreprises"
 	    user[Users : individual or entreprise]
 	    user -- displayed for user --> results
 	    user -- interacts with --> questions
     end
- 
+
 		subgraph "Integrations"
 			integrations[Widget integrations]
 	    integrations --> teeDomain[TEE domain]
@@ -171,7 +171,7 @@ graph TD;
 	    services -- API calls --> Matomo[Matomo, analytics]
 	    services -- API calls --> Brevo[Brevo, emailing]
     end
-		
+
 		user -.- integrations
 		widget -.- integrations
     widget --> services
@@ -179,7 +179,7 @@ graph TD;
     %% STYLES APPS
     style widget fill:#ccccff
     style editor fill:#ccccff
-    
+
     %% STYLES DATA
     style maReco fill:#b2d8d8
     style aidesEntr fill:#b2d8d8
@@ -197,7 +197,7 @@ graph TD;
     style admins fill:orange
     style adminsExt fill:orange
     style user fill:orange
-    
+
     %% TO_DO
     style editor color:red
     style editor stroke:red
@@ -217,7 +217,7 @@ graph TD;
     other[Interactions]
     end
 
-    style users fill:orange    
+    style users fill:orange
     style data fill:#b2d8d8
     style web fill:#ccccff
 
@@ -258,24 +258,24 @@ The `index.ts` file (in the `./src/questionnaire` directory) builds up all the t
 └── README.md
 ```
 
-Each `track` file is structured as follows : 
+Each `track` file is structured as follows :
 
 ```js
 // .src/questionnaire/trackNeeds.sj
 
 export const needs = {
-  
+
   // track id
   id: 'track_needs',
 
   label: { fr: 'Votre besoin' },
-  
+
   // UI options
   interface: {
     component: 'cards',
     columnWidth: 'auto',
   },
-  
+
   // selection options
   behavior: {
     multipleChoices: false,
@@ -286,18 +286,18 @@ export const needs = {
     default: 'track_sectors'
   },
 
-  // choices array that could be used within this track 
-  options: [ 
+  // choices array that could be used within this track
+  options: [
     {
       disabled: true,
 
       // value to store if user selects this choice
       value: { project_needs: '*' },
-      
+
       // content to display
       label: { fr: "Je souhaite tout voir d'un coup même si je n'y connais rien" },
       hint: { fr: "Oui, des fois on est juste très curieux... En vrai c'est pour tester mais faudra pas laisser ce bloc traîner quand on mettra en prod sinon les gens vont se foutre de notre gueule" },
-      
+
       // next track (id) to display after this choice
       next: {
         default: 'track_results'
@@ -366,7 +366,7 @@ The generated `dataset_out.json` file is then created / updated in the `./packag
 ├── public
 |   ├── css
 |   ├── data
-|   |   └── generated               
+|   |   └── generated
 |   |       └── dataset_out.json  <-- the json file used as a "database"
 |   └── fonts
 ├── ...
@@ -410,27 +410,25 @@ In order to filter aid programs corresponding to the user's choices, an aid prog
 title: Diag Eco-flux
 resume: Faites des économies en gérant durablement vos dépenses
 description: ...
-...
+---
 conditions:
   - type: project_needs
-    operator: "or"
-    value: 
+    operator: 'or'
+    value:
       - advices
   - type: project_status
-    operator: "or"
-    value: 
+    operator: 'or'
+    value:
       - economies
   - type: project_sectors
-    operator: "or"
-    value: 
-      - "*"
+    operator: 'or'
+    value:
+      - '*'
   - type: structure_sizes
-    operator: "or"
-    value: 
+    operator: 'or'
+    value:
       - pme
-...
-````
-
+```
 
 ---
 
@@ -457,7 +455,7 @@ Check : https://github.com/orgs/betagouv/projects/54/views/1
 
 ### Data
 
-- [ ] Retrieve pertinent public data from the entreprise SIRET number
+- [x] Retrieve pertinent public data from the entreprise SIRET number
 - [ ] Get and update aid programs dataset
 
 ---
@@ -470,29 +468,33 @@ Check : https://github.com/orgs/betagouv/projects/54/views/1
   id="main-widget"
   locale="fr"
   seed="track_needs"
-  max-depth=3
+  max-depth="3"
   debug-switch="false"
   debug="false"
-  >
+>
 </gov-aid-tree-app>
-<script type="module" defer src="<DEPLOYMENT_URL>/widget.umd.js"></script>
+<script
+  type="module"
+  defer
+  src="<DEPLOYMENT_URL>/widget.umd.js"
+></script>
 ```
 
 ### Widget parameters
 
-| Parameter      | Status | Type      | Default | Definition |
-| :-------:      | :----: | :---:     | :-----: | ---------- |
-| `show-header`  | R&D    | `boolean` | `true`   | Show / hide header on top of the widget  |
-| `show-footer`  | R&D    | `boolean` | `false`  | Show / hide footer on top of the widget  |
-| `show-stepper` | R&D    | `boolean` | `false`  | Show / hide stepper on top of the widget  |
-| `show-message` | R&D    | `boolean` | `false`  | Show / hide message on top of the widget  |
-| `msg`          | R&D    | `string`  | `...`    | Locale `|` Message on the top of the widget  |
-| `seed`         | R&D    | `string`  | `needs`  | Questionnaire seed question       |
-| `dataset`      | x      | `string`  | `*.json` | Dataset file / url to select from to find results |
-| `max-depth`    | x      | `number`  | `4`      | Maximum number of questions before results  |
-| `locale`       | x      | `string`  | `fr`     | Default language  |
-| `debug-switch` | ok     | `boolean` | `false`  | Show / hide the debug switch |
-| `debug`        | ok     | `boolean` | `false`  | Debug mode on / off     |
+|   Parameter    | Status |   Type    | Default  | Definition                                        |
+| :------------: | :----: | :-------: | :------: | ------------------------------------------------- |
+| `show-header`  |  R&D   | `boolean` |  `true`  | Show / hide header on top of the widget           |
+| `show-footer`  |  R&D   | `boolean` | `false`  | Show / hide footer on top of the widget           |
+| `show-stepper` |  R&D   | `boolean` | `false`  | Show / hide stepper on top of the widget          |
+| `show-message` |  R&D   | `boolean` | `false`  | Show / hide message on top of the widget          |
+|     `msg`      |  R&D   | `string`  |  `...`   | Locale `Message on the top of the widget          |
+|     `seed`     |  R&D   | `string`  | `needs`  | Questionnaire seed question                       |
+|   `dataset`    |   x    | `string`  | `*.json` | Dataset file / url to select from to find results |
+|  `max-depth`   |   x    | `number`  |   `4`    | Maximum number of questions before results        |
+|    `locale`    |   x    | `string`  |   `fr`   | Default language                                  |
+| `debug-switch` |   ok   | `boolean` | `false`  | Show / hide the debug switch                      |
+|    `debug`     |   ok   | `boolean` | `false`  | Debug mode on / off                               |
 
 ---
 
@@ -502,7 +504,7 @@ The `env` variables you can use for deployment are listed in the `.env.example` 
 
 ```env
 # To hide the "debug" switch
-# If this variable is set to 'true' 
+# If this variable is set to 'true'
 # it overrides the `debug-switch` parameters to prohibit debug mode
 VITE_NO_DEBUG_SWITCH = false
 
@@ -514,7 +516,7 @@ VITE_DATA_DIR_PATH = ../data/programs
 VITE_DEPLOY_URL = https://tee-frontend.osc-fr1.scalingo.io
 
 # To set up global contact email
-VITE_CONTACT_EMAIL = france-transition@beta.gouv.fr
+VITE_CONTACT_EMAIL = contact@mission-transition-ecologique.beta.gouv.fr
 
 # To set up Matomo analytics
 # Note : if VITE_MATOMO_DEACTIVATE is set to 'true' it prohibits the tracking
@@ -543,7 +545,7 @@ VITE_TEE_BACKEND_URL=https://tee-backend.osc-fr1.scalingo.io
 
 ### Aid programs APIs
 
-- API - Liste des aides Entreprises sur AGIR : 
+- API - Liste des aides Entreprises sur AGIR :
   - https://agirpourlatransition.ademe.fr/entreprises/aides-financieres/recherche?aap%5B0%5D=vous_etes%3AEntreprise
   - https://ppd-x-ademe-externe-api.de-c1.eu1.cloudhub.io/api/v1/r2da/listeDispositif (needs client secret token)
 - API - Aides-territoires : https://aides-territoires.beta.gouv.fr/api/swagger/
@@ -593,14 +595,14 @@ All documentation about data models and references are on our [SE Notion space](
 ### Technical references / tutorials
 
 - create vue app + vite : https://github.com/vuejs/create-vue
-- vue3 + typescript : 
+- vue3 + typescript :
   - https://blog.logrocket.com/how-to-use-vue-3-typescript/
   - https://dev.to/nurlan_tl/tips-to-create-web-components-using-vue-3-ts-vite-3a7a
 - vue + vite + nuxt + dsfr : https://github.com/laruiss/create-vue-dsfr
-- vue3 composition API : 
+- vue3 composition API :
   - https://vuejs.org/guide/extras/composition-api-faq.html
   - https://vuejs.org/guide/reusability/composables.html
-- issues templates : https://github.com/stevemao/github-issue-templates/tree/master 
+- issues templates : https://github.com/stevemao/github-issue-templates/tree/master
 
 ---
 
@@ -615,8 +617,10 @@ TypeScript cannot handle type information for `.vue` imports by default, so we r
 If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
 1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+
+- Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+- Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
 ## Customize configuration
@@ -664,6 +668,7 @@ This runs the end-to-end tests against the Vite development server.
 It is much faster than the production build.
 
 ### Production Mode
+
 #### Type-Check, Compile and Minify for Production
 
 ```sh
@@ -672,8 +677,7 @@ npm run build
 
 #### Run End-to-End Tests with [Cypress](https://www.cypress.io/) on Production Build
 
-```sh
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
+It's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
 
 ```sh
 npm run build

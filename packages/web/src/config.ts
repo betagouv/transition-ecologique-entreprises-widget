@@ -32,7 +32,7 @@ export default class Config extends ConfigCommon {
   }
 
   static get contactEmail() {
-    return this.metaEnv.VITE_CONTACT_EMAIL ?? 'france-transition@beta.gouv.fr'
+    return this.metaEnv.VITE_CONTACT_EMAIL ?? 'contact@mission-transition-ecologique.beta.gouv.fr'
   }
 
   static get hasMatomo() {

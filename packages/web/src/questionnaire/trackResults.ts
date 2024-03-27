@@ -256,9 +256,6 @@ Merci d'avance pour votre retour`,
           <a href="https://mission-transition-ecologique.beta.gouv.fr/donnees-personnelles" target="_blank">
             Conditions Générales d'Utilisation
           </a>.
-          <br>
-          <br>
-          Pour toute question, vous pouvez nous contacter à "france-transition(at)beta.gouv.fr"
         `
         },
         required: true,
