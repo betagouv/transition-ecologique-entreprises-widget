@@ -13,7 +13,7 @@ import type {
 
 // FOR FORMS
 export interface FormValues {
-  [name: string]: any
+  [name: string]: undefined | string | boolean | number
 }
 
 export enum FormFieldTypes {

@@ -15,8 +15,9 @@ import {
   // Entreprise
 } from '@/types'
 import type { Track } from '@/types'
+import type EstablishmentType from '@/types/establishmentType'
 
-const dataTarget = {
+const dataTarget: EstablishmentType = {
   siret: '',
   codeNaf: '',
   codeNAF1: '',

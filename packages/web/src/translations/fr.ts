@@ -40,6 +40,7 @@ export const frDict = {
   },
   results: {
     results: 'résultats',
+    result: 'résultat',
     backToResults: 'Retour aux résultats',
     // showForm: "Candidatez pour le dispositif {title}",
     knowMore: 'En savoir plus',

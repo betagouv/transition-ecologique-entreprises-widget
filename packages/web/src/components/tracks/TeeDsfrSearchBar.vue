@@ -220,7 +220,7 @@
     {{ Translation.t('or') }}
     <a
       class="fr-link tee-input-wildcard"
-      href="#trackElement"
+      :href="Navigation.hashByRouteName(RouteName.Questionnaire)"
       @click="goToNextTrack"
     >
       {{ option.wildcard.label[Translation.lang] }}
@@ -264,8 +264,10 @@
 // CONSOLE LOG TEMPLATE
 // console.log(`TeeDsfrSearchBar > FUNCTION_NAME > MSG_OR_VALUE :`)
 
+import { RouteName } from '@/types/routeType'
+import Navigation from '@/utils/navigation'
 import { onBeforeMount, ref, toRaw } from 'vue'
-import { tracksStore } from '../../stores/tracks'
+import { useTracksStore } from '../../stores/tracks'
 import Translation from '@/utils/translation'
 import { type TrackOptionsInput, type ReqResp, type ReqError, type FormCallback, type ResultsMapping, TrackId } from '@/types'
 import { sendApiRequest } from '../../utils/requests'
@@ -280,7 +282,7 @@ interface Props {
 }
 const props = defineProps<Props>()
 
-const tracks = tracksStore()
+const tracks = useTracksStore()
 const debugStore = useDebugStore()
 
 const inputValue = ref<string | number>()
@@ -347,7 +349,7 @@ const processInput = async () => {
       }
       let resp: ReqResp = {}
       if (callback.action === CallbackActions.RequestAPI) {
-        resp = await sendApiRequest(callback, { inputValue: value }, trackValues, props, Translation.lang)
+        resp = await sendApiRequest(callback, { inputValue: value }, trackValues, props)
       }
       if (resp.ok) {
         const item = remapItem(

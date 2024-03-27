@@ -56,7 +56,7 @@
         </p>
         <router-link
           class="tee-router-link"
-          to="/questionnaire"
+          :to="{ name: RouteName.Questionnaire }"
         >
           <button
             class="fr-link fr-text--bold fr-link--icon-right fr-icon-arrow-right-line"
@@ -71,6 +71,8 @@
 </template>
 
 <script setup lang="ts">
+import { RouteName } from '@/types/routeType'
+
 const content = [
   {
     badge: '⚡️ Gestion énergétique',

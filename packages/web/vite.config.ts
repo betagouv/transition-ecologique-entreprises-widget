@@ -1,8 +1,11 @@
+import { ohVueIconAutoimportPreset, vueDsfrAutoimportPreset, vueDsfrComponentResolver } from '@gouvminint/vue-dsfr'
 import { fileURLToPath, URL } from 'node:url'
 import { resolve } from 'path'
-import { type BuildOptions, defineConfig } from 'vite'
+import { type BuildOptions, defineConfig, type Plugin } from 'vite'
 import type { ServerOptions } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 import { dsnFromString } from '@sentry/utils'
 import * as dotenv from 'dotenv'
 
@@ -34,12 +37,32 @@ const libConfig: Record<LibType, BuildOptions> = {
 }
 
 const plugins = async () => {
-  const basePlugins = [vue()]
+  const basePlugins = [
+    vue(),
+    AutoImport({
+      include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/],
+      imports: ['vue', 'vue-router', vueDsfrAutoimportPreset, ohVueIconAutoimportPreset],
+      vueTemplate: true,
+      dts: './src/auto-imports.d.ts',
+      eslintrc: {
+        enabled: true,
+        filepath: './.eslintrc-auto-import.json',
+        globalsPropValue: true
+      }
+    }) as Plugin,
+    Components({
+      extensions: ['vue'],
+      dirs: ['src/components'],
+      include: [/\.vue$/, /\.vue\?vue/],
+      dts: './src/components.d.ts',
+      resolvers: [vueDsfrComponentResolver]
+    }) as Plugin
+  ]
   if (isProd) {
     return basePlugins
   } else {
     const eslintPlugin = await import('vite-plugin-eslint')
-    return [...basePlugins, eslintPlugin.default()]
+    return [...basePlugins, eslintPlugin.default()] as Plugin[]
   }
 }
 
@@ -66,12 +89,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      // cf: https://stackoverflow.com/questions/72660014/how-to-make-vue-and-vite-work-with-web-components
-      '~@gouvfr': fileURLToPath(new URL('../../node_modules/@gouvfr', import.meta.url)),
-      '~@gouvminint': fileURLToPath(new URL('../../node_modules/@gouvminint', import.meta.url)),
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@public': fileURLToPath(new URL('./public', import.meta.url)),
-      '@icons': fileURLToPath(new URL('../../node_modules/oh-vue-icons', import.meta.url))
+      '@public': fileURLToPath(new URL('./public', import.meta.url))
     }
   }
 })

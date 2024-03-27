@@ -8,6 +8,4 @@
   <ContactHelp />
 </template>
 
-<script setup lang="ts">
-import ContactHelp from '@/components/contact/ContactHelp.vue'
-</script>
+<script setup lang="ts"></script>

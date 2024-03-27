@@ -10,23 +10,19 @@
         <h6 class="fr-mb-1v">usedTracksRegrouped :</h6>
         <pre><code>{{ usedTracksRegrouped }} </code></pre>
       </div>
-      <div class="fr-col-12">
-        <h6 class="fr-mb-1v">usedTracks :</h6>
-        <pre><code>{{ usedTracks }} </code></pre>
-      </div>
     </div>
   </div>
 
   <template
-    v-for="categ in usedCategories"
-    :key="categ"
+    v-for="category in usedCategories"
+    :key="category"
   >
     <div class="fr-mb-6v">
       <div class="fr-mb-2v">
-        {{ Translation.t(`categories.${categ}`) }}
+        {{ Translation.t(`categories.${category}`) }}
       </div>
       <div
-        v-for="usedTrack in usedTracksRegrouped[categ]"
+        v-for="usedTrack in usedTracksRegrouped[category]"
         :key="usedTrack.id"
       >
         <div class="fr-mb-1v">
@@ -48,39 +44,32 @@
 // CONSOLE LOG TEMPLATE
 // console.log(`TeeSidebar > FUNCTION_NAME > MSG_OR_VALUE :`)
 
+import { RouteName } from '@/types/routeType'
+import Navigation from '@/utils/navigation'
 import { computed } from 'vue'
-import { tracksStore } from '@/stores/tracks'
+import { useTracksStore } from '@/stores/tracks'
 import Translation from '@/utils/translation'
-import type { UsedTrack } from '@/types'
 import { TrackId } from '@/types'
 import { groupBy } from '@/utils/helpers'
 import { useDebugStore } from '@/stores/debug'
 import { DsfrButton } from '@gouvminint/vue-dsfr'
+import { useRouter } from 'vue-router'
 
-const tracks = tracksStore()
+const tracks = useTracksStore()
 const debugStore = useDebugStore()
-
-const usedTracks = computed(() => {
-  return tracks.usedTracks
-})
+const router = useRouter()
 
 const usedTracksRegrouped = computed(() => {
-  const trackWithCategories = usedTracks.value.map((usedTrack: UsedTrack) => {
-    return {
-      ...usedTrack,
-      category: tracks.getTrackCategory(usedTrack.id as TrackId)
-    }
-  })
-
-  return groupBy(trackWithCategories, 'category')
+  return groupBy(tracks.usedTracks, 'category')
 })
 
 const usedCategories = computed(() => {
   return Object.keys(usedTracksRegrouped.value)
 })
 
-const backToTrack = (trackId: TrackId) => {
+const backToTrack = async (trackId: TrackId) => {
   tracks.setUsedTracksAsNotCompleted(trackId)
   tracks.removeFurtherUsedTracks(trackId)
+  await router.push({ name: RouteName.QuestionnaireFromSidebar, hash: Navigation.hashByRouteName(RouteName.Questionnaire) })
 }
 </script>

@@ -4,21 +4,10 @@
     "src/**/*",
   ],
   "compilerOptions": {
-    "module": "ESNext",
-    "rootDir": ".",
-    "outDir": "./build",
-    "composite": true,
-    "declaration": true,
-    "baseUrl": ".",
-    "isolatedModules": true,
-    "resolveJsonModule": true,
-    "target": "ESNext",
-    "lib": [
-      "ESNext"
-    ],
-    "preserveValueImports": false,
-    "importsNotUsedAsValues": "remove",
-    "resolvePackageJsonImports": false,
-    "resolvePackageJsonExports": false
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   }
 }

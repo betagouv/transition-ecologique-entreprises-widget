@@ -3,7 +3,7 @@
 
 import { computed, ref, toRaw } from 'vue'
 // cf : https://stackoverflow.com/questions/64917686/vue-array-converted-to-proxy-object
-import { defineStore } from 'pinia'
+import { acceptHMRUpdate, defineStore } from 'pinia'
 import { tracks } from '@/questionnaire'
 import type { Track, TrackOptions, Translations, UsedTrack, UsedTrackValuePair } from '@/types'
 import { TrackComponents, TrackId } from '@/types'
@@ -11,7 +11,7 @@ import { TrackComponents, TrackId } from '@/types'
 const allTracks = ref<Track[]>(tracks)
 const seedTrack = ref<TrackId | undefined>()
 
-export const tracksStore = defineStore('tracks', () => {
+export const useTracksStore = defineStore('tracks', () => {
   const trackResultString = TrackId.Results
 
   const maxDepth = ref(4)
@@ -28,6 +28,7 @@ export const tracksStore = defineStore('tracks', () => {
     })
     return dict
   })
+
   const tracksStepsArray = computed(() => {
     const tracksArray = usedTracks.value.map((t: UsedTrack) => t.id)
     const lastTrack = tracksArray[tracksArray.length - 1]
@@ -36,23 +37,27 @@ export const tracksStore = defineStore('tracks', () => {
     }
     return tracksArray
   })
+
   const getLastTrack = computed(() => {
     const tracksArray = usedTracks.value //.slice(-1)
     return tracksArray[tracksArray.length - 1] as UsedTrack | undefined
   })
+
   const currentTrackId = computed(() => {
     const tracksArray = usedTracks.value.slice(-1)
     const track: UsedTrack = tracksArray[0]
     return track?.id
   })
+
   const currentStep = computed(() => {
     const track = getLastTrack.value
     return track?.step
   })
+
   const getAllUsedTracks = computed(() => {
-    const res = usedTracks.value.filter((i: UsedTrack) => i?.completed).map((i: UsedTrack) => toRaw(i))
-    return res
+    return usedTracks.value.filter((usedTrack: UsedTrack) => usedTrack?.completed).map((usedTrack: UsedTrack) => toRaw(usedTrack))
   })
+
   const getAllUsedTracksValues = computed<(string | number | object)[]>(() => {
     const usedTrackValues = getAllUsedTracks.value
       .map((usedTrack: UsedTrack) => {
@@ -63,6 +68,7 @@ export const tracksStore = defineStore('tracks', () => {
 
     return usedTrackValues.flat(1)
   })
+
   const getAllUsedTracksValuesPairs = computed<UsedTrackValuePair[]>(() => {
     return usedTracks.value.map((usedTrack: UsedTrack) => {
       const values = usedTrack.selected?.map((s) => s.value)
@@ -78,35 +84,54 @@ export const tracksStore = defineStore('tracks', () => {
   const getTrack = (trackId: TrackId): Track | undefined => {
     return allTracks.value.find((track) => track.id === trackId)
   }
+
   const getTrackCategory = (trackId: TrackId): string | undefined => {
     const track = getTrack(trackId)
     return track?.category
   }
+
   const getTrackTitle = (trackId: TrackId, lang: string): string | undefined => {
     const track = getTrack(trackId)
     const trackTitle: Translations | undefined = track?.title
     return trackTitle?.[lang]
   }
+
   const getTrackLabel = (trackId: TrackId, lang: string): string | undefined => {
     const track = getTrack(trackId)
     const trackLabel: Translations | undefined = track?.label
     return trackLabel?.[lang]
   }
+
   const getTrackBgColor = (trackId: TrackId): string | undefined => {
     const track = getTrack(trackId)
     return track?.bgColor
   }
+
   const getTrackImageRight = (trackId: TrackId): string | undefined => {
     const track = getTrack(trackId)
     return track?.imageRight
   }
+
   function trackExistsInUsed(trackId: TrackId) {
     const exists = usedTracks.value.find((usedTrack) => (usedTrack.id as TrackId) === trackId)
     return !!exists
   }
+
   const isTrackCompleted = (trackId: TrackId) => {
     const track = usedTracks.value.find((usedTrack) => (usedTrack.id as TrackId) === trackId)
     return track?.completed || false
+  }
+
+  const findSelectedValueByTrackIdAndKey = (trackId: TrackId, key: string): string | undefined => {
+    const usedTrack = usedTracks.value.find((usedTrack: UsedTrack) => usedTrack.id === trackId)
+    if (usedTrack?.selected) {
+      for (const option of usedTrack.selected) {
+        if (typeof option.value === 'object' && key in option.value) {
+          const value = option.value as Record<string, unknown>
+          return value[key] as string
+        }
+      }
+    }
   }
 
   // actions
@@ -197,6 +222,11 @@ export const tracksStore = defineStore('tracks', () => {
     updateUsedTracks,
     setUsedTracksAsNotCompleted,
     removeFurtherUsedTracks,
-    resetUsedTracks
+    resetUsedTracks,
+    findSelectedValueByTrackIdAndKey
   }
 })
+
+if (import.meta.hot) {
+  import.meta.hot.accept(acceptHMRUpdate(useTracksStore, import.meta.hot))
+}

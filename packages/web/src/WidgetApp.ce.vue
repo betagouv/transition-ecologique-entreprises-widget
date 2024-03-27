@@ -97,7 +97,7 @@
 
     <!-- DETAIL RESULT CARD -->
     <template v-if="programs.programDetail">
-      <TeeProgramDetail
+      <ProgramDetail
         :program-id="programs.programDetail"
         :track-id="programs.programDetailConfig"
       />
@@ -115,15 +115,15 @@ import '@gouvfr/dsfr/dist/core/core.main.min.css'
 
 import { computed, onBeforeMount, ref, watch } from 'vue'
 
-import { tracksStore } from './stores/tracks'
+import { useTracksStore } from './stores/tracks'
 import Translation from '@/utils/translation'
-import { programsStore } from './stores/programs'
-import { navigationStore } from './stores/navigation'
+import { useProgramsStore } from './stores/programs'
+import { useNavigationStore } from './stores/navigation'
 import { type ProgramData, TrackComponents, TrackId } from './types'
 import TeeMatomo from './components/TeeMatomo.vue'
 import TeeTrack from './components/tracks/TeeTrack.vue'
 import TeeSidebar from './components/TeeSidebar.vue'
-import TeeProgramDetail from './components/program/TeeProgramDetail.vue'
+import ProgramDetail from './components/program/detail/ProgramDetail.vue'
 import Widget from '@/utils/widget'
 import { useDebugStore } from '@/stores/debug'
 import { DsfrToggleSwitch } from '@gouvminint/vue-dsfr'
@@ -140,9 +140,9 @@ interface Props {
 }
 const props = defineProps<Props>()
 
-const tracks = tracksStore()
-const programs = programsStore()
-const nav = navigationStore()
+const tracks = useTracksStore()
+const programs = useProgramsStore()
+const nav = useNavigationStore()
 const debugStore = useDebugStore()
 
 // HTML/Vue3 DOM ref
@@ -240,8 +240,8 @@ onBeforeMount(() => {
 </script>
 
 <style lang="scss">
-@import '~@gouvfr/dsfr/dist/dsfr.min.css'; // ok
+@import '@gouvfr/dsfr/dist/dsfr.min.css';
+@import '@gouvfr/dsfr/dist/utility/icons/icons.min.css';
+@import '@gouvminint/vue-dsfr/dist/vue-dsfr.css';
 @import '@public/css/custom.css';
-@import '~@gouvfr/dsfr/dist/utility/icons/icons.min.css'; // ok
-@import '~@gouvminint/vue-dsfr/dist/vue-dsfr.css'; // ok
 </style>

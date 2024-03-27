@@ -1,5 +1,5 @@
 <template>
-  <div class="fr-grid-row fr-my-20v">
+  <div class="fr-grid-row fr-my-10v">
     <div
       v-if="image"
       class="fr-col fr-col-6 fr-col-offset-3"

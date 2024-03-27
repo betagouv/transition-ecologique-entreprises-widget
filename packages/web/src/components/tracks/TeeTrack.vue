@@ -64,7 +64,6 @@
   </div>
 
   <div
-    v-show="!usedTrack.completed && track !== undefined"
     :id="usedTrack.id"
     :key="`track-${step}-${usedTrack.id}`"
     class="fr-grid-row"
@@ -163,12 +162,9 @@
         <!-- TRACK LABEL -->
         <div
           v-if="step !== 1"
-          :class="`fr-px-4v fr-px-md-0v fr-mt-6v ${isTrackResults ? 'fr-col-10 fr-col-offset-md-1' : 'fr-col-12'}`"
+          class="fr-px-4v fr-px-md-0v fr-mt-6v fr-col-12"
         >
-          <h3
-            :class="`${track?.info ? 'fr-mb-0' : 'fr-mb-2v'}`"
-            :style="`${isTrackResults ? 'color: #000091; font-size: 2.75rem;' : ''}`"
-          >
+          <h3 :class="`${track?.info ? 'fr-mb-0' : 'fr-mb-2v'}`">
             {{ tracks.getTrackLabel(usedTrack.id, Translation.lang) }}
           </h3>
         </div>
@@ -176,7 +172,7 @@
         <!-- TRACK INFOS -->
         <div
           v-if="step !== 1 && track?.info"
-          :class="`fr-px-4v fr-px-md-0v ${isTrackResults ? 'fr-col-12 fr-col-offset-md-1' : 'fr-col-12'}`"
+          class="fr-px-4v fr-px-md-0v fr-col-12"
         >
           <p class="fr-mb-2v">
             <span
@@ -190,12 +186,9 @@
         <!-- TRACK HINT -->
         <div
           v-if="step !== 1 && track?.hint"
-          :class="`fr-px-4v fr-px-md-0v ${isTrackResults ? 'fr-col-10 fr-col-offset-md-1' : 'fr-col-12'}`"
+          class="fr-px-4v fr-px-md-0v fr-col-12"
         >
-          <p
-            :class="`fr-mb-0`"
-            :style="`${isTrackResults ? 'color: #000091;' : ''}`"
-          >
+          <p :class="`fr-mb-0`">
             {{ track.hint[Translation.lang] }}
           </p>
         </div>
@@ -203,7 +196,7 @@
         <!-- TRACK RESUME -->
         <div
           v-if="step !== 1 && track?.resume"
-          :class="`fr-px-4v fr-px-md-0v ${isTrackResults ? 'fr-col-10 fr-col-offset-md-1' : 'fr-col-12'}`"
+          class="fr-px-4v fr-px-md-0v fr-col-12"
         >
           <p class="fr-mb-0">
             {{ track.resume[Translation.lang] }}
@@ -211,171 +204,157 @@
         </div>
 
         <!-- TRACK Translation {{ renderAs }} / EXCEPT SELECT-->
-        <div
-          v-for="(option, idx) in optionsArray"
-          :key="`track-${step}-${usedTrack.id}-option-${idx}`"
-          :class="`${colsWidth} ${isTrackResults ? 'fr-col-offset-md-1' : ''} tee-track-choice`"
-          :style="renderAs === trackComponents.Select ? 'display: none' : ''"
-        >
-          <!-- AS CARDS -->
+        <template v-if="renderAs !== trackComponents.Select">
           <div
-            v-if="renderAs === trackComponents.Cards"
-            style="height: 99%"
+            v-for="(option, idx) in optionsArray"
+            :key="`track-${step}-${usedTrack.id}-option-${idx}`"
+            :class="`${colsWidth} tee-track-choice`"
           >
+            <!-- AS CARDS -->
             <div
-              class="fr-card fr-enlarge-link"
-              @click="updateSelection(option, idx)"
+              v-if="renderAs === trackComponents.Cards"
+              style="height: 99%"
             >
               <div
-                v-if="option.imageTop"
-                class="fr-card__header"
+                class="fr-card fr-enlarge-link"
+                @click="updateSelection(option, idx)"
               >
-                <div class="fr-card__img">
-                  <img
-                    class="fr-responsive-img"
-                    :src="`${publicPath}${option.imageTop}`"
-                    :alt="`image / ${option.label}`"
-                  />
+                <div
+                  v-if="option.imageTop"
+                  class="fr-card__header"
+                >
+                  <div class="fr-card__img">
+                    <img
+                      class="fr-responsive-img"
+                      :src="`${publicPath}${option.imageTop}`"
+                      :alt="`image / ${option.label}`"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="fr-card__body">
-                <div class="fr-card__content">
+                <div class="fr-card__body">
+                  <div class="fr-card__content">
+                    <p
+                      v-if="option.hintImage"
+                      class="fr-card__desc fr-mt-0 fr-mb-2v"
+                      style="order: 2"
+                    >
+                      <span
+                        v-if="option.hintImageIcon"
+                        :class="option.hintImageIcon"
+                        aria-hidden="true"
+                      >
+                      </span>
+                      {{ option.hintImage[Translation.lang] }}
+                    </p>
+                    <h3 class="fr-card__title">
+                      <!-- <a href="#"> -->
+                      {{ option.label?.[Translation.lang] }}
+                      <!-- </a> -->
+                    </h3>
+                    <div
+                      v-if="isActiveChoice(option.value as number)"
+                      class="fr-card__start"
+                    >
+                      <p class="fr-badge fr-badge--info fr-badge--no-icon fr-mb-4v">
+                        {{ Translation.t('selection.selected') }}
+                      </p>
+                    </div>
+                  </div>
                   <p
-                    v-if="option.hintImage"
-                    class="fr-card__desc fr-mt-0 fr-mb-2v"
-                    style="order: 2"
+                    v-if="option.hint"
+                    class="fr-card__desc"
                   >
                     <span
-                      v-if="option.hintImageIcon"
-                      :class="option.hintImageIcon"
+                      v-if="option.hintIcon"
+                      :class="option.hintIcon"
                       aria-hidden="true"
                     >
                     </span>
-                    {{ option.hintImage[Translation.lang] }}
+                    {{ option.hint[Translation.lang] }}
                   </p>
-                  <h3 class="fr-card__title">
-                    <!-- <a href="#"> -->
-                    {{ option.label?.[Translation.lang] }}
-                    <!-- </a> -->
-                  </h3>
-                  <div
-                    v-if="isActiveChoice(option.value as number)"
-                    class="fr-card__start"
+                  <p
+                    v-if="option.resume"
+                    class="fr-card__desc"
                   >
-                    <p class="fr-badge fr-badge--info fr-badge--no-icon fr-mb-4v">
-                      {{ Translation.t('selection.selected') }}
-                    </p>
-                  </div>
+                    {{ option.resume[Translation.lang] }}
+                  </p>
                 </div>
-                <p
-                  v-if="option.hint"
-                  class="fr-card__desc"
-                >
-                  <span
-                    v-if="option.hintIcon"
-                    :class="option.hintIcon"
-                    aria-hidden="true"
-                  >
-                  </span>
-                  {{ option.hint[Translation.lang] }}
-                </p>
-                <p
-                  v-if="option.resume"
-                  class="fr-card__desc"
-                >
-                  {{ option.resume[Translation.lang] }}
-                </p>
               </div>
             </div>
-          </div>
 
-          <!-- AS BUTTONS -->
-          <div
-            v-if="renderAs === trackComponents.Buttons && !isTrackOptionsInput(option)"
-            class="fr-div-fixed-height"
-          >
-            <DsfrButton
-              class="fr-btn-fullwidth fr-btn-fixed-height fr-btn-sm-align-left fr-btn-grey"
-              :style="`outline-color: #929292; ${isActiveChoice(idx) ? 'background-color: #eeeeee' : ''}`"
-              :label="option.label?.[Translation.lang]"
-              :icon="getButtonIcon(idx)"
-              :secondary="!isActiveChoice(idx)"
-              @click="updateSelection(option, idx)"
-            />
-          </div>
+            <!-- AS BUTTONS -->
+            <div
+              v-if="renderAs === trackComponents.Buttons && !isTrackOptionsInput(option)"
+              class="fr-div-fixed-height"
+            >
+              <DsfrButton
+                class="fr-btn-fullwidth fr-btn-fixed-height fr-btn-sm-align-left fr-btn-grey"
+                :style="`outline-color: #929292; ${isActiveChoice(idx) ? 'background-color: #eeeeee' : ''}`"
+                :label="option.label?.[Translation.lang]"
+                :icon="getButtonIcon(idx)"
+                :secondary="!isActiveChoice(idx)"
+                @click="updateSelection(option, idx)"
+              />
+            </div>
 
-          <!-- AS BUTTON + BUTTON INPUT -->
-          <div
-            v-if="renderAs === trackComponents.Buttons && isTrackOptionsInput(option)"
-            class="fr-div-fixed-height"
-          >
-            <TeeTrackButtonInput
-              :track-id="usedTrack.id"
-              :icon="getButtonIcon(idx)"
-              :is-active="isActiveChoice(idx)"
-              :option="option"
-              @update-selection="updateSelectionFromSignal($event, idx)"
-              @update-value="updateSelectionValueFromSignal($event)"
-              @go-to-next-track="saveSelectionFromSignal($event, idx)"
-            />
-          </div>
+            <!-- AS BUTTON + BUTTON INPUT -->
+            <div
+              v-if="renderAs === trackComponents.Buttons && isTrackOptionsInput(option)"
+              class="fr-div-fixed-height"
+            >
+              <TeeTrackButtonInput
+                :track-id="usedTrack.id"
+                :icon="getButtonIcon(idx)"
+                :is-active="isActiveChoice(idx)"
+                :option="option"
+                @update-selection="updateSelectionFromSignal($event, idx)"
+                @update-value="updateSelectionValueFromSignal($event)"
+                @go-to-next-track="saveSelectionFromSignal($event, idx)"
+              />
+            </div>
 
-          <!-- AS SIMPLE BUTTONS -->
-          <div v-if="renderAs === trackComponents.SimpleButtons">
-            <DsfrButton
-              class="fr-btn-fullwidth fr-btn-align-center"
-              :label="option.label?.[Translation.lang]"
-              size="large"
-              style="font-weight: 1000; min-height: 3.5rem; font-size: 1.5rem"
-              @click="updateAndSave(option, idx)"
-            />
-          </div>
+            <!-- AS SIMPLE BUTTONS -->
+            <div v-if="renderAs === trackComponents.SimpleButtons">
+              <DsfrButton
+                class="fr-btn-fullwidth fr-btn-align-center"
+                :label="option.label?.[Translation.lang]"
+                size="large"
+                style="font-weight: 1000; min-height: 3.5rem; font-size: 1.5rem"
+                @click="updateAndSave(option, idx)"
+              />
+            </div>
 
-          <!-- AS INPUT -->
-          <div
-            v-if="renderAs === trackComponents.Input && isTrackOptionsInput(option)"
-            style="height: 100%"
-          >
-            <TeeDsfrSearchBar
-              :track-id="usedTrack.id"
-              :option="option"
-              @update-selection="updateSelectionFromSignal($event, idx)"
-              @go-to-next-track="saveSelectionFromSignal($event, idx)"
-            />
+            <!-- AS INPUT -->
+            <div
+              v-if="renderAs === trackComponents.Input && isTrackOptionsInput(option)"
+              style="height: 100%"
+            >
+              <TeeDsfrSearchBar
+                :track-id="usedTrack.id"
+                :option="option"
+                @update-selection="updateSelectionFromSignal($event, idx)"
+                @go-to-next-track="saveSelectionFromSignal($event, idx)"
+              />
+            </div>
           </div>
-
-          <!-- AS RESULT -->
-          <div v-if="isTrackResults">
-            <Suspense>
-              <template #default>
-                <TeeResults
-                  :track-id="usedTrack.id"
-                  :track-config="track?.config"
-                  :track-options="track?.options"
-                  :track-form="track?.form"
-                  :tracks-results="tracks.usedTracks"
-                  :track-element="trackElement"
-                />
-              </template>
-              <template #fallback>
-                <span>Chargement...</span>
-              </template>
-            </Suspense>
-          </div>
-        </div>
+        </template>
       </div>
 
       <!-- AS SELECT -->
-      <div v-if="track !== undefined && renderAs === trackComponents.Select">
+      <div
+        v-if="track !== undefined && renderAs === trackComponents.Select"
+        class="fr-px-4v fr-px-md-0v fr-grid-row fr-grid-row--gutters"
+      >
         <TeeTrackSelect
           :track="track"
+          class="fr-px-2v fr-px-md-3v fr-mt-6v fr-col-12"
           @update-selection="updateSelectionValueFromSelectSignal($event)"
         />
       </div>
 
       <!-- SEND / NEXT BUTTON -->
       <div
-        v-if="!noNeedForNext.includes(renderAs) && !usedTrack.completed && !isTrackResults"
+        v-if="!noNeedForNext.includes(renderAs) && !usedTrack.completed"
         class="fr-grid-row fr-grid-row--gutters fr-pt-8v fr-px-4v fr-px-md-0v"
         style="justify-content: start"
       >
@@ -424,21 +403,31 @@
 // CONSOLE LOG TEMPLATE
 // console.log(`TeeTrack > FUNCTION_NAME > MSG_OR_VALUE :`)
 
-import { computed, ref, toRaw, watch } from 'vue'
-import type { DsfrButton } from '@gouvminint/vue-dsfr'
-import type { ColsOptions, NextTrackRuleSet, Track, TrackOptionsUnion, UsedTrack } from '@/types'
-import { isTrackOptionsInput, TrackComponents } from '@/types'
-import { remapItem, scrollToTop } from '@/utils/helpers'
+import Config from '@/config'
+import { useDebugStore } from '@/stores/debug'
+import { useTracksStore } from '@/stores/tracks'
+import {
+  type ColsOptions,
+  isTrackOptionsInput,
+  type NextTrackRuleSet,
+  type Track,
+  TrackComponents,
+  TrackId,
+  type TrackOptionsUnion,
+  type UsedTrack
+} from '@/types'
+import { RouteName } from '@/types/routeType'
 import { CheckNextTrackRules } from '@/utils/conditions'
+import { remapItem, scrollToTop } from '@/utils/helpers'
+import Matomo from '@/utils/matomo'
+import Navigation from '@/utils/navigation'
+import Translation from '@/utils/translation'
+import type { DsfrButton } from '@gouvminint/vue-dsfr'
+import { computed, ref, toRaw, watch } from 'vue'
+import { useRouter } from 'vue-router'
+import TeeTrackButtonInput from './TeeTrackButtonInput.vue'
 import TeeDsfrSearchBar from './TeeDsfrSearchBar.vue'
 import TeeTrackSelect from './TeeTrackSelect.vue'
-import TeeTrackButtonInput from './TeeTrackButtonInput.vue'
-import TeeResults from '../results/TeeResults.vue'
-import { tracksStore } from '@/stores/tracks'
-import Translation from '@/utils/translation'
-import { useDebugStore } from '@/stores/debug'
-import Config from '@/config'
-import Matomo from '@/utils/matomo'
 
 interface Props {
   step: number
@@ -471,7 +460,8 @@ const trackComponents = TrackComponents
 
 const noNeedForNext = [TrackComponents.Cards, TrackComponents.SimpleButtons]
 
-const tracks = tracksStore()
+const router = useRouter()
+const tracks = useTracksStore()
 const debugStore = useDebugStore()
 
 const selectedOptionsIndices = ref<number[]>([])
@@ -489,10 +479,6 @@ const allowMultiple: boolean = !!track?.behavior?.multipleChoices
 
 const optionsArray = track?.options?.filter((o): o is TrackOptionsUnion => !o.disabled) ?? []
 
-// computed
-const isTrackResults = computed(() => {
-  return track?.interface?.component === TrackComponents.Results
-})
 const selectionValues = computed(() => {
   if (selectedOptions.value.length === 0) {
     return []
@@ -530,7 +516,7 @@ const isActiveChoice = (index: number) => {
   return selectedOptionsIndices.value.includes(index)
 }
 
-const updateSelection = (option: TrackOptionsUnion, index: number, forceRemove: boolean = false) => {
+const updateSelection = async (option: TrackOptionsUnion, index: number, forceRemove: boolean = false) => {
   const isActive = isActiveChoice(index)
   let remove = false
   if (!isActive && !forceRemove) {
@@ -557,14 +543,14 @@ const updateSelection = (option: TrackOptionsUnion, index: number, forceRemove: 
   // Direct to next track
   const directToNext: string[] = ['cards']
   if (!allowMultiple && directToNext.includes(renderAs)) {
-    saveSelection()
+    await saveSelection()
   }
 }
 
-const updateSelectionFromSignal = (ev: any, index: number) => {
+const updateSelectionFromSignal = async (ev: any, index: number) => {
   // TODO (ev.target as HTMLSelectElement)
   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
-  updateSelection(ev.option, index, ev.remove)
+  await updateSelection(ev.option, index, ev.remove)
 }
 
 const updateSelectionValueFromSignal = (ev: any) => {
@@ -587,25 +573,25 @@ const updateSelectionValueFromSignal = (ev: any) => {
   selectedOptions.value = temp
 }
 
-const updateSelectionValueFromSelectSignal = (ev: any) => {
+const updateSelectionValueFromSelectSignal = async (ev: any) => {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   if (ev.reset) {
     selectedOptionsIndices.value = []
     selectedOptions.value = []
   } else {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
-    updateSelection(ev.option, ev.index)
+    await updateSelection(ev.option, ev.index)
   }
 }
 
-const saveSelectionFromSignal = (ev: any, index: number) => {
+const saveSelectionFromSignal = async (ev: any, index: number) => {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-  updateAndSave(ev.option as TrackOptionsUnion, index)
+  await updateAndSave(ev.option as TrackOptionsUnion, index)
 }
 
-const updateAndSave = (option: TrackOptionsUnion, index: number) => {
-  updateSelection(option, index)
-  saveSelection()
+const updateAndSave = async (option: TrackOptionsUnion, index: number) => {
+  await updateSelection(option, index)
+  await saveSelection()
 }
 
 const resetSelections = () => {
@@ -624,7 +610,7 @@ const getButtonIcon = (index: number) => {
   return icon
 }
 
-const saveSelection = () => {
+const saveSelection = async () => {
   const optionNext = selectedOptions.value[0].next
   const nextExceptions = optionNext?.exceptions
   const defaultNext = track?.next
@@ -653,6 +639,9 @@ const saveSelection = () => {
   tracks.updateUsedTracks(props.usedTrack.id, props.step, next, selectedOptions.value)
 
   if (!needRemove.value && next && next.default !== false) {
+    if (next.default === TrackId.Results) {
+      await router.push({ name: RouteName.QuestionnaireResult, hash: Navigation.hashByRouteName(RouteName.QuestionnaireResult) })
+    }
     const canAddTrack = !tracks.trackExistsInUsed(next.default)
     canAddTrack && tracks.addToUsedTracks(props.usedTrack.id, next.default)
   } else {

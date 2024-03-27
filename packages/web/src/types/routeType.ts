@@ -5,5 +5,9 @@ export enum RouteName {
   AddProgram = 'add-program',
   ChatAdvisor = 'chat-advisor',
   Legal = 'legal',
-  PersonalData = 'personal-data'
+  PersonalData = 'personal-data',
+  Questionnaire = 'questionnaire',
+  QuestionnaireFromSidebar = 'questionnaire-from-sidebar',
+  QuestionnaireResult = 'questionnaire-resultat',
+  QuestionnaireResultDetail = 'questionnaire-result-detail'
 }

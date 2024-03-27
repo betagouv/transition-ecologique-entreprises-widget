@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="fr-col-xl-8 fr-col-lg-10 fr-col-md-10 fr-col-sm-6 fr-col-xs-12 tee-home-cta-btn">
-          <router-link to="/questionnaire">
+          <router-link :to="{ name: RouteName.Questionnaire }">
             <button
               class="fr-btn fr-btn--lg inline-flex fr-btn-fullwidth fr-btn-align-center"
               aria-disabled="false"
@@ -50,3 +50,6 @@
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import { RouteName } from '@/types/routeType.js'
+</script>

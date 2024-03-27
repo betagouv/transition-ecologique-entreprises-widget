@@ -15,6 +15,7 @@
     "start-back": "npm run start -w packages/backend",
     "start-front": "PORT=4242 npm run start -w packages/web",
     "start-all": "npm run build && npx concurrently \"npm run start-front\" \"npm run start-back\"",
+    "build-start-dev": "npm run build && npx concurrently \"npm run start-back\" \"PORT=4242 npm run start -w packages/web\"",
     "build": "npm run build-json-output && npm run build -w packages/backend && npm run build -w packages/web",
     "build-back": "npm run build-json-output && npm run build -w packages/backend",
     "build-front": "npm run build-json-output && npm run build -w packages/web",
@@ -39,7 +40,8 @@
   "dependencies": {
     "@tsconfig/node18": "^18.2.2",
     "dotenv": "^16.4.1",
-    "typescript": "~5.2.2"
+    "typescript": "~5.2.2",
+    "true-myth": "^7.1.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",

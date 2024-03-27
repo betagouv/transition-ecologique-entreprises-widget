@@ -1,14 +1,10 @@
-import { OpportunityId, Opportunity } from '../domain/types'
+import { OpportunityBody } from '@tee/common/src/opportunity/opportunityTypes'
+import { OpportunityId } from '../domain/types'
 import { Body, Controller, Example, Post, Res, Route, SuccessResponse, TsoaResponse } from 'tsoa'
 import { ErrorJSON, ValidateErrorJSON } from '../../common/controller/jsonError'
 import { Err } from 'true-myth/dist/es/result'
 import ServiceNotFoundError from '../../common/domain/api/serviceNotFoundError'
 import OpportunityService from '../application/opportunityService'
-
-interface OpportunityBody {
-  opportunity: Opportunity
-  optIn: boolean
-}
 
 @SuccessResponse('200', 'OK')
 @Route('opportunities')

@@ -2,13 +2,13 @@
 // console.log(`store.navigation > FUNCTION_NAME > MSG_OR_VALUE :`)
 
 import { computed, ref } from 'vue'
-import { defineStore } from 'pinia'
+import { acceptHMRUpdate, defineStore } from 'pinia'
 import type { TrackId, UsedTrackValuePair } from '@/types'
 import type { RouteLocationNormalizedLoaded, RouteLocationRaw, Router } from 'vue-router'
 import { RouteName } from '@/types/routeType'
 import Widget from '@/utils/widget'
 
-export const navigationStore = defineStore('navigation', () => {
+export const useNavigationStore = defineStore('navigation', () => {
   // State objects
   const routerReady = ref<boolean>(false)
   const routerRef = ref<Router>()
@@ -23,9 +23,13 @@ export const navigationStore = defineStore('navigation', () => {
     return routeRef.value
   })
 
-  const isCatalog = computed(() => {
-    return routeRef.value?.name === RouteName.Catalog
-  })
+  const isCatalog = () => {
+    return isByRouteName(RouteName.Catalog)
+  }
+
+  const isByRouteName = (routeName: string) => {
+    return routeRef.value?.name === routeName
+  }
 
   // actions
   function setRouterReady(bool: boolean) {
@@ -157,6 +161,7 @@ export const navigationStore = defineStore('navigation', () => {
     currentStep,
     currentDetailId,
     isCatalog,
+    isByRouteName,
     resetQueries,
     setRouter,
     setRoute,
@@ -167,3 +172,7 @@ export const navigationStore = defineStore('navigation', () => {
     updateQueries
   }
 })
+
+if (import.meta.hot) {
+  import.meta.hot.accept(acceptHMRUpdate(useNavigationStore, import.meta.hot))
+}

@@ -33,12 +33,13 @@ export default class Translation {
     return props.reduce((prev: string, curr: string) => prev?.[curr] as string | undefined, obj)
   }
 
-  static ti(translation: string, params: Record<string, string | number> | undefined = undefined) {
+  static ti(translation: string, params: Record<string, string | number | undefined> | undefined = undefined) {
     let translated = translation
     if (params) {
       for (const key in params) {
         const reg = new RegExp(`{${key}}`, 'g')
-        translated = translated.replace(reg, params[key] ? params[key].toString() : '...')
+        const value = params[key]
+        translated = translated.replace(reg, value ? value.toString() : '...')
       }
     }
     return translated
@@ -47,7 +48,7 @@ export default class Translation {
   static translateWithDict(
     path: string,
     dictionary: Record<string, unknown>,
-    params: Record<string, string | number> | undefined = undefined
+    params: Record<string, string | number | undefined> | undefined = undefined
   ) {
     const locDict = dictionary[this._lang] as object
     let translated = (this.resolve(path, locDict) || path) as unknown as string
@@ -57,11 +58,11 @@ export default class Translation {
     return translated
   }
 
-  static t(path: string, params: Record<string, string | number> | undefined = undefined) {
+  static t(path: string, params: Record<string, string | number | undefined> | undefined = undefined) {
     return this.translateWithDict(path, this._dict as Record<string, unknown>, params)
   }
 
-  static to(path: string, params: Record<string, string | number> | undefined = undefined) {
+  static to(path: string, params: Record<string, string | number | undefined> | undefined = undefined) {
     return this.translateWithDict(path, this._dictOperators, params)
   }
 }

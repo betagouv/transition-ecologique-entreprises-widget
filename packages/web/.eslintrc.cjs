@@ -30,6 +30,7 @@ module.exports = {
     '.vscode/*',
     'README.md',
     'index.html',
-    '.eslintrc.js'
+    '.eslintrc.cjs',
+    'auto-imports.d.ts',
   ]
 }

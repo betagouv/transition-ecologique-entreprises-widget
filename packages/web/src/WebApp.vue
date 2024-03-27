@@ -1,5 +1,5 @@
 <template>
-  <div ref="trackElement">
+  <div>
     <!-- HEADER -->
     <TeeHeader />
 
@@ -23,8 +23,8 @@
 
 import { onBeforeMount, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { programsStore } from './stores/programs'
-import { navigationStore } from './stores/navigation'
+import { useProgramsStore } from './stores/programs'
+import { useNavigationStore } from './stores/navigation'
 
 import TeeHeader from './components/TeeHeader.vue'
 import TeeMatomo from './components/TeeMatomo.vue'
@@ -33,8 +33,8 @@ import type { ProgramData } from '@/types'
 import jsonDataset from '../public/data/generated/dataset_out.json'
 import Translation from '@/utils/translation'
 
-const programs = programsStore()
-const nav = navigationStore()
+const programs = useProgramsStore()
+const nav = useNavigationStore()
 
 const router = useRouter()
 const route = useRoute()
@@ -56,11 +56,3 @@ onMounted(async () => {
   nav.setRoute(route)
 })
 </script>
-
-<style lang="scss">
-@import '~@gouvfr/dsfr/dist/dsfr.min.css';
-@import '~@gouvminint/vue-dsfr/dist/vue-dsfr.css';
-@import '@public/css/custom.css';
-@import '~@gouvfr/dsfr/dist/utility/icons/icons.min.css';
-@import './assets/main';
-</style>

@@ -252,11 +252,8 @@
       ref="TeeProgramFormContainer"
       class="fr-tee-form-block fr-tee-form-container"
     >
-      <TeeForm
+      <ProgramForm
         v-if="program"
-        :track-id="trackConfig.id"
-        :form-options="trackConfig.form"
-        :data-props="{ programId: program.id }"
         :program="program"
         :form-container-ref="TeeProgramFormContainer"
       />
@@ -268,31 +265,27 @@
 // CONSOLE LOG TEMPLATE
 // console.log(`TeeProgramDetail > FUNCTION_NAME > MSG_OR_VALUE :`)
 
-import { ref, computed, onBeforeMount } from 'vue'
-
+import ProgramAccordion from '@/components/program/detail/ProgramAccordion.vue'
+import ProgramEligibility from '@/components/program/detail/ProgramEligibility.vue'
+import ProgramForm from '@/components/program/detail/ProgramForm.vue'
+import ProgramLongDescription from '@/components/program/detail/ProgramLongDescription.vue'
+import ProgramObjective from '@/components/program/detail/ProgramObjective.vue'
 import TeeTile from '@/components/TeeTile.vue'
-import TeeForm from '@/components/TeeForm.vue'
-import ProgramObjective from '@/components/program/ProgramObjective.vue'
-import ProgramAccordion from '@/components/program/ProgramAccordion.vue'
-import ProgramEligibility from '@/components/program/ProgramEligibility.vue'
-import ProgramLongDescription from '@/components/program/ProgramLongDescription.vue'
-
-import Translation from '@/utils/translation'
-import { tracksStore } from '@/stores/tracks'
-import { programsStore } from '@/stores/programs'
-import { navigationStore } from '@/stores/navigation'
-import { scrollToId } from '@/utils/helpers'
-import type { TrackId, ProgramData } from '@/types'
-import { useRoute, useRouter } from 'vue-router'
-import { RouteName } from '@/types/routeType'
-import Widget from '@/utils/widget'
 import Config from '@/config'
+import { useNavigationStore } from '@/stores/navigation'
+import { useProgramsStore } from '@/stores/programs'
+import { useTracksStore } from '@/stores/tracks'
+import { type ProgramData, TrackId } from '@/types'
+import { RouteName } from '@/types/routeType'
 import Matomo from '@/utils/matomo'
-import Program from '@/utils/program'
+import Program from '@/utils/program/program'
+import Translation from '@/utils/translation'
+import { computed, onBeforeMount, ref } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
-const tracks = tracksStore()
-const programs = programsStore()
-const nav = navigationStore()
+const tracks = useTracksStore()
+const programs = useProgramsStore()
+const navigation = useNavigationStore()
 const route = useRoute()
 const router = useRouter()
 
@@ -306,7 +299,6 @@ const publicPath = Config.publicPath
 
 interface Props {
   programId: string | number
-  trackId: TrackId | undefined
 }
 const props = defineProps<Props>()
 
@@ -337,23 +329,18 @@ const columnTiles = computed(() => {
 
 // functions
 const resetDetailResult = async () => {
-  if (route.name === RouteName.CatalogDetail) {
+  const isCatalogDetail = navigation.isByRouteName(RouteName.CatalogDetail)
+  if (isCatalogDetail) {
     tracks.resetUsedTracks()
-    await router.push({ name: RouteName.Catalog, hash: '#' + props.programId })
-    return
   }
-  programs.resetDetailResult()
-  await nav.setCurrentDetailId('')
-  await nav.updateUrl(!Widget.is)
 
-  scrollToId(`${props.programId}`)
+  const routeName = isCatalogDetail ? RouteName.Catalog : RouteName.QuestionnaireResult
+  await router.push({ name: routeName, hash: '#' + props.programId })
 }
 
 onBeforeMount(() => {
   program.value = programs.getProgramById(props.programId)
-  if (props.trackId) {
-    trackConfig.value = tracks.getTrack(props.trackId)
-  }
+  trackConfig.value = tracks.getTrack(TrackId.Results)
   // analytics / send event
   Matomo.sendEvent('result_detail', route.name === RouteName.CatalogDetail ? 'show_detail_catalog' : 'show_detail', props.programId)
 })

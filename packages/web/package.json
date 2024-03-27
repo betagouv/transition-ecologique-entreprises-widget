@@ -32,12 +32,13 @@
     "test:unit": "vitest",
     "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
-    "type-check": "vue-tsc --noEmit -p tsconfig.json --composite false",
-    "type-check-watch": "vue-tsc --watch --noEmit -p tsconfig.json --composite false",
+    "type-check": "vue-tsc --noEmit -p tsconfig.tc.json --composite false",
+    "type-check-watch": "vue-tsc --watch --noEmit -p tsconfig.tc.json --composite false",
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@gouvfr/dsfr": "^1.11.1",
     "@gouvminint/vue-dsfr": "^5.0.0",
     "@sentry/utils": "^7.99.0",
     "@sentry/vue": "^7.93.0",
@@ -49,7 +50,9 @@
     "lit": "^2.7.3",
     "path": "^0.12.7",
     "pinia": "^2.0.32",
-    "vite": "^5.0.12",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.1.4",
     "vitest": "^1.2.1",
     "vue": "^3.2.47",
     "vue-router": "^4.2.5"

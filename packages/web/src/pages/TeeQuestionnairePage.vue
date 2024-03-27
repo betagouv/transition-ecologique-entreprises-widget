@@ -5,22 +5,14 @@
   >
     <router-view />
   </div>
-  <ContactHelp v-if="isTrackResults" />
+  <ContactHelp v-if="useNavigationStore().isByRouteName(RouteName.QuestionnaireResult)" />
 </template>
 
 <script setup lang="ts">
 // CONSOLE LOG TEMPLATE
 // console.log(`TeeQuestionnairePage > FUNCTION_NAME > MSG_OR_VALUE :`)
 
-import { computed } from 'vue'
-import { tracksStore } from '@/stores/tracks'
 import ContactHelp from '@/components/contact/ContactHelp.vue'
-import { TrackComponents } from '@/types'
-
-const tracks = tracksStore()
-
-const isTrackResults = computed(() => {
-  const track = tracks.getLastTrack
-  return track?.component === TrackComponents.Results
-})
+import { useNavigationStore } from '@/stores/navigation'
+import { RouteName } from '@/types/routeType'
 </script>

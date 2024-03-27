@@ -79,8 +79,7 @@ export enum CallbackMethods {
 }
 export enum CallbackActions {
   RequestAPI = 'RequestAPI',
-  CreateOpportunity = 'CreateOpportunity',
-  SendTransactionalEmail = 'SendTransactionalEmail'
+  CreateOpportunity = 'CreateOpportunity'
 }
 export enum CleanerOperations {
   replaceAll = 'replaceAll',

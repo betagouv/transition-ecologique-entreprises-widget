@@ -1,7 +1,6 @@
 import type { NextTrackRuleSet, Track } from '@/types'
-import { ConditionOperators, DataMappingFrom, TrackComponents, TrackId } from '@/types'
+import { ConditionOperators, DataMappingFrom, TrackComponents, TrackId, Entreprise } from '@/types'
 import { QuestionnaireRoute } from '@tee/common/src/questionnaire/types'
-import { Entreprise } from '@/types/publicodesObjects'
 
 const nextExceptions: NextTrackRuleSet[] = [
   {
