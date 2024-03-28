@@ -412,6 +412,9 @@ const saveFormData = async () => {
       let resp: ReqResp = {}
       switch (callback.action) {
         case CallbackActions.CreateOpportunity:
+          if (formData.value) {
+            formData.value.programUrl = new URL(route.fullPath, window.location.origin).href
+          }
           resp = await sendApiRequest(callback, toRaw(formData.value), trackValues, props.dataProps, Translation.lang)
           break
         case CallbackActions.SendTransactionalEmail:

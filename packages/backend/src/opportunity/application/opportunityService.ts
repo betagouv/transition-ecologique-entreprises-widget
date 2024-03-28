@@ -5,9 +5,10 @@ import { addBrevoDeal, updateBrevoDeal } from '../infrastructure/api/brevo/brevo
 import { addBrevoContact } from '../infrastructure/api/brevo/brevoContact'
 import { OperatorRepository } from '../../operator/domain/spi'
 import { BpiFrance } from '../../operator/infrastructure/api/bpi/bpiFrance'
-import { ContactRepository, OpportunityRepository } from '../domain/spi'
+import { ContactRepository, MailRepository, OpportunityRepository } from '../domain/spi'
 import { ProgramRepository } from '../../program/domain/spi'
 import ProgramsJson from '../../program/infrastructure/programsJson'
+import BrevoMail from '../infrastructure/api/brevo/brevoMail'
 
 export default class OpportunityService {
   private _opportunityFeatures: OpportuntiyFeatures
@@ -17,7 +18,8 @@ export default class OpportunityService {
       this._getContactRepository(),
       this._getOpportunityRepository(),
       this._getOperatorRepositories(),
-      this._getProgramRepository()
+      this._getProgramRepository(),
+      this._getMailRepository()
     )
   }
 
@@ -44,5 +46,9 @@ export default class OpportunityService {
 
   private _getProgramRepository(): ProgramRepository {
     return ProgramsJson.getInstance()
+  }
+
+  private _getMailRepository(): MailRepository {
+    return { sendReturnReceipt: new BrevoMail().sendReturnReceipt }
   }
 }

@@ -346,6 +346,11 @@ Merci d'avance pour votre retour`,
             dataField: 'optIn'
           },
           {
+            from: DataMappingFrom.FormData,
+            id: 'programUrl',
+            dataField: 'opportunity.programUrl'
+          },
+          {
             from: DataMappingFrom.AllUsedTracks,
             id: '*',
             dataField: 'opportunity.otherData'

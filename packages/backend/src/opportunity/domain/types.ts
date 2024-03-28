@@ -18,6 +18,7 @@ export interface ContactDetails {
 export interface OpportunityDetails {
   programId: string
   programContactOperator?: Operators
+  programUrl: string
   message: string
   questionnaireRoute?: QuestionnaireRoute
   priorityObjectives?: Objectives[]

@@ -11,6 +11,20 @@ export default abstract class ConfigCommon {
     return this._sentryEnvironments.includes(sentryEnvironment)
   }
 
+  protected static getEnvValue(name: string, defaultValue: string | undefined = undefined): string {
+    const value = process.env[name]
+
+    if (!value) {
+      if (defaultValue) {
+        return defaultValue
+      }
+
+      throw new Error(`${name} is not defined`)
+    }
+
+    return value
+  }
+
   public static get SENTRY_DSN(): string | undefined {
     if (!this._sentryDsn) {
       return undefined

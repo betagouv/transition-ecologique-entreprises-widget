@@ -6,18 +6,22 @@ export default class Config extends ConfigCommon {
   protected static override _sentryEnvironment = process.env['SENTRY_ENVIRONMENT'] as Environment
 
   public static get BPI_FRANCE_CLIENT_ID(): string {
-    if (!process.env['BPI_FRANCE_CLIENT_ID']) {
-      throw new Error('BPI_FRANCE_CLIENT_ID is not defined')
-    }
-
-    return process.env['BPI_FRANCE_CLIENT_ID']
+    return this.getEnvValue('BPI_FRANCE_CLIENT_ID')
   }
 
   public static get BPI_FRANCE_CLIENT_SECRET(): string {
-    if (!process.env['BPI_FRANCE_CLIENT_SECRET']) {
-      throw new Error('BPI_FRANCE_CLIENT_SECRET is not defined')
-    }
+    return this.getEnvValue('BPI_FRANCE_CLIENT_SECRET')
+  }
 
-    return process.env['BPI_FRANCE_CLIENT_SECRET']
+  public static get BREVO_API_TOKEN(): string {
+    return this.getEnvValue('BREVO_API_TOKEN')
+  }
+
+  public static get BREVO_SANDBOX(): boolean {
+    return this.getEnvValue('BREVO_SANDBOX', 'false') === 'true'
+  }
+
+  public static get BREVO_SENDER_ID(): number {
+    return parseInt(this.getEnvValue('BREVO_SENDER_ID'))
   }
 }

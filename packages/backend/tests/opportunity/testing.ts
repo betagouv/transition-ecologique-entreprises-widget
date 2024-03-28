@@ -12,8 +12,9 @@ export const fakeContact = (): ContactDetails => {
 
 export const fakeOpportunityDetails = (): OpportunityDetails => {
   return {
-    programId: 'test-program',
-    message: 'Bonjour monde !'
+    programId: 'accelerateur-decarbonation',
+    message: 'Bonjour monde !',
+    programUrl: 'https://localhost'
   }
 }
 

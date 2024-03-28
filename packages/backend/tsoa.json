@@ -13,7 +13,8 @@
   },
   "compilerOptions": {
     "paths": {
-      "@tee/common": ["../common"]
+      "@tee/common": ["../common"],
+      "@tee/data": ["../data"]
     }
   }
 }

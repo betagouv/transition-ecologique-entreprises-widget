@@ -1,5 +1,6 @@
 import axios, { AxiosInstance, AxiosResponse, RawAxiosRequestHeaders } from 'axios'
 import { Result } from 'true-myth'
+import Config from '../../../../config'
 import {
   HttpMethod,
   BrevoPostContactPayload,
@@ -12,11 +13,11 @@ import AxiosHeaders from '../../../../common/infrastructure/api/axiosHeaders'
 import { handleException } from '../../../../common/domain/error/errors'
 
 export default class BrevoAPI {
-  private _axios: AxiosInstance
+  private readonly _axios: AxiosInstance
   private readonly _baseURL = 'https://api.brevo.com/v3'
 
   constructor() {
-    const token = process.env['BREVO_API_TOKEN'] || ''
+    const token = Config.BREVO_API_TOKEN
     this._axios = axios.create({
       baseURL: this.baseURL,
       headers: this._makeHeaders(token)
