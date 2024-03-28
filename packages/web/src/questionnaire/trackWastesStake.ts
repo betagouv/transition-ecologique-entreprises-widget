@@ -1,5 +1,5 @@
 import type { Track } from '@/types'
-import { Objectives, TrackComponents, TrackId, YesNo } from '@/types'
+import { Objectives, TrackComponent, TrackId, YesNo } from '@/types'
 
 export const wastesStake: Track = {
   id: TrackId.WastesStake,
@@ -16,7 +16,7 @@ export const wastesStake: Track = {
     imageLeft: 'images/thema/thema-dechets.svg'
   },
   interface: {
-    component: TrackComponents.Buttons
+    component: TrackComponent.Buttons
   },
   behavior: {
     multipleChoices: false
@@ -26,10 +26,8 @@ export const wastesStake: Track = {
   },
   options: [
     {
-      value: {
-        wastes_stake: 'yes',
-        [Objectives.WasteManagement]: YesNo.Yes
-      },
+      value: YesNo.Yes,
+      questionnaireData: { wastes_stake: YesNo.Yes, [Objectives.WasteManagement]: YesNo.Yes },
       title: { fr: 'Oui' },
       label: { fr: '👍 Oui, j’aimerais faire mieux !' },
       next: {
@@ -37,7 +35,8 @@ export const wastesStake: Track = {
       }
     },
     {
-      value: { wastes_stake: 'no-max', [Objectives.WasteManagement]: YesNo.No },
+      value: 'maximum',
+      questionnaireData: { wastes_stake: 'no-max', [Objectives.WasteManagement]: YesNo.No },
       title: { fr: 'Non' },
       label: { fr: '🤓 Non, je fais déja mon maximum' },
       next: {
@@ -45,7 +44,8 @@ export const wastesStake: Track = {
       }
     },
     {
-      value: { wastes_stake: 'no', [Objectives.WasteManagement]: YesNo.No },
+      value: YesNo.No,
+      questionnaireData: { wastes_stake: YesNo.No, [Objectives.WasteManagement]: YesNo.No },
       title: { fr: 'Non' },
       label: { fr: '👎 Non, la gestion des déchets n’est pas un enjeu pour moi ' },
       next: {
@@ -53,10 +53,8 @@ export const wastesStake: Track = {
       }
     },
     {
-      value: {
-        wastes_stake: 'unknown',
-        [Objectives.WasteManagement]: YesNo.Yes
-      },
+      value: YesNo.Unknown,
+      questionnaireData: { wastes_stake: YesNo.Unknown, [Objectives.WasteManagement]: YesNo.Yes },
       title: { fr: 'Aucune idée' },
       label: { fr: 'Aucune idée' },
       next: {

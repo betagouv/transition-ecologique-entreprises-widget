@@ -10,14 +10,15 @@ import {
   CleanerOperations,
   DataMappingFrom,
   HasInputOptions,
-  TrackComponents,
+  TrackComponent,
   TrackId
   // Entreprise
 } from '@/types'
 import type { Track } from '@/types'
 import type EstablishmentType from '@/types/establishmentType'
+import Validator from '@/utils/validator'
 
-const dataTarget: EstablishmentType = {
+const defaultQuestionnaireData: EstablishmentType = {
   siret: '',
   codeNaf: '',
   codeNAF1: '',
@@ -29,14 +30,17 @@ const dataTarget: EstablishmentType = {
   secteur: undefined
 }
 
+export enum SiretValue {
+  Wildcard = 'wildcard'
+}
+
 export const siret: Track = {
   id: TrackId.Siret,
   category: 'myEntreprise',
   title: { fr: 'Mon SIRET' },
   label: { fr: 'Quelle est votre entreprise ?' },
-  // info: { fr: "Renseignez le SIRET de votre entreprise" },
   interface: {
-    component: TrackComponents.Input
+    component: TrackComponent.Siret
   },
   next: {
     default: TrackId.StructureWorkforce
@@ -45,7 +49,9 @@ export const siret: Track = {
     {
       id: 'search-siret',
       hasInput: HasInputOptions.Search,
-      value: { ...dataTarget },
+      value: undefined,
+      validation: Validator.validateSiret,
+      questionnaireData: { ...defaultQuestionnaireData },
       title: { fr: 'SIRET' },
       // label: { fr: 'Renseignez le SIRET de votre entreprise (14 chiffres)' },
       placeholder: { fr: 'Votre numéro SIRET (14 chiffres)' },
@@ -75,7 +81,7 @@ export const siret: Track = {
             'Content-Type': 'application/json'
           },
           dataPath: { siret: '' },
-          dataStructure: { ...dataTarget },
+          dataStructure: { ...defaultQuestionnaireData },
           dataMapping: [
             {
               from: DataMappingFrom.FormData,
@@ -202,6 +208,7 @@ export const siret: Track = {
       },
       wildcard: {
         label: { fr: 'je préfère compléter mes informations manuellement' },
+        value: SiretValue.Wildcard,
         next: {
           default: TrackId.StructureWorkforce
         }

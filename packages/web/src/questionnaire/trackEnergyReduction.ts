@@ -1,5 +1,4 @@
-import type { Track } from '@/types'
-import { Objectives, TrackComponents, TrackId, YesNo } from '@/types'
+import { type Track, Objectives, TrackComponent, TrackId, YesNo } from '@/types'
 
 export const energyReductionPriority: Track = {
   id: TrackId.EnergyReductionPriority,
@@ -16,7 +15,7 @@ export const energyReductionPriority: Track = {
     imageLeft: 'images/thema/thema-energie.svg'
   },
   interface: {
-    component: TrackComponents.Buttons
+    component: TrackComponent.Buttons
   },
   behavior: {
     multipleChoices: false
@@ -26,7 +25,11 @@ export const energyReductionPriority: Track = {
   },
   options: [
     {
-      value: { energy_reduction_priority: 'yes', [Objectives.EnergyPerformance]: YesNo.Yes },
+      value: YesNo.Yes,
+      questionnaireData: {
+        energy_reduction_priority: YesNo.Yes,
+        [Objectives.EnergyPerformance]: YesNo.Yes
+      },
       title: { fr: 'Oui' },
       label: { fr: '👍 Oui, c’est une priorité' },
       next: {
@@ -34,7 +37,11 @@ export const energyReductionPriority: Track = {
       }
     },
     {
-      value: { energy_reduction_priority: 'no', [Objectives.EnergyPerformance]: YesNo.No },
+      value: YesNo.No,
+      questionnaireData: {
+        energy_reduction_priority: YesNo.No,
+        [Objectives.EnergyPerformance]: YesNo.No
+      },
       title: { fr: 'Non' },
       label: { fr: '❌ Ce n’est pas ma priorité' },
       next: {
@@ -42,7 +49,11 @@ export const energyReductionPriority: Track = {
       }
     },
     {
-      value: { energy_reduction_priority: 'unknown', [Objectives.EnergyPerformance]: YesNo.Yes },
+      value: YesNo.Unknown,
+      questionnaireData: {
+        energy_reduction_priority: YesNo.Unknown,
+        [Objectives.EnergyPerformance]: YesNo.Yes
+      },
       title: { fr: 'Je ne sais pas' },
       label: { fr: 'Je ne sais pas' },
       next: {

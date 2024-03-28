@@ -1,5 +1,5 @@
 import type { Track } from '@/types'
-import { TrackComponents, TrackId, Objectives, YesNo } from '@/types'
+import { Objectives, TrackComponent, TrackId, YesNo } from '@/types'
 
 export const mobilityWishes: Track = {
   id: TrackId.MobilityWishes,
@@ -18,7 +18,7 @@ export const mobilityWishes: Track = {
     imageLeft: 'images/thema/thema-mobilite.svg'
   },
   interface: {
-    component: TrackComponents.Buttons
+    component: TrackComponent.Buttons
   },
   behavior: {
     multipleChoices: false
@@ -28,7 +28,8 @@ export const mobilityWishes: Track = {
   },
   options: [
     {
-      value: {
+      value: YesNo.Yes,
+      questionnaireData: {
         [Objectives.SustainableMobility]: YesNo.Yes
       },
       title: { fr: 'Oui' },
@@ -38,7 +39,8 @@ export const mobilityWishes: Track = {
       }
     },
     {
-      value: {
+      value: 'maximum',
+      questionnaireData: {
         [Objectives.SustainableMobility]: YesNo.No
       },
       title: { fr: 'Non, on fait le maximum' },
@@ -48,7 +50,8 @@ export const mobilityWishes: Track = {
       }
     },
     {
-      value: {
+      value: 'pas un enjeu',
+      questionnaireData: {
         [Objectives.SustainableMobility]: YesNo.No
       },
       title: { fr: 'Non, pas un enjeu' },
@@ -58,7 +61,8 @@ export const mobilityWishes: Track = {
       }
     },
     {
-      value: {
+      value: YesNo.Unknown,
+      questionnaireData: {
         [Objectives.SustainableMobility]: YesNo.Yes
       },
       title: { fr: 'Ne sais pas' },

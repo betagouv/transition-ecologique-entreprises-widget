@@ -5,7 +5,7 @@ import { Result } from 'true-myth'
 export default class ProgramApi extends RequestApi {
   private readonly url = '/api/programs'
 
-  constructor(private questionnaireData: QuestionnaireData) {
+  constructor(private questionnaireData: QuestionnaireData = {}) {
     super()
   }
 
@@ -24,6 +24,9 @@ export default class ProgramApi extends RequestApi {
     const url: string = this.url + '/' + id
     try {
       const response = await fetch(url)
+      if (response.status === 404) {
+        throw new Error('Program not found')
+      }
       return Result.ok((await response.json()) as ProgramData)
     } catch (error: unknown) {
       return Result.err(error as Error)

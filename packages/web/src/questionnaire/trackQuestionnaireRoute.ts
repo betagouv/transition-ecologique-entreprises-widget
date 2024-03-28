@@ -1,5 +1,5 @@
 import type { Track } from '@/types'
-import { TrackComponents, TrackId } from '@/types'
+import { TrackComponent, TrackId } from '@/types'
 import { QuestionnaireRoute } from '@tee/common/src/questionnaire/types'
 
 export const questionnaireRoute: Track = {
@@ -18,7 +18,7 @@ export const questionnaireRoute: Track = {
     hintIcon: 'fr-icon-timer-line'
   },
   interface: {
-    component: TrackComponents.Cards,
+    component: TrackComponent.Cards,
     columnWidth: 6
   },
   behavior: {
@@ -29,9 +29,8 @@ export const questionnaireRoute: Track = {
   },
   options: [
     {
-      value: {
-        questionnaire_route: QuestionnaireRoute.NoSpecificGoal
-      },
+      value: QuestionnaireRoute.NoSpecificGoal,
+      questionnaireData: { questionnaire_route: QuestionnaireRoute.NoSpecificGoal },
       title: { fr: 'Je ne sais pas' },
       label: { fr: 'Je ne sais pas par où commencer' },
       resume: {
@@ -45,7 +44,8 @@ export const questionnaireRoute: Track = {
       }
     },
     {
-      value: {
+      value: QuestionnaireRoute.SpecificGoal,
+      questionnaireData: {
         questionnaire_route: QuestionnaireRoute.SpecificGoal
       },
       title: { fr: "J'ai un objectif" },

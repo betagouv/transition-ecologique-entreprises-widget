@@ -6,8 +6,8 @@ export enum RouteName {
   ChatAdvisor = 'chat-advisor',
   Legal = 'legal',
   PersonalData = 'personal-data',
+  QuestionnaireStart = 'questionnaire-start',
   Questionnaire = 'questionnaire',
-  QuestionnaireFromSidebar = 'questionnaire-from-sidebar',
   QuestionnaireResult = 'questionnaire-resultat',
   QuestionnaireResultDetail = 'questionnaire-result-detail'
 }

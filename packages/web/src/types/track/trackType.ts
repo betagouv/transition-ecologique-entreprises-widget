@@ -35,17 +35,18 @@ export interface TrackCallout {
   hint?: Translations
 }
 
-export enum TrackComponents {
+export enum TrackComponent {
   Cards = 'cards',
   Buttons = 'buttons',
   SimpleButtons = 'simpleButtons',
   Form = 'form',
   Input = 'input',
+  Siret = 'siret',
   Select = 'select',
   Results = 'results'
 }
 export interface TrackInterface {
-  component: TrackComponents
+  component: TrackComponent
   columnWidth?: number | string
 }
 export interface TrackBehavior {
@@ -72,8 +73,10 @@ export enum TrackFieldType {
   Search = 'search'
 }
 
-export interface NextTrackRule extends FormCallbackDataMapping {
-  conditions: Condition[]
+export interface TrackNext {
+  default: TrackId | false
+  ruleSet?: NextTrackRuleSet[]
+  [name: string]: any
 }
 
 export interface NextTrackRuleSet {
@@ -82,10 +85,8 @@ export interface NextTrackRuleSet {
   next: TrackNext
 }
 
-export interface TrackNext {
-  default: TrackId | false
-  exceptions?: NextTrackRuleSet[]
-  [name: string]: any
+export interface NextTrackRule extends FormCallbackDataMapping {
+  conditions: Condition[]
 }
 
 export enum HasInputOptions {
@@ -98,7 +99,9 @@ export enum HasInputOptions {
 export interface TrackOptions {
   id?: string
   disabled?: boolean
-  value: string | number | object
+  value?: string | number | object | Record<string, string | number>
+  validation?: CallableFunction
+  questionnaireData?: object
   required?: boolean
   title?: Translations
   label?: Translations
@@ -136,12 +139,23 @@ export interface TrackOptionsInput extends TrackOptions {
   wildcard?: TrackOptionWildcard
 }
 
+interface TrackOptionWildcard {
+  label: Translations
+  value?: string | number
+  next: TrackNext
+}
+
 export interface TrackOptionsSelect extends TrackOptions {
   label: Translations
 }
-interface TrackOptionWildcard {
-  label: Translations
-  next: TrackNext
+
+// Alias for TrackOptions (TrackOptions | TrackOptionsSelect | TrackOptionsInput)
+export type TrackOptionsUnion = TrackOptions | TrackOptionsSelect | TrackOptionsInput
+
+export type TrackOptionItem = {
+  option: TrackOptionsUnion
+  index?: number
+  remove?: boolean
 }
 
 export interface Track {
@@ -164,16 +178,13 @@ export interface Track {
   form?: FormOptions
 }
 
-// Alias for TrackOptions (TrackOptions | TrackOptionsSelect | TrackOptionsInput)
-export type TrackOptionsUnion = TrackOptions | TrackOptionsSelect | TrackOptionsInput
-
 export interface TracksList {
   programs: Track[]
 }
 
 export interface UsedTrack {
   id: TrackId
-  component: TrackComponents | string
+  component: TrackComponent
   category?: string
   final?: boolean
   completed: boolean
@@ -183,8 +194,8 @@ export interface UsedTrack {
   // titles?: Translations[],
   // val: any[] | null,
   // data: object,
-  selected: TrackOptions[]
-  next: any
+  selected: TrackOptionsUnion[]
+  next?: TrackNext
 }
 
 // FOR TRACKS - COMPONENTS
@@ -229,7 +240,7 @@ export const isTrackOptionsInput = (option: TrackOptionsInput | TrackOptions): o
 }
 
 export interface UsedTrackValuePair {
-  trackId: string
+  currentId: string
   completed: boolean
-  selection: (string | number | object)[]
+  selection: (string | number | object | undefined)[]
 }

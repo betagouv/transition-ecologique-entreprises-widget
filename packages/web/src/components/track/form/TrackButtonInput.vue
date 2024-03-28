@@ -1,28 +1,14 @@
 <template>
   <div
-    class="fr-div-fixed- height"
+    class="fr-div-fixed-height"
     @click="selectItem"
   >
-    <!-- DEBUGGING -->
-    <div
-      v-if="debugStore.is"
-      class="debug"
-    >
-      - option : <code>{{ option }}</code
-      ><br />
-      - icon: <code>{{ icon }}</code
-      ><br />
-      - inputValue: <code>{{ inputValue }}</code
-      ><br />
-      - isActive : <code>{{ isActive }}</code>
-    </div>
-
     <!-- INPUT CANVAS -->
     <div
       class="fr-btn-fullwidth fr-btn-fixed-height fr-btn-sm-align-left fr-btn-grey tee-btn-input"
       :style="`outline-color: #929292; font-weight: 500; ${isActive ? 'background-color: #eeeeee' : ''}`"
     >
-      <v-icon :name="icon"> </v-icon>
+      <v-icon :name="Button.getIcon(isActive, isCheckbox)"> </v-icon>
       <span
         v-if="isTextInput"
         class="fr-pr-3v"
@@ -55,25 +41,24 @@
 // CONSOLE LOG TEMPLATE
 // console.log(`TeeTrackButtonInput > FUNCTION_NAME > MSG_OR_VALUE :`)
 
-import { onBeforeMount, ref, computed } from 'vue'
+import { HasInputOptions, type TrackOptionItem, type TrackOptionsInput } from '@/types'
+import Button from '@/utils/button'
 import Translation from '@/utils/translation'
-import type { TrackOptionsInput } from '@/types'
-import { HasInputOptions } from '@/types'
-import { useDebugStore } from '@/stores/debug'
+import { computed, onBeforeMount, ref } from 'vue'
 
 interface Props {
-  trackId: string
-  icon: string
-  isActive: boolean
   option: TrackOptionsInput
+  isActive: boolean
+  isCheckbox: boolean
 }
 const props = defineProps<Props>()
 
-const debugStore = useDebugStore()
-
 const inputValue = ref<string | number>()
 
-const emit = defineEmits(['updateSelection', 'updateValue', 'goToNextTrack'])
+const emit = defineEmits<{
+  updateSelection: [TrackOptionItem]
+  updateValue: [TrackOptionItem]
+}>()
 
 onBeforeMount(() => {
   if (props.option.hasInput === HasInputOptions.Number) {
@@ -93,29 +78,27 @@ const isNumberInput = computed(() => {
 })
 
 // computed
-const dataObj = computed(() => {
+const trackOptionItem = computed<TrackOptionItem>(() => {
   const inputObject = props.option.value as Record<string, unknown>
   if (props.option.inputField) {
-    const val = inputValue.value
-    inputObject[props.option.inputField] = val
+    inputObject[props.option.inputField] = inputValue.value
   }
-  const data = {
+  return {
     option: {
       ...props.option,
       value: inputObject
     },
     remove: false
   }
-  return data
 })
 
 const sendValueUpdate = () => {
-  emit('updateValue', dataObj.value)
+  emit('updateValue', trackOptionItem.value)
 }
 
 const selectItem = () => {
   if (!props.isActive) {
-    emit('updateSelection', dataObj.value)
+    emit('updateSelection', trackOptionItem.value)
   }
 }
 </script>

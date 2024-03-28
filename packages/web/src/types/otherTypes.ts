@@ -1,9 +1,10 @@
+import type { TrackComponent } from './track/trackType'
 import type { Translations } from './translationTypes'
 import type { Plugin as VuePlugin } from 'vue'
 // FOR COMPONENTS
 
-export interface ColsOptions {
-  [name: string]: number | string
+export type ColsOptions = {
+  [key in TrackComponent]: number
 }
 
 export interface Plugin {
@@ -49,7 +50,6 @@ export interface ReqResp extends ReqError {
   code?: string
   message?: string
   data?: any
-  raw?: any
   resultsMapping?: ResultsMapping[]
   url?: string
 }

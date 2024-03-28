@@ -1,5 +1,11 @@
 import type { Track } from '@/types'
-import { Entreprise, TrackComponents, TrackId, YesNo } from '@/types'
+import { Entreprise, TrackComponent, TrackId, YesNo } from '@/types'
+
+export enum BuildingProperty {
+  Owns = 'owns',
+  Rents = 'rents',
+  OwnsAndRents = 'owns_and_rents'
+}
 
 export const buildingProperty: Track = {
   id: TrackId.BuildingProperty,
@@ -16,7 +22,7 @@ export const buildingProperty: Track = {
     imageLeft: 'images/thema/thema-batiments.svg'
   },
   interface: {
-    component: TrackComponents.Buttons
+    component: TrackComponent.Buttons
   },
   behavior: {
     multipleChoices: false
@@ -26,8 +32,9 @@ export const buildingProperty: Track = {
   },
   options: [
     {
-      value: {
-        structure_building_property: 'owns',
+      value: BuildingProperty.Owns,
+      questionnaireData: {
+        structure_building_property: BuildingProperty.Owns,
         [Entreprise.BuildingOwner]: YesNo.Yes
       },
       title: { fr: 'Propriétaire' },
@@ -37,8 +44,9 @@ export const buildingProperty: Track = {
       }
     },
     {
-      value: {
-        structure_building_property: 'rents',
+      value: BuildingProperty.Rents,
+      questionnaireData: {
+        structure_building_property: BuildingProperty.Rents,
         [Entreprise.BuildingOwner]: YesNo.No
       },
       title: { fr: 'Locataire' },
@@ -48,8 +56,9 @@ export const buildingProperty: Track = {
       }
     },
     {
-      value: {
-        structure_building_property: 'owns_and_rents',
+      value: BuildingProperty.OwnsAndRents,
+      questionnaireData: {
+        structure_building_property: BuildingProperty.OwnsAndRents,
         [Entreprise.BuildingOwner]: YesNo.Yes
       },
       title: { fr: 'Propriétaire & locataire' },

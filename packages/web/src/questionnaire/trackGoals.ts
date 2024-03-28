@@ -1,5 +1,5 @@
-import { Objectives, priorityObjectives, YesNo, TrackComponents, TrackId } from '@/types'
 import type { Track } from '@/types'
+import { Objective, Objectives, priorityObjectives, TrackComponent, TrackId, YesNo } from '@/types'
 
 export const goals: Track = {
   id: TrackId.Goals,
@@ -8,7 +8,7 @@ export const goals: Track = {
   label: { fr: 'Quel est votre objectif prioritaire ?' },
   hint: { fr: 'Je souhaite...' },
   interface: {
-    component: TrackComponents.Buttons
+    component: TrackComponent.Buttons
   },
   behavior: {
     multipleChoices: false
@@ -19,7 +19,8 @@ export const goals: Track = {
   options: [
     {
       // WIP
-      value: {
+      value: Objective.EnvironmentalImpact,
+      questionnaireData: {
         ...priorityObjectives,
         [Objectives.EnvironmentalImpact]: YesNo.Yes
       },
@@ -30,7 +31,8 @@ export const goals: Track = {
       }
     },
     {
-      value: {
+      value: Objective.EnergyPerformance,
+      questionnaireData: {
         ...priorityObjectives,
         [Objectives.EnergyPerformance]: YesNo.Yes
       },
@@ -41,7 +43,8 @@ export const goals: Track = {
       }
     },
     {
-      value: {
+      value: Objective.WaterConsumption,
+      questionnaireData: {
         ...priorityObjectives,
         [Objectives.WaterConsumption]: YesNo.Yes
       },
@@ -52,7 +55,8 @@ export const goals: Track = {
       }
     },
     {
-      value: {
+      value: Objective.BuildingRenovation,
+      questionnaireData: {
         ...priorityObjectives,
         [Objectives.BuildingRenovation]: YesNo.Yes
       },
@@ -63,7 +67,8 @@ export const goals: Track = {
       }
     },
     {
-      value: {
+      value: Objective.SustainableMobility,
+      questionnaireData: {
         ...priorityObjectives,
         [Objectives.SustainableMobility]: YesNo.Yes
       },
@@ -74,7 +79,8 @@ export const goals: Track = {
       }
     },
     {
-      value: {
+      value: Objective.WasteManagement,
+      questionnaireData: {
         ...priorityObjectives,
         [Objectives.WasteManagement]: YesNo.Yes
       },
@@ -85,7 +91,8 @@ export const goals: Track = {
       }
     },
     {
-      value: {
+      value: Objective.EcoDesign,
+      questionnaireData: {
         ...priorityObjectives,
         [Objectives.EcoDesign]: YesNo.Yes
       },
@@ -96,53 +103,13 @@ export const goals: Track = {
       }
     },
     {
-      value: {
+      value: Objective.TrainOrRecruit,
+      questionnaireData: {
         ...priorityObjectives,
         [Objectives.TrainOrRecruit]: YesNo.Yes
       },
       title: { fr: 'Formation' },
       label: { fr: '🧑‍🎓 Former ou recruter sur la transition écologique' },
-      next: {
-        default: TrackId.Results
-      }
-    },
-
-    // LEGACY OPTIONS
-    // USEFUL FOR DEBUGGING
-    {
-      disabled: true,
-      value: {
-        ...priorityObjectives,
-        [Objectives.MakeSavings]: YesNo.Yes
-      },
-      title: { fr: 'Economies' },
-      label: {
-        fr: '💶 Faire des économies en réduisant nos pertes en énergie, matière, déchets et eau'
-      },
-      next: {
-        default: TrackId.Results
-      }
-    },
-    {
-      disabled: true,
-      value: {
-        ...priorityObjectives,
-        [Objectives.DurablyInvest]: YesNo.Yes
-      },
-      title: { fr: 'Consolider mon projet' },
-      label: { fr: "📂 Consolider mon projet d'investissement durable" },
-      next: {
-        default: TrackId.Results
-      }
-    },
-    {
-      disabled: true,
-      value: {
-        ...priorityObjectives,
-        [Objectives.UnknownYet]: YesNo.Yes
-      },
-      title: { fr: 'Autre' },
-      label: { fr: '💁 Je ne sais pas encore' },
       next: {
         default: TrackId.Results
       }

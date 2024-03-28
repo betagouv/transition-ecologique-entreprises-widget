@@ -56,7 +56,7 @@
         </p>
         <router-link
           class="tee-router-link"
-          :to="{ name: RouteName.Questionnaire }"
+          :to="{ name: RouteName.QuestionnaireStart }"
         >
           <button
             class="fr-link fr-text--bold fr-link--icon-right fr-icon-arrow-right-line"

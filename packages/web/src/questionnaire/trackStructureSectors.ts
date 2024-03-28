@@ -1,4 +1,4 @@
-import { Sectors, SectorByNAF, NAF1ToVar, codesNAF1, EntrepriseSector, YesNo, Sector, TrackComponents, TrackId } from '@/types'
+import { Sectors, SectorByNAF, NAF1ToVar, codesNAF1, EntrepriseSector, YesNo, Sector, TrackComponent, TrackId } from '@/types'
 import type { Track } from '@/types'
 
 export const sectors: Track = {
@@ -8,22 +8,23 @@ export const sectors: Track = {
   title: { fr: 'Mon activité' },
   label: { fr: 'Quelle est votre activité ?' },
   interface: {
-    component: TrackComponents.Buttons
+    component: TrackComponent.Buttons
   },
   behavior: {
     multipleChoices: false
   },
   options: [
     {
-      value: {
+      value: Sector.Craftsmanship,
+      questionnaireData: {
         secteur: Sector.Craftsmanship,
         ...Sectors,
         [EntrepriseSector.Craftsmanship]: YesNo.Yes,
-        // "entreprise . code NAF niveau 1 . est A": YesNo.Yes
+        ...codesNAF1,
         ...(Object.assign(
           {},
-          ...SectorByNAF[EntrepriseSector.Craftsmanship].map((l) => {
-            return { [NAF1ToVar(l)]: YesNo.Yes }
+          ...SectorByNAF[EntrepriseSector.Craftsmanship].map((letter) => {
+            return { [NAF1ToVar(letter)]: YesNo.Yes }
           })
         ) as object)
       },
@@ -34,15 +35,16 @@ export const sectors: Track = {
       }
     },
     {
-      value: {
+      value: Sector.Industry,
+      questionnaireData: {
         secteur: Sector.Industry,
         ...Sectors,
         [EntrepriseSector.Industry]: YesNo.Yes,
         ...codesNAF1,
         ...(Object.assign(
           {},
-          ...SectorByNAF[EntrepriseSector.Industry].map((l) => {
-            return { [NAF1ToVar(l)]: YesNo.Yes }
+          ...SectorByNAF[EntrepriseSector.Industry].map((letter) => {
+            return { [NAF1ToVar(letter)]: YesNo.Yes }
           })
         ) as object)
       },
@@ -53,15 +55,16 @@ export const sectors: Track = {
       }
     },
     {
-      value: {
+      value: Sector.Tourism,
+      questionnaireData: {
         secteur: Sector.Tourism,
         ...Sectors,
         [EntrepriseSector.Tourism]: YesNo.Yes,
         ...codesNAF1,
         ...(Object.assign(
           {},
-          ...SectorByNAF[EntrepriseSector.Tourism].map((l) => {
-            return { [NAF1ToVar(l)]: YesNo.Yes }
+          ...SectorByNAF[EntrepriseSector.Tourism].map((letter) => {
+            return { [NAF1ToVar(letter)]: YesNo.Yes }
           })
         ) as object)
       },
@@ -72,15 +75,16 @@ export const sectors: Track = {
       }
     },
     {
-      value: {
+      value: Sector.Tertiary,
+      questionnaireData: {
         secteur: Sector.Tertiary,
         ...Sectors,
         [EntrepriseSector.Tertiary]: YesNo.Yes,
         ...codesNAF1,
         ...(Object.assign(
           {},
-          ...SectorByNAF[EntrepriseSector.Tertiary].map((l) => {
-            return { [NAF1ToVar(l)]: YesNo.Yes }
+          ...SectorByNAF[EntrepriseSector.Tertiary].map((letter) => {
+            return { [NAF1ToVar(letter)]: YesNo.Yes }
           })
         ) as object)
       },
@@ -91,15 +95,16 @@ export const sectors: Track = {
       }
     },
     {
-      value: {
+      value: Sector.Agriculture,
+      questionnaireData: {
         secteur: Sector.Agriculture,
         ...Sectors,
         [EntrepriseSector.Agriculture]: YesNo.Yes,
         ...codesNAF1,
         ...(Object.assign(
           {},
-          ...SectorByNAF[EntrepriseSector.Agriculture].map((l) => {
-            return { [NAF1ToVar(l)]: YesNo.Yes }
+          ...SectorByNAF[EntrepriseSector.Agriculture].map((letter) => {
+            return { [NAF1ToVar(letter)]: YesNo.Yes }
           })
         ) as object)
       },
@@ -110,15 +115,16 @@ export const sectors: Track = {
       }
     },
     {
-      value: {
+      value: Sector.Other,
+      questionnaireData: {
         secteur: Sector.Other,
         ...Sectors,
         [EntrepriseSector.Other]: YesNo.Yes,
         ...codesNAF1,
         ...(Object.assign(
           {},
-          ...SectorByNAF[EntrepriseSector.Other].map((l) => {
-            return { [NAF1ToVar(l)]: YesNo.Yes }
+          ...SectorByNAF[EntrepriseSector.Other].map((letter) => {
+            return { [NAF1ToVar(letter)]: YesNo.Yes }
           })
         ) as object)
       },

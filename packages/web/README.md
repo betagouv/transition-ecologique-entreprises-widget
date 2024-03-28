@@ -380,25 +380,7 @@ This strategy for building the dataset has several advantages :
 - No need for a database technology (no use for a PostGreSQL / SQL / MongoDB...), we keep it simple in a json ;
 - Any member of the team (especially not developpers) can add new yaml files to the repo, and the "database" will be updated without any need of a developer.
 
-The `TeeApp` widget can the import the json file as a static, and they are then stored in the global Pinia store (`./src/stores/programs.ts`) for later uses :
-
-```js
-// ./src/TeeApp.ce.vue
-
-<script lang="ts">
-  import jsonDataset from '../public/data/generated/dataset_out.json'
-  import {useProgramsStore} from './stores/programs'
-  const programs = programsStore()
-  ...
-  onBeforeMount(() => {
-  ...
-    programs.setDataset(jsonDataset as ProgramData[])
-  ...
-})
-  ...
-</script>
-
-```
+The json file as a static who store programs, are in the Pinia store (`./src/stores/program.ts`) for later uses :
 
 Once in the store, programs can be filtered (cf `filterPrograms` function in `./src/stores/program.ts` ) depending on the choices made by the user during the questionnaire.
 

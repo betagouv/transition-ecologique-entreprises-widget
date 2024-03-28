@@ -37,6 +37,11 @@ export interface ProgramData {
 }
 
 export type PublicodesProgramData = {
+  [Entreprise.isTargeted]:
+    | {
+        [k: string]: unknown
+      }
+    | string
   [key: string]: unknown
   [Entreprise.hasObjective]?: {
     [PublicodesCondition.oneOfThese]: Objectives[]

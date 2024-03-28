@@ -1,0 +1,24 @@
+input[type=search] {
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.tee-btn-input-clear-btn {
+  background-color: var(--background-contrast-grey);
+  box-shadow: inset 0 -2px 0 0 var(--border-action-high-blue-france);
+
+  &:before {
+    -webkit-mask-image: url(@gouvfr/dsfr/dist/icons/system/close-circle-line.svg) !important;
+    mask-image: url(@gouvfr/dsfr/dist/icons/system/close-line.svg) !important;
+  }
+
+  &:disabled {
+    background-color: var(--background-contrast-grey);
+    box-shadow: inset 0 -2px 0 0 var(--border-disabled-grey);
+    color: var(--text-disabled-grey);
+  }
+}

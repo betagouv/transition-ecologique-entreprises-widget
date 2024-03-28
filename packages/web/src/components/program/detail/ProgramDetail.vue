@@ -1,4 +1,32 @@
 <template>
+  <div class="fr-container-fluid fr-px-0 fr-px-md-20v fr-mt-3v">
+    <div class="fr-grid-row fr-grid-row-gutters">
+      <div class="fr-col">
+        <!-- BACK TO RESULTS BTN -->
+        <button
+          class="fr-btn fr-btn--lg fr-btn--tertiary-no-outline fr-mb-3v fr-pl-2v"
+          @click="resetDetailResult"
+        >
+          <v-icon
+            name="ri-arrow-left-line"
+            aria-hidden="true"
+            class="fr-mr-2v"
+          ></v-icon>
+          {{ Translation.t('results.backToResults') }}
+        </button>
+      </div>
+      <div
+        v-if="!program"
+        class="fr-col-12"
+      >
+        <TeeError
+          :mailto="Contact.email"
+          :email="Contact.email"
+        />
+      </div>
+    </div>
+  </div>
+
   <!-- ALERT - PROGRAM NOT AVAILABLE ANYMORE -->
   <div
     v-if="!programIsAvailable"
@@ -19,24 +47,12 @@
   </div>
 
   <!-- PROGRAM INFOS -->
-  <div class="fr-container-fluid fr-px-0 fr-px-md-20v fr-mt-3v">
+  <div
+    v-if="program"
+    class="fr-container-fluid fr-px-0 fr-px-md-20v fr-mt-3v"
+  >
     <div class="fr-grid-row fr-grid-row-gutters">
       <div class="fr-col">
-        <!-- BACK TO RESULTS BTN -->
-        <button
-          class="fr-btn fr-btn--lg fr-btn--tertiary-no-outline fr-mb-3v fr-pl-2v"
-          tertiary
-          noOutline
-          @click="resetDetailResult"
-        >
-          <v-icon
-            name="ri-arrow-left-line"
-            aria-hidden="true"
-            class="fr-mr-2v"
-          ></v-icon>
-          {{ Translation.t('results.backToResults') }}
-        </button>
-
         <!-- PROGRAM DETAILS -->
         <div class="fr-grid-row fr-grid-row--gutters fr-mb-8v">
           <!-- IMAGE -->
@@ -63,12 +79,6 @@
             </p>
 
             <!-- PROGRAM RESUME / TEXT-->
-            <h6
-              v-if="trackConfig.config?.showProgramSubtitles"
-              :style="`color: ${blockColor}`"
-            >
-              {{ Translation.t('program.programResume') }}
-            </h6>
             <h2
               :style="`color: ${blockColor}`"
               v-html="program?.promesse"
@@ -78,21 +88,6 @@
               style="color: #000091"
               v-html="program?.description"
             ></p>
-            <!-- <p
-              v-if="program['description longue']"
-              style="color: #000091"
-              v-html="program['description longue']">
-            </p> -->
-
-            <!-- OPEN MODAL -> FORM -->
-            <!-- :label="Translation.t('results.showForm', {title: program.title})" -->
-            <!-- <DsfrButton
-              class="fr-mb-3v fr-btn-sm-fullwidth"
-              :label="Translation.t('results.knowMore')"
-              secondary
-              @click="toggleShowForm"
-              ref="modalOrigin"/> -->
-
             <ProgramObjective
               v-if="program"
               :program="program"
@@ -101,27 +96,13 @@
         </div>
 
         <!-- PROGRAM INFOS : PROVIDERS / TYPE / START / END -->
-        <div
-          v-if="trackConfig.config?.showProgramInfos"
-          class="fr-grid-row fr-grid-row--gutters fr-mb-8v"
-        >
-          <!-- PROGRAM GEO ZONES -->
-          <!-- <div
-            v-if="program.geo_zones"
-            :class="columnTiles">
-            <TeeTile
-              :title="Translation.t('program.programGeoZones')"
-              :image-path="`${publicPath}images/TEE-porteur.svg`"
-              :description="'...'"
-            />
-          </div> -->
-
+        <div class="fr-grid-row fr-grid-row--gutters fr-mb-8v">
           <!-- PROGRAM COST | LOAN | AID -->
           <div
             v-if="programCost"
             :class="columnTiles"
           >
-            <TeeTile
+            <ProgramTile
               class="tee-no-hover"
               :title="Translation.t('programCosts.cost')"
               :image-path="`${publicPath}images/TEE-cout-02.svg`"
@@ -133,7 +114,7 @@
             v-if="programAidAmount"
             :class="columnTiles"
           >
-            <TeeTile
+            <ProgramTile
               class="tee-no-hover"
               :title="Translation.t('programCosts.aid')"
               :image-path="`${publicPath}images/TEE-cout-02.svg`"
@@ -145,7 +126,7 @@
             v-if="programTaxAdvantage"
             :class="columnTiles"
           >
-            <TeeTile
+            <ProgramTile
               class="tee-no-hover"
               :title="Translation.t('programCosts.taxAdvantage')"
               :image-path="`${publicPath}images/TEE-cout-02.svg`"
@@ -157,30 +138,20 @@
             v-if="programLoan"
             :class="columnTiles"
           >
-            <TeeTile
+            <ProgramTile
               class="tee-no-hover"
               :title="Translation.t('programCosts.loan')"
               :image-path="`${publicPath}images/TEE-cout-02.svg`"
               :description="`${programLoan}`"
             />
           </div>
-          <!-- <div
-            v-if="program[`taux du prêt`]"
-            :class="columnTiles">
-            <TeeTile
-              class="tee-no-hover"
-              :title="Translation.t('programCosts.loanRate')"
-              :image-path="`${Translation.publicPath}images/TEE-cout.svg`"
-              :description="`${program[`taux du prêt`]}`"
-            />
-          </div> -->
 
           <!-- PROGRAM DURATION -->
           <div
             v-if="programDuration"
             :class="columnTiles"
           >
-            <TeeTile
+            <ProgramTile
               class="tee-no-hover"
               :title="Translation.t('program.programDuration')"
               :image-path="`${publicPath}images/TEE-duree.svg`"
@@ -191,7 +162,7 @@
             v-if="programLoanDuration"
             :class="columnTiles"
           >
-            <TeeTile
+            <ProgramTile
               class="tee-no-hover"
               :title="Translation.t('program.programLoanDuration')"
               :image-path="`${publicPath}images/TEE-duree.svg`"
@@ -201,19 +172,19 @@
 
           <!-- PROGRAM PROVIDERS -->
           <div :class="columnTiles">
-            <TeeTile
+            <ProgramTile
               v-if="programProvider"
               class="tee-no-hover"
               :title="Translation.t('program.programProviders')"
               :image-path="`${publicPath}images/TEE-porteur.svg`"
               :description="Translation.to(programProvider)"
             >
-            </TeeTile>
+            </ProgramTile>
           </div>
 
           <!-- PROGRAM END VALIDITY -->
           <div :class="columnTiles">
-            <TeeTile
+            <ProgramTile
               class="tee-no-hover"
               :title="Translation.t('program.programEndValidity')"
               :image-path="`${publicPath}images/TEE-duree.svg`"
@@ -270,35 +241,33 @@ import ProgramEligibility from '@/components/program/detail/ProgramEligibility.v
 import ProgramForm from '@/components/program/detail/ProgramForm.vue'
 import ProgramLongDescription from '@/components/program/detail/ProgramLongDescription.vue'
 import ProgramObjective from '@/components/program/detail/ProgramObjective.vue'
-import TeeTile from '@/components/TeeTile.vue'
+import ProgramTile from '@/components/program/detail/ProgramTile.vue'
 import Config from '@/config'
 import { useNavigationStore } from '@/stores/navigation'
-import { useProgramsStore } from '@/stores/programs'
-import { useTracksStore } from '@/stores/tracks'
-import { type ProgramData, TrackId } from '@/types'
+import { useProgramStore } from '@/stores/program'
+import { type ProgramData as ProgramType } from '@/types'
 import { RouteName } from '@/types/routeType'
+import Contact from '@/utils/contact'
 import Matomo from '@/utils/matomo'
 import Program from '@/utils/program/program'
 import Translation from '@/utils/translation'
 import { computed, onBeforeMount, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
-const tracks = useTracksStore()
-const programs = useProgramsStore()
-const navigation = useNavigationStore()
+const programsStore = useProgramStore()
+const navigationStore = useNavigationStore()
 const route = useRoute()
 const router = useRouter()
 
-const program = ref<{ index: string } & ProgramData>()
-const trackConfig = ref<any>()
+const program = ref<ProgramType>()
 const TeeProgramFormContainer = ref<HTMLElement | null | undefined>(null)
 
 const blockColor = '#000091'
-
 const publicPath = Config.publicPath
+const isCatalogDetail = navigationStore.isByRouteName(RouteName.CatalogDetail)
 
 interface Props {
-  programId: string | number
+  programId: string
 }
 const props = defineProps<Props>()
 
@@ -329,23 +298,21 @@ const columnTiles = computed(() => {
 
 // functions
 const resetDetailResult = async () => {
-  const isCatalogDetail = navigation.isByRouteName(RouteName.CatalogDetail)
-  if (isCatalogDetail) {
-    tracks.resetUsedTracks()
-  }
-
-  const routeName = isCatalogDetail ? RouteName.Catalog : RouteName.QuestionnaireResult
-  await router.push({ name: routeName, hash: '#' + props.programId })
+  await router.push({
+    name: isCatalogDetail ? RouteName.Catalog : RouteName.QuestionnaireResult,
+    hash: '#' + props.programId,
+    query: isCatalogDetail ? undefined : navigationStore.query
+  })
 }
 
 onBeforeMount(() => {
-  program.value = programs.getProgramById(props.programId)
-  trackConfig.value = tracks.getTrack(TrackId.Results)
+  program.value = programsStore.currentProgram
+
   // analytics / send event
   Matomo.sendEvent('result_detail', route.name === RouteName.CatalogDetail ? 'show_detail_catalog' : 'show_detail', props.programId)
 })
 
 const programIsAvailable = computed(() => {
-  return Program.isAvailable(program.value)
+  return Program.isAvailable(programsStore.currentProgram)
 })
 </script>

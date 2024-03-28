@@ -36,5 +36,5 @@ export const CheckNextTrackRules = (data: Record<string, unknown>, rules: NextTr
     boolArray.push(bool)
   })
 
-  return boolArray.every((b) => !!b)
+  return boolArray.every((b) => b)
 }

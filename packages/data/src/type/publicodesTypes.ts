@@ -1,7 +1,8 @@
 // LEGACY
 export enum YesNo {
   Yes = 'oui',
-  No = 'non'
+  No = 'non',
+  Unknown = 'unknown'
 }
 
 export enum PublicodesCondition {
@@ -15,7 +16,8 @@ export enum Entreprise {
   CodeNAF = 'entreprise . code NAF',
   Workforce = 'entreprise . effectif',
   BuildingOwner = 'entreprise . est propriétaire de ses locaux',
-  hasObjective = 'entreprise . a un objectif ciblé'
+  hasObjective = 'entreprise . a un objectif ciblé',
+  isTargeted = 'entreprise . est ciblée'
 }
 
 export enum Questionnaire {
@@ -67,7 +69,7 @@ export const SectorByNAF = {
   [EntrepriseSector.Other]: ['D', 'E', 'F', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U']
 }
 
-enum Objective {
+export enum Objective {
   EnvironmentalImpact = 'mon impact environnemental',
   EnergyPerformance = 'ma performance énergétique',
   WaterConsumption = "diminuer ma consommation d'eau",

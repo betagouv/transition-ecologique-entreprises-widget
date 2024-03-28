@@ -1,5 +1,5 @@
 import type { Track } from '@/types'
-import { Objectives, TrackComponents, TrackId, YesNo } from '@/types'
+import { Objectives, TrackComponent, TrackId, YesNo } from '@/types'
 
 export const strategyAudits: Track = {
   id: TrackId.StrategyAudits,
@@ -18,7 +18,7 @@ export const strategyAudits: Track = {
     imageLeft: 'images/thema/thema-strategie.svg'
   },
   interface: {
-    component: TrackComponents.Buttons
+    component: TrackComponent.Buttons
   },
   behavior: {
     multipleChoices: false
@@ -28,7 +28,11 @@ export const strategyAudits: Track = {
   },
   options: [
     {
-      value: { strategy_audits: 'yes', [Objectives.EnvironmentalImpact]: YesNo.No },
+      value: YesNo.Yes,
+      questionnaireData: {
+        strategy_audits: YesNo.Yes,
+        [Objectives.EnvironmentalImpact]: YesNo.No
+      },
       title: { fr: 'Oui' },
       label: { fr: '✅ Oui !' },
       next: {
@@ -36,8 +40,11 @@ export const strategyAudits: Track = {
       }
     },
     {
-      value: { strategy_audits: 'no', [Objectives.EnvironmentalImpact]: YesNo.Yes },
-
+      value: YesNo.No,
+      questionnaireData: {
+        strategy_audits: YesNo.No,
+        [Objectives.EnvironmentalImpact]: YesNo.Yes
+      },
       title: { fr: 'Non' },
       label: { fr: '❌ Non' },
       next: {
@@ -45,7 +52,11 @@ export const strategyAudits: Track = {
       }
     },
     {
-      value: { strategy_audits: 'unknown', [Objectives.EnvironmentalImpact]: YesNo.Yes },
+      value: YesNo.Unknown,
+      questionnaireData: {
+        strategy_audits: YesNo.Unknown,
+        [Objectives.EnvironmentalImpact]: YesNo.Yes
+      },
       title: { fr: 'Je ne sais pas' },
       label: { fr: 'Je ne sais pas' },
       next: {

@@ -1,4 +1,4 @@
-import { useTracksStore } from '@/stores/tracks'
+import { useUsedTrackStore } from '@/stores/usedTrack'
 import { Entreprise, QuestionnaireRoute, TrackId } from '@/types'
 import type { OpportunityBody, ReqResp, WithoutNullableKeys, opportunityFormType } from '@/types'
 import RequestApi from '@/service/api/requestApi'
@@ -10,7 +10,7 @@ export default class OpportunityApi extends RequestApi {
     'content-type': 'application/json'
   }
 
-  private useTracks = useTracksStore()
+  private usedTrackStore = useUsedTrackStore()
 
   private _opportunityForm: WithoutNullableKeys<opportunityFormType>
 
@@ -68,10 +68,10 @@ export default class OpportunityApi extends RequestApi {
   }
 
   private getFromUsedTrack(trackId: TrackId, key: string) {
-    return this.useTracks.findSelectedValueByTrackIdAndKey(trackId, key)
+    return this.usedTrackStore.findInQuestionnaireDataByTrackIdAndKey(trackId, key)
   }
 
   private getAllValuesFromUsedTrack() {
-    return JSON.stringify(this.useTracks.getAllUsedTracksValues)
+    return JSON.stringify(this.usedTrackStore.completedQuestionnaireData)
   }
 }

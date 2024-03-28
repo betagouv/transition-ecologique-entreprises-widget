@@ -239,18 +239,7 @@ button.fr-link:hover, .tee-router-link:hover {
 .tee-btn-input-large::before {
   width: 3rem !important;
 }
-/* .tee-form-input-large input[type="search"]::-webkit-search-decoration,
-.tee-form-input-large input[type="search"]::-webkit-search-cancel-button,
-.tee-form-input-large input[type="search"]::-webkit-search-results-button,
-.tee-form-input-large input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance:none !important;
-} */
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
-  display: none;
-}
+
 .tee-form-input-large:focus-within {
   outline-offset: 2px;
   outline-width: 2px;
@@ -258,20 +247,12 @@ input[type=search]::-webkit-search-results-decoration {
   outline-style: solid;
 }
 .tee-input-large:focus {
-  outline-offset: none;
-  outline-width: none;
-  outline-color: none;
+  outline-offset: unset;
+  outline-width: unset;
+  outline-color: unset;
   outline-style: none;
 }
 
-.tee-btn-input-clear-btn {
-  background-color: var(--background-contrast-grey);
-  box-shadow: inset 0 -2px 0 0 var(--border-plain-grey);
-}
-.tee-btn-input-clear-btn:disabled {
-  background-color: var(--background-contrast-grey);
-  box-shadow: inset 0 -2px 0 0 var(--border-disabled-grey);
-}
 .tee-input-hint {
   color: #000091;
 }

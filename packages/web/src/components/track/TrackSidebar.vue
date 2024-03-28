@@ -26,13 +26,20 @@
         :key="usedTrack.id"
       >
         <div class="fr-mb-1v">
+          <router-link
+            v-if="usedTrack.completed"
+            class="tee-btn-sidebar fr-btn fr-btn--tertiary-no-outline"
+            :to="navigationStore.routeByTrackId(usedTrack.id)"
+          >
+            {{ trackStore.getTrackTitle(usedTrack.id as TrackId, Translation.lang) }}
+          </router-link>
           <DsfrButton
-            :label="tracks.getTrackTitle(usedTrack.id as TrackId, Translation.lang)"
-            :disabled="!usedTrack.completed"
-            class="tee-btn-sidebar"
+            v-else
+            :label="trackStore.getTrackTitle(usedTrack.id as TrackId, Translation.lang)"
+            :disabled="true"
             tertiary
             no-outline
-            @click="backToTrack(usedTrack.id)"
+            class="tee-btn-sidebar"
           />
         </div>
       </div>
@@ -44,32 +51,26 @@
 // CONSOLE LOG TEMPLATE
 // console.log(`TeeSidebar > FUNCTION_NAME > MSG_OR_VALUE :`)
 
-import { RouteName } from '@/types/routeType'
-import Navigation from '@/utils/navigation'
-import { computed } from 'vue'
-import { useTracksStore } from '@/stores/tracks'
-import Translation from '@/utils/translation'
+import { useDebugStore } from '@/stores/debug'
+import { useNavigationStore } from '@/stores/navigation'
+import { useTrackStore } from '@/stores/track'
+import { useUsedTrackStore } from '@/stores/usedTrack'
 import { TrackId } from '@/types'
 import { groupBy } from '@/utils/helpers'
-import { useDebugStore } from '@/stores/debug'
-import { DsfrButton } from '@gouvminint/vue-dsfr'
-import { useRouter } from 'vue-router'
+import Translation from '@/utils/translation'
+import { computed } from 'vue'
 
-const tracks = useTracksStore()
+const trackStore = useTrackStore()
 const debugStore = useDebugStore()
-const router = useRouter()
+// const router = useRouter()
+const navigationStore = useNavigationStore()
+const usedTrackStore = useUsedTrackStore()
 
 const usedTracksRegrouped = computed(() => {
-  return groupBy(tracks.usedTracks, 'category')
+  return groupBy(usedTrackStore.usedTracks, 'category')
 })
 
 const usedCategories = computed(() => {
   return Object.keys(usedTracksRegrouped.value)
 })
-
-const backToTrack = async (trackId: TrackId) => {
-  tracks.setUsedTracksAsNotCompleted(trackId)
-  tracks.removeFurtherUsedTracks(trackId)
-  await router.push({ name: RouteName.QuestionnaireFromSidebar, hash: Navigation.hashByRouteName(RouteName.Questionnaire) })
-}
 </script>

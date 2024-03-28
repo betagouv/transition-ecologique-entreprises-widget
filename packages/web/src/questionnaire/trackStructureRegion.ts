@@ -1,8 +1,8 @@
 // CONSOLE LOG TEMPLATE
 // console.log(`questionnaire.trackStructureRegion > FUNCTION_NAME > MSG_OR_VALUE :`)
 
-import type { Track } from '@/types'
-import { TrackComponents, TrackId, ConditionOperators, DataMappingFrom } from '@/types'
+import type { Track, TrackOptionsUnion } from '@/types'
+import { TrackComponent, TrackId, ConditionOperators, DataMappingFrom } from '@/types'
 import { QuestionnaireRoute } from '@tee/common/src/questionnaire/types'
 import type { NextTrackRuleSet } from '@/types'
 
@@ -41,7 +41,7 @@ const regionsList = [
   'Wallis et Futuna'
 ]
 
-const nextExceptions: NextTrackRuleSet[] = [
+const nextTrackRulesSet: NextTrackRuleSet[] = [
   {
     help: "Goes to track_structure_building_property if : questionnaire_route == 'no_specific_goal' (newbie)",
     rules: [
@@ -80,14 +80,15 @@ const nextExceptions: NextTrackRuleSet[] = [
   }
 ]
 
-const regionsOptions = regionsList.map((regName) => {
+const regionsOptions: TrackOptionsUnion[] = regionsList.map((regName) => {
   return {
-    value: { région: regName },
+    value: regName,
+    questionnaireData: { région: regName },
     title: { fr: regName },
     label: { fr: regName },
     next: {
       default: TrackId.Goals,
-      exceptions: nextExceptions
+      ruleSet: nextTrackRulesSet
     }
   }
 })
@@ -98,7 +99,7 @@ export const regions: Track = {
   title: { fr: 'Ma localisation' },
   label: { fr: 'Où êtes-vous situé ?' },
   interface: {
-    component: TrackComponents.Select
+    component: TrackComponent.Select
   },
   behavior: {
     multipleChoices: false

@@ -1,5 +1,5 @@
 import type { Track } from '@/types'
-import { Objectives, TrackComponents, TrackId, YesNo } from '@/types'
+import { Objectives, TrackComponent, TrackId, YesNo } from '@/types'
 
 export const waterStake: Track = {
   id: TrackId.WaterStake,
@@ -16,7 +16,7 @@ export const waterStake: Track = {
     imageLeft: 'images/thema/thema-eau.svg'
   },
   interface: {
-    component: TrackComponents.Buttons
+    component: TrackComponent.Buttons
   },
   behavior: {
     multipleChoices: false
@@ -26,7 +26,8 @@ export const waterStake: Track = {
   },
   options: [
     {
-      value: { water_stake: 'yes', [Objectives.WaterConsumption]: YesNo.Yes },
+      value: YesNo.Yes,
+      questionnaireData: { water_stake: YesNo.Yes, [Objectives.WaterConsumption]: YesNo.Yes },
       title: { fr: 'Oui' },
       label: { fr: "👍 Oui, je pense que c'est un enjeu pour mon entreprise" },
       next: {
@@ -34,7 +35,8 @@ export const waterStake: Track = {
       }
     },
     {
-      value: { water_stake: 'no', [Objectives.WaterConsumption]: YesNo.No },
+      value: YesNo.No,
+      questionnaireData: { water_stake: YesNo.No, [Objectives.WaterConsumption]: YesNo.No },
       title: { fr: 'Non' },
       label: { fr: '👎 Non, pas vraiment' },
       next: {
@@ -42,7 +44,8 @@ export const waterStake: Track = {
       }
     },
     {
-      value: { water_stake: 'unknown', [Objectives.WaterConsumption]: YesNo.Yes },
+      value: YesNo.Unknown,
+      questionnaireData: { water_stake: 'unknown', [Objectives.WaterConsumption]: YesNo.Yes },
       title: { fr: 'Je ne sais pas' },
       label: { fr: 'Aucune idée !' },
       next: {

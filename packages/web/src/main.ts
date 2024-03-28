@@ -1,7 +1,7 @@
 import '@gouvfr/dsfr/dist/dsfr.min.css'
 import '@gouvfr/dsfr/dist/utility/icons/icons.min.css'
 import '@gouvminint/vue-dsfr/styles'
-import '@public/css/custom.css'
+import '@/assets/custom.css'
 import '@/assets/main.scss'
 
 import { type App, type Component, createApp } from 'vue'

@@ -11,18 +11,12 @@
       <div class="fr-grid-row fr-grid-row--gutters fr-mb-3v">
         <div class="fr-col-4">
           <h6 class="fr-mb-1v">
-            tracks.currentStep : <code>{{ tracks.currentStep }} </code>
-          </h6>
-          <h6 class="fr-mb-1v">
             seed : <code>{{ seed }} </code>
           </h6>
         </div>
         <div class="fr-col-4">
           <h6 class="fr-mb-1v">
-            programs.programDetail : <code>{{ programs.programDetail }} </code>
-          </h6>
-          <h6 class="fr-mb-1v">
-            tracks.seedTrack : <code>{{ tracks.seedTrack }} </code>
+            tracks.seedTrack : <code>{{ trackStore.currentId }} </code>
           </h6>
         </div>
       </div>
@@ -49,9 +43,9 @@
 
     <!-- QUESTIONNAIRE -->
     <div
-      v-show="!programs.programDetail"
+      v-show="!programs.currentProgram"
       id="widget"
-      :class="`fr-container--fluid ${tracks.currentStep && tracks.currentStep > 1 ? 'fr-pt-10v' : ''}`"
+      :class="`fr-container--fluid ${usedTrackStore.currentStep && usedTrackStore.currentStep > 1 ? 'fr-pt-10v' : ''}`"
     >
       <!-- TRACKS INTERFACES -->
       <div
@@ -60,31 +54,31 @@
       >
         <!-- SIDEBAR MENU (FIL D'ARIANE)-->
         <div
-          v-if="needSidebar && tracks.currentStep && tracks.currentStep > 1"
+          v-if="needSidebar && usedTrackStore.currentStep && usedTrackStore.currentStep > 1"
           class="fr-tee-add-padding fr-mt-4v fr-col-3 fr-col-md-4 fr-col-lg-4 fr-col-xl-2 fr-col-sm-hide"
           style="height: 100%"
         >
-          <TeeSidebar />
+          <TrackSidebar />
         </div>
 
         <!-- TRACKS -->
         <div
           id="tee-app-tracks"
-          :class="`${tracks.currentStep && tracks.currentStep > 1 ? 'fr-tee-add-padding' : ''} ${getColumnsWidth} ${
+          :class="`${usedTrackStore.currentStep && usedTrackStore.currentStep > 1 ? 'fr-tee-add-padding' : ''} ${getColumnsWidth} ${
             debugStore.is ? '' : 'fr-grid-row--center'
           }`"
         >
           <div
-            v-for="(track, index) in tracks.usedTracks"
+            v-for="(track, index) in usedTrackStore.usedTracks"
             :key="track.id"
             :style="`${
-              tracks.getTrackBgColor(track.id as TrackId)
-                ? 'padding: 0px; background-color:' + tracks.getTrackBgColor(track.id as TrackId)
+              trackStore.getTrackBgColor(track.id as TrackId)
+                ? 'padding: 0px; background-color:' + trackStore.getTrackBgColor(track.id as TrackId)
                 : ''
             }`"
             :class="`fr-p-0 fr-mb-${debugStore.is ? '12v' : '0'}`"
           >
-            <TeeTrack
+            <TrackContent
               v-if="trackElement"
               :step="index + 1"
               :used-track="track"
@@ -96,11 +90,8 @@
     </div>
 
     <!-- DETAIL RESULT CARD -->
-    <template v-if="programs.programDetail">
-      <ProgramDetail
-        :program-id="programs.programDetail"
-        :track-id="programs.programDetailConfig"
-      />
+    <template v-if="programs.currentProgram">
+      <ProgramDetail :program-id="programs.currentProgram.id" />
     </template>
   </div>
 </template>
@@ -112,22 +103,18 @@
 // cf : https://stackoverflow.com/questions/71163741/vuejs-script-setup-cannot-contain-es-module-exports
 
 import '@gouvfr/dsfr/dist/core/core.main.min.css'
-
-import { computed, onBeforeMount, ref, watch } from 'vue'
-
-import { useTracksStore } from './stores/tracks'
+import { useTrackStore } from '@/stores/track'
+import { useUsedTrackStore } from '@/stores/usedTrack'
+import { computed, onBeforeMount, ref } from 'vue'
 import Translation from '@/utils/translation'
-import { useProgramsStore } from './stores/programs'
-import { useNavigationStore } from './stores/navigation'
-import { type ProgramData, TrackComponents, TrackId } from './types'
+import { useProgramStore } from './stores/program'
+import { TrackComponent, TrackId } from './types'
 import TeeMatomo from './components/TeeMatomo.vue'
-import TeeTrack from './components/tracks/TeeTrack.vue'
-import TeeSidebar from './components/TeeSidebar.vue'
+import TrackSidebar from '@/components/track/TrackSidebar.vue'
 import ProgramDetail from './components/program/detail/ProgramDetail.vue'
 import Widget from '@/utils/widget'
 import { useDebugStore } from '@/stores/debug'
 import { DsfrToggleSwitch } from '@gouvminint/vue-dsfr'
-import jsonDataset from '../public/data/generated/dataset_out.json'
 import Config from '@/config'
 
 interface Props {
@@ -140,46 +127,33 @@ interface Props {
 }
 const props = defineProps<Props>()
 
-const tracks = useTracksStore()
-const programs = useProgramsStore()
-const nav = useNavigationStore()
+const programs = useProgramStore()
 const debugStore = useDebugStore()
+const trackStore = useTrackStore()
+const usedTrackStore = useUsedTrackStore()
 
 // HTML/Vue3 DOM ref
 const trackElement = ref<HTMLElement | null>(null)
-
-watch(
-  () => tracks.usedTracks,
-  () => {
-    if (nav.routerReady) {
-      if (tracks.currentStep) {
-        nav.setCurrentStep(tracks.currentStep)
-      }
-      nav.setCurrentTrackId(tracks.currentTrackId as TrackId)
-      nav.updateQueries(tracks.getAllUsedTracksValuesPairs)
-    }
-  }
-)
 
 const changeDebug = (payload: boolean) => {
   debugStore.is = payload
 }
 
 const needSidebar = computed(() => {
-  return tracks.seedTrack !== TrackId.Results && tracks.currentStep && (tracks.currentStep > 1 || !Widget.is)
+  return trackStore.currentId !== TrackId.Results && usedTrackStore.currentStep && (usedTrackStore.currentStep > 1 || !Widget.is)
 })
 
 const getColumnsWidth = computed(() => {
-  const currentTrack = tracks.getLastTrack
+  const currentUsedTrack = usedTrackStore.current
   const colsDebug = 'fr-col-7'
   const colsStart = 'fr-col-12 fr-col-xl-12'
   const colsTracks = 'fr-col fr-col-sm-12 fr-col-md-8 fr-col-lg-8 fr-col-xl-6'
   const colsResults = 'fr-col fr-col-sm-12 fr-col-md-8 fr-col-lg-8 fr-col-xl-8'
   if (debugStore.is) {
     return colsDebug
-  } else if (tracks.seedTrack === TrackId.Results || (tracks.currentStep === 1 && Widget.is)) {
+  } else if (trackStore.currentId === TrackId.Results || (usedTrackStore.currentStep === 1 && Widget.is)) {
     return colsStart
-  } else if ((currentTrack && (currentTrack.component as TrackComponents)) === TrackComponents.Results) {
+  } else if ((currentUsedTrack && (currentUsedTrack.component as TrackComponent)) === TrackComponent.Results) {
     return colsResults
   } else {
     return colsTracks
@@ -187,10 +161,6 @@ const getColumnsWidth = computed(() => {
 })
 
 const setupGlobal = () => {
-  // load dataset to pinia store
-  // programs.setDataset(props.datasetUrl, deployMode, deployUrl)
-  programs.setDataset(jsonDataset as ProgramData[])
-
   // set locale and message
   const locale = props.locale ?? 'fr'
   Translation.setLocale(locale)
@@ -223,7 +193,7 @@ onBeforeMount(() => {
   // set max depth at mount
   if (props.maxDepth) {
     const maxDepthNum = Number(props.maxDepth)
-    tracks.setMaxDepth(maxDepthNum)
+    trackStore.setMaxDepth(maxDepthNum)
   }
 
   // set debug mode
@@ -234,8 +204,7 @@ onBeforeMount(() => {
   }
 
   // set first track at mount
-  tracks.setSeedTrack(props.seed)
-  tracks.addToUsedTracks(props.seed, props.seed)
+  usedTrackStore.add(props.seed, props.seed)
 })
 </script>
 

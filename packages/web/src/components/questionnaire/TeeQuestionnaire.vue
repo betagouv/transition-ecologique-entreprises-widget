@@ -19,7 +19,7 @@
           class="fr-tee-add-padding fr-mt-10v fr-col-3 fr-col-md-4 fr-col-lg-4 fr-col-xl-2 fr-col-sm-hide"
           style="height: 100%"
         >
-          <TeeSidebar />
+          <TrackSidebar />
         </div>
 
         <!-- TRACKS -->
@@ -27,26 +27,13 @@
           id="tee-app-tracks"
           class="fr-grid-row--center fr-col fr-col-sm-12 fr-col-md-8 fr-col-lg-8 fr-col-xl-6"
         >
-          <template
-            v-for="(track, index) in tracks.usedTracks"
-            :key="track.id"
+          <div
+            v-if="trackElement && usedTrackStore.current && trackStore.current"
+            :style="`${trackStore.current.bgColor ? 'padding: 0px; background-color:' + trackStore.current.bgColor : ''}`"
+            :class="`fr-p-0 fr-mb-${debugStore.is ? '12v' : '0'}`"
           >
-            <div
-              v-if="trackElement && !track.completed"
-              :style="`${
-                tracks.getTrackBgColor(track.id as TrackId)
-                  ? 'padding: 0px; background-color:' + tracks.getTrackBgColor(track.id as TrackId)
-                  : ''
-              }`"
-              :class="`fr-p-0 fr-mb-${debugStore.is ? '12v' : '0'}`"
-            >
-              <TeeTrack
-                :step="index + 1"
-                :used-track="track"
-                :track-element="trackElement"
-              />
-            </div>
-          </template>
+            <TrackContent :track-element="trackElement" />
+          </div>
         </div>
       </div>
     </div>
@@ -54,62 +41,45 @@
 </template>
 
 <script setup lang="ts">
+import TrackContent from '@/components/track/TrackContent.vue'
+import TrackSidebar from '@/components/track/TrackSidebar.vue'
+import { useDebugStore } from '@/stores/debug'
+// import { useNavigationStore } from '@/stores/navigation'
+import { useTrackStore } from '@/stores/track'
+import { useUsedTrackStore } from '@/stores/usedTrack'
+import { TrackId } from '@/types'
 import { RouteName } from '@/types/routeType'
-import { computed, onBeforeMount, onMounted, ref, watch } from 'vue'
+import { computed, onBeforeMount, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 
-import { useTracksStore } from '@/stores/tracks'
-import { useNavigationStore } from '@/stores/navigation'
-import { TrackId } from '@/types'
-import TeeTrack from '@/components/tracks/TeeTrack.vue'
-import TeeSidebar from '@/components/TeeSidebar.vue'
-import { useDebugStore } from '@/stores/debug'
-
 interface Props {
-  seed?: TrackId
+  trackId: TrackId
 }
 const props = defineProps<Props>()
 
 const trackElement = ref<HTMLElement | null>(null)
 
-const tracks = useTracksStore()
-const nav = useNavigationStore()
+const trackStore = useTrackStore()
+const usedTrackStore = useUsedTrackStore()
+// const nav = useNavigationStore()
 const debugStore = useDebugStore()
 const router = useRouter()
 
-watch(
-  () => tracks.usedTracks,
-  () => {
-    if (nav.routerReady) {
-      if (tracks.currentStep) {
-        nav.setCurrentStep(tracks.currentStep)
-      }
-      nav.setCurrentTrackId(tracks.currentTrackId)
-      nav.updateQueries(tracks.getAllUsedTracksValuesPairs)
-    }
-  }
-)
-
 const needSidebar = computed(() => {
-  return tracks.currentStep && tracks.currentStep > 1
+  return trackStore.currentId !== TrackId.QuestionnaireRoute
 })
 
-const setupFromUrl = () => {
-  nav.setCurrentTrackId(tracks.currentTrackId)
-  nav.updateQueries(tracks.getAllUsedTracksValuesPairs)
-}
+// const setupFromUrl = async () => {
+//   await nav.updateQueries(usedTrackStore.usedTracksValuesPairs)
+// }
 
 onBeforeMount(() => {
-  // set first track at mount
-  if (props.seed) {
-    tracks.setSeedTrack(props.seed)
-    tracks.addToUsedTracks(props.seed, props.seed)
-  }
+  usedTrackStore.add(props.trackId, props.trackId)
 })
 
 onMounted(async () => {
   // cf: https://stackoverflow.com/questions/69495211/vue3-route-query-empty
   await router.isReady()
-  setupFromUrl()
+  // await setupFromUrl()
 })
 </script>

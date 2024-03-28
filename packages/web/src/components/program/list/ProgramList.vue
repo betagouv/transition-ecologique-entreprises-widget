@@ -1,7 +1,7 @@
 <template>
   <!-- PROGRAMS AS LIST OF CARDS -->
   <div class="fr-container fr-px-4v fr-mb-0 fr-mt-6v fr-px-md-4w">
-    <ProgramListHeaderResult v-if="!navigation.isCatalog()" />
+    <ProgramListHeaderResult v-if="!navigationStore.isCatalog() && !hasSpinner" />
     <div class="fr-grid-row">
       <div class="fr-mt-4v fr-mb-2v fr-col-12">
         <div
@@ -16,8 +16,11 @@
         <ProgramFilters v-if="havePrograms && countPrograms > 1" />
       </div>
 
-      <div class="fr-col-12">
-        <span v-if="programs === undefined && !hasError">Chargement...</span>
+      <div class="fr-col-12 fr-text-center">
+        <TeeSpinner
+          v-if="hasSpinner"
+          scale="6"
+        />
         <ProgramListNoResults
           v-else-if="!countFilteredPrograms && !hasError"
           image="images/tracks/no-results.svg"
@@ -45,21 +48,24 @@
 
 <script setup lang="ts">
 import ProgramCard from '@/components/program/list/ProgramCard.vue'
+import ProgramFilters from '@/components/program/list/ProgramFilters.vue'
 import ProgramListHeaderResult from '@/components/program/list/ProgramListHeaderResult.vue'
 import Contact from '@/utils/contact'
-import { computed, onBeforeMount } from 'vue'
-import Translation from '@/utils/translation'
-import { useProgramsStore } from '@/stores/programs'
-import { type ProgramData, TrackId } from '@/types'
+import ProgramListNoResults from '@/components/program/list/ProgramListNoResults.vue'
 import { useNavigationStore } from '@/stores/navigation'
+import { useProgramStore } from '@/stores/program'
+import { useUsedTrackStore } from '@/stores/usedTrack'
+import { type ProgramData, TrackId } from '@/types'
 import { RouteName } from '@/types/routeType'
 import Matomo from '@/utils/matomo'
-import ProgramListNoResults from '@/components/program/list/ProgramListNoResults.vue'
-import ProgramFilters from '@/components/program/list/ProgramFilters.vue'
+import Translation from '@/utils/translation'
+import { computed, onBeforeMount } from 'vue'
+import { type RouteLocationRaw } from 'vue-router'
 
-const programsStore = useProgramsStore()
-const navigation = useNavigationStore()
+const programsStore = useProgramStore()
+const navigationStore = useNavigationStore()
 
+const isCatalog = navigationStore.isCatalog()
 const programs = ref<ProgramData[]>()
 const hasError = ref<boolean>(false)
 
@@ -79,13 +85,20 @@ const countFilteredPrograms = computed(() => {
   return filteredPrograms.value?.length || 0
 })
 
-const getRouteToProgramDetail = (programId: string) => {
-  const routeName = navigation.isCatalog() ? RouteName.CatalogDetail : RouteName.QuestionnaireResultDetail
-  return { name: routeName, params: { programId } }
+const hasSpinner = computed(() => {
+  return programs.value === undefined && !hasError.value
+})
+
+const getRouteToProgramDetail = (programId: string): RouteLocationRaw => {
+  return {
+    name: isCatalog ? RouteName.CatalogDetail : RouteName.QuestionnaireResultDetail,
+    params: { programId },
+    query: isCatalog ? undefined : navigationStore.query
+  }
 }
 
 onBeforeMount(async () => {
-  const result = await programsStore.getProgramsByUsedTracks()
+  const result = useUsedTrackStore().hasUsedTracks() ? await programsStore.programsByUsedTracks : await programsStore.programs
   if (result.isOk) {
     programs.value = result.value
   } else {
@@ -93,6 +106,6 @@ onBeforeMount(async () => {
   }
 
   // analytics / send event
-  Matomo.sendEvent(TrackId.Results, navigation.isCatalog() ? 'show_results_catalog' : 'show_results')
+  Matomo.sendEvent(TrackId.Results, navigationStore.isCatalog() ? 'show_results_catalog' : 'show_results')
 })
 </script>
