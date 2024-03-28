@@ -1,6 +1,6 @@
 <template>
   <!-- SELECTOR -->
-  <div class="fr-select-group">
+  <div class="fr-select-group fr-py-4v fr-px-3v">
     <select
       :id="`${track.id}-select`"
       class="fr-select"

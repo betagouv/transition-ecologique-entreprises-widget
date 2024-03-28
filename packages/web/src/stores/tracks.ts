@@ -6,7 +6,7 @@ import { computed, ref, toRaw } from 'vue'
 import { defineStore } from 'pinia'
 import { tracks } from '@/questionnaire'
 import type { Track, TrackOptions, Translations, UsedTrack, UsedTrackValuePair } from '@/types'
-import { TrackComponents, TrackId } from '@/types'
+import { TrackComponents, TrackId, type FlatObject } from '@/types'
 
 const allTracks = ref<Track[]>(tracks)
 const seedTrack = ref<TrackId | undefined>()
@@ -72,6 +72,16 @@ export const tracksStore = defineStore('tracks', () => {
         selection: toRaw(values.map((i) => toRaw(i)))
       }
     })
+  })
+  const getAllUsedTracksValuesSingleObject = computed<object>(() => {
+    const allTracksValues = getAllUsedTracksValues.value as FlatObject[]
+    const result: FlatObject = {}
+    allTracksValues.forEach((obj) => {
+      Object.entries(obj).forEach(([key, value]) => {
+        result[key] = value
+      })
+    })
+    return result
   })
 
   // getters
@@ -191,6 +201,7 @@ export const tracksStore = defineStore('tracks', () => {
     getAllUsedTracks,
     getAllUsedTracksValues,
     getAllUsedTracksValuesPairs,
+    getAllUsedTracksValuesSingleObject,
     trackExistsInUsed,
     setSeedTrack,
     addToUsedTracks,

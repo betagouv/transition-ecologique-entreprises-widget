@@ -206,7 +206,7 @@
           :class="`fr-px-4v fr-px-md-0v ${isTrackResults ? 'fr-col-10 fr-col-offset-md-1' : 'fr-col-12'}`"
         >
           <p class="fr-mb-0">
-            {{ track.resume[Translation.lang] }}
+            {{ injectValuesInString(track.resume[Translation.lang]) }}
           </p>
         </div>
 
@@ -426,7 +426,7 @@
 
 import { computed, ref, toRaw, watch } from 'vue'
 import type { DsfrButton } from '@gouvminint/vue-dsfr'
-import type { ColsOptions, NextTrackRuleSet, Track, TrackOptionsUnion, UsedTrack } from '@/types'
+import type { ColsOptions, NextTrackRuleSet, Track, TrackOptionsUnion, UsedTrack, FlatObject } from '@/types'
 import { isTrackOptionsInput, TrackComponents } from '@/types'
 import { remapItem, scrollToTop } from '@/utils/helpers'
 import { CheckNextTrackRules } from '@/utils/conditions'
@@ -669,6 +669,20 @@ const backToPreviousTrack = () => {
   tracks.removeFurtherUsedTracks(TrackToGoBackTo)
 
   scrollToTop(props.trackElement)
+}
+
+const injectValuesInString = (str: string) => {
+  const userValues = tracks.getAllUsedTracksValuesSingleObject as FlatObject
+  const regex = /\{.+?\}/g
+  const matches = str.match(regex) || []
+  const params: Record<string, string> = {}
+  if (matches.length) {
+    matches.forEach((s: string) => {
+      const key = s.replace('{', '').replace('}', '')
+      params[key] = userValues[key].toString()
+    })
+  }
+  return Translation.ti(str, params)
 }
 
 // watchers

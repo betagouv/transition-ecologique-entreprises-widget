@@ -110,3 +110,7 @@ export interface CleanerFromDict extends Cleaner {
 export interface CleanerInjectInObject extends Cleaner {
   object: object
 }
+
+export interface FlatObject {
+  [name: string]: string | string[]
+}
