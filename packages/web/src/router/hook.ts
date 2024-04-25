@@ -1,4 +1,5 @@
 import { useProgramStore } from '@/stores/program'
+import { useFilterStore } from '@/stores/filter'
 import { RouteName } from '@/types/routeType'
 import type { NavigationGuardNext, RouteLocationNormalized } from 'vue-router'
 import { useNavigationStore } from '@/stores/navigation'
@@ -11,7 +12,7 @@ export default class Hook {
   }
 
   static readonly resetProgramFilters = (to: RouteLocationNormalized, from: RouteLocationNormalized, next: NavigationGuardNext) => {
-    useProgramStore().resetFilters()
+    useFilterStore().resetFilters()
     next()
   }
 

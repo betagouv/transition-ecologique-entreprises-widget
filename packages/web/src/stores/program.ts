@@ -7,17 +7,14 @@ import ProgramFilter from '@/utils/program/programFilters'
 import { Result } from 'true-myth'
 import { computed, ref } from 'vue'
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import { type programFiltersType, ProgramAidType, PublicodeObjective, type ProgramData } from '@/types'
+import { ProgramAidType, PublicodeObjective, type ProgramData } from '@/types'
 import type { QuestionnaireData } from '@/types'
+import { useFilterStore } from './filter'
 
 export const useProgramStore = defineStore('program', () => {
+  const filterStore = useFilterStore()
   const currentProgram = ref<ProgramData>()
   const hasPrograms = ref<boolean>(false)
-
-  const programFilters = ref<programFiltersType>({
-    programAidTypeSelected: '',
-    objectifTypeSelected: ''
-  })
 
   const programs = computed(async () => {
     const result = await getPrograms()
@@ -41,8 +38,8 @@ export const useProgramStore = defineStore('program', () => {
   function getProgramsByFilters(programs: ProgramData[]) {
     return programs.filter((program: ProgramData) => {
       return (
-        ProgramFilter.filterProgramsByAidType(program, programFilters.value.programAidTypeSelected as ProgramAidType) &&
-        ProgramFilter.filterProgramsByObjective(program, programFilters.value.objectifTypeSelected as PublicodeObjective)
+        ProgramFilter.filterProgramsByAidType(program, filterStore.programFilters.programAidTypeSelected as ProgramAidType) &&
+        ProgramFilter.filterProgramsByObjective(program, filterStore.programFilters.objectifTypeSelected as PublicodeObjective)
       )
     })
   }
@@ -73,21 +70,12 @@ export const useProgramStore = defineStore('program', () => {
     return result
   }
 
-  function resetFilters() {
-    programFilters.value = {
-      programAidTypeSelected: '',
-      objectifTypeSelected: ''
-    }
-  }
-
   return {
     programs,
     currentProgram,
-    programFilters,
     programsByUsedTracks,
     getProgramsByFilters,
-    getProgramById,
-    resetFilters
+    getProgramById
   }
 })
 

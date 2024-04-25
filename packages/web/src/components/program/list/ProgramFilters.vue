@@ -16,12 +16,12 @@
 </template>
 
 <script setup lang="ts">
-import { useProgramStore } from '@/stores/program'
+import { useFilterStore } from '@/stores/filter'
 import { PublicodeObjective, ProgramAidType, type programFiltersType } from '@/types'
 import { DsfrSelect } from '@gouvminint/vue-dsfr'
 import type { DsfrSelectProps } from '@gouvminint/vue-dsfr/types/components/DsfrSelect/DsfrSelect.types'
 
-const programFilters: programFiltersType = useProgramStore().programFilters
+const programFilters: programFiltersType = useFilterStore().programFilters
 
 const programAidTypeOptions: DsfrSelectProps['options'] = [
   {
