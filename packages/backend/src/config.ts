@@ -1,4 +1,4 @@
-import ConfigCommon from '../../common/src/config/configCommon'
+import ConfigCommon from '@tee/common/src/config/configCommon'
 import { Environment } from '@tee/common/src/config/types'
 
 export default class Config extends ConfigCommon {

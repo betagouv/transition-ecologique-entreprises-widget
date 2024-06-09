@@ -2,6 +2,13 @@
   "$schema": "https://json.schemastore.org/tsconfig",
 
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@tee/common/*": ["packages/common/src/*"],
+      "@tee/data/*": ["packages/data/src/*"],
+      "@tee/web/*": ["packages/web/src/*"],
+      "@tee/backend/*": ["packages/backend/src/*"]
+    },
     "target": "ESNext",
     "module": "commonjs",
     "moduleResolution": "node",

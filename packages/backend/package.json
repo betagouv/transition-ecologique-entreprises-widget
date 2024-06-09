@@ -19,6 +19,7 @@
     "npm": ">=10.0 <11"
   },
   "dependencies": {
+    "@tee/common": "*",
     "@getbrevo/brevo": "^2.0.0-beta.4",
     "@sentry/node": "^7.109.0",
     "axios": "^1.6.5",

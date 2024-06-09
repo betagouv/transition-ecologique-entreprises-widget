@@ -2,7 +2,7 @@ import { SendSmtpEmail, TransactionalEmailsApi, TransactionalEmailsApiApiKeys } 
 import { Maybe } from 'true-myth'
 import Config from '../../../../config'
 import { Program as ProgramType } from '../../../../program/domain/types/types'
-import Program from '../../../../../../common/src/program/program'
+import Program from '@tee/common/src/program/program'
 import { MailerService } from '../../../domain/spi'
 import { Opportunity } from '../../../domain/types'
 

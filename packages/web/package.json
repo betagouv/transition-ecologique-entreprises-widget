@@ -44,6 +44,7 @@
     "@sentry/vue": "^7.93.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/tsconfig": "^0.5.1",
+    "@tee/common": "*",
     "fs": "^0.0.1-security",
     "iframe-resizer": "^4.3.9",
     "js-yaml": "^4.1.0",

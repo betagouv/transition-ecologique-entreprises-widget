@@ -1,5 +1,4 @@
 import {
-  BuildingProperty,
   MobilityStatus,
   Objective,
   PublicodeObjective,
@@ -9,7 +8,13 @@ import {
   StructureSize,
   WasteManagementStatus,
   YesNo
-} from '../../../../common/src/questionnaire/types'
+} from '@tee/common/src/questionnaire/types'
+
+enum BuildingProperty {
+  Owns = 'proprietaire',
+  Rents = 'locataire',
+  OwnsAndRents = 'proprietaire-et-locataire'
+}
 
 import { type Program } from '@tee/data/src/type/program'
 import { QuestionnaireData } from '../domain/types/types'

@@ -11,7 +11,8 @@
     "cypress.config.*",
     "cypress/**/*",
     "widget/**/*",
-    "plugin/**/*"
+    "plugin/**/*",
+    "../common/dist/*"
   ],
   "exclude": [
     "../backend/**/*",

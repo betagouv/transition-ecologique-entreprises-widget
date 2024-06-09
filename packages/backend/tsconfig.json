@@ -1,11 +1,5 @@
 {
-  "include": [
-    "src/**/*",
-    "tests/**/*",
-    "generated/**/*",
-    "generated/swagger.json",
-    "../common/**/*",
-  ],
+  "include": ["src/**/*", "tests/**/*", "generated/**/*", "generated/swagger.json", "../common/dist/*"],
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     // Directory from which to pull the source code
