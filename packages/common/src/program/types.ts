@@ -1,5 +1,5 @@
 export enum ProgramAidType {
-  acc = 'accompagnement',
+  acc = 'étude',
   train = 'formation',
   fund = 'financement',
   loan = 'prêt',

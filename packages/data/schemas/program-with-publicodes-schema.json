@@ -81,8 +81,8 @@
       "uniqueItems": true
     },
     "nature de l'aide": {
-      "description": "Précise s'il s'agit d'une aide financière, d'un accompagnement, ou d'un prêt. Un accompagnement se définit comme la réalisation d'une prestation intellectuelle, par un intervenant choisi par l'opérateur.",
-      "enum": ["accompagnement", "formation", "financement", "avantage fiscal", "prêt"]
+      "description": "Précise s'il s'agit d'une aide financière, d'une étude, ou d'un prêt.",
+      "enum": ["étude", "formation", "financement", "avantage fiscal", "prêt"]
     },
     "activable en autonomie": {
       "description": "Précise s'il s'agit d'un dispositif en autonomie ou s'il y aura des interactions avec l'opérateur.",
@@ -185,12 +185,7 @@
   "oneOf": [
     {
       "properties": {
-        "nature de l'aide": {
-          "oneOf": [
-          {"const": "accompagnement" },
-          {"const": "formation" }
-          ]
-        }
+        "nature de l'aide": { "const": "formation" }
       },
       "required": ["coût de l'accompagnement", "durée de l'accompagnement"]
     },
@@ -211,6 +206,19 @@
         "nature de l'aide": { "const": "prêt" }
       },
       "required": ["durée du prêt", "montant du prêt"]
+    },
+    {
+      "properties": {
+        "nature de l'aide": { "const": "étude" }
+      },
+      "anyOf": [
+        {
+          "required": ["coût de l'accompagnement", "durée de l'accompagnement"]
+        },
+        {
+          "required": ["montant du financement"]
+        }
+      ]
     }
   ],
   "required": [

@@ -91,9 +91,20 @@ def assembleProgramYAML(rawData, colNumbersByName, id):
     set("url", get("🔗 URL externe"))
     set("nature de l'aide", get("💸 Nature de l'aide").lower())
     nat = prog["nature de l'aide"]
+    if nat == "étude":
+        if get("💰 Montant de l'aide") and get("💰 Montant de l'aide") != "-":
+            set("montant du financement", get("💰 Montant de l'aide"))
+        if get("💰 Coût reste à charge") and get("💰 Coût reste à charge") != "-":
+            set("coût de l'accompagnement", get("💰 Coût reste à charge"))
+        if (
+            get("⏱Prestation (durée + étalement)")
+            and get("⏱Prestation (durée + étalement)") != "-"
+        ):
+            set("durée de l'accompagnement", get("⏱Prestation (durée + étalement)"))
+
     if nat == "financement":
         set("montant du financement", get("💰 Montant de l'aide"))
-    if nat == "accompagnement" or nat == "formation":
+    if nat == "étude":
         set("coût de l'accompagnement", get("💰 Coût reste à charge"))
         set("durée de l'accompagnement", get("⏱Prestation (durée + étalement)"))
     if nat == "prêt":

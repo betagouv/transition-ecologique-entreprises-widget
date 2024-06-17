@@ -149,27 +149,27 @@
       "uniqueItems": true
     },
     "type de l'aide": {
-      "description": "Précise s'il s'agit d'une aide financière, d'un accompagnement, ou d'un prêt, d'une formation ou d'un avantage fiscal. Un accompagnement se définit comme la réalisation d'une prestation intellectuelle, par un intervenant choisi par l'opérateur.",
-      "enum": ["accompagnement", "formation", "financement", "avantage fiscal", "prêt"]
+      "description": "Précise s'il s'agit d'une aide financière, d'une étude, ou d'un prêt, d'une formation ou d'un avantage fiscal.",
+      "enum": ["étude", "formation", "financement", "avantage fiscal", "prêt"]
     },
     "activable en autonomie": {
       "description": "Précise s'il s'agit d'un dispositif en autonomie ou s'il y aura des interactions avec l'opérateur.",
       "type": "string"
     },
     "coût de l'accompagnement": {
-      "description": "Uniquement si l'aide est de type \"accompagnement\". Le coût reste à charge correspond au montant que devra payer l'entreprise pour bénéficier d'un accompagnement, après déduction de la subvention.\n\n Formulation :\n- 10 mots max\n- selon le format \"x € HT après subvention de x%\"\n- écriture des chiffres en unités numériques\n- ne pas utiliser d'abréviations (ex : utiliser jour et non l'abréviation \"j.\")",
+      "description": "Le coût reste à charge correspond au montant que devra payer l'entreprise pour bénéficier d'un accompagnement, après déduction de la subvention.\n\n Formulation :\n- 10 mots max\n- selon le format \"x € HT après subvention de x%\"\n- écriture des chiffres en unités numériques\n- ne pas utiliser d'abréviations (ex : utiliser jour et non l'abréviation \"j.\")",
       "examples": ["4 000 € HT après subvention de 60%"],
       "type": "string"
     },
     "durée de l'accompagnement": {
       "title": "Durée de la prestation et son étalement dans le temps",
-      "description": "Ce champ est utile et requis uniquement si l'aide est de type \"accompagnement\".\n\nFormulation :\n- 10 mots max.\n- selon le format \" n jours de prestation répartis sur x mois\"\n- écriture des chiffres en unités numériques\n- ne pas utiliser d'abréviations (ex : utiliser jour et non l'abréviation \"j.\")\n- utiliser \"journée\" au singulier (et non jour)",
+      "description": "Formulation :\n- 10 mots max.\n- selon le format \" n jours de prestation répartis sur x mois\"\n- écriture des chiffres en unités numériques\n- ne pas utiliser d'abréviations (ex : utiliser jour et non l'abréviation \"j.\")\n- utiliser \"journée\" au singulier (et non jour)",
       "examples": ["12 jours de prestation répartis sur 6 à 8 mois"],
       "type": "string"
     },
     "montant du financement": {
       "title": "Montant du financement",
-      "description": "Uniquement si l'aide est de type \"financement\". Le montant de l'aide correspond au montant de financement ou de prêt auquel l'entreprise peut prétendre pour financer son projet / son étude.\n\nFormulation :\n- 10 mots max.\nLes objectifs aparaissent sous la dénomination de \"au programme :\" pour les accompagnements. Ils ont pour objectif de détailler les grandes étapes de l'accompagnement.\n- Les objectifs apparaissent sous la dénomination de \"Les étapes de votre demande d’aide :\" pour les financements. Ils ont pour objectifs de détailler comment se passe la démarche pour obtenir le financement en question.",
+      "description": "Le montant de l'aide correspond au montant de financement ou de prêt auquel l'entreprise peut prétendre pour financer son projet / son étude.\n\nFormulation :\n- 10 mots max.\nLes objectifs aparaissent sous la dénomination de \"au programme :\" pour les accompagnements. Ils ont pour objectif de détailler les grandes étapes de l'accompagnement.\n- Les objectifs apparaissent sous la dénomination de \"Les étapes de votre demande d’aide :\" pour les financements. Ils ont pour objectifs de détailler comment se passe la démarche pour obtenir le financement en question.",
       "examples": ["jusqu'à 70% du coût de l'étude", "selon projet", "de 5 000 € HT à 200 000 € HT"],
       "type": "string"
     },
