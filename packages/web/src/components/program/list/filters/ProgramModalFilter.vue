@@ -1,6 +1,6 @@
 <template>
   <DsfrButton
-    label="Filtrer"
+    label="Filtres"
     tertiary
     no-outline
     size="sm"
@@ -14,7 +14,7 @@
     @close="close()"
   >
     <template #default>
-      <div class="fr-h5 tee-text-blue fr-text-center">Filtrer</div>
+      <div class="fr-h5 tee-text-blue fr-text-center">Filtres</div>
       <ProgramFiltersAccordion accordion-class="fr-accordion-bg--blue" />
     </template>
   </DsfrModal>

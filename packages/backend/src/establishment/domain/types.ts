@@ -10,6 +10,7 @@ export interface EstablishmentDetails {
   siret: string
   creationDate: string
   denomination: string
+  legalCategory: string
   nafCode: string
   address: {
     streetNumber: string

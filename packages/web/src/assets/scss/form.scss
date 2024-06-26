@@ -1,0 +1,40 @@
+@use "setting";
+
+/* FORM */
+.fr-tee-form {
+  &-banner p {
+    white-space: pre-wrap;
+  }
+  &-block {
+    background-color: setting.$base-blue-light;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    .fr-input {
+      background-color: white;
+    }
+
+  }
+  &-container {
+    @media screen and (max-width:48em) {
+      width: 100%;
+    }
+    width: 80%;
+  }
+  &-error {
+    text-align: center;
+  }
+}
+.tee-form-response {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  &-blue {
+    color: setting.$blue-france;
+    a {
+      white-space: nowrap;
+    }
+  }
+  &-error {
+    color: setting.$red-marianne;
+  }
+}

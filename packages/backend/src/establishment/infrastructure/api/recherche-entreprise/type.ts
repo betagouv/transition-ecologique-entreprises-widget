@@ -13,6 +13,7 @@ export interface RechercheEntrepriseEstablishment {
 
   siege: Siege
   activite_principale: string // NafCode
+  nature_juridique: string
   section_activite_principale: string // NafSectionCode
   date_creation: string
 

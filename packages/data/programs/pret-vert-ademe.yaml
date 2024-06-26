@@ -15,6 +15,7 @@ description longue: "Le prêt Vert Ademe est destiné aux entreprises ayant bén
   \ eau, … ; en ce compris la dédieselisation, l’allongement de la durée de vie des\
   \ produits, l’intégration de recyclé, la recyclabilité, la réutilisation ou le réemploi),\n\
   • produire des énergies nouvelles."
+fin de validité: 16/06/2024
 illustration: images/TEE_ampoule.png
 opérateur de contact: Bpifrance
 autres opérateurs:
@@ -62,6 +63,7 @@ publicodes:
     toutes ces conditions:
     - a un effectif éligible
     - est dans un secteur d'activité éligible
+    - date du jour <= dispositif . fin de validité
   entreprise . a un effectif éligible:
     toutes ces conditions:
     - effectif >= 1

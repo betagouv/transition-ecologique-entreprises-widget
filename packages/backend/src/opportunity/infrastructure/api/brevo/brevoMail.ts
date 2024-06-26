@@ -3,7 +3,7 @@ import { Maybe } from 'true-myth'
 import Config from '../../../../config'
 import { Program as ProgramType } from '../../../../program/domain/types/types'
 import Program from '../../../../../../common/src/program/program'
-import { MailerService } from '../../../domain/spi'
+import { MailerManager } from '../../../domain/spi'
 import { Opportunity } from '../../../domain/types'
 
 export default class BrevoMail {
@@ -14,7 +14,7 @@ export default class BrevoMail {
     this._api.setApiKey(TransactionalEmailsApiApiKeys.apiKey, Config.BREVO_API_TOKEN)
   }
 
-  sendReturnReceipt: MailerService['sendReturnReceipt'] = async (
+  sendReturnReceipt: MailerManager['sendReturnReceipt'] = async (
     opportunity: Opportunity,
     program: ProgramType
   ): Promise<Maybe<Error> | void> => {

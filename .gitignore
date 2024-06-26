@@ -37,4 +37,4 @@ coverage
 .venv
 pyrightconfig.json
 .flake8
-dispositifs.xlsx
+dispositifs*.xlsx

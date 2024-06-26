@@ -89,6 +89,7 @@ export default class EstablishmentFeatures {
       ville: establishment.address.cityLabel,
       codePostal: establishment.address.zipCode,
       region: establishment.region || '',
+      legalCategory: establishment.legalCategory,
       structure_size: undefined,
       denomination: establishment.denomination,
       secteur: establishment.nafLabel || '',

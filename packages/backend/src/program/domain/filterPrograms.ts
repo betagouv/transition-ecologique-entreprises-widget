@@ -1,6 +1,6 @@
 import { Result } from 'true-myth'
 import { Program, QuestionnaireData } from './types/types'
-import { RulesService } from './spi'
+import { RulesManager } from './spi'
 
 /** Expected rule to evaluate if a program should be displayed to the user or
  * filtered out (in a program's `publicodes`
@@ -20,7 +20,7 @@ export const filterPrograms = (
   programs: Program[],
   inputData: QuestionnaireData,
   currentDate: string,
-  rulesService: RulesService
+  rulesService: RulesManager
 ): Result<Program[], Error> => {
   const filteredPrograms: Program[] = []
 

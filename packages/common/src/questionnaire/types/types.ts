@@ -12,7 +12,8 @@ export enum QuestionnaireRoute {
 export enum BuildingProperty {
   Owns = 'proprietaire',
   Rents = 'locataire',
-  OwnsAndRents = 'proprietaire-et-locataire'
+  OwnsAndRents = 'proprietaire-et-locataire',
+  No = 'non'
 }
 
 export enum SiretValue {
@@ -25,6 +26,10 @@ export enum StructureSize {
   PE = 'PE',
   ME = 'ME',
   ETI_GE = 'ETI_GE'
+}
+
+export enum LegalCategory {
+  EI = '1000'
 }
 
 export enum WasteSortingStatus {

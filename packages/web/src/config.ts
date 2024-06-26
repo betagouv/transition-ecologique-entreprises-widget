@@ -44,7 +44,7 @@ export default class Config extends ConfigCommon {
   }
 
   static get publicPath() {
-    return `${this.deployUrl}/`
+    return this.isDevelopment ? this.baseUrl : `${this.deployUrl}/`
   }
 
   static get matomoUrl() {

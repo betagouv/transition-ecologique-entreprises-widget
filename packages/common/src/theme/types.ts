@@ -1,4 +1,4 @@
-import { ProjectId } from '@/project/types'
+import { ProjectId } from '../project/types'
 import { PublicodeObjective } from '../questionnaire/types/types'
 import ThemeCommon from './theme'
 

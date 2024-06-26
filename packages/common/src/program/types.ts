@@ -12,8 +12,10 @@ export enum ProgramOperatorType {
   BPI = 'Bpifrance',
   CCI = 'CCI',
   CMA = 'CMA',
-  DDFIP = 'DGFIP',
+  DDFIP = 'DDFIP',
   LAPOSTE = 'La Poste',
   MTES = 'Ministère de la Transition Écologique et Solidaire',
-  ORACE = 'ORACE'
+  ORACE = 'ORACE',
+  BREIZHFAB = 'Breizh Fab',
+  ECOCO2 = 'EcoCO2'
 }
