@@ -8,10 +8,16 @@ $base-green: #1ebe8e;
 $base-purple: #6a62f4;
 $base-red: #fca081;
 $base-yellow: #facf35;
+$base-yellow-light:#fef7da;
 
 $colors: (
+  "white": color.$white,
   "yellow": (
     "background-color": $base-yellow,
+    "color": var(--text-action-high-blue-france)
+  ),
+  "yellow-light": (
+    "background-color": $base-yellow-light,
     "color": var(--text-action-high-blue-france)
   ),
   "green": (

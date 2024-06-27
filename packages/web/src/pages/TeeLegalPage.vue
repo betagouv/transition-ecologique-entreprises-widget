@@ -6,89 +6,250 @@
     <div class="fr-grid-row--gutters">
       <div class="fr-grid-col">
         <h1>Mentions légales</h1>
-        <h4>Direction de publication</h4>
+        <p>Mis à jour le 17 juin 2024</p>
 
+        <h4>1. Présentation du site</h4>
         <p>
-          Mission Transition Écologique est un service public co-porté par le Ministère de la Transition Écologique et le Ministère de
-          l’Economie, des Finances et de la Relance. Le Commissaire Général au Développement Durable est le directeur de publication du
-          portail.
+          Il est précisé aux utilisateurs du site mission-transition-ecologique l'identité des différents intervenants dans le cadre de sa
+          réalisation et de son suivi.
+        </p>
+
+        <h5 class="fr-mt-3w">1.1. Propriétaire et éditeur</h5>
+        <p>
+          Conformément aux dispositions de l’article 6-I 1° de la loi n°2004-575 du 21 juin 2004 relative à la confiance dans l’économie
+          numérique, le site
+          <a href="https://mission-transition-ecologique.beta.gouv.fr">https://mission-transition-ecologique.beta.gouv.fr</a> (et autres
+          sites en ademe.fr, ci-après les “Sites”) est édité par l’ADEME, ayant son siège social au :
         </p>
         <div class="fr-highlight fr-mt-3w">
-          <p>
-            Commissariat Général au Développement Durable <br />Tour Séquoia <br />1 place Carpeaux <br />92800 Puteaux <br />Tél : 01 40 81
-            21 22
-          </p>
+          <address class="fr-mb-2w">
+            20, avenue du Grésillé — BP 90406<br />
+            49004 Angers Cedex 01<br />
+            <a href="tel:+33241204120">02 41 20 41 20</a>
+          </address>
         </div>
-        <h4 class="fr-mt-3w">Conception éditoriale</h4>
         <p>
-          La conception éditoriale, sa mise à jour ainsi que la maintenance technique sont assurées par le Commissariat Général au
-          Développement Durable.
+          inscrit au registre du commerce d'Angers sous le n° 385 290 309, représentée par Sylvain Waserman, agissant en qualité de
+          Président du conseil d'administration.
         </p>
 
-        <h4 class="fr-mt-3w">Développement du portail</h4>
+        <h5 class="fr-mt-3w">1.2. Publication</h5>
+        <p>Le directeur de la publication est Monsieur Sylvain Waserman, en qualité de représentant légal de l’ADEME.</p>
         <p>
-          Le portail est conçu et administré par le Commissariat Général au Développement Durable. Le traceur d’audience (ou cookie
-          d’audience) est géré par la société Matomo.
-          <br />Les coordonnées de la société Matomo sont :<br />
+          La personne responsable de l'accès aux documents administratifs et des questions relatives à la réutilisation des informations est
+          Monsieur Luc Morinière en qualité de Chef du service juridique.
         </p>
 
-        <div class="fr-highlight fr-mt-3w">
-          Société Matomo <br />
-          External Data Protection Officer <br />Privacy GmbH represented by Prof. Dr. Christoph Bauer <br />Große Bleichen 21, 20354 <br />
-          Hamburg Germany
-        </div>
-
-        <h4 class="fr-mt-3w">Hébergement du portail</h4>
+        <h5 class="fr-mt-3w">1.3. Hébergement</h5>
         <p>
-          L’hébergement du portail est assuré par la société Scalingo. <br />
-          Les coordonnées de la société Scalingo sont :
+          Le prestataire assurant le stockage direct du site
+          <a href="https://mission-transition-ecologique.beta.gouv.fr">https://mission-transition-ecologique.beta.gouv.fr</a> est Scalingo,
+          dont le siège social est situé :
         </p>
         <div class="fr-highlight fr-mt-3w">
-          Société Scalingo SAS <br />
-          15 avenue du Rhin 67100 Strasbourg France <br />SIRET 80866548300018
+          <address class="fr-mb-2w">
+            13 rue Jacques Peirotes 67000 Strasbourg, France<br />
+            <a href="mailto:hello@scalingo.com">hello@scalingo.com</a>
+          </address>
         </div>
 
-        <h4 class="fr-mt-3w">Marques</h4>
+        <h5 class="fr-mt-3w">1.4. Utilisateur</h5>
         <p>
-          Le Commissariat Général au Développement Durable est et restera propriétaire de ses signes distinctifs, à savoir marques,
-          dénominations sociales et autres noms commerciaux, enseignes et noms de domaine. La reproduction, l’imitation ou l’apposition,
-          partielle ou totale des marques, dessins et modèles, qu’ils soient protégés par le droit d’auteur ou le droit de la propriété
-          industrielle, appartenant au Commissariat Général au Développement Durable est strictement interdite sans son accord écrit
-          préalable. Toute utilisation des contenus à des fins commerciales est interdite.
+          L’utilisateur est l’internaute qui navigue, lit, visionne, et utilise le site
+          <a href="https://mission-transition-ecologique.beta.gouv.fr">https://mission-transition-ecologique.beta.gouv.fr</a> et ses
+          services.
         </p>
 
-        <h4 class="fr-mt-3w">Reproduction et réutilisation du contenu du portail</h4>
+        <h5 class="fr-mt-3w">1.5. Attribution tierce</h5>
         <p>
-          Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous licence
-          ouverte Etalab 2.0. En conséquence, il est possible de les reproduire, copier, modifier, extraire, transformer, communiquer
-          diffuser, redistribuer, publier, transmettre et exploiter sous réserve de mentionner leur source, leur date de dernière mise à
-          jour et ne pas induire en erreur des tiers quant aux informations qui y figurent.
-          <br />
-          Tout site public ou privé est autorisé à établir, sans autorisation préalable, un lien (y compris profond) vers les informations
-          diffusées sur ce site.
+          La recherche d'entreprise est effectuée via l'
+          <a
+            target="_blank"
+            href="https://api.gouv.fr/les-api/api-recherche-entreprises"
+            >API recherche entreprise</a
+          >
+          . Les données sont ensuite précisées via l'
+          <a
+            target="_blank"
+            href="https://api.gouv.fr/les-api/sirene_v3"
+          >
+            API SIREN
+          </a>
         </p>
 
-        <h4 class="fr-mt-3w">Contenu du portail</h4>
+        <h4 class="fr-mt-3w">2. Acceptation des conditions d’utilisation du site et des services proposés</h4>
         <p>
-          Le Commissariat Général au Développement Durable ne saurait être tenue pour responsable de tout dommage, quelle qu’en soit la
-          nature, des erreurs typographiques ou des inexactitudes techniques du portail qui pourrait survenir malgré tout le soin apporté
-          par les équipes à la rédaction et la mise en ligne des informations et des documents.<br /><br />
-          Les informations et les documents contenus sur le portail sont susceptibles de faire l’objet d’une mise à jour à tout moment. Le
-          Commissariat Général au Développement Durable ne saurait être tenue pour responsable de tout dommage, quelle qu’en soit la nature,
-          résultant de la mise à jour du site.<br /><br />
-          Le Commissariat Général au Développement Durable s’efforce de permettre aux usagers d’avoir accès en continu au portail.
-          Néanmoins, le Commissariat Général au Développement Durable ne garantit pas l’accessibilité à son site notamment en cas de panne
-          et de maintenance ou de force majeure. Le Commissariat Général au Développement Durable ne saurait être tenue pour responsable de
-          tout dommage, quelle qu’en soit la nature, résultant de l’indisponibilité du site.
+          L’utilisation des Sites de l’ADEME implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après
+          décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs des Sites
+          de l’ADEME sont donc invités à les consulter de manière régulière.
+        </p>
+        <p>
+          L’utilisateur reconnaît avoir pris connaissance des conditions d’utilisation, au moment de sa connexion sur les sites de l’ADEME,
+          et déclare expressément les accepter sans réserve.
         </p>
 
-        <h4 class="fr-mt-3w">Data for Good</h4>
+        <h4 class="fr-mt-3w">3. Description des services fournis</h4>
         <p>
-          Mobilisation de data scientists bénévoles du programme Data for Good sur le off season 2021 et saison 10 qui ont accompagné
-          pendant plusieurs mois l'équipe projet sur divers chantiers liés à une meilleure mobilisation et valorisation de la donnée (par
-          exemple catégorisation automatique des aides publiques, extraction des critères d'éligibilité, structuration des informations des
-          PDFs liés aux aides etc.).
+          Les Sites de l’ADEME ont pour objet de fournir des informations concernant l’ensemble des éléments liés aux services de l’ADEME,
+          en particulier une information sur l’actualité de la transition écologique, l’expertise de l’ADEME, les actions mises en œuvre au
+          sein des territoires, l’action internationale de l’ADEME, les programmes de recherche et d’innovation.
         </p>
+        <p>L’ADEME s’efforce de fournir sur les Sites des informations aussi précises que possible.</p>
+        <p>
+          Toutefois, elle ne pourra être tenue responsable des omissions, des inexactitudes des carences dans la mise à jour ou de tout
+          autres manquements qu’ils soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.
+        </p>
+        <p>
+          Toutes les informations indiquées sur les Sites de l’ADEME sont données à titre indicatif, et sont susceptibles d’évoluer. Par
+          ailleurs, les renseignements figurant sur les Sites de l’ADEME ne sont pas exhaustifs. Ils sont donnés sous réserve de
+          modifications ayant été apportées depuis leur mise en ligne.
+        </p>
+
+        <h4 class="fr-mt-3w">4. Disponibilité du site</h4>
+        <p>
+          L’ADEME s’efforce de permettre l’accès au site 24 heures sur 24, 7 jours sur 7, sauf en cas de force majeure ou d’un événement
+          hors du contrôle de l’ADEME, et sous réserve des éventuelles pannes et interventions de maintenance nécessaires au bon
+          fonctionnement du site et des services.
+        </p>
+        <p>
+          Par conséquent, l’ADEME ne peut garantir une disponibilité du site et/ou des services, une fiabilité des transmissions et des
+          performances en termes de temps de réponse ou de qualité. Il n’est prévu aucune assistance technique vis-à-vis de l’utilisateur
+          que ce soit par des moyens électroniques ou téléphoniques.
+        </p>
+        <p>
+          La responsabilité de l’ADEME ne saurait être engagée en cas d’impossibilité d’accès à ce site et/ou d’utilisation des services.
+        </p>
+        <p>
+          L’ADEME peut être amenée à interrompre le site ou une partie des services, à tout moment sans préavis, le tout sans droit à
+          indemnités. L’utilisateur reconnaît et accepte que l’ADEME ne soit pas responsable des interruptions, et des conséquences qui
+          peuvent en découler pour l’utilisateur ou tout tiers.
+        </p>
+
+        <h4 class="fr-mt-3w">5. Liens hypertextes</h4>
+        <p>L’ADEME décline toute responsabilité quant au contenu des sites proposés en liens.</p>
+        <p>
+          Tout site public ou privé est autorisé à établir, sans information ni autorisation préalable, un lien vers les informations
+          diffusées par l’ATE. En revanche et sauf mentions contraires (ex. iframes), les pages des Sites ne doivent pas être imbriquées à
+          l’intérieur des pages d’un autre site.
+        </p>
+        <p>
+          La mise en place d’un lien est valable pour tout site à l’exception de ceux diffusant des informations à caractère polémique,
+          pornographique, xénophobe ou pouvant, dans une plus large mesure, porter atteinte à la sensibilité du plus grand nombre.
+        </p>
+
+        <h4 class="fr-mt-3w">6. Cookies de navigation</h4>
+        <p>
+          Des cookies sont utilisés sur les Sites pour différentes finalités : pour faciliter votre navigation, pour vous proposer des
+          contenus personnalisés ou pour réaliser des statistiques de visites. Pour connaître notre politique des cookies, vous êtes invités
+          à cliquer sur le lien accessible dans le pied depage des sites ademe.fr.
+        </p>
+
+        <h4 class="fr-mt-3w">7. Propriété intellectuelle</h4>
+        <p>
+          Sauf mention contraire précisée sur le fichier
+          <a
+            href="https://github.com/betagouv/mission-transition-ecologique/blob/main/LICENSE"
+            target="_blank"
+          >
+            https://github.com/betagouv/mission-transition-ecologique/blob/main/LICENSE
+          </a>
+          , l’ADEME est propriétaire des droits de propriété intellectuelle ou détient les droits d’usage sur tous les éléments accessibles
+          sur le site, notamment les textes, images, graphismes, logos, icônes, sons, logiciels et marques déposées.
+        </p>
+        <p>
+          Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site ainsi que des
+          logos de l’ADEME, quel que soit le moyen ou le procédé utilisé, est interdite, sauf acceptation écrite et préalable de l’ADEME
+          d’une demande d’autorisation de reproduction et de représentation formulée à l’adresse suivante :
+          <a
+            href="https://agirpourlatransition.ademe.fr/entreprises/form/contact"
+            target="_blank"
+          >
+            https://agirpourlatransition.ademe.fr/entreprises/form/contact
+          </a>
+          .
+        </p>
+        <p>
+          Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive
+          d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété
+          Intellectuelle.
+        </p>
+        <p>
+          L’ADEME ne pourra en revanche interdire la réutilisation de discours, dossiers de presse et communiqués, les circulaires,
+          directives et autres documents règlementaires.
+        </p>
+        <p>
+          L’ADEME autorise la réutilisation non commerciale et pédagogique des informations disponibles sur ses Sites, à la condition de
+          respecter l’intégrité des informations et de n’en altérer ni le sens, ni la portée, ni l’application et de faire mention du nom de
+          l’ADEME ou d’en préciser l’origine et la date de publication avec la mention du crédit photo si tel est le cas.
+        </p>
+        <p>
+          L’ADEME pourra autoriser la réutilisation d’informations à des fins commerciales ou promotionnelles par le biais d’une licence de
+          réutilisation de ses informations. Est considérée comme réutilisation à des fins commerciales ou promotionnelles, l’élaboration à
+          partir des informations publiques, d’un produit ou d’un service destiné à être mis à disposition de tiers, à titre gratuit ou
+          onéreux.
+        </p>
+
+        <h4 class="fr-mt-3w">8. Gestion des données personnelles</h4>
+        <p>
+          Conformément à la Règlementation relative à la protection des données à caractère personnel, l'utilisateur est informé que
+          l’ADEME, en tant que responsable du traitement, met en œuvre un traitement de données à caractère personnel.
+        </p>
+        <p>
+          L’ADEME est attachée au respect des règles de protection de la vie privée des utilisateurs de son site internet et de ses
+          services. L’ensemble des traitements de données personnelles mis en œuvre dans le cadre des services accessibles respecte la
+          réglementation applicable en matière de protection des données personnelles et notamment les dispositions de la loi « Informatique
+          et libertés » du 6 janvier 1978 modifiée et le Règlement général sur la Protection des données (Règlement UE 2016/679) désigné par
+          « RGPD ».
+        </p>
+        <p>
+          Pour en savoir plus sur ce traitement de données à caractère personnel et sur l’étendue de leurs droits, cliquez sur
+          <router-link :to="{ name: RouteName.PersonalData }"> {{ privacyPolicy }} </router-link>.
+        </p>
+
+        <h4 class="fr-mt-3w">9. Accessibilité</h4>
+        <p>
+          La conformité aux normes d'accessibilité numérique est un objectif ultérieur mais l’ADEME tâche de rendre ce site accessible à
+          toutes et tous, conformément à l'article 47 de la loi n°2005-102 du 11 février 2005.
+        </p>
+
+        <h5 class="fr-mt-3w">9.1. Signaler un dysfonctionnement</h5>
+        <p>
+          Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, merci de nous en
+          [faire part](insérer l’email de contact). Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire
+          parvenir vos doléances ou une demande de saisine au Défenseur des droits.
+        </p>
+        <p>
+          Pour en savoir plus sur la politique d’accessibilité numérique de l’État:
+          <a
+            target="_blank"
+            href="https://references.modernisation.gouv.fr/accessibilite-numerique"
+          >
+            https://references.modernisation.gouv.fr/accessibilite-numerique
+          </a>
+        </p>
+
+        <h4 class="fr-mt-3w">10. Sécurité</h4>
+        <p>
+          Le site est protégé par un certificat électronique, matérialisé pour la grande majorité des navigateurs par un cadenas. Cette
+          protection participe à la confidentialité des échanges. En aucun cas les services associés à la plateforme ne seront à l’origine
+          d’envoi d'emails pour demander la saisie d’informations personnelles.
+        </p>
+
+        <h4 class="fr-mt-3w">11. Votre attention</h4>
+        <p>
+          Nous vous rappelons qu’il n’est pas possible de garantir la confidentialité des messages transmis sur le réseau Internet. Aussi,
+          si vous souhaitez transmettre un message dans de meilleures conditions de sécurité, nous vous recommandons d’utiliser la voie
+          postale. L’ADEME dégage toute responsabilité quant aux difficultés techniques que vous pourriez rencontrer sur les Sites qu’elles
+          qu’en soient la cause et l’origine.
+        </p>
+
+        <h4 class="fr-mt-3w">12. Modifications</h4>
+        <p>L’ADEME se réserve le droit d’adapter les présentes mentions légales.</p>
+        <p>
+          Si l’ADEME apporte une modification aux présentes mentions légales, elle publiera la nouvelle version sur les supports concernés
+          et actualisera la date de « dernière mise à jour » figurant en haut des présentes mentions légales.
+        </p>
+        <p>L’ADEME vous invite donc à consulter régulièrement les supports concernés où sont publiées les mentions légales.</p>
       </div>
     </div>
   </div>
@@ -98,6 +259,9 @@
 <script setup lang="ts">
 // CONSOLE LOG TEMPLATE
 // console.log(`TeeLegalPage > FUNCTION_NAME > MSG_OR_VALUE :`)
+const privacyPolicy = new URL(useRouter().resolve({ name: RouteName.PersonalData }).href, window.location.origin).href
 
 import ContactMail from '@/components/contact/ContactMail.vue'
+import { RouteName } from '@/types/routeType'
+import { useRouter } from 'vue-router'
 </script>

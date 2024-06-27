@@ -1,4 +1,5 @@
 export enum CalloutType {
   Default = 'default',
-  Warning = 'warning'
+  Warning = 'warning',
+  FormInput = 'form-input'
 }

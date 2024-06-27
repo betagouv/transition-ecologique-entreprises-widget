@@ -1,7 +1,7 @@
 import { Result } from 'true-myth'
 import type { Program, QuestionnaireData } from './types/types'
 
-export type CurrentDateService = {
+export type CurrentDateProvider = {
   get: () => string // fr-FR formatted, e.g. "20/12/2023"
 }
 
@@ -10,7 +10,7 @@ export interface ProgramRepository {
   getAll: () => Program[]
 }
 
-export interface RulesService {
+export interface RulesManager {
   evaluate: (
     ruleName: string,
     program: Program,

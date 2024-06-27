@@ -1,0 +1,45 @@
+@use 'setting';
+
+.fr-callout {
+  padding: 32px 48px 32px 32px;
+
+  &.defaultCallout {
+    border-left: 4px solid;
+    border-color: setting.$base-purple;
+    background: var(--light-background-alt-blue-france, #f5f5fe);
+  }
+
+  &.warningCallout {
+    border-left: 4px solid;
+    border-color: setting.$base-red;
+    background: rgba(252, 160, 129, 0.2);
+  }
+
+  h5 {
+    color: var(--light-text-title-grey, #161616);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem; /* 116.667% */
+    margin-bottom: 0.75rem;
+  }
+
+  .image-container {
+    margin-left: -1rem;
+    margin-right: 0.2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}

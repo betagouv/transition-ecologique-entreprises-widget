@@ -1,4 +1,8 @@
-export interface OpportunityFormType {
+import { CalloutType } from '@tee/web/src/types/elementsPropsTypes'
+
+export type ProjectFormType = FormType & { project: StringFieldInputType; linkToProjectPage: MandatoryStringFieldFormType }
+export type OpportunityFormType = FormType & { linkToProgramPage: MandatoryStringFieldFormType }
+export interface FormType {
   [key: string]: StringFieldInputType | MandatoryStringFieldFormType | BooleanFieldInputType | ValidatedStringFieldInputType
   name: StringFieldInputType
   surname: StringFieldInputType
@@ -7,7 +11,6 @@ export interface OpportunityFormType {
   siret: ValidatedStringFieldInputType
   needs: StringFieldInputType
   cgu: BooleanFieldInputType
-  linkToProgramPage: MandatoryStringFieldFormType
 }
 
 type DefaultFieldFormType = {
@@ -15,6 +18,7 @@ type DefaultFieldFormType = {
   isValid: boolean | undefined
   label?: string
   hint?: string
+  callOut?: InputCalloutType
 }
 
 export type StringFieldInputType = DefaultFieldFormType & { value: string | undefined }
@@ -33,4 +37,11 @@ export type InputFieldUnionType =
 
 export const isValidatedStringFieldInputType = (field: InputFieldUnionType): field is ValidatedStringFieldInputType => {
   return 'validation' in field
+}
+
+export type InputCalloutType = {
+  type?: CalloutType
+  content?: string
+  containerClass?: string
+  img?: string
 }

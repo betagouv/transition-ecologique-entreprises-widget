@@ -67,12 +67,6 @@ WARNING :
   display: flex;
   justify-content: center;
 }
-.fr-tee-form {
-  max-width: 685px;
-}
-.fr-tee-form-error {
-  text-align: center;
-}
 .fr-form-block .fr-input {
   background-color: white;
 }
@@ -435,37 +429,6 @@ button.fr-link:hover, .tee-router-link:hover {
     height: 4rem;
   }
 }
-
-/* FORM */
-.fr-tee-form {
-  max-width: 685px;
-}
-.fr-tee-form-block {
-  background-color: #E8EDFF;
-  padding: 2em;
-  display: flex;
-  justify-content: center;
-}
-.fr-tee-form-block .fr-input {
-  background-color: white;
-}
-.fr-tee-form-error {
-  text-align: center;
-}
-.tee-form-response {
-  font-size: 1.3rem;
-  line-height: 1.3rem;
-}
-.tee-form-response-blue a {
-  white-space: nowrap;
-}
-.tee-form-response-blue {
-  color: #000091;
-}
-.tee-form-response-error {
-  color: #CE0500;
-}
-
 /* DEBUGGING STYLES */
 code {
   color: red !important;

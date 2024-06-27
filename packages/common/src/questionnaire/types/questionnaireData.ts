@@ -43,7 +43,7 @@ export interface QuestionnaireData {
 
   recently_audited?: YesNo
   recent_audits?: string
-
+  legalCategory?: string
   siret?: string
   // below is data extracted from the SIREN database
   codeNAF?: string

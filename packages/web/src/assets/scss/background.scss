@@ -1,26 +1,44 @@
+@use '@gouvfr/dsfr/module/media-query';
+@use '@gouvfr/dsfr/module/media-query/variable/breakpoints';
 @use 'setting';
 @use 'tool';
 @use 'sass:color';
 
+@mixin backgroundColor($properties, $opacity: 100%) {
+  @if type-of($properties) == map {
+    background-color: tool.scaleAlphaToHex(map-get($properties, "background-color"), $opacity);
+  } @else {
+    background-color: tool.scaleAlphaToHex($properties, $opacity);
+  }
+}
+
 @each $color, $properties in setting.$colors {
-  .fr-bg--#{$color} {
-    @if type-of($properties) == map {
-      background-color: map-get($properties, "background-color");
-    } @else {
-      background-color: $properties;
-    }
-    &--light {
-      @if type-of($properties) == map {
-        background-color: tool.scaleAlphaToHex(map-get($properties, "background-color"), -50%);
-      } @else {
-        background-color: tool.scaleAlphaToHex($properties, -50%);
+  .fr-bg {
+
+    &--#{$color} {
+      @include backgroundColor($properties);
+      &--light {
+        @include backgroundColor($properties, -50%);
+      }
+      &--lightness {
+        @include backgroundColor($properties, -75%);
       }
     }
-    &--lightness {
-      @if type-of($properties) == map {
-        background-color: tool.scaleAlphaToHex(map-get($properties, "background-color"), -75%);
-      } @else {
-        background-color: tool.scaleAlphaToHex($properties, -75%);
+
+    @each $breakpoint, $value in breakpoints.$values {
+      $modifier: tool.modifierByBreakpoint($breakpoint);
+      &#{$modifier} {
+        @include media-query.respond-from($breakpoint) {
+          &--#{$color} {
+            @include backgroundColor($properties);
+            &--light {
+              @include backgroundColor($properties, -50%);
+            }
+            &--lightness {
+              @include backgroundColor($properties, -75%);
+            }
+          }
+        }
       }
     }
   }

@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 // FOR AID PROGRAMS
-import { PublicodesKeys, PublicodeObjective, PublicodesCondition, ProgramAidType, ProgramOperatorType } from '@/types'
+import { PublicodesKeys, PublicodeObjective, PublicodesCondition, ProgramAidType, ProgramOperatorType } from '../../types'
 
 interface ProgramObjectiveLink {
   lien: string

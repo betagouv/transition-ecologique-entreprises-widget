@@ -1,18 +1,18 @@
 import { Program, QuestionnaireData } from './types/types'
-import { CurrentDateService, ProgramRepository, RulesService } from './spi'
+import { CurrentDateProvider, ProgramRepository, RulesManager } from './spi'
 import { filterPrograms } from './filterPrograms'
 import { sortPrograms } from './sortPrograms'
 import { Result } from 'true-myth'
 
 export default class ProgramFeatures {
   private _programRepository: ProgramRepository
-  private _currentDateService: CurrentDateService | undefined
-  private _rulesService: RulesService | undefined
+  private _currentDateService: CurrentDateProvider | undefined
+  private _rulesService: RulesManager | undefined
 
   constructor(
     programRepository: ProgramRepository,
-    currentDateService: CurrentDateService | undefined = undefined,
-    rulesService: RulesService | undefined = undefined
+    currentDateService: CurrentDateProvider | undefined = undefined,
+    rulesService: RulesManager | undefined = undefined
   ) {
     this._programRepository = programRepository
     this._currentDateService = currentDateService

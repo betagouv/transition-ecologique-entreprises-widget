@@ -1,5 +1,5 @@
-import type { CurrentDateService } from '../domain/spi'
+import type { CurrentDateProvider } from '../domain/spi'
 
-export const currentDateService: CurrentDateService = {
+export const currentDateService: CurrentDateProvider = {
   get: () => new Date().toLocaleDateString('fr-FR')
 }

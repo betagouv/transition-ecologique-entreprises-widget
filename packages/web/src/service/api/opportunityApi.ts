@@ -1,11 +1,13 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { useUsedTrackStore } from '@/stores/usedTrack'
 import { PublicodesKeys, QuestionnaireDataEnum, QuestionnaireRoute, TrackId } from '@/types'
 import type { OpportunityBody, ReqResp, WithoutNullableKeys, OpportunityFormType } from '@/types'
 import RequestApi from '@/service/api/requestApi'
 import TrackStructure from '@/utils/track/trackStructure'
+import { Opportunity } from '@tee/backend/src/opportunity/domain/types'
 
-export default class OpportunityApi extends RequestApi {
-  private readonly url = '/api/opportunities'
+export default class OpportunityApi extends RequestApi<Opportunity> {
+  protected readonly url = '/api/opportunities'
   private readonly headers = {
     accept: 'application/json',
     'content-type': 'application/json'

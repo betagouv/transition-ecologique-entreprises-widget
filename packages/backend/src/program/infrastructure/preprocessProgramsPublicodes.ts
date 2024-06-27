@@ -115,7 +115,10 @@ const setObjectives = (publicodesData: PublicodesInputData, questionnaireData: Q
       ? YesNo.Yes
       : YesNo.No
 
-    publicodesData[PublicodesKeys.BuildingOwner] = questionnaireData.building_property == BuildingProperty.Rents ? YesNo.No : YesNo.Yes
+    publicodesData[PublicodesKeys.BuildingOwner] =
+      questionnaireData.building_property == BuildingProperty.Rents || questionnaireData.building_property == BuildingProperty.No
+        ? YesNo.No
+        : YesNo.Yes
   }
 }
 const setQuestionnaireRoute = (publicodesData: PublicodesInputData, questionnaireData: QuestionnaireData) => {

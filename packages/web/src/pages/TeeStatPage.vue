@@ -49,7 +49,7 @@
       <div class="fr-col-md-6">
         <TeeCallout
           :type="CalloutType.Warning"
-          imglink="/images/TEE-missingData.svg"
+          img="/images/TEE-missingData.svg"
           class="fr-mr-md-3v"
         >
           Nous travaillons actuellement sur cette mesure.<br /><br />

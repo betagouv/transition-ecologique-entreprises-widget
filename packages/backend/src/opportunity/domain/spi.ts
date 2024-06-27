@@ -12,6 +12,6 @@ export type OpportunityRepository = {
   readDates: () => Promise<Result<Date[], Error>>
 }
 
-export type MailerService = {
+export type MailerManager = {
   sendReturnReceipt: (opportunity: Opportunity, program: Program) => Promise<Maybe<Error> | void>
 }

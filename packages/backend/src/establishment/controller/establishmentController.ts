@@ -20,6 +20,7 @@ const exampleEstablishment = {
   creationDate: '2021-12-01',
   denomination: 'MULTI',
   nafCode: '62.01Z',
+  legalCategory: '5710',
   nafSectionCode: 'A',
   nafLabel: 'Programmation informatique',
   address: {

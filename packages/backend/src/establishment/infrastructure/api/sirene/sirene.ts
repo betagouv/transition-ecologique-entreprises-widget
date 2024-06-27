@@ -52,6 +52,7 @@ const parseEstablishment = (establishmentDocument: EstablishmentDocument): Estab
     creationDate: rawEstablishment.uniteLegale.dateCreationUniteLegale,
     denomination: rawEstablishment.uniteLegale.denominationUniteLegale,
     nafCode: rawEstablishment.uniteLegale.activitePrincipaleUniteLegale,
+    legalCategory: rawEstablishment.uniteLegale.categorieJuridiqueUniteLegale,
     address: {
       streetNumber: rawEstablishment.adresseEtablissement.numeroVoieEtablissement,
       streetType: rawEstablishment.adresseEtablissement.typeVoieEtablissement,

@@ -4,16 +4,21 @@
     :class="linkClasses"
   >
     <div
-      v-if="imglink"
+      v-if="img"
       class="image-container fr-col-12 fr-col-md-3 fr-mb-2v fr-mb-md-0"
+      :class="imgContainerClass"
     >
       <img
-        :src="imglink"
+        :src="img"
         alt=""
         class="image"
+        :class="imgClass"
       />
     </div>
-    <div class="content fr-col-12">
+    <div
+      class="content fr-col-12"
+      :class="contentClass"
+    >
       <h5 v-if="title">{{ title }}</h5>
       <p><slot></slot></p>
       <TeeButtonExternalLink
@@ -36,7 +41,10 @@ interface Props {
   title?: string | number | undefined
   link?: string | undefined
   linkText?: string | undefined
-  imglink?: string | undefined
+  contentClass?: string | undefined
+  img?: string | undefined
+  imgContainerClass?: string | undefined
+  imgClass?: string | undefined
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -44,64 +52,16 @@ const props = withDefaults(defineProps<Props>(), {
   title: undefined,
   link: undefined,
   linkText: undefined,
-  imglink: undefined
+  contentClass: undefined,
+  img: undefined,
+  imgContainerClass: undefined,
+  imgClass: undefined
 })
 
 const linkClasses = {
-  baseCallout: true,
+  'fr-callout': true,
   defaultCallout: props.type === CalloutType.Default,
-  warningCallout: props.type === CalloutType.Warning
+  warningCallout: props.type === CalloutType.Warning,
+  customCallout: props.type === CalloutType.FormInput
 }
 </script>
-
-<style scoped lang="scss">
-@import '../../assets/scss/setting/color';
-
-.baseCallout {
-  border-left: 4px solid;
-  padding: 32px 48px 32px 32px;
-}
-
-.defaultCallout {
-  background: var(--light-background-alt-blue-france, #f5f5fe);
-  border-color: #{$base-purple};
-}
-
-.warningCallout {
-  border-color: #{$base-red};
-  background: rgba(252, 160, 129, 0.2);
-}
-
-h5 {
-  color: var(--light-text-title-grey, #161616);
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 3.5rem; /* 116.667% */
-  margin-bottom: 0.75rem;
-}
-
-p {
-  margin-bottom: 0rem;
-  white-space: pre-wrap;
-}
-
-.image-container {
-  margin-left: -1rem;
-  margin-right: 0.2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.image {
-  max-width: 100%;
-  height: auto;
-}
-
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-</style>

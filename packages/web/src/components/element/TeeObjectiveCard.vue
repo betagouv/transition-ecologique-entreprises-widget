@@ -1,10 +1,10 @@
 <template>
   <DsfrCard
-    v-if="Theme.isPublicodeObjective(objective)"
+    v-if="Theme.isPublicodeObjective(objective) || !isResultPage"
     horizontal
     title="Thématique"
-    :description="Theme.getTitleByValue(objective)"
-    :img-src="Theme.getImageByValue(objective)"
+    :description="Theme.getTitleByValue(objective as PublicodeObjective)"
+    :img-src="Theme.getImageByValue(objective as PublicodeObjective)"
     :class="classes"
     size="sm"
     no-arrow
@@ -15,6 +15,8 @@
 import Theme from '@/utils/theme'
 import { DsfrCard } from '@gouvminint/vue-dsfr'
 import { PublicodeObjective } from '@/types'
+import { useNavigationStore } from '@/stores/navigation'
+import { RouteName } from '@/types/routeType'
 
 interface Props {
   objective: PublicodeObjective | ''
@@ -22,6 +24,9 @@ interface Props {
   radiusSize?: '0' | '0-5v' | '1v' | '2v' | '2-5v'
 }
 const props = defineProps<Props>()
+
+const navigationStore = useNavigationStore()
+const isResultPage = navigationStore.isByRouteName(RouteName.QuestionnaireResult)
 
 function getRadiusClass() {
   const { radiusCorner, radiusSize } = props

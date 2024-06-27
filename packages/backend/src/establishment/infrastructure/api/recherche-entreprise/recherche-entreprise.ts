@@ -34,7 +34,6 @@ export class RechercheEntreprise {
         resultCount: 0
       }
     }
-
     const establishmentList = rechercheEntrepriseSearch.results.map((result: RechercheEntrepriseEstablishment) => ({
       siret: result.siege.siret,
       siren: result.siege.siret.substring(0, 9),
@@ -42,6 +41,7 @@ export class RechercheEntreprise {
       creationDate: result.date_creation,
       denomination: result.nom_raison_sociale || result.nom_complet,
       nafCode: result.activite_principale,
+      legalCategory: result.nature_juridique,
       address: {
         streetNumber: result.siege.numero_voie,
         streetType: result.siege.type_voie,
