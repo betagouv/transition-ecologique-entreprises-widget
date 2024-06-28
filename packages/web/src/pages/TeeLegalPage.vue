@@ -1,257 +1,20 @@
 <template>
-  <div
-    id="simple-page"
-    class="fr-container fr-my-8w"
-  >
-    <div class="fr-grid-row--gutters">
-      <div class="fr-grid-col">
-        <h1>Mentions légales</h1>
-        <p>Mis à jour le 17 juin 2024</p>
-
-        <h4>1. Présentation du site</h4>
-        <p>
-          Il est précisé aux utilisateurs du site mission-transition-ecologique l'identité des différents intervenants dans le cadre de sa
-          réalisation et de son suivi.
-        </p>
-
-        <h5 class="fr-mt-3w">1.1. Propriétaire et éditeur</h5>
-        <p>
-          Conformément aux dispositions de l’article 6-I 1° de la loi n°2004-575 du 21 juin 2004 relative à la confiance dans l’économie
-          numérique, le site
-          <a href="https://mission-transition-ecologique.beta.gouv.fr">https://mission-transition-ecologique.beta.gouv.fr</a> (et autres
-          sites en ademe.fr, ci-après les “Sites”) est édité par l’ADEME, ayant son siège social au :
-        </p>
-        <div class="fr-highlight fr-mt-3w">
-          <address class="fr-mb-2w">
-            20, avenue du Grésillé — BP 90406<br />
-            49004 Angers Cedex 01<br />
-            <a href="tel:+33241204120">02 41 20 41 20</a>
-          </address>
-        </div>
-        <p>
-          inscrit au registre du commerce d'Angers sous le n° 385 290 309, représentée par Sylvain Waserman, agissant en qualité de
-          Président du conseil d'administration.
-        </p>
-
-        <h5 class="fr-mt-3w">1.2. Publication</h5>
-        <p>Le directeur de la publication est Monsieur Sylvain Waserman, en qualité de représentant légal de l’ADEME.</p>
-        <p>
-          La personne responsable de l'accès aux documents administratifs et des questions relatives à la réutilisation des informations est
-          Monsieur Luc Morinière en qualité de Chef du service juridique.
-        </p>
-
-        <h5 class="fr-mt-3w">1.3. Hébergement</h5>
-        <p>
-          Le prestataire assurant le stockage direct du site
-          <a href="https://mission-transition-ecologique.beta.gouv.fr">https://mission-transition-ecologique.beta.gouv.fr</a> est Scalingo,
-          dont le siège social est situé :
-        </p>
-        <div class="fr-highlight fr-mt-3w">
-          <address class="fr-mb-2w">
-            13 rue Jacques Peirotes 67000 Strasbourg, France<br />
-            <a href="mailto:hello@scalingo.com">hello@scalingo.com</a>
-          </address>
-        </div>
-
-        <h5 class="fr-mt-3w">1.4. Utilisateur</h5>
-        <p>
-          L’utilisateur est l’internaute qui navigue, lit, visionne, et utilise le site
-          <a href="https://mission-transition-ecologique.beta.gouv.fr">https://mission-transition-ecologique.beta.gouv.fr</a> et ses
-          services.
-        </p>
-
-        <h5 class="fr-mt-3w">1.5. Attribution tierce</h5>
-        <p>
-          La recherche d'entreprise est effectuée via l'
-          <a
-            target="_blank"
-            href="https://api.gouv.fr/les-api/api-recherche-entreprises"
-            >API recherche entreprise</a
-          >
-          . Les données sont ensuite précisées via l'
-          <a
-            target="_blank"
-            href="https://api.gouv.fr/les-api/sirene_v3"
-          >
-            API SIREN
-          </a>
-        </p>
-
-        <h4 class="fr-mt-3w">2. Acceptation des conditions d’utilisation du site et des services proposés</h4>
-        <p>
-          L’utilisation des Sites de l’ADEME implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après
-          décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs des Sites
-          de l’ADEME sont donc invités à les consulter de manière régulière.
-        </p>
-        <p>
-          L’utilisateur reconnaît avoir pris connaissance des conditions d’utilisation, au moment de sa connexion sur les sites de l’ADEME,
-          et déclare expressément les accepter sans réserve.
-        </p>
-
-        <h4 class="fr-mt-3w">3. Description des services fournis</h4>
-        <p>
-          Les Sites de l’ADEME ont pour objet de fournir des informations concernant l’ensemble des éléments liés aux services de l’ADEME,
-          en particulier une information sur l’actualité de la transition écologique, l’expertise de l’ADEME, les actions mises en œuvre au
-          sein des territoires, l’action internationale de l’ADEME, les programmes de recherche et d’innovation.
-        </p>
-        <p>L’ADEME s’efforce de fournir sur les Sites des informations aussi précises que possible.</p>
-        <p>
-          Toutefois, elle ne pourra être tenue responsable des omissions, des inexactitudes des carences dans la mise à jour ou de tout
-          autres manquements qu’ils soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.
-        </p>
-        <p>
-          Toutes les informations indiquées sur les Sites de l’ADEME sont données à titre indicatif, et sont susceptibles d’évoluer. Par
-          ailleurs, les renseignements figurant sur les Sites de l’ADEME ne sont pas exhaustifs. Ils sont donnés sous réserve de
-          modifications ayant été apportées depuis leur mise en ligne.
-        </p>
-
-        <h4 class="fr-mt-3w">4. Disponibilité du site</h4>
-        <p>
-          L’ADEME s’efforce de permettre l’accès au site 24 heures sur 24, 7 jours sur 7, sauf en cas de force majeure ou d’un événement
-          hors du contrôle de l’ADEME, et sous réserve des éventuelles pannes et interventions de maintenance nécessaires au bon
-          fonctionnement du site et des services.
-        </p>
-        <p>
-          Par conséquent, l’ADEME ne peut garantir une disponibilité du site et/ou des services, une fiabilité des transmissions et des
-          performances en termes de temps de réponse ou de qualité. Il n’est prévu aucune assistance technique vis-à-vis de l’utilisateur
-          que ce soit par des moyens électroniques ou téléphoniques.
-        </p>
-        <p>
-          La responsabilité de l’ADEME ne saurait être engagée en cas d’impossibilité d’accès à ce site et/ou d’utilisation des services.
-        </p>
-        <p>
-          L’ADEME peut être amenée à interrompre le site ou une partie des services, à tout moment sans préavis, le tout sans droit à
-          indemnités. L’utilisateur reconnaît et accepte que l’ADEME ne soit pas responsable des interruptions, et des conséquences qui
-          peuvent en découler pour l’utilisateur ou tout tiers.
-        </p>
-
-        <h4 class="fr-mt-3w">5. Liens hypertextes</h4>
-        <p>L’ADEME décline toute responsabilité quant au contenu des sites proposés en liens.</p>
-        <p>
-          Tout site public ou privé est autorisé à établir, sans information ni autorisation préalable, un lien vers les informations
-          diffusées par l’ATE. En revanche et sauf mentions contraires (ex. iframes), les pages des Sites ne doivent pas être imbriquées à
-          l’intérieur des pages d’un autre site.
-        </p>
-        <p>
-          La mise en place d’un lien est valable pour tout site à l’exception de ceux diffusant des informations à caractère polémique,
-          pornographique, xénophobe ou pouvant, dans une plus large mesure, porter atteinte à la sensibilité du plus grand nombre.
-        </p>
-
-        <h4 class="fr-mt-3w">6. Cookies de navigation</h4>
-        <p>
-          Des cookies sont utilisés sur les Sites pour différentes finalités : pour faciliter votre navigation, pour vous proposer des
-          contenus personnalisés ou pour réaliser des statistiques de visites. Pour connaître notre politique des cookies, vous êtes invités
-          à cliquer sur le lien accessible dans le pied depage des sites ademe.fr.
-        </p>
-
-        <h4 class="fr-mt-3w">7. Propriété intellectuelle</h4>
-        <p>
-          Sauf mention contraire précisée sur le fichier
-          <a
-            href="https://github.com/betagouv/mission-transition-ecologique/blob/main/LICENSE"
-            target="_blank"
-          >
-            https://github.com/betagouv/mission-transition-ecologique/blob/main/LICENSE
-          </a>
-          , l’ADEME est propriétaire des droits de propriété intellectuelle ou détient les droits d’usage sur tous les éléments accessibles
-          sur le site, notamment les textes, images, graphismes, logos, icônes, sons, logiciels et marques déposées.
-        </p>
-        <p>
-          Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site ainsi que des
-          logos de l’ADEME, quel que soit le moyen ou le procédé utilisé, est interdite, sauf acceptation écrite et préalable de l’ADEME
-          d’une demande d’autorisation de reproduction et de représentation formulée à l’adresse suivante :
-          <a
-            href="https://agirpourlatransition.ademe.fr/entreprises/form/contact"
-            target="_blank"
-          >
-            https://agirpourlatransition.ademe.fr/entreprises/form/contact
-          </a>
-          .
-        </p>
-        <p>
-          Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive
-          d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété
-          Intellectuelle.
-        </p>
-        <p>
-          L’ADEME ne pourra en revanche interdire la réutilisation de discours, dossiers de presse et communiqués, les circulaires,
-          directives et autres documents règlementaires.
-        </p>
-        <p>
-          L’ADEME autorise la réutilisation non commerciale et pédagogique des informations disponibles sur ses Sites, à la condition de
-          respecter l’intégrité des informations et de n’en altérer ni le sens, ni la portée, ni l’application et de faire mention du nom de
-          l’ADEME ou d’en préciser l’origine et la date de publication avec la mention du crédit photo si tel est le cas.
-        </p>
-        <p>
-          L’ADEME pourra autoriser la réutilisation d’informations à des fins commerciales ou promotionnelles par le biais d’une licence de
-          réutilisation de ses informations. Est considérée comme réutilisation à des fins commerciales ou promotionnelles, l’élaboration à
-          partir des informations publiques, d’un produit ou d’un service destiné à être mis à disposition de tiers, à titre gratuit ou
-          onéreux.
-        </p>
-
-        <h4 class="fr-mt-3w">8. Gestion des données personnelles</h4>
-        <p>
-          Conformément à la Règlementation relative à la protection des données à caractère personnel, l'utilisateur est informé que
-          l’ADEME, en tant que responsable du traitement, met en œuvre un traitement de données à caractère personnel.
-        </p>
-        <p>
-          L’ADEME est attachée au respect des règles de protection de la vie privée des utilisateurs de son site internet et de ses
-          services. L’ensemble des traitements de données personnelles mis en œuvre dans le cadre des services accessibles respecte la
-          réglementation applicable en matière de protection des données personnelles et notamment les dispositions de la loi « Informatique
-          et libertés » du 6 janvier 1978 modifiée et le Règlement général sur la Protection des données (Règlement UE 2016/679) désigné par
-          « RGPD ».
-        </p>
-        <p>
-          Pour en savoir plus sur ce traitement de données à caractère personnel et sur l’étendue de leurs droits, cliquez sur
-          <router-link :to="{ name: RouteName.PersonalData }"> {{ privacyPolicy }} </router-link>.
-        </p>
-
-        <h4 class="fr-mt-3w">9. Accessibilité</h4>
-        <p>
-          La conformité aux normes d'accessibilité numérique est un objectif ultérieur mais l’ADEME tâche de rendre ce site accessible à
-          toutes et tous, conformément à l'article 47 de la loi n°2005-102 du 11 février 2005.
-        </p>
-
-        <h5 class="fr-mt-3w">9.1. Signaler un dysfonctionnement</h5>
-        <p>
-          Si vous rencontrez un défaut d’accessibilité vous empêchant d’accéder à un contenu ou une fonctionnalité du site, merci de nous en
-          [faire part](insérer l’email de contact). Si vous n’obtenez pas de réponse rapide de notre part, vous êtes en droit de faire
-          parvenir vos doléances ou une demande de saisine au Défenseur des droits.
-        </p>
-        <p>
-          Pour en savoir plus sur la politique d’accessibilité numérique de l’État:
-          <a
-            target="_blank"
-            href="https://references.modernisation.gouv.fr/accessibilite-numerique"
-          >
-            https://references.modernisation.gouv.fr/accessibilite-numerique
-          </a>
-        </p>
-
-        <h4 class="fr-mt-3w">10. Sécurité</h4>
-        <p>
-          Le site est protégé par un certificat électronique, matérialisé pour la grande majorité des navigateurs par un cadenas. Cette
-          protection participe à la confidentialité des échanges. En aucun cas les services associés à la plateforme ne seront à l’origine
-          d’envoi d'emails pour demander la saisie d’informations personnelles.
-        </p>
-
-        <h4 class="fr-mt-3w">11. Votre attention</h4>
-        <p>
-          Nous vous rappelons qu’il n’est pas possible de garantir la confidentialité des messages transmis sur le réseau Internet. Aussi,
-          si vous souhaitez transmettre un message dans de meilleures conditions de sécurité, nous vous recommandons d’utiliser la voie
-          postale. L’ADEME dégage toute responsabilité quant aux difficultés techniques que vous pourriez rencontrer sur les Sites qu’elles
-          qu’en soient la cause et l’origine.
-        </p>
-
-        <h4 class="fr-mt-3w">12. Modifications</h4>
-        <p>L’ADEME se réserve le droit d’adapter les présentes mentions légales.</p>
-        <p>
-          Si l’ADEME apporte une modification aux présentes mentions légales, elle publiera la nouvelle version sur les supports concernés
-          et actualisera la date de « dernière mise à jour » figurant en haut des présentes mentions légales.
-        </p>
-        <p>L’ADEME vous invite donc à consulter régulièrement les supports concernés où sont publiées les mentions légales.</p>
-      </div>
-    </div>
+  <div class="fr-container fr-my-4w">
+    <LegalNotice
+      licence-url="https://github.com/betagouv/mission-transition-ecologique/blob/main/LICENSE"
+      :privacy-policy-url="privacyPolicy"
+      :site-url="siteUrl"
+      :site-host="{
+        address: '13 rue Jacques Peirotes 67000 Strasbourg',
+        country: 'France',
+        email: 'hello@scalingo.com',
+        name: 'Scalingo'
+      }"
+      site-name="Mission Transition Écologique"
+      date="17/06/2024"
+      :third-parties="thirdParties"
+      :contact-email="Contact.email"
+    />
   </div>
   <ContactMail />
 </template>
@@ -259,9 +22,17 @@
 <script setup lang="ts">
 // CONSOLE LOG TEMPLATE
 // console.log(`TeeLegalPage > FUNCTION_NAME > MSG_OR_VALUE :`)
-const privacyPolicy = new URL(useRouter().resolve({ name: RouteName.PersonalData }).href, window.location.origin).href
-
-import ContactMail from '@/components/contact/ContactMail.vue'
 import { RouteName } from '@/types/routeType'
-import { useRouter } from 'vue-router'
+import Contact from '@/utils/contact'
+
+const privacyPolicy = new URL(useRouter().resolve({ name: RouteName.PersonalData }).href, window.location.origin).href
+const siteUrl = new URL(useRouter().resolve({ name: RouteName.Homepage }).href, window.location.origin).href
+//
+const thirdParties = [
+  {
+    name: 'API recherche entreprise',
+    url: 'https://api.gouv.fr/les-api/api-recherche-entreprises',
+    text: "La recherche d'entreprise est effectuée via l'"
+  }
+]
 </script>

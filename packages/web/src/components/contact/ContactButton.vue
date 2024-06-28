@@ -20,7 +20,7 @@ import { RouteName } from '@/types/routeType'
 import Contact from '@/utils/contact'
 
 interface Props {
-  iframe: boolean
+  iframe?: boolean
 }
 withDefaults(defineProps<Props>(), {
   iframe: false

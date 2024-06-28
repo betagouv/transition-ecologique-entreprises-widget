@@ -39,10 +39,10 @@
   },
   "dependencies": {
     "@tsconfig/node20": "^20.1.4",
+    "concurrently": "^8.2.0",
     "dotenv": "^16.4.1",
     "true-myth": "^7.1.0",
-    "typescript": "^5.4.3",
-    "concurrently": "^8.2.0"
+    "typescript": "^5.4.3"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
