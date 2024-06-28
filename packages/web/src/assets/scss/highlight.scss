@@ -1,0 +1,26 @@
+@use 'setting';
+
+.fr-highlight {
+  &-border {
+    @each $color, $properties in setting.$colors {
+      &--#{$color} {
+        @if type-of($properties) == map {
+          background-image: linear-gradient(0deg, map-get($properties, "background-color"), map-get($properties, "background-color"));
+        } @else {
+          background: linear-gradient(0deg, $properties, $properties);
+        }
+      }
+    }
+  }
+  &-bg {
+    @each $color, $properties in setting.$colors {
+      &--#{$color} {
+        @if type-of($properties) == map {
+          background-color: map-get($properties, "background-color");
+        } @else {
+          background-color: $properties;
+        }
+      }
+    }
+  }
+}

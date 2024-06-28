@@ -32,6 +32,19 @@
   }
 }
 
+.fr-grid-row {
+  @each $breakpoint, $value in breakpoints.$values {
+    $modifier: tool.modifierByBreakpoint($breakpoint);
+    @each $align-name, $align in setting.$horizontal-flex-aligns {
+      &#{$modifier}--#{$align-name} {
+        @include media-query.respond-from($breakpoint) {
+          justify-content: $align;
+        }
+      }
+    }
+  }
+}
+
 .fr-container {
   @each $breakpoint, $value in breakpoints.$values {
     $modifier: tool.modifierByBreakpoint($breakpoint);

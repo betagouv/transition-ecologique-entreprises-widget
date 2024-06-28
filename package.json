@@ -19,6 +19,7 @@
     "build": "npm run build-json-output && npm run build -w packages/backend && npm run build -w packages/web",
     "build-back": "npm run build-json-output && npm run build -w packages/backend",
     "build-front": "npm run build-json-output && npm run build -w packages/web",
+    "build-projects": "npm run build-projects -w packages/data",
     "build-and-preview-front": "npm run build-front && PORT=4242 npm run start-preview -w packages/web",
     "build-json-output": "npm run build-json-output -w packages/data",
     "build-json-output-watch": "npm run build-json-output-watch -w packages/data",

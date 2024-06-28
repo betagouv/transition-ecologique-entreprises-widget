@@ -1,4 +1,5 @@
 import programFrDict from '@/translations/fr/program'
+import projectFrDict from '@/translations/fr/project'
 
 export const frDict = {
   next: 'Suivant',
@@ -67,8 +68,7 @@ export const frDict = {
     taxAdvantage: 'Avantage fiscal'
   },
   programResults: {
-    resume:
-      'Voici les accompagnements dont vous pouvez bénéficier pour diminuer l’empreinte écologique de votre {effectif} du secteur {secteur} en région {region}.'
+    resume: 'Voilà une liste de projets pertinents pour votre {effectif} du secteur {secteur} en Région {region}.'
   },
   enterprise: {
     select: 'Sélectionnez votre entreprise',
@@ -124,5 +124,6 @@ export const frDict = {
       of: 'de la'
     }
   },
-  ...programFrDict
+  ...programFrDict,
+  ...projectFrDict
 }

@@ -13,9 +13,10 @@ import { TrackId } from '@/types'
 import Hook from '@/router/hook'
 import TeeQuestionnaire from '@/components/questionnaire/TeeQuestionnaire.vue'
 import TeeQuestionnaireResult from '@/components/questionnaire/TeeQuestionnaireResult.vue'
-import ProgramList from '@/components/program/list/ProgramList.vue'
 import ProgramDetail from '@/components/program/detail/ProgramDetail.vue'
 import TeeStatPage from '@/pages/TeeStatPage.vue'
+import CatalogList from '@/components/catalog/CatalogList.vue'
+import ProjectDetail from '@/components/project/details/ProjectDetail.vue'
 
 // please edit the sitemap.ts file if you add any path starting with /
 // that you don't want to be listed in the sitemap
@@ -56,6 +57,13 @@ export const routes = [
         component: ProgramDetail as Component,
         beforeEnter: [Hook.hasProgram, Hook.setUsedTracks, Hook.hasUsedTracks],
         props: true
+      },
+      {
+        path: 'resultat/projets/:projectId',
+        component: ProjectDetail as Component,
+        name: RouteName.ProjectResultDetail,
+        beforeEnter: [Hook.hasProject, Hook.setUsedTracks, Hook.hasUsedTracks],
+        props: true
       }
     ]
   },
@@ -67,7 +75,7 @@ export const routes = [
       {
         path: '',
         name: RouteName.Catalog,
-        component: ProgramList as Component
+        component: CatalogList as Component
       },
       {
         path: ':programId',

@@ -1,22 +1,24 @@
 <template>
   <div class="fr-grid-row fr-grid-row--gutters">
-    <div
-      v-if="programStore.hasObjectiveTypeFilter()"
-      class="fr-col-12"
-    >
-      <TeeDsfrTags
-        v-model="programFilters.objectiveTypeSelected"
-        :tags="objectiveTypeTags"
-      />
-    </div>
+    <TeeDsfrTags
+      v-model="programFilters.objectiveTypeSelected"
+      :tags="objectiveTypeTags"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
 import { useProgramStore } from '@/stores/program'
-import { Theme as ThemeType, type programFiltersType } from '@/types'
+import { Theme as ThemeType, type programFiltersType, PublicodeObjective } from '@/types'
 import Theme from '@/utils/theme'
 import { TeeDsfrTagProps } from '@/components/element/tag/TeeDsfrTag.vue'
+import { computed } from 'vue'
+
+interface Props {
+  objective?: PublicodeObjective | ''
+}
+
+const props = defineProps<Props>()
 
 const programStore = useProgramStore()
 
@@ -55,4 +57,10 @@ const objectiveTypeTags = computed<TeeDsfrTagProps[]>((): TeeDsfrTagProps[] => {
 function isActive(tag: ThemeType) {
   return Theme.getTags().length === 1 || programFilters.objectiveTypeSelected === (tag.value as string)
 }
+
+onMounted(() => {
+  if (props.objective) {
+    programFilters.objectiveTypeSelected = props.objective
+  }
+})
 </script>

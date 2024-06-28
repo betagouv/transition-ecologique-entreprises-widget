@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Package in charge of storing and building TEE datasets",
   "scripts": {
-    "build-json-output": "npx ts-node src/generateProgramType.ts && npx ts-node src/buildJsonOutput.ts",
-    "build-json-output-watch": "nodemon --exec \"npx ts-node src/generateProgramType.ts && npx ts-node src/buildJsonOutput.ts\" --ext yaml,json,ts --ignore src/generated --ignore public/data --ignore generated",
+    "build-json-output": "npx ts-node src/generateProgramType.ts && npx ts-node src/buildProgramJsonOutput.ts",
+    "build-projects": "npx ts-node src/buildProjectJsonOutput.ts",
+    "build-json-output-watch": "nodemon --exec \"npx ts-node src/generateProgramType.ts && npx ts-node src/buildProgramJsonOutput.ts\" --ext yaml,json,ts --ignore src/generated --ignore public/data --ignore generated",
     "test": "jest",
     "lint": "eslint . --fix"
   },

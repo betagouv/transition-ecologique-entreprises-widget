@@ -251,6 +251,7 @@ export const remapItem = (
 
 // UX HELPERS
 export const scrollToTop = (element: Element) => {
+  console.log(element, Widget.is)
   if (!Widget.is) {
     element.scrollIntoView()
   } else {

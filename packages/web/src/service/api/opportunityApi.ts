@@ -4,8 +4,8 @@ import type { OpportunityBody, ReqResp, WithoutNullableKeys, OpportunityFormType
 import RequestApi from '@/service/api/requestApi'
 import TrackStructure from '@/utils/track/trackStructure'
 
-export default class OpportunityApi extends RequestApi {
-  private readonly url = '/api/opportunities'
+export default class OpportunityApi extends RequestApi<any> {
+  protected readonly url = '/api/opportunities'
   private readonly headers = {
     accept: 'application/json',
     'content-type': 'application/json'

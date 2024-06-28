@@ -46,6 +46,7 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/tsconfig": "^0.5.1",
     "fs": "^0.0.1-security",
+    "marked": "^13.0.0",
     "iframe-resizer": "^4.3.9",
     "js-yaml": "^4.1.0",
     "lit": "^2.7.3",
