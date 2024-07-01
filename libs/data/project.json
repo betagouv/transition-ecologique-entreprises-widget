@@ -12,9 +12,17 @@
         "cwd": "libs/data",
         "commands": [
           "npx ts-node src/generateProgramType.ts",
-          "npx ts-node src/buildJsonOutput.ts"
+          "npx ts-node src/buildProgramJson.ts"
         ],
         "parallel": false
+      }
+    },"generate-projects": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/data",
+        "commands": [
+          "npx ts-node src/buildProjectsJson.ts"
+        ]
       }
     }
   }

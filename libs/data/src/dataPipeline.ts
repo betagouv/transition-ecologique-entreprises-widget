@@ -68,7 +68,7 @@ export const prependInterface = (programs: ProgramType[], log = false): ProgramT
 /**
  * Converts program data to JSON and writes it to a file.
  */
-export const buildJSONOutput = (programs: ProgramType[]): void => {
+export const buildProgramJson = (programs: ProgramType[]): void => {
   console.log('♺ Converting data to JSON')
   const dataAsJson: string = JSON.stringify(programs, null, 2)
 
