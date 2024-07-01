@@ -1,8 +1,8 @@
 import { nafMapping } from '@tee/data/references'
 import { Maybe } from 'true-myth'
-import { NafMapping } from '../../domain/spi'
+import { NafMappingType } from '../../domain/spi'
 
-export class NAF_JSONMapping implements NafMapping {
+export class NafMapping implements NafMappingType {
   private _lastNafCode = ''
   private _lastNafData: NafData | undefined
 

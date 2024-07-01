@@ -1,9 +1,9 @@
 import { Maybe } from 'true-myth'
-import { NafMapping } from '../../src/establishment/domain/spi'
+import { NafMappingType } from '../../src/establishment/domain/spi'
 import EstablishmentFeatures from '../../src/establishment/domain/establishmentFeatures'
 import { expectToBeOk } from '../testing'
 import { dummyEstablishmentRepository, nothingNafMapping, nothingRegionMapping } from './testing'
-import { COG2023Mapping } from '../../src/establishment/infrastructure/json/cityToRegionMapping'
+import { CityToRegionMapping } from '../../src/establishment/infrastructure/json/cityToRegionMapping'
 
 const DUMMY_SIRET = '00000000000000'
 
@@ -15,7 +15,7 @@ EXPECT the result to have Naf label information derived from the provided NafMap
   const DUMMY_SECTION_CODE = 'J'
   const DUMMY_NAF_LABEL = 'Programmation, conseil et autres activités informatiques'
 
-  const dummyNafMapping: NafMapping = {
+  const dummyNafMapping: NafMappingType = {
     getLabel: () => Maybe.of(DUMMY_NAF_LABEL),
     getSectionCode: () => Maybe.of(DUMMY_SECTION_CODE)
   }
@@ -38,7 +38,7 @@ WHEN   fetching establishment data with 'getBySiret'
 EXPECT the result to have region data provided by the RegionMapping
 `, () => {
   const DUMMY_REGION = 'Pays de la Loire'
-  const dummyRegionMapping: COG2023Mapping = {
+  const dummyRegionMapping: CityToRegionMapping = {
     getRegion: () => Maybe.of(DUMMY_REGION)
   }
 

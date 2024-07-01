@@ -6,11 +6,11 @@ export type EstablishmentRepository = {
   search: (query: string) => Promise<Result<SearchResult, Error>>
 }
 
-export type CityToRegionMapping = {
+export type CityToRegionMappingType = {
   getRegion: (cityCode: string) => Maybe<string>
 }
 
-export type NafMapping = {
+export type NafMappingType = {
   getLabel: (nafCode: string) => Maybe<string>
   getSectionCode: (nafCode: string) => Maybe<string>
 }
