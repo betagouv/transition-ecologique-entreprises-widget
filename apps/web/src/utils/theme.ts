@@ -1,11 +1,10 @@
-import { PublicodeObjective, Objective as ObjectiveEnum, PublicodesKeys } from '@/types'
-import { Color } from '@/types'
-import { ThemeType } from '@/types'
+import { Color, Objective as ObjectiveEnum, PublicodeObjective, PublicodesKeys, ThemeId, ThemeType } from '@/types'
 import UsedTrack from '@/utils/track/usedTrack'
 
 export class Theme {
   static themes: ThemeType[] = [
     {
+      id: ThemeId.Environmental,
       title: 'Analyses environnementales',
       tagLabel: '🌱 analyses',
       value: PublicodeObjective.EnvironmentalImpact,
@@ -13,6 +12,7 @@ export class Theme {
       color: Color.blue
     },
     {
+      id: ThemeId.Energy,
       title: 'Économies d’énergie',
       tagLabel: '⚡️ énergie',
       value: PublicodeObjective.EnergyPerformance,
@@ -20,6 +20,7 @@ export class Theme {
       color: Color.yellow
     },
     {
+      id: ThemeId.Water,
       title: 'Économies d’eau',
       tagLabel: '💧 eau',
       value: PublicodeObjective.WaterConsumption,
@@ -27,6 +28,7 @@ export class Theme {
       color: Color.blueLight
     },
     {
+      id: ThemeId.Building,
       title: 'Construction & rénovation',
       tagLabel: '🏢 bâtiment',
       value: PublicodeObjective.BuildingRenovation,
@@ -34,6 +36,7 @@ export class Theme {
       color: Color.blue
     },
     {
+      id: ThemeId.Mobility,
       title: 'Mobilité',
       tagLabel: '🚲 mobilité',
       value: PublicodeObjective.SustainableMobility,
@@ -41,6 +44,7 @@ export class Theme {
       color: Color.green
     },
     {
+      id: ThemeId.Waste,
       title: 'Déchets & réemploi',
       tagLabel: '🗑 déchets',
       value: PublicodeObjective.WasteManagement,
@@ -48,6 +52,7 @@ export class Theme {
       color: Color.red
     },
     {
+      id: ThemeId.EcoDesign,
       title: 'Éco-conception',
       tagLabel: '🔁 écoconception',
       value: PublicodeObjective.EcoDesign,
@@ -55,6 +60,7 @@ export class Theme {
       color: Color.green
     },
     {
+      id: ThemeId.RH,
       title: 'Ressources humaines',
       tagLabel: '🧑‍🎓 RH',
       value: PublicodeObjective.TrainOrRecruit,

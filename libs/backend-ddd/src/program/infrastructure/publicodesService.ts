@@ -54,7 +54,7 @@ const initializePublicodesEngineForAllPrograms = (programs: ProgramType[]): Reco
 const initializePublicodesEngine = (rules: object): Result<Engine, Error> => {
   let engine: Engine
   try {
-    engine = new Engine(rules)
+    engine = new Engine(rules, { strict: { noOrphanRule: false } })
   } catch (e) {
     const err = ensureError(e)
     return Result.err(err)
