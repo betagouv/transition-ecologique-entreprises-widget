@@ -8,6 +8,7 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin'
 import { fileURLToPath } from 'url'
 import { resolve } from 'path'
 import { dsnFromString } from '@sentry/utils'
+import { sentryVitePlugin } from "@sentry/vite-plugin";
 import * as dotenv from 'dotenv'
 import { unheadVueComposablesImports } from '@unhead/vue'
 
@@ -28,7 +29,8 @@ const libBuildConfig: Record<LibType, BuildOptions> = {
     reportCompressedSize: true,
     commonjsOptions: {
       transformMixedEsModules: true
-    }
+    },
+    sourcemap: true
   },
   widget: {
     emptyOutDir: false,
@@ -64,7 +66,13 @@ const plugins = async () => {
       include: [/\.vue$/, /\.vue\?vue/],
       dts: './src/components.d.ts',
       resolvers: [vueDsfrComponentResolver]
-    }) as Plugin
+    }) as Plugin,
+    sentryVitePlugin({
+      authToken: process.env.SENTRY_AUTH_TOKEN,
+      org: "betagouv",
+      project: "tee-frontend-vue",
+      url: "https://sentry.incubateur.net",
+    })
   ]
   if (isProd) {
     return basePlugins
